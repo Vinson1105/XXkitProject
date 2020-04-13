@@ -6,10 +6,8 @@
 //  Copyright © 2020 郭文轩. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "../../XXkit/Object-C/AppDelegate/XXappDelegate.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-
+@interface AppDelegate : XXappDelegate
 @end
 
