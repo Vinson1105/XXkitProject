@@ -2,81 +2,29 @@
 //  MainViewController.m
 //  XXkitProject
 //
-//  Created by 郭文轩 on 2020/4/12.
+//  Created by 郭文轩 on 2020/4/14.
 //  Copyright © 2020 郭文轩. All rights reserved.
 //
 
 #import "MainViewController.h"
+#import "../../XXkit/Object-C/TableView/XXtableViewShell.h"
 
 @interface MainViewController ()
-@property (nonatomic,strong) NSMutableArray *data;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic,strong) XXtableViewShell *shell;
 @end
 
 @implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _data = [NSMutableArray new];
+    // Do any additional setup after loading the view.
     
-    NSMutableDictionary *section = [NSMutableDictionary new];
-    [section setObject:@"TableView" forKey:@"header"];
-    [section setObject:@[@"XXtableViewShell"] forKey:@"row"];
-    [_data addObject:section];
+    _shell = [XXtableViewShell new];
+    [_shell shell:_tableView];
+    [_shell configSectionWithHeader:nil row:@[@"XXtableViewShell"] footer:nil];
+    [_shell configFinished];
 }
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return _data.count;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return [_data[section][@"row"] count];
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    
-    // Configure the cell...
-    cell.textLabel.text = _data[indexPath.section][@"row"][indexPath.row];
-    return cell;
-}
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 /*
 #pragma mark - Navigation

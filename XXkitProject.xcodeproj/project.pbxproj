@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D3508822243FFCDD00B8BC8F /* XXtableViewShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3508821243FFCDD00B8BC8F /* XXtableViewShellVC.m */; };
-		D35C83D424427873003F6FCF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35C83D324427873003F6FCF /* MainViewController.m */; };
 		D3659516243E8F59009F5228 /* XXtableViewShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D365942D243E8F58009F5228 /* XXtableViewShell.m */; };
 		D3659517243E8F59009F5228 /* XXnode.m in Sources */ = {isa = PBXBuildFile; fileRef = D3659430243E8F58009F5228 /* XXnode.m */; };
 		D3659518243E8F59009F5228 /* UIButton+XX.m in Sources */ = {isa = PBXBuildFile; fileRef = D3659435243E8F58009F5228 /* UIButton+XX.m */; };
@@ -35,6 +34,7 @@
 		D3659569243E8F59009F5228 /* Readme.MD in Resources */ = {isa = PBXBuildFile; fileRef = D36594E0243E8F59009F5228 /* Readme.MD */; };
 		D365956A243E8F59009F5228 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D36594E1243E8F59009F5228 /* .gitignore */; };
 		D365956B243E8F59009F5228 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = D36594E2243E8F59009F5228 /* .gitattributes */; };
+		D36B7A392445DD2F001BBE89 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D36B7A382445DD2F001BBE89 /* MainViewController.m */; };
 		D37F69FD243C017E00DC2F28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D37F69FC243C017E00DC2F28 /* AppDelegate.m */; };
 		D37F6A06243C017E00DC2F28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37F6A04243C017E00DC2F28 /* Main.storyboard */; };
 		D37F6A08243C017F00DC2F28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D37F6A07243C017F00DC2F28 /* Assets.xcassets */; };
@@ -64,8 +64,6 @@
 /* Begin PBXFileReference section */
 		D3508820243FFCDD00B8BC8F /* XXtableViewShellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXtableViewShellVC.h; sourceTree = "<group>"; };
 		D3508821243FFCDD00B8BC8F /* XXtableViewShellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXtableViewShellVC.m; sourceTree = "<group>"; };
-		D35C83D224427873003F6FCF /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		D35C83D324427873003F6FCF /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		D365942D243E8F58009F5228 /* XXtableViewShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXtableViewShell.m; sourceTree = "<group>"; };
 		D365942E243E8F58009F5228 /* XXtableViewShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXtableViewShell.h; sourceTree = "<group>"; };
 		D3659430243E8F58009F5228 /* XXnode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXnode.m; sourceTree = "<group>"; };
@@ -144,6 +142,8 @@
 		D36594E1243E8F59009F5228 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		D36594E2243E8F59009F5228 /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		D36594E3243E8F59009F5228 /* XXdefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXdefine.h; sourceTree = "<group>"; };
+		D36B7A372445DD2F001BBE89 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		D36B7A382445DD2F001BBE89 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		D37F69F8243C017E00DC2F28 /* XXkitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXkitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37F69FB243C017E00DC2F28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D37F69FC243C017E00DC2F28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -416,8 +416,8 @@
 				D37F6A09243C017F00DC2F28 /* LaunchScreen.storyboard */,
 				D37F6A0C243C017F00DC2F28 /* Info.plist */,
 				D37F6A0D243C017F00DC2F28 /* main.m */,
-				D35C83D224427873003F6FCF /* MainViewController.h */,
-				D35C83D324427873003F6FCF /* MainViewController.m */,
+				D36B7A372445DD2F001BBE89 /* MainViewController.h */,
+				D36B7A382445DD2F001BBE89 /* MainViewController.m */,
 			);
 			path = XXkitProject;
 			sourceTree = "<group>";
@@ -584,9 +584,9 @@
 				D365955B243E8F59009F5228 /* XXshadowCreator.m in Sources */,
 				D3659566243E8F59009F5228 /* XXtools.m in Sources */,
 				D3659567243E8F59009F5228 /* XXbundleManager.m in Sources */,
-				D35C83D424427873003F6FCF /* MainViewController.m in Sources */,
 				D365955D243E8F59009F5228 /* XXmtkYuvDelegate.m in Sources */,
 				D3659518243E8F59009F5228 /* UIButton+XX.m in Sources */,
+				D36B7A392445DD2F001BBE89 /* MainViewController.m in Sources */,
 				D3659517243E8F59009F5228 /* XXnode.m in Sources */,
 				D3508822243FFCDD00B8BC8F /* XXtableViewShellVC.m in Sources */,
 				D37F69FD243C017E00DC2F28 /* AppDelegate.m in Sources */,
