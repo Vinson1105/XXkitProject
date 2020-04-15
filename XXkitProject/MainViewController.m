@@ -7,11 +7,14 @@
 //
 
 #import "MainViewController.h"
+#import "./VC/UITableVIew/XXtableViewShellVC.h"
 #import "../../XXkit/Object-C/TableView/XXtableViewShell.h"
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic,strong) XXtableViewShell *shell;
+
+@property (nonatomic,copy) void(^onTableViewRowClicked)(NSIndexPath *indexPath, id data);
 @end
 
 @implementation MainViewController
@@ -24,16 +27,18 @@
     [_shell shell:_tableView];
     [_shell configSectionWithHeader:nil row:@[@"XXtableViewShell"] footer:nil];
     [_shell configFinished];
+    
+    _shell.onRowClicked = self.onTableViewRowClicked;
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void (^)(NSIndexPath *, id))onTableViewRowClicked{
+    if(!_onTableViewRowClicked){
+        _onTableViewRowClicked = ^(NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
+            XXtableViewShellVC *
+        }
+    }
+    return _onTableViewRowClicked;
 }
-*/
 
 @end

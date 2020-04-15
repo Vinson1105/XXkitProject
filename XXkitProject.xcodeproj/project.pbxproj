@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D337582424472DF200A1C252 /* XXocUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = D337582324472DF200A1C252 /* XXocUtility.m */; };
 		D3508822243FFCDD00B8BC8F /* XXtableViewShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3508821243FFCDD00B8BC8F /* XXtableViewShellVC.m */; };
 		D3659516243E8F59009F5228 /* XXtableViewShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D365942D243E8F58009F5228 /* XXtableViewShell.m */; };
 		D3659517243E8F59009F5228 /* XXnode.m in Sources */ = {isa = PBXBuildFile; fileRef = D3659430243E8F58009F5228 /* XXnode.m */; };
@@ -62,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D337582324472DF200A1C252 /* XXocUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXocUtility.m; sourceTree = "<group>"; };
 		D3508820243FFCDD00B8BC8F /* XXtableViewShellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXtableViewShellVC.h; sourceTree = "<group>"; };
 		D3508821243FFCDD00B8BC8F /* XXtableViewShellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXtableViewShellVC.m; sourceTree = "<group>"; };
 		D365942D243E8F58009F5228 /* XXtableViewShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXtableViewShell.m; sourceTree = "<group>"; };
@@ -110,7 +112,7 @@
 		D365945C243E8F58009F5228 /* XXlistViewShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXlistViewShell.h; sourceTree = "<group>"; };
 		D365945D243E8F58009F5228 /* UITableView+XXshell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+XXshell.m"; sourceTree = "<group>"; };
 		D365945E243E8F58009F5228 /* XXcomboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXcomboBox.h; sourceTree = "<group>"; };
-		D365945F243E8F58009F5228 /* XXocDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXocDefine.h; sourceTree = "<group>"; };
+		D365945F243E8F58009F5228 /* XXocUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXocUtility.h; sourceTree = "<group>"; };
 		D3659461243E8F58009F5228 /* WebViewPayShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewPayShell.m; sourceTree = "<group>"; };
 		D3659462243E8F58009F5228 /* WebViewPayShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewPayShell.h; sourceTree = "<group>"; };
 		D3659470243E8F58009F5228 /* UIViewController+ApplicationState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ApplicationState.h"; sourceTree = "<group>"; };
@@ -196,18 +198,10 @@
 		D350881B243FF9AC00B8BC8F /* UITableVIew */ = {
 			isa = PBXGroup;
 			children = (
-				D350881C243FF9CD00B8BC8F /* XXtableViewShell */,
-			);
-			path = UITableVIew;
-			sourceTree = "<group>";
-		};
-		D350881C243FF9CD00B8BC8F /* XXtableViewShell */ = {
-			isa = PBXGroup;
-			children = (
 				D3508820243FFCDD00B8BC8F /* XXtableViewShellVC.h */,
 				D3508821243FFCDD00B8BC8F /* XXtableViewShellVC.m */,
 			);
-			path = XXtableViewShell;
+			path = UITableVIew;
 			sourceTree = "<group>";
 		};
 		D3659403243E8F58009F5228 /* XXkit */ = {
@@ -231,9 +225,10 @@
 				D365943A243E8F58009F5228 /* AV */,
 				D365944C243E8F58009F5228 /* StackView */,
 				D365944F243E8F58009F5228 /* Shell */,
-				D365945F243E8F58009F5228 /* XXocDefine.h */,
+				D365945F243E8F58009F5228 /* XXocUtility.h */,
+				D337582324472DF200A1C252 /* XXocUtility.m */,
 				D3659460243E8F58009F5228 /* Web */,
-				D365946F243E8F58009F5228 /* UIViewController */,
+				D365946F243E8F58009F5228 /* ViewController */,
 				D36594C2243E8F59009F5228 /* View */,
 				D36594D2243E8F59009F5228 /* AppDelegate */,
 				D36594D5243E8F59009F5228 /* Utility */,
@@ -331,13 +326,13 @@
 			path = Web;
 			sourceTree = "<group>";
 		};
-		D365946F243E8F58009F5228 /* UIViewController */ = {
+		D365946F243E8F58009F5228 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				D3659470243E8F58009F5228 /* UIViewController+ApplicationState.h */,
 				D3659471243E8F58009F5228 /* UIViewController+ApplicationState.m */,
 			);
-			path = UIViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		D36594C2243E8F59009F5228 /* View */ = {
@@ -591,6 +586,7 @@
 				D3508822243FFCDD00B8BC8F /* XXtableViewShellVC.m in Sources */,
 				D37F69FD243C017E00DC2F28 /* AppDelegate.m in Sources */,
 				D3659533243E8F59009F5228 /* UIViewController+ApplicationState.m in Sources */,
+				D337582424472DF200A1C252 /* XXocUtility.m in Sources */,
 				D37F6A0E243C017F00DC2F28 /* main.m in Sources */,
 				D3659560243E8F59009F5228 /* XXmaskView.m in Sources */,
 				D365952D243E8F59009F5228 /* WebViewPayShell.m in Sources */,

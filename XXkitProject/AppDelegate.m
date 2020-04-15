@@ -11,9 +11,7 @@
 
 @implementation AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey,id> *)launchOptions{
-    
-    MainViewController *mainVC = [MainViewController new];
-    [self createNavigationWithRootViewController:mainVC];
+    [self createNavigationWithUIStoryboard:@"Main" bundle:nil];
     return YES;
 }
 @end
