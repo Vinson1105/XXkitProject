@@ -8,7 +8,8 @@
 
 #import "MainViewController.h"
 #import "./VC/UITableVIew/XXtableViewShellVC.h"
-#import "../../XXkit/Object-C/TableView/XXtableViewShell.h"
+#import "../../XXkit/Object-C/UITableView/XXtableViewShell.h"
+#import "../../XXkit/Object-C/XXocUtility.h"
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -34,9 +35,12 @@
 
 - (void (^)(NSIndexPath *, id))onTableViewRowClicked{
     if(!_onTableViewRowClicked){
+        XXOC_WS;
         _onTableViewRowClicked = ^(NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
-            XXtableViewShellVC *
-        }
+            XXOC_SS;
+            XXtableViewShellVC *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"XXtableViewShellVC"];
+            [ss.navigationController pushViewController:vc animated:YES];
+        };
     }
     return _onTableViewRowClicked;
 }

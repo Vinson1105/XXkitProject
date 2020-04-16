@@ -41,17 +41,17 @@
         <!--Xtable View ShellVC-->
         <scene sceneID="Gjs-H0-z3J">
             <objects>
-                <viewController id="qer-FP-OZd" customClass="XXtableViewShellVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="XXtableViewShellVC" id="qer-FP-OZd" customClass="XXtableViewShellVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hYe-h4-VAZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q3F-Ka-b61">
-                                <rect key="frame" x="0.0" y="54" width="414" height="768"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="q3F-Ka-b61">
+                                <rect key="frame" x="0.0" y="10" width="414" height="802"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jlK-yl-MpG">
-                                <rect key="frame" x="20" y="832" width="374" height="30"/>
+                                <rect key="frame" x="20" y="822" width="374" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZe-HN-aCs">
                                         <rect key="frame" x="0.0" y="0.0" width="111.5" height="30"/>
@@ -85,12 +85,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="CMv-e9-yeS" firstAttribute="trailing" secondItem="q3F-Ka-b61" secondAttribute="trailing" id="R8q-82-N76"/>
+                            <constraint firstAttribute="trailing" secondItem="q3F-Ka-b61" secondAttribute="trailing" id="R8q-82-N76"/>
                             <constraint firstItem="jlK-yl-MpG" firstAttribute="leading" secondItem="CMv-e9-yeS" secondAttribute="leading" constant="20" id="X65-RU-x3j"/>
-                            <constraint firstItem="q3F-Ka-b61" firstAttribute="leading" secondItem="CMv-e9-yeS" secondAttribute="leading" id="b7h-ZN-hfr"/>
+                            <constraint firstItem="q3F-Ka-b61" firstAttribute="leading" secondItem="hYe-h4-VAZ" secondAttribute="leading" id="b7h-ZN-hfr"/>
                             <constraint firstItem="jlK-yl-MpG" firstAttribute="top" secondItem="q3F-Ka-b61" secondAttribute="bottom" constant="10" id="f5I-V9-8B9"/>
-                            <constraint firstItem="CMv-e9-yeS" firstAttribute="bottom" secondItem="jlK-yl-MpG" secondAttribute="bottom" id="qmA-9E-FOj"/>
-                            <constraint firstItem="q3F-Ka-b61" firstAttribute="top" secondItem="CMv-e9-yeS" secondAttribute="top" constant="10" id="wCG-Pu-I1l"/>
+                            <constraint firstItem="CMv-e9-yeS" firstAttribute="bottom" secondItem="jlK-yl-MpG" secondAttribute="bottom" constant="10" id="qmA-9E-FOj"/>
+                            <constraint firstItem="q3F-Ka-b61" firstAttribute="top" secondItem="hYe-h4-VAZ" secondAttribute="top" constant="10" id="wCG-Pu-I1l"/>
                             <constraint firstItem="CMv-e9-yeS" firstAttribute="trailing" secondItem="jlK-yl-MpG" secondAttribute="trailing" constant="20" id="zEP-PF-YZO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CMv-e9-yeS"/>
@@ -105,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Sa-hp-tYI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-276" y="90"/>
+            <point key="canvasLocation" x="-390" y="48"/>
         </scene>
     </scenes>
 </document>
