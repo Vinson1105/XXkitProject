@@ -52,10 +52,10 @@
     
     for (int sectionIndex = 0; sectionIndex < sectionCount; sectionIndex++) {
         for (int rowIndex = 0; rowIndex < rowCount; rowIndex++) {
-            [row addObject:@{
+            [row addObject:[[NSMutableDictionary alloc] initWithDictionary:@{
                 @"Title":[NSString stringWithFormat:@"[Title %d]",rowIndex],
                 @"Message":@"[Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message]",
-            }];
+            }]];
         }
         
         [_headers addObject:[NSString stringWithFormat:@"[Header %d]",sectionIndex]];
@@ -81,11 +81,13 @@
     int tag = (int)button.tag;
     switch (tag) {
         case kDefaultRowButtonID:{
-            
+             _defaultRowShell = [XXtableViewShell new];
+            [_defaultRowShell shell:_tableView];
+            [_defaultRowShell configRowType:nil loadType:0 systemStyle:UITableViewCellStyleDefault height:0];
+            [_defaultRowShell configSectionWithHeaders:_headers rows:_rows footers:_footers];
             break;
         }
         case kNibRowButtonID:{
-            
             _nibRowShell = [XXtableViewShell new];
             [_nibRowShell shell:_tableView];
             [_nibRowShell configRowType:@"TableViewNibCell" loadType:XXtableViewShellRowLoadTypeNib systemStyle:0 height:0];
@@ -93,7 +95,10 @@
             break;
         }
         case kCodeRowButtonID:{
-            
+            _codeRowShell = [XXtableViewShell new];
+            [_codeRowShell shell:_tableView];
+            [_codeRowShell configRowType:@"TableViewCodeCell" loadType:XXtableViewShellRowLoadTypeCode systemStyle:0 height:0];
+            [_codeRowShell configSectionWithHeaders:_headers rows:_rows footers:_footers];
             break;
         }
         default:

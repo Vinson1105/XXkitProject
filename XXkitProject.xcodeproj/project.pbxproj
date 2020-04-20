@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D348AB26244D99F000C7588F /* TableViewCodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D348AB25244D99F000C7588F /* TableViewCodeCell.m */; };
 		D3508822243FFCDD00B8BC8F /* XXtableViewShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3508821243FFCDD00B8BC8F /* XXtableViewShellVC.m */; };
 		D3659516243E8F59009F5228 /* XXtableViewShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D365942D243E8F58009F5228 /* XXtableViewShell.m */; };
 		D3659518243E8F59009F5228 /* UIButton+XX.m in Sources */ = {isa = PBXBuildFile; fileRef = D3659435243E8F58009F5228 /* UIButton+XX.m */; };
@@ -64,6 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D348AB24244D99F000C7588F /* TableViewCodeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCodeCell.h; sourceTree = "<group>"; };
+		D348AB25244D99F000C7588F /* TableViewCodeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCodeCell.m; sourceTree = "<group>"; };
 		D3508820243FFCDD00B8BC8F /* XXtableViewShellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXtableViewShellVC.h; sourceTree = "<group>"; };
 		D3508821243FFCDD00B8BC8F /* XXtableViewShellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXtableViewShellVC.m; sourceTree = "<group>"; };
 		D365942D243E8F58009F5228 /* XXtableViewShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXtableViewShell.m; sourceTree = "<group>"; };
@@ -206,6 +209,8 @@
 				D39503B22447EABC001434A5 /* TableViewNibCell.h */,
 				D39503B32447EABC001434A5 /* TableViewNibCell.m */,
 				D39503B42447EABC001434A5 /* TableViewNibCell.xib */,
+				D348AB24244D99F000C7588F /* TableViewCodeCell.h */,
+				D348AB25244D99F000C7588F /* TableViewCodeCell.m */,
 			);
 			path = UITableVIew;
 			sourceTree = "<group>";
@@ -599,6 +604,7 @@
 				D365951E243E8F59009F5228 /* XXcodecBase.m in Sources */,
 				D3659525243E8F59009F5228 /* XXstackViewShell.m in Sources */,
 				D3659516243E8F59009F5228 /* XXtableViewShell.m in Sources */,
+				D348AB26244D99F000C7588F /* TableViewCodeCell.m in Sources */,
 				D365951D243E8F59009F5228 /* XXaudioFormat.m in Sources */,
 				D3659563243E8F59009F5228 /* XXappDelegate.m in Sources */,
 				D365955E243E8F59009F5228 /* Metal.metal in Sources */,
