@@ -9,7 +9,7 @@
 #import "TableViewNibCell.h"
 #import "../../../../XXkit/Object-C/UITableView/XXtableViewShell.h"
 
-@interface TableViewNibCell() <XXtableViewCell>
+@interface TableViewNibCell() <XXtableViewCellDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *messageLabel;
 @property (weak, nonatomic) IBOutlet UIButton *detailButton;

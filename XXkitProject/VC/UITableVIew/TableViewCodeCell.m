@@ -9,7 +9,7 @@
 #import "TableViewCodeCell.h"
 #import "../../../../XXkit/Object-C/UITableView/XXtableViewShell.h"
 
-@interface TableViewCodeCell() <XXtableViewCell>
+@interface TableViewCodeCell() <XXtableViewCellDelegate>
 @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) UILabel *messageLabel;
 @property (strong, nonatomic) UIButton *detailButton;
