@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D348AB26244D99F000C7588F /* TableViewCodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D348AB25244D99F000C7588F /* TableViewCodeCell.m */; };
 		D3508822243FFCDD00B8BC8F /* XXtableViewShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3508821243FFCDD00B8BC8F /* XXtableViewShellVC.m */; };
+		D35E3203244FB44900300362 /* XXstackViewShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D35E3202244FB44900300362 /* XXstackViewShellVC.m */; };
 		D3659516243E8F59009F5228 /* XXtableViewShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D365942D243E8F58009F5228 /* XXtableViewShell.m */; };
 		D3659518243E8F59009F5228 /* UIButton+XX.m in Sources */ = {isa = PBXBuildFile; fileRef = D3659435243E8F58009F5228 /* UIButton+XX.m */; };
 		D3659519243E8F59009F5228 /* UIView+Zoomable.m in Sources */ = {isa = PBXBuildFile; fileRef = D3659437243E8F58009F5228 /* UIView+Zoomable.m */; };
@@ -69,6 +70,8 @@
 		D348AB25244D99F000C7588F /* TableViewCodeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCodeCell.m; sourceTree = "<group>"; };
 		D3508820243FFCDD00B8BC8F /* XXtableViewShellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXtableViewShellVC.h; sourceTree = "<group>"; };
 		D3508821243FFCDD00B8BC8F /* XXtableViewShellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXtableViewShellVC.m; sourceTree = "<group>"; };
+		D35E3201244FB44900300362 /* XXstackViewShellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXstackViewShellVC.h; sourceTree = "<group>"; };
+		D35E3202244FB44900300362 /* XXstackViewShellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXstackViewShellVC.m; sourceTree = "<group>"; };
 		D365942D243E8F58009F5228 /* XXtableViewShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXtableViewShell.m; sourceTree = "<group>"; };
 		D365942E243E8F58009F5228 /* XXtableViewShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXtableViewShell.h; sourceTree = "<group>"; };
 		D3659431243E8F58009F5228 /* UIButton+XX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+XX.h"; sourceTree = "<group>"; };
@@ -99,20 +102,9 @@
 		D365944B243E8F58009F5228 /* XXaudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXaudioPlayer.m; sourceTree = "<group>"; };
 		D365944D243E8F58009F5228 /* XXstackViewShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXstackViewShell.m; sourceTree = "<group>"; };
 		D365944E243E8F58009F5228 /* XXstackViewShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXstackViewShell.h; sourceTree = "<group>"; };
-		D3659450243E8F58009F5228 /* XXshellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXshellProtocol.h; sourceTree = "<group>"; };
-		D3659451243E8F58009F5228 /* XXshellCellBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXshellCellBase.m; sourceTree = "<group>"; };
 		D3659452243E8F58009F5228 /* XXtextFieldShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXtextFieldShell.m; sourceTree = "<group>"; };
-		D3659453243E8F58009F5228 /* XXheaderCellFooterBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXheaderCellFooterBase.h; sourceTree = "<group>"; };
 		D3659454243E8F58009F5228 /* XXcomboBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXcomboBox.m; sourceTree = "<group>"; };
-		D3659455243E8F58009F5228 /* UITableView+XXshell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+XXshell.h"; sourceTree = "<group>"; };
-		D3659456243E8F58009F5228 /* XXlistViewShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXlistViewShell.m; sourceTree = "<group>"; };
-		D3659457243E8F58009F5228 /* XXtableViewShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXtableViewShell.m; sourceTree = "<group>"; };
-		D3659458243E8F58009F5228 /* XXshellCellBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXshellCellBase.h; sourceTree = "<group>"; };
-		D3659459243E8F58009F5228 /* XXheaderCellFooterBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXheaderCellFooterBase.m; sourceTree = "<group>"; };
 		D365945A243E8F58009F5228 /* XXtextFieldShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXtextFieldShell.h; sourceTree = "<group>"; };
-		D365945B243E8F58009F5228 /* XXtableViewShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXtableViewShell.h; sourceTree = "<group>"; };
-		D365945C243E8F58009F5228 /* XXlistViewShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXlistViewShell.h; sourceTree = "<group>"; };
-		D365945D243E8F58009F5228 /* UITableView+XXshell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+XXshell.m"; sourceTree = "<group>"; };
 		D365945E243E8F58009F5228 /* XXcomboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXcomboBox.h; sourceTree = "<group>"; };
 		D3659461243E8F58009F5228 /* WebViewPayShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewPayShell.m; sourceTree = "<group>"; };
 		D3659462243E8F58009F5228 /* WebViewPayShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewPayShell.h; sourceTree = "<group>"; };
@@ -196,6 +188,7 @@
 		D350881A243FF99F00B8BC8F /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				D35E3200244FB41A00300362 /* UIStackView */,
 				D350881B243FF9AC00B8BC8F /* UITableVIew */,
 			);
 			path = VC;
@@ -213,6 +206,15 @@
 				D348AB25244D99F000C7588F /* TableViewCodeCell.m */,
 			);
 			path = UITableVIew;
+			sourceTree = "<group>";
+		};
+		D35E3200244FB41A00300362 /* UIStackView */ = {
+			isa = PBXGroup;
+			children = (
+				D35E3201244FB44900300362 /* XXstackViewShellVC.h */,
+				D35E3202244FB44900300362 /* XXstackViewShellVC.m */,
+			);
+			path = UIStackView;
 			sourceTree = "<group>";
 		};
 		D3659403243E8F58009F5228 /* XXkit */ = {
@@ -308,20 +310,9 @@
 		D365944F243E8F58009F5228 /* Shell */ = {
 			isa = PBXGroup;
 			children = (
-				D3659450243E8F58009F5228 /* XXshellProtocol.h */,
-				D3659451243E8F58009F5228 /* XXshellCellBase.m */,
 				D3659452243E8F58009F5228 /* XXtextFieldShell.m */,
-				D3659453243E8F58009F5228 /* XXheaderCellFooterBase.h */,
 				D3659454243E8F58009F5228 /* XXcomboBox.m */,
-				D3659455243E8F58009F5228 /* UITableView+XXshell.h */,
-				D3659456243E8F58009F5228 /* XXlistViewShell.m */,
-				D3659457243E8F58009F5228 /* XXtableViewShell.m */,
-				D3659458243E8F58009F5228 /* XXshellCellBase.h */,
-				D3659459243E8F58009F5228 /* XXheaderCellFooterBase.m */,
 				D365945A243E8F58009F5228 /* XXtextFieldShell.h */,
-				D365945B243E8F58009F5228 /* XXtableViewShell.h */,
-				D365945C243E8F58009F5228 /* XXlistViewShell.h */,
-				D365945D243E8F58009F5228 /* UITableView+XXshell.m */,
 				D365945E243E8F58009F5228 /* XXcomboBox.h */,
 			);
 			path = Shell;
@@ -608,6 +599,7 @@
 				D365951D243E8F59009F5228 /* XXaudioFormat.m in Sources */,
 				D3659563243E8F59009F5228 /* XXappDelegate.m in Sources */,
 				D365955E243E8F59009F5228 /* Metal.metal in Sources */,
+				D35E3203244FB44900300362 /* XXstackViewShellVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
