@@ -55,6 +55,7 @@
             [row addObject:[[NSMutableDictionary alloc] initWithDictionary:@{
                 @"Title":[NSString stringWithFormat:@"[Title %d]",rowIndex],
                 @"Message":@"[Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message]",
+                @"IsDetailShowing":@(NO)
             }]];
         }
         
@@ -92,6 +93,12 @@
             [_nibRowShell shell:_tableView];
             [_nibRowShell configRowType:@"TableViewNibCell" loadType:XXtableViewShellRowLoadTypeNib systemStyle:0 height:0];
             [_nibRowShell configSectionWithHeaders:_headers rows:_rows footers:_footers];
+            _nibRowShell.onRowClicked = ^(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
+                NSMutableDictionary *dict = data;
+                BOOL curr = [dict[@"IsDetailShowing"] boolValue];
+                dict[@"IsDetailShowing"] = @(!curr);
+                [shell resetData:dict atIndexPath:indexPath];
+            };
             break;
         }
         case kCodeRowButtonID:{
@@ -99,6 +106,12 @@
             [_codeRowShell shell:_tableView];
             [_codeRowShell configRowType:@"TableViewCodeCell" loadType:XXtableViewShellRowLoadTypeCode systemStyle:0 height:0];
             [_codeRowShell configSectionWithHeaders:_headers rows:_rows footers:_footers];
+            _codeRowShell.onRowClicked = ^(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
+                NSMutableDictionary *dict = data;
+                BOOL curr = [dict[@"IsDetailShowing"] boolValue];
+                dict[@"IsDetailShowing"] = @(!curr);
+                [shell resetData:dict atIndexPath:indexPath];
+            };
             break;
         }
         default:

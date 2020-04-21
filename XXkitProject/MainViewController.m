@@ -15,7 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic,strong) XXtableViewShell *shell;
 
-@property (nonatomic,copy) void(^onTableViewRowClicked)(NSIndexPath *indexPath, id data);
+@property (nonatomic,copy) void(^onTableViewRowClicked)(XXtableViewShell *shell, NSIndexPath *indexPath, id data);
 @end
 
 @implementation MainViewController
@@ -33,10 +33,10 @@
 }
 
 
-- (void (^)(NSIndexPath *, id))onTableViewRowClicked{
+- (void (^)(XXtableViewShell*, NSIndexPath *, id))onTableViewRowClicked{
     if(!_onTableViewRowClicked){
         XXOC_WS;
-        _onTableViewRowClicked = ^(NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
+        _onTableViewRowClicked = ^(XXtableViewShell *shell,NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
             XXOC_SS;
             XXtableViewShellVC *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"XXtableViewShellVC"];
             [ss.navigationController pushViewController:vc animated:YES];

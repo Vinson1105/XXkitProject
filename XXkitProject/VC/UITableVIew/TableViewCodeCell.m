@@ -67,7 +67,7 @@
     // Configure the view for the selected state
 }
 
-- (void)reset:(nonnull id)data {
+- (void)resetData:(id)data{
     _data = data;
     if(_data[@"Title"]) _titleLabel.text = _data[@"Title"];
     if(_data[@"Message"]) _messageLabel.text = _data[@"Message"];

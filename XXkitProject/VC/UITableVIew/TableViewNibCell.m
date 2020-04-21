@@ -26,7 +26,7 @@
     // Initialization code
     [_detailButton setBackgroundColor:UIColor.greenColor];
 }
-- (void)reset:(id)data{
+- (void)resetData:(id)data{
     _data = data;
     if(_data[@"Title"]) _titleLabel.text = _data[@"Title"];
     if(_data[@"Message"]) _messageLabel.text = _data[@"Message"];
