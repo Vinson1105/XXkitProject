@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dYX-cw-sdH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dYX-cw-sdH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -129,8 +129,8 @@
                                     <action selector="onButtonTouchUpInside:" destination="hO7-Ye-LCX" eventType="touchUpInside" id="glW-JH-YY0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeV-h7-avZ">
-                                <rect key="frame" x="367" y="802" width="40" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeV-h7-avZ">
+                                <rect key="frame" x="354" y="802" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="Nhd-DH-Ubh"/>
                                     <constraint firstAttribute="height" constant="40" id="gni-tl-6nC"/>
@@ -218,17 +218,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CbW-YQ-as1">
+                                <rect key="frame" x="20" y="114" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="WV7-JS-DX1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Io1-0c-qPF" firstAttribute="trailing" secondItem="CbW-YQ-as1" secondAttribute="trailing" constant="20" id="7eo-B4-x4l"/>
                             <constraint firstItem="OED-45-vqX" firstAttribute="top" secondItem="Io1-0c-qPF" secondAttribute="top" constant="20" id="8l3-Ej-FeO"/>
                             <constraint firstItem="OED-45-vqX" firstAttribute="leading" secondItem="Io1-0c-qPF" secondAttribute="leading" constant="20" id="Oju-Dl-JK1"/>
+                            <constraint firstItem="CbW-YQ-as1" firstAttribute="leading" secondItem="Io1-0c-qPF" secondAttribute="leading" constant="20" id="eU1-wC-kQs"/>
                             <constraint firstItem="Io1-0c-qPF" firstAttribute="trailing" secondItem="OED-45-vqX" secondAttribute="trailing" constant="20" id="g8H-0u-euC"/>
+                            <constraint firstItem="CbW-YQ-as1" firstAttribute="top" secondItem="OED-45-vqX" secondAttribute="bottom" constant="10" id="qg2-e6-ijC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Io1-0c-qPF"/>
                     </view>
                     <connections>
                         <outlet property="textField" destination="OED-45-vqX" id="Kyb-kb-l0y"/>
+                        <outlet property="textField2" destination="CbW-YQ-as1" id="xeb-5c-waP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hew-zj-mEm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
