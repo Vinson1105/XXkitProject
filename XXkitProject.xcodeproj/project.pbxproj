@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D33F5375244FF85300B8D5E1 /* TextFieldPasswordShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D33F5372244FF85300B8D5E1 /* TextFieldPasswordShell.m */; };
+		D33F5376244FF85300B8D5E1 /* TextFieldExpressShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D33F5374244FF85300B8D5E1 /* TextFieldExpressShell.m */; };
+		D33F537A245014B500B8D5E1 /* XXtextFieldShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D33F5379245014B500B8D5E1 /* XXtextFieldShellVC.m */; };
 		D348AB26244D99F000C7588F /* TableViewCodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D348AB25244D99F000C7588F /* TableViewCodeCell.m */; };
 		D3508822243FFCDD00B8BC8F /* XXtableViewShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3508821243FFCDD00B8BC8F /* XXtableViewShellVC.m */; };
 		D35E3203244FB44900300362 /* XXstackViewShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D35E3202244FB44900300362 /* XXstackViewShellVC.m */; };
@@ -46,6 +49,7 @@
 		D39503B12447E5A4001434A5 /* XXocUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = D39503AF2447E5A3001434A5 /* XXocUtility.m */; };
 		D39503B52447EABC001434A5 /* TableViewNibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D39503B32447EABC001434A5 /* TableViewNibCell.m */; };
 		D39503B62447EABC001434A5 /* TableViewNibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39503B42447EABC001434A5 /* TableViewNibCell.xib */; };
+		D3E7DFF8245049A400124252 /* XXtextFieldShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E7DFF7245049A400124252 /* XXtextFieldShell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D33F5371244FF85300B8D5E1 /* TextFieldExpressShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldExpressShell.h; sourceTree = "<group>"; };
+		D33F5372244FF85300B8D5E1 /* TextFieldPasswordShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldPasswordShell.m; sourceTree = "<group>"; };
+		D33F5373244FF85300B8D5E1 /* TextFieldPasswordShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldPasswordShell.h; sourceTree = "<group>"; };
+		D33F5374244FF85300B8D5E1 /* TextFieldExpressShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldExpressShell.m; sourceTree = "<group>"; };
+		D33F5378245014B500B8D5E1 /* XXtextFieldShellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXtextFieldShellVC.h; sourceTree = "<group>"; };
+		D33F5379245014B500B8D5E1 /* XXtextFieldShellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXtextFieldShellVC.m; sourceTree = "<group>"; };
 		D348AB24244D99F000C7588F /* TableViewCodeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCodeCell.h; sourceTree = "<group>"; };
 		D348AB25244D99F000C7588F /* TableViewCodeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCodeCell.m; sourceTree = "<group>"; };
 		D3508820243FFCDD00B8BC8F /* XXtableViewShellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXtableViewShellVC.h; sourceTree = "<group>"; };
@@ -158,6 +168,8 @@
 		D39503B22447EABC001434A5 /* TableViewNibCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewNibCell.h; sourceTree = "<group>"; };
 		D39503B32447EABC001434A5 /* TableViewNibCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewNibCell.m; sourceTree = "<group>"; };
 		D39503B42447EABC001434A5 /* TableViewNibCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewNibCell.xib; sourceTree = "<group>"; };
+		D3E7DFF6245049A400124252 /* XXtextFieldShell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXtextFieldShell.h; sourceTree = "<group>"; };
+		D3E7DFF7245049A400124252 /* XXtextFieldShell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXtextFieldShell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,9 +197,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D33F5370244FF82000B8D5E1 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				D33F5371244FF85300B8D5E1 /* TextFieldExpressShell.h */,
+				D33F5374244FF85300B8D5E1 /* TextFieldExpressShell.m */,
+				D33F5373244FF85300B8D5E1 /* TextFieldPasswordShell.h */,
+				D33F5372244FF85300B8D5E1 /* TextFieldPasswordShell.m */,
+				D3E7DFF6245049A400124252 /* XXtextFieldShell.h */,
+				D3E7DFF7245049A400124252 /* XXtextFieldShell.m */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		D33F5377245011FC00B8D5E1 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				D33F5378245014B500B8D5E1 /* XXtextFieldShellVC.h */,
+				D33F5379245014B500B8D5E1 /* XXtextFieldShellVC.m */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
 		D350881A243FF99F00B8BC8F /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				D33F5377245011FC00B8D5E1 /* UITextField */,
 				D35E3200244FB41A00300362 /* UIStackView */,
 				D350881B243FF9AC00B8BC8F /* UITableVIew */,
 			);
@@ -233,6 +268,7 @@
 		D365942B243E8F58009F5228 /* Object-C */ = {
 			isa = PBXGroup;
 			children = (
+				D33F5370244FF82000B8D5E1 /* UITextField */,
 				D39503B02447E5A4001434A5 /* XXocUtility.h */,
 				D39503AF2447E5A3001434A5 /* XXocUtility.m */,
 				D365942C243E8F58009F5228 /* UITableView */,
@@ -572,9 +608,12 @@
 			files = (
 				D365951A243E8F59009F5228 /* NSFileHandle+XXextend.m in Sources */,
 				D3659568243E8F59009F5228 /* XXbundleManager+Language.m in Sources */,
+				D3E7DFF8245049A400124252 /* XXtextFieldShell.m in Sources */,
 				D3659519243E8F59009F5228 /* UIView+Zoomable.m in Sources */,
+				D33F5375244FF85300B8D5E1 /* TextFieldPasswordShell.m in Sources */,
 				D3659562243E8F59009F5228 /* XXkeyboardAdapter.m in Sources */,
 				D3659565243E8F59009F5228 /* UIColor+Hex.m in Sources */,
+				D33F537A245014B500B8D5E1 /* XXtextFieldShellVC.m in Sources */,
 				D39503B52447EABC001434A5 /* TableViewNibCell.m in Sources */,
 				D365951B243E8F59009F5228 /* UIViewController+Orientation.m in Sources */,
 				D365955C243E8F59009F5228 /* XXmtkRgbDelegate.m in Sources */,
@@ -598,6 +637,7 @@
 				D348AB26244D99F000C7588F /* TableViewCodeCell.m in Sources */,
 				D365951D243E8F59009F5228 /* XXaudioFormat.m in Sources */,
 				D3659563243E8F59009F5228 /* XXappDelegate.m in Sources */,
+				D33F5376244FF85300B8D5E1 /* TextFieldExpressShell.m in Sources */,
 				D365955E243E8F59009F5228 /* Metal.metal in Sources */,
 				D35E3203244FB44900300362 /* XXstackViewShellVC.m in Sources */,
 			);
