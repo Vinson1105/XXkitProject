@@ -7,15 +7,12 @@
 //
 
 #import "XXtextFieldShellVC.h"
-#import "../../../../XXkit/Object-C/UITextField/TextFieldExpressShell.h"
-#import "../../../../XXkit/Object-C/UITextField/TextFieldPasswordShell.h"
 #import "../../../../XXkit/Object-C/UITextField/XXtextFieldShell.h"
 
 @interface XXtextFieldShellVC ()
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UITextField *textField2;
-@property (nonatomic,strong) TextFieldExpressShell *expressShell;
-@property (nonatomic,strong) TextFieldPasswordShell *passwordShell;
+@property (nonatomic,strong) XXtextFieldShell *shell1;
 @property (nonatomic,strong) XXtextFieldShell *shell2;
 @end
 
@@ -23,15 +20,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _passwordShell = [TextFieldPasswordShell new];
-    [_passwordShell shell:_textField];
-    _passwordShell.clearImage = [UIImage imageNamed:@"common_btn_cancel"];
-    _passwordShell.secureONImage = [UIImage imageNamed:@"common_btn_pwhide"];
-    _passwordShell.secureOFFImage = [UIImage imageNamed:@"common_btn_pwshow"];
-
+    
+    _shell1 = [XXtextFieldShell new];
+    [_shell1 shell:_textField];
+    [_shell1 configLogo:[UIImage imageNamed:@"username"] size:CGSizeMake(30, 30)];
+    [_shell1 configClear:[UIImage imageNamed:@"common_btn_cancel"] size:CGSizeMake(30, 30) margin:5];
 
     _shell2 = [XXtextFieldShell new];
     [_shell2 shell:_textField2];
+    [_shell2 configLogo:[UIImage imageNamed:@"password"] size:CGSizeMake(30, 30)];
+    [_shell2 configClear:[UIImage imageNamed:@"common_btn_cancel"]
+                secureON:[UIImage imageNamed:@"common_btn_pwhide"]
+               secureOFF:[UIImage imageNamed:@"common_btn_pwshow"]
+                    size:CGSizeMake(30, 30)
+                  margin:5
+                 spacing:5];
     // Do any additional setup after loading the view.
 }
 
