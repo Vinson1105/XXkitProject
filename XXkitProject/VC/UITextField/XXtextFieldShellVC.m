@@ -62,6 +62,14 @@
                                spacing:5];
     XXOC_WS;
     [_mijiaLoginShell configOKButton:_loginButton action:^(NSString * _Nonnull account, NSString * _Nonnull password) {
+        UIAlertController *alert = [XXocUtils alertWithTitle:@"title"
+                                                         msg:[NSString stringWithFormat:@"Account:%@\nPassword:%@",account,password]
+                                                     okTitle:@"ok"
+                                                        onOK:^(UIAlertAction * _Nonnull action) {}
+                                                 cancelTitle:@"cancel"
+                                                    onCancel:^(UIAlertAction * _Nonnull action) {}];
+        XXOC_SS;
+        [ss presentViewController:alert animated:YES completion:nil];
     }];
     _mijiaLoginShell.accountShell.onEditBegin = ^(XXtextFieldShell * _Nonnull shell) {
         XXOC_SS;
