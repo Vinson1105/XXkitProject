@@ -74,12 +74,19 @@
     _mijiaLoginShell.accountShell.onEditBegin = ^(XXtextFieldShell * _Nonnull shell) {
         XXOC_SS;
         ss.textField3BarView.backgroundColor = kBarViewBgColorON;
-        ss.textField4BarView.backgroundColor = kBarViewBgColorOFF;
     };
-    _mijiaLoginShell.passwordShell.onEditBegin = ^(XXtextFieldShell * _Nonnull shell) {
+    _mijiaLoginShell.accountShell.onEditEnd = ^(XXtextFieldShell * _Nonnull shell) {
         XXOC_SS;
         ss.textField3BarView.backgroundColor = kBarViewBgColorOFF;
+    };
+    
+    _mijiaLoginShell.passwordShell.onEditBegin = ^(XXtextFieldShell * _Nonnull shell) {
+        XXOC_SS;
         ss.textField4BarView.backgroundColor = kBarViewBgColorON;
+    };
+    _mijiaLoginShell.passwordShell.onEditEnd = ^(XXtextFieldShell * _Nonnull shell) {
+        XXOC_SS;
+        ss.textField4BarView.backgroundColor = kBarViewBgColorOFF;
     };
 }
 
