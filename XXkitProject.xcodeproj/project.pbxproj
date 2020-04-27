@@ -31,7 +31,6 @@
 		D3659562243E8F59009F5228 /* XXkeyboardAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D36594D1243E8F59009F5228 /* XXkeyboardAdapter.m */; };
 		D3659563243E8F59009F5228 /* XXappDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D36594D4243E8F59009F5228 /* XXappDelegate.m */; };
 		D3659564243E8F59009F5228 /* NSBundle+XXlanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = D36594D8243E8F59009F5228 /* NSBundle+XXlanguage.m */; };
-		D3659565243E8F59009F5228 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = D36594D9243E8F59009F5228 /* UIColor+Hex.m */; };
 		D3659567243E8F59009F5228 /* XXbundleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D36594DB243E8F59009F5228 /* XXbundleManager.m */; };
 		D3659568243E8F59009F5228 /* XXbundleManager+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = D36594DE243E8F59009F5228 /* XXbundleManager+Language.m */; };
 		D3659569243E8F59009F5228 /* Readme.MD in Resources */ = {isa = PBXBuildFile; fileRef = D36594E0243E8F59009F5228 /* Readme.MD */; };
@@ -132,9 +131,7 @@
 		D36594D6243E8F59009F5228 /* XXbundleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXbundleManager.h; sourceTree = "<group>"; };
 		D36594D7243E8F59009F5228 /* XXbundleManager+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XXbundleManager+Language.h"; sourceTree = "<group>"; };
 		D36594D8243E8F59009F5228 /* NSBundle+XXlanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+XXlanguage.m"; sourceTree = "<group>"; };
-		D36594D9243E8F59009F5228 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		D36594DB243E8F59009F5228 /* XXbundleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXbundleManager.m; sourceTree = "<group>"; };
-		D36594DC243E8F59009F5228 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		D36594DD243E8F59009F5228 /* NSBundle+XXlanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+XXlanguage.h"; sourceTree = "<group>"; };
 		D36594DE243E8F59009F5228 /* XXbundleManager+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XXbundleManager+Language.m"; sourceTree = "<group>"; };
 		D36594E0243E8F59009F5228 /* Readme.MD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.MD; sourceTree = "<group>"; };
@@ -404,9 +401,7 @@
 				D36594D6243E8F59009F5228 /* XXbundleManager.h */,
 				D36594D7243E8F59009F5228 /* XXbundleManager+Language.h */,
 				D36594D8243E8F59009F5228 /* NSBundle+XXlanguage.m */,
-				D36594D9243E8F59009F5228 /* UIColor+Hex.m */,
 				D36594DB243E8F59009F5228 /* XXbundleManager.m */,
-				D36594DC243E8F59009F5228 /* UIColor+Hex.h */,
 				D36594DD243E8F59009F5228 /* NSBundle+XXlanguage.h */,
 				D36594DE243E8F59009F5228 /* XXbundleManager+Language.m */,
 			);
@@ -610,7 +605,6 @@
 				D3E7DFF8245049A400124252 /* XXtextFieldShell.m in Sources */,
 				D3659519243E8F59009F5228 /* UIView+Zoomable.m in Sources */,
 				D3659562243E8F59009F5228 /* XXkeyboardAdapter.m in Sources */,
-				D3659565243E8F59009F5228 /* UIColor+Hex.m in Sources */,
 				D33F537A245014B500B8D5E1 /* XXtextFieldShellVC.m in Sources */,
 				D39503B52447EABC001434A5 /* TableViewNibCell.m in Sources */,
 				D365951B243E8F59009F5228 /* UIViewController+Orientation.m in Sources */,
