@@ -10,6 +10,7 @@
 #import "../../../../XXkit/Object-C/UITextField/XXtextFieldShell.h"
 #import "../../../../XXkit/Object-C/Shell/XXloginShell.h"
 #import "../../../../XXkit/Object-C/XXocUtils.h"
+#import "../../../../XXkit/Object-C/Shell/XXverificationCodeShell.h"
 
 #define kBarViewBgColorON   [XXocUtils colorFromHexString:@"#33cccc"]
 #define kBarViewBgColorOFF  [XXocUtils colorFromHexString:@"#f6f6ee"]
@@ -27,6 +28,11 @@
 @property (weak, nonatomic) IBOutlet UIView *textField4BarView;
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (nonatomic,strong) XXloginShell *mijiaLoginShell;
+
+@property (weak, nonatomic) IBOutlet UITextField *textField5;
+@property (weak, nonatomic) IBOutlet UITextField *textField6;
+@property (weak, nonatomic) IBOutlet UIButton *requestCodeButton;
+@property (nonatomic,strong) XXverificationCodeShell *verificationCodeShell;
 @end
 
 @implementation XXtextFieldShellVC
@@ -87,6 +93,13 @@
     _mijiaLoginShell.passwordShell.onEditEnd = ^(XXtextFieldShell * _Nonnull shell) {
         XXOC_SS;
         ss.textField4BarView.backgroundColor = kBarViewBgColorOFF;
+    };
+    
+    _verificationCodeShell = [XXverificationCodeShell new];
+    [_verificationCodeShell shellAccount:_textField5 code:_textField6 request:_requestCodeButton];
+    [_verificationCodeShell.requestShell configNormalColor:UIColor.whiteColor limitColor:UIColor.grayColor];
+    _verificationCodeShell.onRequest = ^(XXverificationCodeShell * _Nonnull shell, NSString * _Nonnull account) {
+        
     };
 }
 

@@ -44,6 +44,9 @@
 		D37F6A0E243C017F00DC2F28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D37F6A0D243C017F00DC2F28 /* main.m */; };
 		D37F6A18243C017F00DC2F28 /* XXkitProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D37F6A17243C017F00DC2F28 /* XXkitProjectTests.m */; };
 		D37F6A23243C017F00DC2F28 /* XXkitProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D37F6A22243C017F00DC2F28 /* XXkitProjectUITests.m */; };
+		D39097112459267000A850F6 /* XXlimitButtonShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D39097102459267000A850F6 /* XXlimitButtonShell.m */; };
+		D39097142459286800A850F6 /* XXtimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D39097132459286700A850F6 /* XXtimer.m */; };
+		D390971A2459592700A850F6 /* XXverificationCodeShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D39097192459592700A850F6 /* XXverificationCodeShell.m */; };
 		D39503B12447E5A4001434A5 /* XXocUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D39503AF2447E5A3001434A5 /* XXocUtils.m */; };
 		D39503B52447EABC001434A5 /* TableViewNibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D39503B32447EABC001434A5 /* TableViewNibCell.m */; };
 		D39503B62447EABC001434A5 /* TableViewNibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39503B42447EABC001434A5 /* TableViewNibCell.xib */; };
@@ -154,6 +157,12 @@
 		D37F6A1E243C017F00DC2F28 /* XXkitProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XXkitProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37F6A22243C017F00DC2F28 /* XXkitProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXkitProjectUITests.m; sourceTree = "<group>"; };
 		D37F6A24243C017F00DC2F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D390970F2459267000A850F6 /* XXlimitButtonShell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXlimitButtonShell.h; sourceTree = "<group>"; };
+		D39097102459267000A850F6 /* XXlimitButtonShell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXlimitButtonShell.m; sourceTree = "<group>"; };
+		D39097122459286700A850F6 /* XXtimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXtimer.h; sourceTree = "<group>"; };
+		D39097132459286700A850F6 /* XXtimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXtimer.m; sourceTree = "<group>"; };
+		D39097182459592700A850F6 /* XXverificationCodeShell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXverificationCodeShell.h; sourceTree = "<group>"; };
+		D39097192459592700A850F6 /* XXverificationCodeShell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXverificationCodeShell.m; sourceTree = "<group>"; };
 		D39503AF2447E5A3001434A5 /* XXocUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXocUtils.m; sourceTree = "<group>"; };
 		D39503B02447E5A4001434A5 /* XXocUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXocUtils.h; sourceTree = "<group>"; };
 		D39503B22447EABC001434A5 /* TableViewNibCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewNibCell.h; sourceTree = "<group>"; };
@@ -346,6 +355,10 @@
 				D365945E243E8F58009F5228 /* XXcomboBox.h */,
 				D32E8B8524519AB400AB33ED /* XXloginShell.h */,
 				D32E8B8624519AB400AB33ED /* XXloginShell.m */,
+				D390970F2459267000A850F6 /* XXlimitButtonShell.h */,
+				D39097102459267000A850F6 /* XXlimitButtonShell.m */,
+				D39097182459592700A850F6 /* XXverificationCodeShell.h */,
+				D39097192459592700A850F6 /* XXverificationCodeShell.m */,
 			);
 			path = Shell;
 			sourceTree = "<group>";
@@ -398,6 +411,8 @@
 		D36594D5243E8F59009F5228 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				D39097122459286700A850F6 /* XXtimer.h */,
+				D39097132459286700A850F6 /* XXtimer.m */,
 				D36594D6243E8F59009F5228 /* XXbundleManager.h */,
 				D36594D7243E8F59009F5228 /* XXbundleManager+Language.h */,
 				D36594D8243E8F59009F5228 /* NSBundle+XXlanguage.m */,
@@ -615,8 +630,11 @@
 				D3659567243E8F59009F5228 /* XXbundleManager.m in Sources */,
 				D365955D243E8F59009F5228 /* XXmtkYuvDelegate.m in Sources */,
 				D3659518243E8F59009F5228 /* UIButton+XX.m in Sources */,
+				D390971A2459592700A850F6 /* XXverificationCodeShell.m in Sources */,
+				D39097142459286800A850F6 /* XXtimer.m in Sources */,
 				D36B7A392445DD2F001BBE89 /* MainViewController.m in Sources */,
 				D3508822243FFCDD00B8BC8F /* XXtableViewShellVC.m in Sources */,
+				D39097112459267000A850F6 /* XXlimitButtonShell.m in Sources */,
 				D37F69FD243C017E00DC2F28 /* AppDelegate.m in Sources */,
 				D3659533243E8F59009F5228 /* UIViewController+ApplicationState.m in Sources */,
 				D37F6A0E243C017F00DC2F28 /* main.m in Sources */,
