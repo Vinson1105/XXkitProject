@@ -11,7 +11,7 @@
 
 @implementation AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey,id> *)launchOptions{
-    [self createNavigationWithUIStoryboard:@"Main" bundle:nil];
+    [self createNavigationWithIntitalViewControllerAtStoryboard:@"Main" bundle:nil];
     return YES;
 }
 @end

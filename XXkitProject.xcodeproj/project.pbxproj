@@ -10,6 +10,10 @@
 		D32E8B8724519AB400AB33ED /* XXloginShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E8B8624519AB400AB33ED /* XXloginShell.m */; };
 		D33F537A245014B500B8D5E1 /* XXtextFieldShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D33F5379245014B500B8D5E1 /* XXtextFieldShellVC.m */; };
 		D348AB26244D99F000C7588F /* TableViewCodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D348AB25244D99F000C7588F /* TableViewCodeCell.m */; };
+		D34C486B24610A440031884A /* XXsceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C486A24610A440031884A /* XXsceneDelegate.m */; };
+		D34C4870246113200031884A /* UIViewController+SceneState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C486F246113200031884A /* UIViewController+SceneState.m */; };
+		D34C4873246119A30031884A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C4872246119A30031884A /* SceneDelegate.m */; };
+		D34C487724613FB50031884A /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = D34C487624613FB50031884A /* Readme.md */; };
 		D3508822243FFCDD00B8BC8F /* XXtableViewShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3508821243FFCDD00B8BC8F /* XXtableViewShellVC.m */; };
 		D35663DA2456F7CF00EAB7FB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35663D92456F7CF00EAB7FB /* Security.framework */; };
 		D35E3203244FB44900300362 /* XXstackViewShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D35E3202244FB44900300362 /* XXstackViewShellVC.m */; };
@@ -77,6 +81,13 @@
 		D33F5379245014B500B8D5E1 /* XXtextFieldShellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXtextFieldShellVC.m; sourceTree = "<group>"; };
 		D348AB24244D99F000C7588F /* TableViewCodeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCodeCell.h; sourceTree = "<group>"; };
 		D348AB25244D99F000C7588F /* TableViewCodeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCodeCell.m; sourceTree = "<group>"; };
+		D34C486924610A440031884A /* XXsceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXsceneDelegate.h; sourceTree = "<group>"; };
+		D34C486A24610A440031884A /* XXsceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXsceneDelegate.m; sourceTree = "<group>"; };
+		D34C486E246113200031884A /* UIViewController+SceneState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SceneState.h"; sourceTree = "<group>"; };
+		D34C486F246113200031884A /* UIViewController+SceneState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SceneState.m"; sourceTree = "<group>"; };
+		D34C4871246119A30031884A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		D34C4872246119A30031884A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		D34C487624613FB50031884A /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		D3508820243FFCDD00B8BC8F /* XXtableViewShellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXtableViewShellVC.h; sourceTree = "<group>"; };
 		D3508821243FFCDD00B8BC8F /* XXtableViewShellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXtableViewShellVC.m; sourceTree = "<group>"; };
 		D35663D92456F7CF00EAB7FB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -377,6 +388,8 @@
 			children = (
 				D3659470243E8F58009F5228 /* UIViewController+ApplicationState.h */,
 				D3659471243E8F58009F5228 /* UIViewController+ApplicationState.m */,
+				D34C486E246113200031884A /* UIViewController+SceneState.h */,
+				D34C486F246113200031884A /* UIViewController+SceneState.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -402,8 +415,11 @@
 		D36594D2243E8F59009F5228 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				D34C487624613FB50031884A /* Readme.md */,
 				D36594D3243E8F59009F5228 /* XXappDelegate.h */,
 				D36594D4243E8F59009F5228 /* XXappDelegate.m */,
+				D34C486924610A440031884A /* XXsceneDelegate.h */,
+				D34C486A24610A440031884A /* XXsceneDelegate.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -451,6 +467,8 @@
 				D3659403243E8F58009F5228 /* XXkit */,
 				D37F69FB243C017E00DC2F28 /* AppDelegate.h */,
 				D37F69FC243C017E00DC2F28 /* AppDelegate.m */,
+				D34C4871246119A30031884A /* SceneDelegate.h */,
+				D34C4872246119A30031884A /* SceneDelegate.m */,
 				D37F6A04243C017E00DC2F28 /* Main.storyboard */,
 				D37F6A07243C017F00DC2F28 /* Assets.xcassets */,
 				D37F6A09243C017F00DC2F28 /* LaunchScreen.storyboard */,
@@ -589,6 +607,7 @@
 				D3659569243E8F59009F5228 /* Readme.MD in Resources */,
 				D365956A243E8F59009F5228 /* .gitignore in Resources */,
 				D365956B243E8F59009F5228 /* .gitattributes in Resources */,
+				D34C487724613FB50031884A /* Readme.md in Resources */,
 				D37F6A06243C017E00DC2F28 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,6 +638,7 @@
 				D32E8B8724519AB400AB33ED /* XXloginShell.m in Sources */,
 				D3E7DFF8245049A400124252 /* XXtextFieldShell.m in Sources */,
 				D3659519243E8F59009F5228 /* UIView+Zoomable.m in Sources */,
+				D34C486B24610A440031884A /* XXsceneDelegate.m in Sources */,
 				D3659562243E8F59009F5228 /* XXkeyboardAdapter.m in Sources */,
 				D33F537A245014B500B8D5E1 /* XXtextFieldShellVC.m in Sources */,
 				D39503B52447EABC001434A5 /* TableViewNibCell.m in Sources */,
@@ -629,6 +649,7 @@
 				D39503B12447E5A4001434A5 /* XXocUtils.m in Sources */,
 				D3659567243E8F59009F5228 /* XXbundleManager.m in Sources */,
 				D365955D243E8F59009F5228 /* XXmtkYuvDelegate.m in Sources */,
+				D34C4873246119A30031884A /* SceneDelegate.m in Sources */,
 				D3659518243E8F59009F5228 /* UIButton+XX.m in Sources */,
 				D390971A2459592700A850F6 /* XXverificationCodeShell.m in Sources */,
 				D39097142459286800A850F6 /* XXtimer.m in Sources */,
@@ -643,6 +664,7 @@
 				D365951E243E8F59009F5228 /* XXcodecBase.m in Sources */,
 				D3659525243E8F59009F5228 /* XXstackViewShell.m in Sources */,
 				D3659516243E8F59009F5228 /* XXtableViewShell.m in Sources */,
+				D34C4870246113200031884A /* UIViewController+SceneState.m in Sources */,
 				D348AB26244D99F000C7588F /* TableViewCodeCell.m in Sources */,
 				D365951D243E8F59009F5228 /* XXaudioFormat.m in Sources */,
 				D3659563243E8F59009F5228 /* XXappDelegate.m in Sources */,
