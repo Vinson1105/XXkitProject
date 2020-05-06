@@ -107,6 +107,68 @@
             </objects>
             <point key="canvasLocation" x="-390" y="48"/>
         </scene>
+        <!--Orientation View Controller-->
+        <scene sceneID="A7Y-Yq-Sqb">
+            <objects>
+                <viewController storyboardIdentifier="OrientationViewController" id="hNd-4f-cwr" customClass="OrientationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8zO-kl-uCT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4yv-UE-z5O">
+                                <rect key="frame" x="20" y="184" width="374" height="100"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOg-X5-137">
+                                <rect key="frame" x="20" y="304" width="374" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Gr-3q-rJG">
+                                <rect key="frame" x="20" y="64" width="374" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ndF-1U-qKf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="a44-Na-UJ3" firstAttribute="trailing" secondItem="1Gr-3q-rJG" secondAttribute="trailing" constant="20" id="42i-eO-cjd"/>
+                            <constraint firstItem="TOg-X5-137" firstAttribute="top" secondItem="4yv-UE-z5O" secondAttribute="bottom" constant="20" id="GSC-Uz-cH0"/>
+                            <constraint firstItem="TOg-X5-137" firstAttribute="trailing" secondItem="1Gr-3q-rJG" secondAttribute="trailing" id="RAs-eK-EbT"/>
+                            <constraint firstItem="1Gr-3q-rJG" firstAttribute="top" secondItem="a44-Na-UJ3" secondAttribute="top" constant="20" id="TLV-vz-o4N"/>
+                            <constraint firstItem="TOg-X5-137" firstAttribute="height" secondItem="1Gr-3q-rJG" secondAttribute="height" id="VmS-99-4Zv"/>
+                            <constraint firstItem="4yv-UE-z5O" firstAttribute="leading" secondItem="1Gr-3q-rJG" secondAttribute="leading" id="XUx-qQ-dza"/>
+                            <constraint firstItem="4yv-UE-z5O" firstAttribute="top" secondItem="1Gr-3q-rJG" secondAttribute="bottom" constant="20" id="pML-IT-zCw"/>
+                            <constraint firstItem="4yv-UE-z5O" firstAttribute="trailing" secondItem="1Gr-3q-rJG" secondAttribute="trailing" id="phG-Ag-uQf"/>
+                            <constraint firstItem="1Gr-3q-rJG" firstAttribute="leading" secondItem="a44-Na-UJ3" secondAttribute="leading" constant="20" id="xJW-Jc-6Q6"/>
+                            <constraint firstItem="TOg-X5-137" firstAttribute="leading" secondItem="1Gr-3q-rJG" secondAttribute="leading" id="xTc-Qe-g4t"/>
+                            <constraint firstItem="4yv-UE-z5O" firstAttribute="height" secondItem="1Gr-3q-rJG" secondAttribute="height" id="ywc-1k-ZtB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a44-Na-UJ3"/>
+                    </view>
+                    <connections>
+                        <outlet property="blueView" destination="1Gr-3q-rJG" id="VTO-SR-LZK"/>
+                        <outlet property="greenView" destination="TOg-X5-137" id="T1T-uc-y8r"/>
+                        <outlet property="redView" destination="4yv-UE-z5O" id="Mgj-32-rYO"/>
+                        <outletCollection property="installLayouts" destination="ndF-1U-qKf" id="e2i-5F-M7W"/>
+                        <outletCollection property="installLayouts" destination="42i-eO-cjd" id="ZgL-uA-njQ"/>
+                        <outletCollection property="installLayouts" destination="xTc-Qe-g4t" id="isD-AC-mR3"/>
+                        <outletCollection property="installLayouts" destination="VmS-99-4Zv" id="D5k-t8-DQ9"/>
+                        <outletCollection property="installLayouts" destination="RAs-eK-EbT" id="wbG-ri-lmM"/>
+                        <outletCollection property="installLayouts" destination="GSC-Uz-cH0" id="eMu-5x-sEz"/>
+                        <outletCollection property="installLayouts" destination="ywc-1k-ZtB" id="oeq-JH-3Og"/>
+                        <outletCollection property="installLayouts" destination="phG-Ag-uQf" id="Qd2-Qf-zNe"/>
+                        <outletCollection property="installLayouts" destination="XUx-qQ-dza" id="hS7-s3-8zw"/>
+                        <outletCollection property="installLayouts" destination="xJW-Jc-6Q6" id="Orv-zJ-3wD"/>
+                        <outletCollection property="installLayouts" destination="TLV-vz-o4N" id="mBz-rr-dsa"/>
+                        <outletCollection property="installLayouts" destination="pML-IT-zCw" id="bp0-oO-4wd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FTp-db-qbw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-391.304347826087" y="701.78571428571422"/>
+        </scene>
         <!--Xstack View ShellVC-->
         <scene sceneID="R6v-Qx-ebA">
             <objects>

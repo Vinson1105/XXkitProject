@@ -12,6 +12,7 @@
 #import "./VC/UITableVIew/XXtableViewShellVC.h"
 #import "./VC/UIStackView/XXstackViewShellVC.h"
 #import "./VC/UITextField/XXtextFieldShellVC.h"
+#import "./VC/Extention/OrientationViewController.h"
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -25,17 +26,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSMutableArray *headers = [[NSMutableArray alloc] initWithArray:@[@"Shell",@"Extention"]];
     
-    NSMutableArray *row = [[NSMutableArray alloc] initWithArray:@[
-        @{@"Title":@"XXtableViewShell",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
-        @{@"Title":@"XXstackViewShell",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
-        @{@"Title":@"XXtextFieldShell",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+    NSMutableArray *rows = [[NSMutableArray alloc] initWithArray:@[
+        @[
+            @{@"Title":@"XXtableViewShell",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+            @{@"Title":@"XXstackViewShell",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+            @{@"Title":@"XXtextFieldShell",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),}
+        ],
+        @[
+            @{@"Title":@"UIViewController+Orientation",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+        ],
     ]];
     
     _shell = [XXtableViewShell new];
     [_shell shell:_tableView];
-    [_shell configSectionWithHeader:nil row:row footer:nil];
-    [_shell configFinished];
+    [_shell configSectionWithHeaders:headers rows:rows footers:nil];
     
     _shell.onRowClicked = self.onTableViewRowClicked;
 }
@@ -47,16 +53,25 @@
         _onTableViewRowClicked = ^(XXtableViewShell *shell,NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
             XXOC_SS;
             NSString *title = [data objectForKey:@"Title"];
-            if([title isEqualToString:@"XXtableViewShell"]){
-                XXtableViewShellVC *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"XXtableViewShellVC"];
-                [ss.navigationController pushViewController:vc animated:YES];
+            if(0 == indexPath.section){
+                if([title isEqualToString:@"XXtableViewShell"]){
+                    XXtableViewShellVC *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"XXtableViewShellVC"];
+                    [ss.navigationController pushViewController:vc animated:YES];
+                }
+                else if([title isEqualToString:@"XXstackViewShell"]){
+                    XXstackViewShellVC *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"XXstackViewShellVC"];
+                    [ss.navigationController pushViewController:vc animated:YES];
+                }
+                else if([title isEqualToString:@"XXtextFieldShell"]){
+                    XXtextFieldShellVC *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"XXtextFieldShellVC"];
+                    [ss.navigationController pushViewController:vc animated:YES];
+                }
+                else{
+                    
+                }
             }
-            else if([title isEqualToString:@"XXstackViewShell"]){
-                XXstackViewShellVC *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"XXstackViewShellVC"];
-                [ss.navigationController pushViewController:vc animated:YES];
-            }
-            else if([title isEqualToString:@"XXtextFieldShell"]){
-                XXtextFieldShellVC *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"XXtextFieldShellVC"];
+            else if(1 == indexPath.section){
+                OrientationViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"OrientationViewController"];
                 [ss.navigationController pushViewController:vc animated:YES];
             }
             else{
