@@ -9,10 +9,13 @@
 #import "MainViewController.h"
 #import "../../XXkit/Object-C/UITableView/XXtableViewShell.h"
 #import "../../XXkit/Object-C/XXocUtils.h"
+
 #import "./VC/UITableVIew/XXtableViewShellVC.h"
 #import "./VC/UIStackView/XXstackViewShellVC.h"
 #import "./VC/UITextField/XXtextFieldShellVC.h"
+
 #import "./VC/Extention/OrientationViewController.h"
+#import "./VC/Extention/ZoomableViewController.h"
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -36,6 +39,7 @@
         ],
         @[
             @{@"Title":@"UIViewController+Orientation",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+            @{@"Title":@"UIView+Zoomable",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
         ],
     ]];
     
@@ -71,8 +75,17 @@
                 }
             }
             else if(1 == indexPath.section){
-                OrientationViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"OrientationViewController"];
-                [ss.navigationController pushViewController:vc animated:YES];
+                if([title isEqualToString:@"OrientationViewController"]){
+                    OrientationViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"OrientationViewController"];
+                    [ss.navigationController pushViewController:vc animated:YES];
+                }
+                else if([title isEqualToString:@"UIView+Zoomable"]){
+                    ZoomableViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ZoomableViewController"];
+                    [ss.navigationController pushViewController:vc animated:YES];
+                }
+                else{
+                    
+                }
             }
             else{
                 

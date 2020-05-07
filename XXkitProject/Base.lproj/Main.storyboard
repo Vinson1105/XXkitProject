@@ -169,6 +169,64 @@
             </objects>
             <point key="canvasLocation" x="-391.304347826087" y="701.78571428571422"/>
         </scene>
+        <!--Zoomable View Controller-->
+        <scene sceneID="LuZ-e6-job">
+            <objects>
+                <viewController storyboardIdentifier="ZoomableViewController" id="TQ2-MX-v36" customClass="ZoomableViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="niY-Ob-ZEk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1rb-kK-Dyk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="400"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5o7-Rd-7GR">
+                                        <rect key="frame" x="80" y="80" width="254" height="240"/>
+                                        <color key="backgroundColor" red="0.34583371314275924" green="0.77216626875680738" blue="0.96537912436548223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="5o7-Rd-7GR" secondAttribute="bottom" constant="80" id="6ag-be-AIg"/>
+                                    <constraint firstAttribute="height" constant="400" id="7N3-13-w0R"/>
+                                    <constraint firstItem="5o7-Rd-7GR" firstAttribute="leading" secondItem="1rb-kK-Dyk" secondAttribute="leading" constant="80" id="DLB-JT-LJY"/>
+                                    <constraint firstItem="5o7-Rd-7GR" firstAttribute="top" secondItem="1rb-kK-Dyk" secondAttribute="top" constant="80" id="L0M-Lc-Wac"/>
+                                    <constraint firstAttribute="trailing" secondItem="5o7-Rd-7GR" secondAttribute="trailing" constant="80" id="x8w-Sv-BG4"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjO-QR-EVX">
+                                <rect key="frame" x="20" y="802" width="374" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bKe-wb-BEy"/>
+                                </constraints>
+                                <state key="normal" title="Restore">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonTouchUpInside:" destination="TQ2-MX-v36" eventType="touchUpInside" id="lV4-XP-2UT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1rb-kK-Dyk" firstAttribute="leading" secondItem="Erl-9B-arx" secondAttribute="leading" id="3bJ-ic-i4B"/>
+                            <constraint firstItem="KjO-QR-EVX" firstAttribute="leading" secondItem="Erl-9B-arx" secondAttribute="leading" constant="20" id="5td-WD-rPP"/>
+                            <constraint firstItem="Erl-9B-arx" firstAttribute="bottom" secondItem="KjO-QR-EVX" secondAttribute="bottom" constant="20" id="9FH-iW-CH0"/>
+                            <constraint firstItem="Erl-9B-arx" firstAttribute="trailing" secondItem="1rb-kK-Dyk" secondAttribute="trailing" id="DyM-LW-U74"/>
+                            <constraint firstItem="Erl-9B-arx" firstAttribute="trailing" secondItem="KjO-QR-EVX" secondAttribute="trailing" constant="20" id="Yfy-X4-OhN"/>
+                            <constraint firstItem="1rb-kK-Dyk" firstAttribute="top" secondItem="Erl-9B-arx" secondAttribute="top" id="two-nm-C3c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Erl-9B-arx"/>
+                    </view>
+                    <connections>
+                        <outlet property="zoomableView" destination="5o7-Rd-7GR" id="V0e-r0-51d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kqP-z9-rdr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="702"/>
+        </scene>
         <!--Xstack View ShellVC-->
         <scene sceneID="R6v-Qx-ebA">
             <objects>
