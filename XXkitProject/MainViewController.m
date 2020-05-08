@@ -14,8 +14,14 @@
 #import "./VC/UIStackView/XXstackViewShellVC.h"
 #import "./VC/UITextField/XXtextFieldShellVC.h"
 
-#import "./VC/Extention/OrientationViewController.h"
-#import "./VC/Extention/ZoomableViewController.h"
+#import "./VC/Category/OrientationViewController.h"
+#import "./VC/Category/ZoomableViewController.h"
+
+#import "./VC/AV/AudioRecordAndPlayViewController.h"
+
+#define kShellSection 0
+#define kCategorySection 1
+#define kAVSection 2
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -29,7 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSMutableArray *headers = [[NSMutableArray alloc] initWithArray:@[@"Shell",@"Extention"]];
+    NSMutableArray *headers = [[NSMutableArray alloc] initWithArray:@[@"Shell",@"Category",@"AV"]];
     
     NSMutableArray *rows = [[NSMutableArray alloc] initWithArray:@[
         @[
@@ -40,6 +46,9 @@
         @[
             @{@"Title":@"UIViewController+Orientation",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"UIView+Zoomable",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+        ],
+        @[
+            @{@"Title":@"XXaudioFileRecorder",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
         ],
     ]];
     
@@ -57,7 +66,7 @@
         _onTableViewRowClicked = ^(XXtableViewShell *shell,NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
             XXOC_SS;
             NSString *title = [data objectForKey:@"Title"];
-            if(0 == indexPath.section){
+            if(kShellSection == indexPath.section){
                 if([title isEqualToString:@"XXtableViewShell"]){
                     XXtableViewShellVC *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"XXtableViewShellVC"];
                     [ss.navigationController pushViewController:vc animated:YES];
@@ -74,13 +83,22 @@
                     
                 }
             }
-            else if(1 == indexPath.section){
+            else if(kCategorySection == indexPath.section){
                 if([title isEqualToString:@"OrientationViewController"]){
                     OrientationViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"OrientationViewController"];
                     [ss.navigationController pushViewController:vc animated:YES];
                 }
                 else if([title isEqualToString:@"UIView+Zoomable"]){
                     ZoomableViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ZoomableViewController"];
+                    [ss.navigationController pushViewController:vc animated:YES];
+                }
+                else{
+                    
+                }
+            }
+            else if(kAVSection == indexPath.section){
+                if([title isEqualToString:@"XXaudioFileRecorder"]){
+                    AudioRecordAndPlayViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"AudioRecordAndPlayViewController"];
                     [ss.navigationController pushViewController:vc animated:YES];
                 }
                 else{
