@@ -7,7 +7,7 @@
 //
 
 #import "OrientationViewController.h"
-#import "../../../../XXkit/Object-C/Extend/UIViewController+Orientation.h"
+#import "../../../../XXkit/Object-C/Category/UIViewController+Orientation.h"
 #import "../../../../XXkit/Object-C/XXocUtils.h"
 
 @interface OrientationViewController ()
