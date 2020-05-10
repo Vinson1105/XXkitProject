@@ -11,11 +11,13 @@
 #import "../../../../XXkit/Object-C/AV/XXaudioFormat.h"
 #import "../../../../XXkit/Object-C/AV/XXaudioFileRecorder.h"
 #import "../../../../XXkit/Object-C/XXocUtils.h"
+#import "../../../../XXkit/Object-C/UITableView/XXtableViewShell.h"
 
 @interface AudioRecordAndPlayViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic,copy) NSString *dir;
+@property (nonatomic,strong) XXtableViewShell *tableShell;
 @end
 
 @implementation AudioRecordAndPlayViewController
@@ -38,17 +40,12 @@
     format.formatID = kAudioFormatMPEG4AAC;
     format.formatFlags = kAudioFormatFlagIsSignedInteger;
     [[XXaudioFileRecorder sharedInstance] config:format];
+    
+    _tableShell = [XXtableViewShell new];
+    [_tableShell shell:_tableView];
+    [_tableShell configRowType:@"AudioFileCell" loadType:XXtableViewShellRowLoadTypeNib systemStyle:0 height:0];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 - (IBAction)onButtonTouchUpInside:(id)sender {
     UIButton *button = sender;
     if(button == _startButton){
@@ -56,6 +53,7 @@
             [_startButton setBackgroundColor:UIColor.greenColor];
             NSURL *url = [[XXaudioFileRecorder sharedInstance] stop];
             NSLog(@"[AudioRecordAndPlayViewController] 录音停止，文件保存到：%@",url);
+            [_tableShell addRow:@[@{@"url":url,@"filename":[XXocUtils currentDateString]}] atSection:0];
         }
         else{
             NSString *name = [[XXocUtils currentDateString] stringByAppendingString:@".aac"];

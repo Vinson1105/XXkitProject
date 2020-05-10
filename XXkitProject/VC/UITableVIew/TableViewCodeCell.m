@@ -98,6 +98,6 @@
 
 - (void)onButtonTouchUpInside:(id)sender {
     self.isDetailShowing = !self.isDetailShowing;
-    [self.tableViewShell.target reloadRowsAtIndexPaths:@[self.indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    [self.tableViewShell.tableView reloadRowsAtIndexPaths:@[self.indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 @end
