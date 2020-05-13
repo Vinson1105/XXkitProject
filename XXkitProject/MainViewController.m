@@ -19,9 +19,12 @@
 
 #import "./VC/AV/AudioRecordAndPlayViewController.h"
 
+#import "./VC/CoreData/CoreDataViewController.h"
+
 #define kShellSection 0
 #define kCategorySection 1
 #define kAVSection 2
+#define kCoreDataSection 3
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -35,7 +38,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSMutableArray *headers = [[NSMutableArray alloc] initWithArray:@[@"Shell",@"Category",@"AV"]];
+    NSMutableArray *headers = [[NSMutableArray alloc] initWithArray:@[@"Shell",@"Category",@"AV",@"Utils"]];
     
     NSMutableArray *rows = [[NSMutableArray alloc] initWithArray:@[
         @[
@@ -49,6 +52,9 @@
         ],
         @[
             @{@"Title":@"XXaudioFileRecorder",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+        ],
+        @[
+            @{@"Title":@"CoreDataTest",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
         ],
     ]];
     
@@ -99,6 +105,15 @@
             else if(kAVSection == indexPath.section){
                 if([title isEqualToString:@"XXaudioFileRecorder"]){
                     AudioRecordAndPlayViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"AudioRecordAndPlayViewController"];
+                    [ss.navigationController pushViewController:vc animated:YES];
+                }
+                else{
+                    
+                }
+            }
+            else if(kCoreDataSection == indexPath.section){
+                if([title isEqualToString:@"CoreDataTest"]){
+                    CoreDataViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"CoreDataViewController"];
                     [ss.navigationController pushViewController:vc animated:YES];
                 }
                 else{

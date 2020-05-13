@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3286E7C246B9F9500B0A958 /* XXcoreModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3286E7A246B9F9500B0A958 /* XXcoreModel.xcdatamodeld */; };
+		D3286E8C246BA6AD00B0A958 /* CoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3286E8B246BA6AD00B0A958 /* CoreDataViewController.m */; };
+		D3286E91246BD1A800B0A958 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3286E90246BD1A700B0A958 /* CoreData.framework */; };
+		D3286E94246BD1BA00B0A958 /* XXcoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = D3286E93246BD1BA00B0A958 /* XXcoreData.m */; };
 		D32E8B8724519AB400AB33ED /* XXloginShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E8B8624519AB400AB33ED /* XXloginShell.m */; };
 		D33F537A245014B500B8D5E1 /* XXtextFieldShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D33F5379245014B500B8D5E1 /* XXtextFieldShellVC.m */; };
 		D33FF84C2466DEC800AF3652 /* AudioFileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D33FF84A2466DEC800AF3652 /* AudioFileCell.m */; };
@@ -79,6 +83,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D3286E7B246B9F9500B0A958 /* XXcoreModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XXcoreModel.xcdatamodel; sourceTree = "<group>"; };
+		D3286E83246BA0C900B0A958 /* AudioFile+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioFile+CoreDataProperties.h"; sourceTree = "<group>"; };
+		D3286E84246BA0C900B0A958 /* AudioFile+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioFile+CoreDataClass.h"; sourceTree = "<group>"; };
+		D3286E85246BA0C900B0A958 /* AudioFile+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AudioFile+CoreDataClass.m"; sourceTree = "<group>"; };
+		D3286E86246BA0C900B0A958 /* AudioFile+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AudioFile+CoreDataProperties.m"; sourceTree = "<group>"; };
+		D3286E8A246BA6AD00B0A958 /* CoreDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataViewController.h; sourceTree = "<group>"; };
+		D3286E8B246BA6AD00B0A958 /* CoreDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataViewController.m; sourceTree = "<group>"; };
+		D3286E90246BD1A700B0A958 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D3286E92246BD1BA00B0A958 /* XXcoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXcoreData.h; sourceTree = "<group>"; };
+		D3286E93246BD1BA00B0A958 /* XXcoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXcoreData.m; sourceTree = "<group>"; };
 		D32E8B8524519AB400AB33ED /* XXloginShell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXloginShell.h; sourceTree = "<group>"; };
 		D32E8B8624519AB400AB33ED /* XXloginShell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXloginShell.m; sourceTree = "<group>"; };
 		D33F5378245014B500B8D5E1 /* XXtextFieldShellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXtextFieldShellVC.h; sourceTree = "<group>"; };
@@ -189,6 +203,10 @@
 		D3BEB01C2465456E0024C397 /* AudioRecordAndPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioRecordAndPlayViewController.m; sourceTree = "<group>"; };
 		D3BEB01E246551810024C397 /* XXaudioFileRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXaudioFileRecorder.h; sourceTree = "<group>"; };
 		D3BEB01F246551810024C397 /* XXaudioFileRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXaudioFileRecorder.m; sourceTree = "<group>"; };
+		D3E1B43E246BF7AE00BD4802 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
+		D3E1B43F246BF7AE00BD4802 /* Person+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataClass.h"; sourceTree = "<group>"; };
+		D3E1B440246BF7AE00BD4802 /* Person+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataClass.m"; sourceTree = "<group>"; };
+		D3E1B441246BF7AE00BD4802 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
 		D3E7DFF6245049A400124252 /* XXtextFieldShell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXtextFieldShell.h; sourceTree = "<group>"; };
 		D3E7DFF7245049A400124252 /* XXtextFieldShell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXtextFieldShell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,6 +216,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3286E91246BD1A800B0A958 /* CoreData.framework in Frameworks */,
 				D35663DA2456F7CF00EAB7FB /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +238,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3286E7D246BA06000B0A958 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D3E1B43E246BF7AE00BD4802 /* Person+CoreDataProperties.h */,
+				D3E1B43F246BF7AE00BD4802 /* Person+CoreDataClass.h */,
+				D3E1B440246BF7AE00BD4802 /* Person+CoreDataClass.m */,
+				D3E1B441246BF7AE00BD4802 /* Person+CoreDataProperties.m */,
+				D3286E84246BA0C900B0A958 /* AudioFile+CoreDataClass.h */,
+				D3286E85246BA0C900B0A958 /* AudioFile+CoreDataClass.m */,
+				D3286E83246BA0C900B0A958 /* AudioFile+CoreDataProperties.h */,
+				D3286E86246BA0C900B0A958 /* AudioFile+CoreDataProperties.m */,
+				D3286E7A246B9F9500B0A958 /* XXcoreModel.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		D3286E89246BA67400B0A958 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D3286E8A246BA6AD00B0A958 /* CoreDataViewController.h */,
+				D3286E8B246BA6AD00B0A958 /* CoreDataViewController.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		D33F5370244FF82000B8D5E1 /* UITextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +284,7 @@
 		D350881A243FF99F00B8BC8F /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				D3286E89246BA67400B0A958 /* CoreData */,
 				D3BEB014246542770024C397 /* AV */,
 				D38624402462B02D00617E77 /* Category */,
 				D33F5377245011FC00B8D5E1 /* UITextField */,
@@ -266,6 +311,7 @@
 		D35663D82456F7CE00EAB7FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3286E90246BD1A700B0A958 /* CoreData.framework */,
 				D35663D92456F7CF00EAB7FB /* Security.framework */,
 			);
 			name = Frameworks;
@@ -436,6 +482,8 @@
 		D36594D5243E8F59009F5228 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				D3286E92246BD1BA00B0A958 /* XXcoreData.h */,
+				D3286E93246BD1BA00B0A958 /* XXcoreData.m */,
 				D39097122459286700A850F6 /* XXtimer.h */,
 				D39097132459286700A850F6 /* XXtimer.m */,
 				D36594D6243E8F59009F5228 /* XXbundleManager.h */,
@@ -472,6 +520,7 @@
 		D37F69FA243C017E00DC2F28 /* XXkitProject */ = {
 			isa = PBXGroup;
 			children = (
+				D3286E7D246BA06000B0A958 /* CoreData */,
 				D350881A243FF99F00B8BC8F /* VC */,
 				D3659403243E8F58009F5228 /* XXkit */,
 				D37F69FB243C017E00DC2F28 /* AppDelegate.h */,
@@ -597,6 +646,7 @@
 				TargetAttributes = {
 					D37F69F7243C017E00DC2F28 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					D37F6A12243C017F00DC2F28 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -688,6 +738,7 @@
 				D39097142459286800A850F6 /* XXtimer.m in Sources */,
 				D36B7A392445DD2F001BBE89 /* MainViewController.m in Sources */,
 				D3BEB020246551810024C397 /* XXaudioFileRecorder.m in Sources */,
+				D3286E94246BD1BA00B0A958 /* XXcoreData.m in Sources */,
 				D3508822243FFCDD00B8BC8F /* XXtableViewShellVC.m in Sources */,
 				D39097112459267000A850F6 /* XXlimitButtonShell.m in Sources */,
 				D37F69FD243C017E00DC2F28 /* AppDelegate.m in Sources */,
@@ -698,6 +749,7 @@
 				D365951E243E8F59009F5228 /* XXcodecBase.m in Sources */,
 				D3659525243E8F59009F5228 /* XXstackViewShell.m in Sources */,
 				D3659516243E8F59009F5228 /* XXtableViewShell.m in Sources */,
+				D3286E7C246B9F9500B0A958 /* XXcoreModel.xcdatamodeld in Sources */,
 				D38624432462B10B00617E77 /* OrientationViewController.m in Sources */,
 				D34C4870246113200031884A /* UIViewController+SceneState.m in Sources */,
 				D348AB26244D99F000C7588F /* TableViewCodeCell.m in Sources */,
@@ -706,6 +758,7 @@
 				D3659563243E8F59009F5228 /* XXappDelegate.m in Sources */,
 				D365955E243E8F59009F5228 /* Metal.metal in Sources */,
 				D35E3203244FB44900300362 /* XXstackViewShellVC.m in Sources */,
+				D3286E8C246BA6AD00B0A958 /* CoreDataViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -876,6 +929,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36CJ297PL9;
 				INFOPLIST_FILE = XXkitProject/Info.plist;
@@ -885,6 +939,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xxx.com.XXkitProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XXkitProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -893,6 +950,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36CJ297PL9;
 				INFOPLIST_FILE = XXkitProject/Info.plist;
@@ -902,6 +960,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xxx.com.XXkitProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XXkitProject-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1018,6 +1078,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D3286E7A246B9F9500B0A958 /* XXcoreModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D3286E7B246B9F9500B0A958 /* XXcoreModel.xcdatamodel */,
+			);
+			currentVersion = D3286E7B246B9F9500B0A958 /* XXcoreModel.xcdatamodel */;
+			path = XXcoreModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D37F69F0243C017E00DC2F28 /* Project object */;
 }
