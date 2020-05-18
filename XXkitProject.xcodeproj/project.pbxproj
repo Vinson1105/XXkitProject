@@ -46,6 +46,7 @@
 		D365956A243E8F59009F5228 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D36594E1243E8F59009F5228 /* .gitignore */; };
 		D365956B243E8F59009F5228 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = D36594E2243E8F59009F5228 /* .gitattributes */; };
 		D36B7A392445DD2F001BBE89 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D36B7A382445DD2F001BBE89 /* MainViewController.m */; };
+		D37F4A47247346460065155C /* XXkeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = D37F4A46247346460065155C /* XXkeyChain.m */; };
 		D37F69FD243C017E00DC2F28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D37F69FC243C017E00DC2F28 /* AppDelegate.m */; };
 		D37F6A06243C017E00DC2F28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37F6A04243C017E00DC2F28 /* Main.storyboard */; };
 		D37F6A08243C017F00DC2F28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D37F6A07243C017F00DC2F28 /* Assets.xcassets */; };
@@ -173,6 +174,9 @@
 		D36594E3243E8F59009F5228 /* XXdefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXdefine.h; sourceTree = "<group>"; };
 		D36B7A372445DD2F001BBE89 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		D36B7A382445DD2F001BBE89 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		D37F4A4424733ED20065155C /* XXkitProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XXkitProject.entitlements; sourceTree = "<group>"; };
+		D37F4A45247346460065155C /* XXkeyChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXkeyChain.h; sourceTree = "<group>"; };
+		D37F4A46247346460065155C /* XXkeyChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXkeyChain.m; sourceTree = "<group>"; };
 		D37F69F8243C017E00DC2F28 /* XXkitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXkitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37F69FB243C017E00DC2F28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D37F69FC243C017E00DC2F28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -497,6 +501,8 @@
 				D36594DB243E8F59009F5228 /* XXbundleManager.m */,
 				D36594DD243E8F59009F5228 /* NSBundle+XXlanguage.h */,
 				D36594DE243E8F59009F5228 /* XXbundleManager+Language.m */,
+				D37F4A45247346460065155C /* XXkeyChain.h */,
+				D37F4A46247346460065155C /* XXkeyChain.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -525,6 +531,7 @@
 		D37F69FA243C017E00DC2F28 /* XXkitProject */ = {
 			isa = PBXGroup;
 			children = (
+				D37F4A4424733ED20065155C /* XXkitProject.entitlements */,
 				D3286E7D246BA06000B0A958 /* CoreData */,
 				D350881A243FF99F00B8BC8F /* VC */,
 				D3659403243E8F58009F5228 /* XXkit */,
@@ -757,6 +764,7 @@
 				D3325A3924723E03000E6D95 /* TouchIDViewController.m in Sources */,
 				D3286E7C246B9F9500B0A958 /* XXcoreModel.xcdatamodeld in Sources */,
 				D38624432462B10B00617E77 /* OrientationViewController.m in Sources */,
+				D37F4A47247346460065155C /* XXkeyChain.m in Sources */,
 				D34C4870246113200031884A /* UIViewController+SceneState.m in Sources */,
 				D348AB26244D99F000C7588F /* TableViewCodeCell.m in Sources */,
 				D365951D243E8F59009F5228 /* XXaudioFormat.m in Sources */,
@@ -936,6 +944,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = XXkitProject/XXkitProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36CJ297PL9;
 				INFOPLIST_FILE = XXkitProject/Info.plist;
@@ -957,6 +966,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = XXkitProject/XXkitProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36CJ297PL9;
 				INFOPLIST_FILE = XXkitProject/Info.plist;
