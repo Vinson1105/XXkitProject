@@ -12,6 +12,7 @@
 		D3286E91246BD1A800B0A958 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3286E90246BD1A700B0A958 /* CoreData.framework */; };
 		D3286E94246BD1BA00B0A958 /* XXcoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = D3286E93246BD1BA00B0A958 /* XXcoreData.m */; };
 		D32E8B8724519AB400AB33ED /* XXloginShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D32E8B8624519AB400AB33ED /* XXloginShell.m */; };
+		D3325A3924723E03000E6D95 /* TouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3325A3824723E03000E6D95 /* TouchIDViewController.m */; };
 		D33F537A245014B500B8D5E1 /* XXtextFieldShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D33F5379245014B500B8D5E1 /* XXtextFieldShellVC.m */; };
 		D33FF84C2466DEC800AF3652 /* AudioFileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D33FF84A2466DEC800AF3652 /* AudioFileCell.m */; };
 		D33FF84D2466DEC800AF3652 /* AudioFileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33FF84B2466DEC800AF3652 /* AudioFileCell.xib */; };
@@ -95,6 +96,8 @@
 		D3286E93246BD1BA00B0A958 /* XXcoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXcoreData.m; sourceTree = "<group>"; };
 		D32E8B8524519AB400AB33ED /* XXloginShell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXloginShell.h; sourceTree = "<group>"; };
 		D32E8B8624519AB400AB33ED /* XXloginShell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXloginShell.m; sourceTree = "<group>"; };
+		D3325A3724723E03000E6D95 /* TouchIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchIDViewController.h; sourceTree = "<group>"; };
+		D3325A3824723E03000E6D95 /* TouchIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchIDViewController.m; sourceTree = "<group>"; };
 		D33F5378245014B500B8D5E1 /* XXtextFieldShellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXtextFieldShellVC.h; sourceTree = "<group>"; };
 		D33F5379245014B500B8D5E1 /* XXtextFieldShellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXtextFieldShellVC.m; sourceTree = "<group>"; };
 		D33FF8492466DEC800AF3652 /* AudioFileCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioFileCell.h; sourceTree = "<group>"; };
@@ -254,13 +257,15 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		D3286E89246BA67400B0A958 /* CoreData */ = {
+		D3286E89246BA67400B0A958 /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				D3286E8A246BA6AD00B0A958 /* CoreDataViewController.h */,
 				D3286E8B246BA6AD00B0A958 /* CoreDataViewController.m */,
+				D3325A3724723E03000E6D95 /* TouchIDViewController.h */,
+				D3325A3824723E03000E6D95 /* TouchIDViewController.m */,
 			);
-			path = CoreData;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		D33F5370244FF82000B8D5E1 /* UITextField */ = {
@@ -284,7 +289,7 @@
 		D350881A243FF99F00B8BC8F /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				D3286E89246BA67400B0A958 /* CoreData */,
+				D3286E89246BA67400B0A958 /* Core */,
 				D3BEB014246542770024C397 /* AV */,
 				D38624402462B02D00617E77 /* Category */,
 				D33F5377245011FC00B8D5E1 /* UITextField */,
@@ -749,6 +754,7 @@
 				D365951E243E8F59009F5228 /* XXcodecBase.m in Sources */,
 				D3659525243E8F59009F5228 /* XXstackViewShell.m in Sources */,
 				D3659516243E8F59009F5228 /* XXtableViewShell.m in Sources */,
+				D3325A3924723E03000E6D95 /* TouchIDViewController.m in Sources */,
 				D3286E7C246B9F9500B0A958 /* XXcoreModel.xcdatamodeld in Sources */,
 				D38624432462B10B00617E77 /* OrientationViewController.m in Sources */,
 				D34C4870246113200031884A /* UIViewController+SceneState.m in Sources */,

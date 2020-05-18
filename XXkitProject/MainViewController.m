@@ -19,7 +19,8 @@
 
 #import "./VC/AV/AudioRecordAndPlayViewController.h"
 
-#import "./VC/CoreData/CoreDataViewController.h"
+#import "./VC/Core/CoreDataViewController.h"
+#import "./VC/Core/TouchIDViewController.h"
 
 #define kShellSection 0
 #define kCategorySection 1
@@ -54,7 +55,8 @@
             @{@"Title":@"XXaudioFileRecorder",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
         ],
         @[
-            @{@"Title":@"CoreDataTest",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+            @{@"Title":@"CoreData",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+            @{@"Title":@"TouchID",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
         ],
     ]];
     
@@ -112,8 +114,12 @@
                 }
             }
             else if(kCoreDataSection == indexPath.section){
-                if([title isEqualToString:@"CoreDataTest"]){
+                if([title isEqualToString:@"CoreData"]){
                     CoreDataViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"CoreDataViewController"];
+                    [ss.navigationController pushViewController:vc animated:YES];
+                }
+                else if([title isEqualToString:@"TouchID"]){
+                    TouchIDViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"TouchIDViewController"];
                     [ss.navigationController pushViewController:vc animated:YES];
                 }
                 else{
