@@ -95,7 +95,7 @@
                                                                    msg:@""
                                                                okTitle:@"好的"
                                                                   onOK:^(UIAlertAction * _Nonnull action) {
-            [[XXcoreData sharedInstance] insertObject:@"Person" initHandle:^(id  _Nonnull obj) {
+            [[XXcoreData sharedInstance] insertObject:@"Person" initHandler:^(id  _Nonnull obj) {
                 Person *person = obj;
                 person.name = alertController.textFields.firstObject.text;
                 
