@@ -16,6 +16,7 @@
 		D33F537A245014B500B8D5E1 /* XXtextFieldShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D33F5379245014B500B8D5E1 /* XXtextFieldShellVC.m */; };
 		D33FF84C2466DEC800AF3652 /* AudioFileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D33FF84A2466DEC800AF3652 /* AudioFileCell.m */; };
 		D33FF84D2466DEC800AF3652 /* AudioFileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33FF84B2466DEC800AF3652 /* AudioFileCell.xib */; };
+		D3417FD8247368E800B509B1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3417FD7247368E800B509B1 /* MapKit.framework */; };
 		D348AB26244D99F000C7588F /* TableViewCodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D348AB25244D99F000C7588F /* TableViewCodeCell.m */; };
 		D34C486B24610A440031884A /* XXsceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C486A24610A440031884A /* XXsceneDelegate.m */; };
 		D34C4870246113200031884A /* UIViewController+SceneState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C486F246113200031884A /* UIViewController+SceneState.m */; };
@@ -104,6 +105,7 @@
 		D33FF8492466DEC800AF3652 /* AudioFileCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioFileCell.h; sourceTree = "<group>"; };
 		D33FF84A2466DEC800AF3652 /* AudioFileCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioFileCell.m; sourceTree = "<group>"; };
 		D33FF84B2466DEC800AF3652 /* AudioFileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioFileCell.xib; sourceTree = "<group>"; };
+		D3417FD7247368E800B509B1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D348AB24244D99F000C7588F /* TableViewCodeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCodeCell.h; sourceTree = "<group>"; };
 		D348AB25244D99F000C7588F /* TableViewCodeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCodeCell.m; sourceTree = "<group>"; };
 		D34C486924610A440031884A /* XXsceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXsceneDelegate.h; sourceTree = "<group>"; };
@@ -174,7 +176,6 @@
 		D36594E3243E8F59009F5228 /* XXdefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXdefine.h; sourceTree = "<group>"; };
 		D36B7A372445DD2F001BBE89 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		D36B7A382445DD2F001BBE89 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		D37F4A4424733ED20065155C /* XXkitProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XXkitProject.entitlements; sourceTree = "<group>"; };
 		D37F4A45247346460065155C /* XXkeyChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXkeyChain.h; sourceTree = "<group>"; };
 		D37F4A46247346460065155C /* XXkeyChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXkeyChain.m; sourceTree = "<group>"; };
 		D37F69F8243C017E00DC2F28 /* XXkitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXkitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3286E91246BD1A800B0A958 /* CoreData.framework in Frameworks */,
+				D3417FD8247368E800B509B1 /* MapKit.framework in Frameworks */,
 				D35663DA2456F7CF00EAB7FB /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +322,7 @@
 		D35663D82456F7CE00EAB7FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3417FD7247368E800B509B1 /* MapKit.framework */,
 				D3286E90246BD1A700B0A958 /* CoreData.framework */,
 				D35663D92456F7CF00EAB7FB /* Security.framework */,
 			);
@@ -531,7 +534,6 @@
 		D37F69FA243C017E00DC2F28 /* XXkitProject */ = {
 			isa = PBXGroup;
 			children = (
-				D37F4A4424733ED20065155C /* XXkitProject.entitlements */,
 				D3286E7D246BA06000B0A958 /* CoreData */,
 				D350881A243FF99F00B8BC8F /* VC */,
 				D3659403243E8F58009F5228 /* XXkit */,
@@ -944,7 +946,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = XXkitProject/XXkitProject.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36CJ297PL9;
 				INFOPLIST_FILE = XXkitProject/Info.plist;
@@ -966,7 +968,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = XXkitProject/XXkitProject.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36CJ297PL9;
 				INFOPLIST_FILE = XXkitProject/Info.plist;
