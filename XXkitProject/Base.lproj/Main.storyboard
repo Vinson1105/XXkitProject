@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dYX-cw-sdH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dYX-cw-sdH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -287,6 +287,81 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jgd-3p-gwa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="280" y="2029"/>
+        </scene>
+        <!--Key Chain View Controller-->
+        <scene sceneID="YpQ-nk-TO1">
+            <objects>
+                <viewController storyboardIdentifier="KeyChainViewController" id="aEl-IR-kIF" customClass="KeyChainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pFu-PG-YpM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7z6-l6-eAJ">
+                                <rect key="frame" x="20" y="74" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4pf-cP-td8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="69Z-ST-ylg">
+                                <rect key="frame" x="20" y="134" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Jhz-Ob-CTk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0y-4b-l5J">
+                                <rect key="frame" x="191.5" y="284" width="31" height="30"/>
+                                <state key="normal" title="查询"/>
+                                <connections>
+                                    <action selector="onButtonTouchUpInside:" destination="aEl-IR-kIF" eventType="touchUpInside" id="65r-Um-s57"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEN-hC-WFp">
+                                <rect key="frame" x="191.5" y="344" width="31" height="30"/>
+                                <state key="normal" title="更新"/>
+                                <connections>
+                                    <action selector="onButtonTouchUpInside:" destination="aEl-IR-kIF" eventType="touchUpInside" id="gW4-BU-ijW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Lc-6Z-VAR">
+                                <rect key="frame" x="191.5" y="404" width="31" height="30"/>
+                                <state key="normal" title="删除"/>
+                                <connections>
+                                    <action selector="onButtonTouchUpInside:" destination="aEl-IR-kIF" eventType="touchUpInside" id="gDy-hn-fQf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="69Z-ST-ylg" firstAttribute="leading" secondItem="S5L-Na-QKm" secondAttribute="leading" constant="20" id="5uW-U6-4Dv"/>
+                            <constraint firstItem="69Z-ST-ylg" firstAttribute="top" secondItem="7z6-l6-eAJ" secondAttribute="bottom" constant="20" id="9v2-92-luy"/>
+                            <constraint firstItem="S5L-Na-QKm" firstAttribute="trailing" secondItem="7z6-l6-eAJ" secondAttribute="trailing" constant="20" id="HcI-YV-2vR"/>
+                            <constraint firstItem="7Lc-6Z-VAR" firstAttribute="centerX" secondItem="pFu-PG-YpM" secondAttribute="centerX" id="OJl-1V-7eb"/>
+                            <constraint firstItem="7Lc-6Z-VAR" firstAttribute="top" secondItem="XEN-hC-WFp" secondAttribute="bottom" constant="30" id="OoE-7b-SZO"/>
+                            <constraint firstItem="r0y-4b-l5J" firstAttribute="centerX" secondItem="pFu-PG-YpM" secondAttribute="centerX" id="Q2e-XJ-S87"/>
+                            <constraint firstItem="XEN-hC-WFp" firstAttribute="centerX" secondItem="pFu-PG-YpM" secondAttribute="centerX" id="ThY-KV-G5v"/>
+                            <constraint firstItem="r0y-4b-l5J" firstAttribute="top" secondItem="69Z-ST-ylg" secondAttribute="bottom" constant="110" id="UWT-bI-nT9"/>
+                            <constraint firstItem="7z6-l6-eAJ" firstAttribute="leading" secondItem="S5L-Na-QKm" secondAttribute="leading" constant="20" id="hxG-7H-rln"/>
+                            <constraint firstItem="S5L-Na-QKm" firstAttribute="trailing" secondItem="69Z-ST-ylg" secondAttribute="trailing" constant="20" id="kzm-P4-glk"/>
+                            <constraint firstItem="7z6-l6-eAJ" firstAttribute="top" secondItem="S5L-Na-QKm" secondAttribute="top" constant="30" id="lJe-IW-dVo"/>
+                            <constraint firstItem="XEN-hC-WFp" firstAttribute="top" secondItem="r0y-4b-l5J" secondAttribute="bottom" constant="30" id="ysh-fc-0DB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="S5L-Na-QKm"/>
+                    </view>
+                    <connections>
+                        <outlet property="account" destination="7z6-l6-eAJ" id="tHt-N7-oDF"/>
+                        <outlet property="check" destination="r0y-4b-l5J" id="gzq-Kr-NRb"/>
+                        <outlet property="del" destination="7Lc-6Z-VAR" id="enG-7A-VWA"/>
+                        <outlet property="password" destination="69Z-ST-ylg" id="r7W-UC-asf"/>
+                        <outlet property="update" destination="XEN-hC-WFp" id="LcE-4G-MFb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ajy-NQ-6zK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967" y="2030"/>
         </scene>
         <!--Zoomable View Controller-->
         <scene sceneID="LuZ-e6-job">

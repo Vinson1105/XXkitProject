@@ -21,6 +21,7 @@
 
 #import "./VC/Core/CoreDataViewController.h"
 #import "./VC/Core/TouchIDViewController.h"
+#import "./VC/Core/KeyChainViewController.h"
 
 #define kShellSection 0
 #define kCategorySection 1
@@ -57,6 +58,7 @@
         @[
             @{@"Title":@"CoreData",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"TouchID",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+            @{@"Title":@"KeyChain",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
         ],
     ]];
     
@@ -120,6 +122,10 @@
                 }
                 else if([title isEqualToString:@"TouchID"]){
                     TouchIDViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"TouchIDViewController"];
+                    [ss.navigationController pushViewController:vc animated:YES];
+                }
+                else if([title isEqualToString:@"KeyChain"]){
+                    KeyChainViewController *vc = [XXocUtils viewController:@"KeyChainViewController"];
                     [ss.navigationController pushViewController:vc animated:YES];
                 }
                 else{

@@ -24,6 +24,7 @@
 		D34C487724613FB50031884A /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = D34C487624613FB50031884A /* Readme.md */; };
 		D3508822243FFCDD00B8BC8F /* XXtableViewShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3508821243FFCDD00B8BC8F /* XXtableViewShellVC.m */; };
 		D35663DA2456F7CF00EAB7FB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35663D92456F7CF00EAB7FB /* Security.framework */; };
+		D35D7AF624748B9B00C2472A /* KeyChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35D7AF524748B9B00C2472A /* KeyChainViewController.m */; };
 		D35E3203244FB44900300362 /* XXstackViewShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D35E3202244FB44900300362 /* XXstackViewShellVC.m */; };
 		D3659516243E8F59009F5228 /* XXtableViewShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D365942D243E8F58009F5228 /* XXtableViewShell.m */; };
 		D3659519243E8F59009F5228 /* UIView+Zoomable.m in Sources */ = {isa = PBXBuildFile; fileRef = D3659437243E8F58009F5228 /* UIView+Zoomable.m */; };
@@ -118,6 +119,8 @@
 		D3508820243FFCDD00B8BC8F /* XXtableViewShellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXtableViewShellVC.h; sourceTree = "<group>"; };
 		D3508821243FFCDD00B8BC8F /* XXtableViewShellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXtableViewShellVC.m; sourceTree = "<group>"; };
 		D35663D92456F7CF00EAB7FB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D35D7AF424748B9B00C2472A /* KeyChainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyChainViewController.h; sourceTree = "<group>"; };
+		D35D7AF524748B9B00C2472A /* KeyChainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyChainViewController.m; sourceTree = "<group>"; };
 		D35E3201244FB44900300362 /* XXstackViewShellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXstackViewShellVC.h; sourceTree = "<group>"; };
 		D35E3202244FB44900300362 /* XXstackViewShellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXstackViewShellVC.m; sourceTree = "<group>"; };
 		D365942D243E8F58009F5228 /* XXtableViewShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXtableViewShell.m; sourceTree = "<group>"; };
@@ -270,6 +273,8 @@
 				D3286E8B246BA6AD00B0A958 /* CoreDataViewController.m */,
 				D3325A3724723E03000E6D95 /* TouchIDViewController.h */,
 				D3325A3824723E03000E6D95 /* TouchIDViewController.m */,
+				D35D7AF424748B9B00C2472A /* KeyChainViewController.h */,
+				D35D7AF524748B9B00C2472A /* KeyChainViewController.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -738,6 +743,7 @@
 				D34C486B24610A440031884A /* XXsceneDelegate.m in Sources */,
 				D3659562243E8F59009F5228 /* XXkeyboardAdapter.m in Sources */,
 				D33F537A245014B500B8D5E1 /* XXtextFieldShellVC.m in Sources */,
+				D35D7AF624748B9B00C2472A /* KeyChainViewController.m in Sources */,
 				D39503B52447EABC001434A5 /* TableViewNibCell.m in Sources */,
 				D365951B243E8F59009F5228 /* UIViewController+Orientation.m in Sources */,
 				D365955C243E8F59009F5228 /* XXmtkRgbDelegate.m in Sources */,
