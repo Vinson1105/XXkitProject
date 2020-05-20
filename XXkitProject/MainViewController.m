@@ -19,9 +19,10 @@
 
 #import "./VC/AV/AudioRecordAndPlayViewController.h"
 
-#import "./VC/Core/CoreDataViewController.h"
-#import "./VC/Core/TouchIDViewController.h"
-#import "./VC/Core/KeyChainViewController.h"
+#import "./VC/Utils/CoreDataViewController.h"
+#import "./VC/Utils/TouchIDViewController.h"
+#import "./VC/Utils/KeyChainViewController.h"
+#import "./VC/Utils/ToastViewController.h"
 
 #define kShellSection 0
 #define kCategorySection 1
@@ -39,6 +40,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"[MainViewController] alloc %p", self);
+    
     // Do any additional setup after loading the view.
     NSMutableArray *headers = [[NSMutableArray alloc] initWithArray:@[@"Shell",@"Category",@"AV",@"Utils"]];
     
@@ -59,6 +62,7 @@
             @{@"Title":@"CoreData",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"TouchID",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"KeyChain",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+            @{@"Title":@"Toast",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
         ],
     ]];
     
@@ -116,21 +120,23 @@
                 }
             }
             else if(kCoreDataSection == indexPath.section){
+                UIViewController *vc = nil;
                 if([title isEqualToString:@"CoreData"]){
-                    CoreDataViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"CoreDataViewController"];
-                    [ss.navigationController pushViewController:vc animated:YES];
+                    vc = [XXocUtils viewController:@"CoreDataViewController"];
                 }
                 else if([title isEqualToString:@"TouchID"]){
-                    TouchIDViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"TouchIDViewController"];
-                    [ss.navigationController pushViewController:vc animated:YES];
+                    vc = [XXocUtils viewController:@"TouchIDViewController"];
                 }
                 else if([title isEqualToString:@"KeyChain"]){
-                    KeyChainViewController *vc = [XXocUtils viewController:@"KeyChainViewController"];
-                    [ss.navigationController pushViewController:vc animated:YES];
+                    vc = [XXocUtils viewController:@"KeyChainViewController"];
+                }
+                else if([title isEqualToString:@"Toast"]){
+                    vc = [XXocUtils viewController:@"ToastViewController"];
                 }
                 else{
-                    
+                    return;
                 }
+                [ss.navigationController pushViewController:vc animated:YES];
             }
             else{
                 

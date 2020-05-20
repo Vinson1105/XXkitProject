@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dYX-cw-sdH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dYX-cw-sdH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -362,6 +362,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ajy-NQ-6zK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="967" y="2030"/>
+        </scene>
+        <!--Toast View Controller-->
+        <scene sceneID="JzB-2t-OzD">
+            <objects>
+                <viewController storyboardIdentifier="ToastViewController" id="uEu-Mq-BMD" customClass="ToastViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wsy-KS-BOM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHD-Tr-yJG">
+                                <rect key="frame" x="191" y="74" width="32" height="30"/>
+                                <state key="normal" title="tips1"/>
+                                <connections>
+                                    <action selector="onTips:" destination="uEu-Mq-BMD" eventType="touchUpInside" id="lGj-1Z-b0h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGh-d2-8wI">
+                                <rect key="frame" x="189.5" y="134" width="35" height="30"/>
+                                <state key="normal" title="tips2"/>
+                                <connections>
+                                    <action selector="onTips:" destination="uEu-Mq-BMD" eventType="touchUpInside" id="SOa-6y-aMJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1CF-3u-tUs">
+                                <rect key="frame" x="189.5" y="194" width="35" height="30"/>
+                                <state key="normal" title="tips3"/>
+                                <connections>
+                                    <action selector="onTips:" destination="uEu-Mq-BMD" eventType="touchUpInside" id="o2p-My-bQW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qGh-d2-8wI" firstAttribute="centerX" secondItem="wsy-KS-BOM" secondAttribute="centerX" id="Ad0-S8-gq5"/>
+                            <constraint firstItem="zHD-Tr-yJG" firstAttribute="centerX" secondItem="wsy-KS-BOM" secondAttribute="centerX" id="KW3-ZH-CuZ"/>
+                            <constraint firstItem="1CF-3u-tUs" firstAttribute="top" secondItem="qGh-d2-8wI" secondAttribute="bottom" constant="30" id="Vhe-lb-8YL"/>
+                            <constraint firstItem="qGh-d2-8wI" firstAttribute="top" secondItem="zHD-Tr-yJG" secondAttribute="bottom" constant="30" id="aUf-Vd-bB6"/>
+                            <constraint firstItem="1CF-3u-tUs" firstAttribute="centerX" secondItem="wsy-KS-BOM" secondAttribute="centerX" id="n5o-hP-3hm"/>
+                            <constraint firstItem="zHD-Tr-yJG" firstAttribute="top" secondItem="hOV-SD-r1M" secondAttribute="top" constant="30" id="p99-OW-aa0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hOV-SD-r1M"/>
+                    </view>
+                    <connections>
+                        <outlet property="tips1" destination="zHD-Tr-yJG" id="z5t-jH-9UN"/>
+                        <outlet property="tips2" destination="qGh-d2-8wI" id="cU1-xc-Pkb"/>
+                        <outlet property="tips3" destination="1CF-3u-tUs" id="xwo-Lf-5Vf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dTl-dC-2lb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1641" y="2028"/>
         </scene>
         <!--Zoomable View Controller-->
         <scene sceneID="LuZ-e6-job">

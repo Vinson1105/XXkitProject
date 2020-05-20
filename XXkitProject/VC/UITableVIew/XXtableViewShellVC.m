@@ -46,14 +46,14 @@
     _rows       = [NSMutableArray new];
     _footers    = [NSMutableArray new];
     
-    NSMutableArray *row = [NSMutableArray new];
     int sectionCount    = 5;
     int rowCount        = 10;
     
     for (int sectionIndex = 0; sectionIndex < sectionCount; sectionIndex++) {
+        NSMutableArray *row = [NSMutableArray new];
         for (int rowIndex = 0; rowIndex < rowCount; rowIndex++) {
             [row addObject:[[NSMutableDictionary alloc] initWithDictionary:@{
-                @"Title":[NSString stringWithFormat:@"[Title %d]",rowIndex],
+                @"Title":[NSString stringWithFormat:@"[Title (%d-%d)]",sectionIndex,rowIndex],
                 @"Message":@"[Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message]",
                 @"IsDetailShowing":@(NO)
             }]];
