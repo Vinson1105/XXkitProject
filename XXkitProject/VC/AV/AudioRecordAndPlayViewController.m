@@ -57,25 +57,7 @@
 
 - (IBAction)onButtonTouchUpInside:(id)sender {
     UIButton *button = sender;
-    if(button == _startButton){
-//        XXOC_WS
-//        __block UIAlertController *alert = [XXocUtils alertWithTitle:@"" msg:@"" okTitle:@"好的" onOK:^(UIAlertAction * _Nonnull action) {
-//            XXOC_SS
-//            [[XXcoreData sharedInstance] insertObject:@"AudioFile" initHandler:^(id  _Nonnull obj) {
-//                AudioFile *audioFile = obj;
-//                audioFile.path = @"1111111";
-//                audioFile.name = alert.textFields.firstObject.text;
-//                
-//                [ss.tableShell addRow:@[audioFile] atSection:0];
-//            } error:nil];
-//        } cancelTitle:@"取消" onCancel:^(UIAlertAction * _Nonnull action) {
-//            //[[NSFileManager defaultManager] removeItemAtURL:url error:nil];
-//        }];
-//        [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-//            textField.text = [XXocUtils currentDateString];
-//        }];
-//        [self presentViewController:alert animated:YES completion:nil];
-        
+    if(button == _startButton){       
         if([XXaudioFileRecorder sharedInstance].isRunning){
             [_startButton setBackgroundColor:UIColor.greenColor];
             NSURL *url = [[XXaudioFileRecorder sharedInstance] stop];

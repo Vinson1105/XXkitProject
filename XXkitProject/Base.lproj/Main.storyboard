@@ -760,6 +760,50 @@
             </objects>
             <point key="canvasLocation" x="966.66666666666674" y="52.901785714285715"/>
         </scene>
+        <!--Web View Progress View Controller-->
+        <scene sceneID="8E7-CO-qPJ">
+            <objects>
+                <viewController storyboardIdentifier="WebViewProgressViewController" id="Tjt-c6-Y2r" customClass="WebViewProgressViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PvO-ME-DRt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lyT-Z8-iXW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ipa-bB-Xtl">
+                                <rect key="frame" x="0.0" y="44" width="414" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="reA-Bd-uT0"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ipa-bB-Xtl" firstAttribute="leading" secondItem="PvO-ME-DRt" secondAttribute="leading" id="Jxh-8e-ON9"/>
+                            <constraint firstItem="Ioo-fs-2Z0" firstAttribute="trailing" secondItem="lyT-Z8-iXW" secondAttribute="trailing" id="TYh-XF-7sc"/>
+                            <constraint firstAttribute="trailing" secondItem="ipa-bB-Xtl" secondAttribute="trailing" id="WuL-1q-ajb"/>
+                            <constraint firstItem="lyT-Z8-iXW" firstAttribute="top" secondItem="Ioo-fs-2Z0" secondAttribute="top" id="aIs-dD-0hR"/>
+                            <constraint firstItem="ipa-bB-Xtl" firstAttribute="top" secondItem="Ioo-fs-2Z0" secondAttribute="top" id="j5J-mI-xJl"/>
+                            <constraint firstItem="lyT-Z8-iXW" firstAttribute="leading" secondItem="Ioo-fs-2Z0" secondAttribute="leading" id="pWK-Wl-nDK"/>
+                            <constraint firstItem="Ioo-fs-2Z0" firstAttribute="bottom" secondItem="lyT-Z8-iXW" secondAttribute="bottom" id="piH-JE-DNL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ioo-fs-2Z0"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="ipa-bB-Xtl" id="4Ew-WF-sXy"/>
+                        <outlet property="webView" destination="lyT-Z8-iXW" id="rhT-zU-M0w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ykk-za-46H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1641" y="53"/>
+        </scene>
     </scenes>
     <resources>
         <image name="minus" catalog="system" width="64" height="12"/>
