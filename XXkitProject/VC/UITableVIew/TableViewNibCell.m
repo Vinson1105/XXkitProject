@@ -7,7 +7,7 @@
 //
 
 #import "TableViewNibCell.h"
-#import "../../../../XXkit/Object-C/UITableView/XXtableViewShell.h"
+#import "../../../../XXkit/Object-C/Shell/XXtableViewShell.h"
 
 @interface TableViewNibCell() <XXtableViewCellDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;

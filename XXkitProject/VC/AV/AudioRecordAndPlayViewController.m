@@ -11,7 +11,11 @@
 #import "../../../../XXkit/Object-C/AV/XXaudioFormat.h"
 #import "../../../../XXkit/Object-C/AV/XXaudioFileRecorder.h"
 #import "../../../../XXkit/Object-C/XXocUtils.h"
-#import "../../../../XXkit/Object-C/UITableView/XXtableViewShell.h"
+
+#import "../../../../XXkit/Object-C/Shell/XXtableViewShell.h"
+#import "../../../../XXkit/Object-C/Utility/XXcoreData.h"
+#import "../../../CoreData/AudioFile+CoreDataProperties.h"
+#import "../../../../XXkit/Object-C/XXocUtils.h"
 
 @interface AudioRecordAndPlayViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
@@ -44,16 +48,65 @@
     _tableShell = [XXtableViewShell new];
     [_tableShell shell:_tableView];
     [_tableShell configRowType:@"AudioFileCell" loadType:XXtableViewShellRowLoadTypeNib systemStyle:0 height:0];
+    
+    NSArray *audioFiles = [[XXcoreData sharedInstance] getObject:@"AudioFile" predicate:nil error:nil];
+    if(nil != audioFiles){
+        [_tableShell addRow:audioFiles atSection:0];
+    }
 }
 
 - (IBAction)onButtonTouchUpInside:(id)sender {
     UIButton *button = sender;
     if(button == _startButton){
+//        XXOC_WS
+//        __block UIAlertController *alert = [XXocUtils alertWithTitle:@"" msg:@"" okTitle:@"好的" onOK:^(UIAlertAction * _Nonnull action) {
+//            XXOC_SS
+//            [[XXcoreData sharedInstance] insertObject:@"AudioFile" initHandler:^(id  _Nonnull obj) {
+//                AudioFile *audioFile = obj;
+//                audioFile.path = @"1111111";
+//                audioFile.name = alert.textFields.firstObject.text;
+//                
+//                [ss.tableShell addRow:@[audioFile] atSection:0];
+//            } error:nil];
+//        } cancelTitle:@"取消" onCancel:^(UIAlertAction * _Nonnull action) {
+//            //[[NSFileManager defaultManager] removeItemAtURL:url error:nil];
+//        }];
+//        [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+//            textField.text = [XXocUtils currentDateString];
+//        }];
+//        [self presentViewController:alert animated:YES completion:nil];
+        
         if([XXaudioFileRecorder sharedInstance].isRunning){
             [_startButton setBackgroundColor:UIColor.greenColor];
             NSURL *url = [[XXaudioFileRecorder sharedInstance] stop];
-            NSLog(@"[AudioRecordAndPlayViewController] 录音停止，文件保存到：%@",url);
-            [_tableShell addRow:@[@{@"url":url,@"filename":[XXocUtils currentDateString]}] atSection:0];
+            if(nil == url){
+                NSLog(@"[AudioRecordAndPlayViewController] 录音失败");
+                return;
+            }
+
+
+            NSString *docPath   = [XXocUtils documentAbsolutePathString];
+            NSString *filePath  = url.relativePath;
+            NSRange range       = [filePath rangeOfString:docPath];
+            NSString *relaPath  = [filePath substringFromIndex:range.length];
+
+            XXOC_WS
+            __block UIAlertController *alert = [XXocUtils alertWithTitle:@"" msg:@"" okTitle:@"好的" onOK:^(UIAlertAction * _Nonnull action) {
+                XXOC_SS
+                [[XXcoreData sharedInstance] insertObject:@"AudioFile" initHandler:^(id  _Nonnull obj) {
+                    AudioFile *audioFile = obj;
+                    audioFile.path = relaPath;
+                    audioFile.name = alert.textFields.firstObject.text;
+
+                    [ss.tableShell addRow:@[audioFile] atSection:0];
+                } error:nil];
+            } cancelTitle:@"取消" onCancel:^(UIAlertAction * _Nonnull action) {
+                [[NSFileManager defaultManager] removeItemAtURL:url error:nil];
+            }];
+            [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+                textField.text = [XXocUtils currentDateString];
+            }];
+            [self presentViewController:alert animated:YES completion:nil];
         }
         else{
             NSString *name = [[XXocUtils currentDateString] stringByAppendingString:@".aac"];

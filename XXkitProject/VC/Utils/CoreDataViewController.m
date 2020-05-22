@@ -8,12 +8,12 @@
 
 #import "CoreDataViewController.h"
 #import "../../../../XXkit/Object-C/Utility/XXcoreData.h"
-#import "../../CoreData/Person+CoreDataClass.h"
-#import "../../CoreData/Person+CoreDataProperties.h"
+#import "../../../CoreData/Person+CoreDataClass.h"
+#import "../../../CoreData/Person+CoreDataProperties.h"
 #import "../../../../XXkit/Object-C/XXocUtils.h"
 
-#import "../../../../XXkit/Object-C/UITableView/XXtableViewShell.h"
-#import "../../../../XXkit/Object-C/UITextField/XXtextFieldShell.h"
+#import "../../../../XXkit/Object-C/Shell/XXtableViewShell.h"
+#import "../../../../XXkit/Object-C/Shell/XXtextFieldShell.h"
 
 @interface CoreDataViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -29,10 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStylePlain target:self action:@selector(onRightItemClicked)];
-    
-    NSURL *url = [[XXocUtils documentAbsolutePathUrl] URLByAppendingPathComponent:[NSString stringWithFormat:@"xx.sqlite"]];
-    [[XXcoreData sharedInstance] configModel:@"XXcoreModel" bundle:nil storeType:NSSQLiteStoreType storeUrl:url];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStylePlain target:self action:@selector(onRightItemClicked)];    
     
     _tableViewShell = [XXtableViewShell new];
     [_tableViewShell shell:_tableView];

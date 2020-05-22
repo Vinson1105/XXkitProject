@@ -7,7 +7,9 @@
 //
 
 #import "MainViewController.h"
-#import "../../XXkit/Object-C/UITableView/XXtableViewShell.h"
+#import "../../XXkit/Object-C/Utility/XXcoreData.h"
+
+#import "../../XXkit/Object-C/Shell/XXtableViewShell.h"
 #import "../../XXkit/Object-C/XXocUtils.h"
 
 #import "./VC/UITableVIew/XXtableViewShellVC.h"
@@ -71,7 +73,9 @@
     [_shell configSectionWithHeaders:headers rows:rows footers:nil];
     
     _shell.onRowClicked = self.onTableViewRowClicked;
-}
+    
+    NSURL *url = [[XXocUtils documentAbsolutePathUrl] URLByAppendingPathComponent:[NSString stringWithFormat:@"xx.sqlite"]];
+    [[XXcoreData sharedInstance] configModel:@"XXcoreModel" bundle:nil storeType:NSSQLiteStoreType storeUrl:url];}
 
 
 - (void (^)(XXtableViewShell*, NSIndexPath *, id))onTableViewRowClicked{

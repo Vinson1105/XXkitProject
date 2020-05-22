@@ -7,7 +7,7 @@
 //
 
 #import "XXstackViewShellVC.h"
-#import "../../../../XXkit/Object-C/UIStackView/XXstackViewShell.h"
+#import "../../../../XXkit/Object-C/Shell/XXstackViewShell.h"
 
 @interface XXstackViewShellVC ()
 @property (weak, nonatomic) IBOutlet UIButton *addButton;

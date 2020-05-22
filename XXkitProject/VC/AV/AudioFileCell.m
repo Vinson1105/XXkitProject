@@ -7,7 +7,8 @@
 //
 
 #import "AudioFileCell.h"
-#import "../../../../XXkit/Object-C/UITableView/XXtableViewShell.h"
+#import "../../../../XXkit/Object-C/Shell/XXtableViewShell.h"
+#import "../../../CoreData/AudioFile+CoreDataProperties.h"
 
 @interface AudioFileCell()<XXtableViewCellDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *name;
@@ -36,7 +37,7 @@
 @synthesize indexPath;
 @synthesize tableViewShell;
 - (void)resetData:(nonnull id)data {
-    NSDictionary *info = data;
-    _name.text = info[@"filename"];
+    AudioFile *info = data;
+    _name.text = info.name;
 }
 @end

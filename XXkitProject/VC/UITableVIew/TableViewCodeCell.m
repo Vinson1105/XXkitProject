@@ -7,7 +7,7 @@
 //
 
 #import "TableViewCodeCell.h"
-#import "../../../../XXkit/Object-C/UITableView/XXtableViewShell.h"
+#import "../../../../XXkit/Object-C/Shell/XXtableViewShell.h"
 
 @interface TableViewCodeCell() <XXtableViewCellDelegate>
 @property (strong, nonatomic) UILabel *titleLabel;
