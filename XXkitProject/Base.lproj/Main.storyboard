@@ -472,6 +472,87 @@
             </objects>
             <point key="canvasLocation" x="319" y="702"/>
         </scene>
+        <!--Popupable View Controller-->
+        <scene sceneID="dst-Lh-lly">
+            <objects>
+                <viewController storyboardIdentifier="PopupableViewController" id="qjU-Uo-Mee" customClass="PopupableViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LTY-rA-YSn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6my-Mt-F4r">
+                                <rect key="frame" x="10" y="64" width="394" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="q5F-vO-34q"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QWq-3E-MAa">
+                                <rect key="frame" x="10" y="812" width="394" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wxd-WY-ObW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xI3-qq-apt">
+                                <rect key="frame" x="364" y="348" width="30" height="200"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="DBG-Df-i7n"/>
+                                    <constraint firstAttribute="height" constant="200" id="EmC-kN-Clf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pnP-Sk-cfm">
+                                <rect key="frame" x="182" y="423" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="PlR-ai-R1C"/>
+                                    <constraint firstAttribute="height" constant="50" id="sRu-Ui-VC1"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3Z-Sw-JXG">
+                                <rect key="frame" x="20" y="431" width="80" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="HOLD ON">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonTouchUpInside:" destination="qjU-Uo-Mee" eventType="touchUpInside" id="m4M-gw-mTm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QWq-3E-MAa" firstAttribute="leading" secondItem="q7A-7z-kur" secondAttribute="leading" constant="10" id="Dx2-29-Khg"/>
+                            <constraint firstItem="6my-Mt-F4r" firstAttribute="top" secondItem="q7A-7z-kur" secondAttribute="top" constant="20" id="EEi-Ov-nRS"/>
+                            <constraint firstItem="q7A-7z-kur" firstAttribute="trailing" secondItem="xI3-qq-apt" secondAttribute="trailing" constant="20" id="KoY-kS-bIV"/>
+                            <constraint firstItem="q7A-7z-kur" firstAttribute="trailing" secondItem="6my-Mt-F4r" secondAttribute="trailing" constant="10" id="MFg-mN-3uj"/>
+                            <constraint firstItem="xI3-qq-apt" firstAttribute="centerY" secondItem="LTY-rA-YSn" secondAttribute="centerY" id="OcV-xU-Nsb"/>
+                            <constraint firstItem="6my-Mt-F4r" firstAttribute="leading" secondItem="q7A-7z-kur" secondAttribute="leading" constant="10" id="QTu-Ne-8AF"/>
+                            <constraint firstItem="q7A-7z-kur" firstAttribute="trailing" secondItem="QWq-3E-MAa" secondAttribute="trailing" constant="10" id="l2w-vI-Vev"/>
+                            <constraint firstItem="Y3Z-Sw-JXG" firstAttribute="centerY" secondItem="LTY-rA-YSn" secondAttribute="centerY" id="pEa-Yr-Hea"/>
+                            <constraint firstItem="pnP-Sk-cfm" firstAttribute="centerY" secondItem="LTY-rA-YSn" secondAttribute="centerY" id="rdW-QK-DyJ"/>
+                            <constraint firstItem="Y3Z-Sw-JXG" firstAttribute="leading" secondItem="q7A-7z-kur" secondAttribute="leading" constant="20" id="tkN-cL-CDG"/>
+                            <constraint firstItem="pnP-Sk-cfm" firstAttribute="centerX" secondItem="LTY-rA-YSn" secondAttribute="centerX" id="uH8-HK-dKj"/>
+                            <constraint firstItem="q7A-7z-kur" firstAttribute="bottom" secondItem="QWq-3E-MAa" secondAttribute="bottom" constant="20" id="y5b-kd-d0M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q7A-7z-kur"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomView" destination="QWq-3E-MAa" id="l0l-05-TMc"/>
+                        <outlet property="holdonButton" destination="Y3Z-Sw-JXG" id="baU-Ft-RNf"/>
+                        <outlet property="midViwe" destination="pnP-Sk-cfm" id="IRa-x1-E1X"/>
+                        <outlet property="rightView" destination="xI3-qq-apt" id="0sb-Nh-sQf"/>
+                        <outlet property="topView" destination="6my-Mt-F4r" id="5B6-Xh-aUU"/>
+                        <outletCollection property="topViewPopupConstraints" destination="EEi-Ov-nRS" id="JFC-wV-mKl"/>
+                        <outletCollection property="rightViewPopupConstraints" destination="KoY-kS-bIV" id="ffO-pD-4n4"/>
+                        <outletCollection property="bottomViewPopupConstraints" destination="y5b-kd-d0M" id="0Pv-EU-mPG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0WH-Hf-MAc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970" y="703"/>
+        </scene>
         <!--Xstack View ShellVC-->
         <scene sceneID="R6v-Qx-ebA">
             <objects>

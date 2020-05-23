@@ -21,6 +21,8 @@
 		D3417FD8247368E800B509B1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3417FD7247368E800B509B1 /* MapKit.framework */; };
 		D346DAB72477E7510028B081 /* XXwebViewProgressShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D346DAB52477E7510028B081 /* XXwebViewProgressShell.m */; };
 		D346DABB2477EA390028B081 /* WebViewProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D346DABA2477EA390028B081 /* WebViewProgressViewController.m */; };
+		D346DAC02478BF870028B081 /* UIView+Popup.m in Sources */ = {isa = PBXBuildFile; fileRef = D346DABC2478BF870028B081 /* UIView+Popup.m */; };
+		D346DAC12478BF870028B081 /* UIView+TapToVisible.m in Sources */ = {isa = PBXBuildFile; fileRef = D346DABF2478BF870028B081 /* UIView+TapToVisible.m */; };
 		D348AB26244D99F000C7588F /* TableViewCodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D348AB25244D99F000C7588F /* TableViewCodeCell.m */; };
 		D34C486B24610A440031884A /* XXsceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C486A24610A440031884A /* XXsceneDelegate.m */; };
 		D34C4870246113200031884A /* UIViewController+SceneState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C486F246113200031884A /* UIViewController+SceneState.m */; };
@@ -59,6 +61,7 @@
 		D37F6A18243C017F00DC2F28 /* XXkitProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D37F6A17243C017F00DC2F28 /* XXkitProjectTests.m */; };
 		D37F6A23243C017F00DC2F28 /* XXkitProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D37F6A22243C017F00DC2F28 /* XXkitProjectUITests.m */; };
 		D38624432462B10B00617E77 /* OrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D38624422462B10B00617E77 /* OrientationViewController.m */; };
+		D3865B4A2478FF8700EF29B4 /* PopupableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3865B492478FF8700EF29B4 /* PopupableViewController.m */; };
 		D38C26982463FD0D00B88757 /* ZoomableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D38C26972463FD0D00B88757 /* ZoomableViewController.m */; };
 		D39097112459267000A850F6 /* XXbuttonLimitShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D39097102459267000A850F6 /* XXbuttonLimitShell.m */; };
 		D39097142459286800A850F6 /* XXtimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D39097132459286700A850F6 /* XXtimer.m */; };
@@ -117,6 +120,10 @@
 		D346DAB62477E7510028B081 /* XXwebViewProgressShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXwebViewProgressShell.h; sourceTree = "<group>"; };
 		D346DAB92477EA390028B081 /* WebViewProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewProgressViewController.h; sourceTree = "<group>"; };
 		D346DABA2477EA390028B081 /* WebViewProgressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewProgressViewController.m; sourceTree = "<group>"; };
+		D346DABC2478BF870028B081 /* UIView+Popup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Popup.m"; sourceTree = "<group>"; };
+		D346DABD2478BF870028B081 /* UIView+TapToVisible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TapToVisible.h"; sourceTree = "<group>"; };
+		D346DABE2478BF870028B081 /* UIView+Popup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Popup.h"; sourceTree = "<group>"; };
+		D346DABF2478BF870028B081 /* UIView+TapToVisible.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TapToVisible.m"; sourceTree = "<group>"; };
 		D348AB24244D99F000C7588F /* TableViewCodeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCodeCell.h; sourceTree = "<group>"; };
 		D348AB25244D99F000C7588F /* TableViewCodeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCodeCell.m; sourceTree = "<group>"; };
 		D34C486924610A440031884A /* XXsceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXsceneDelegate.h; sourceTree = "<group>"; };
@@ -203,6 +210,8 @@
 		D37F6A24243C017F00DC2F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D38624412462B10B00617E77 /* OrientationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrientationViewController.h; sourceTree = "<group>"; };
 		D38624422462B10B00617E77 /* OrientationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrientationViewController.m; sourceTree = "<group>"; };
+		D3865B482478FF8700EF29B4 /* PopupableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopupableViewController.h; sourceTree = "<group>"; };
+		D3865B492478FF8700EF29B4 /* PopupableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopupableViewController.m; sourceTree = "<group>"; };
 		D38C26962463FD0C00B88757 /* ZoomableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZoomableViewController.h; sourceTree = "<group>"; };
 		D38C26972463FD0D00B88757 /* ZoomableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZoomableViewController.m; sourceTree = "<group>"; };
 		D390970F2459267000A850F6 /* XXbuttonLimitShell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXbuttonLimitShell.h; sourceTree = "<group>"; };
@@ -360,6 +369,10 @@
 		D365942F243E8F58009F5228 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				D346DABE2478BF870028B081 /* UIView+Popup.h */,
+				D346DABC2478BF870028B081 /* UIView+Popup.m */,
+				D346DABD2478BF870028B081 /* UIView+TapToVisible.h */,
+				D346DABF2478BF870028B081 /* UIView+TapToVisible.m */,
 				D3659470243E8F58009F5228 /* UIViewController+ApplicationState.h */,
 				D3659471243E8F58009F5228 /* UIViewController+ApplicationState.m */,
 				D34C486E246113200031884A /* UIViewController+SceneState.h */,
@@ -544,6 +557,8 @@
 				D38624422462B10B00617E77 /* OrientationViewController.m */,
 				D38C26962463FD0C00B88757 /* ZoomableViewController.h */,
 				D38C26972463FD0D00B88757 /* ZoomableViewController.m */,
+				D3865B482478FF8700EF29B4 /* PopupableViewController.h */,
+				D3865B492478FF8700EF29B4 /* PopupableViewController.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -708,6 +723,7 @@
 				D39503B52447EABC001434A5 /* TableViewNibCell.m in Sources */,
 				D3304957247529F4005DC415 /* ToastViewController.m in Sources */,
 				D365951B243E8F59009F5228 /* UIViewController+Orientation.m in Sources */,
+				D3865B4A2478FF8700EF29B4 /* PopupableViewController.m in Sources */,
 				D365955C243E8F59009F5228 /* XXmtkRgbDelegate.m in Sources */,
 				D3659564243E8F59009F5228 /* NSBundle+XXlanguage.m in Sources */,
 				D3BEB01D2465456E0024C397 /* AudioRecordAndPlayViewController.m in Sources */,
@@ -727,11 +743,13 @@
 				D3659533243E8F59009F5228 /* UIViewController+ApplicationState.m in Sources */,
 				D37F6A0E243C017F00DC2F28 /* main.m in Sources */,
 				D3659560243E8F59009F5228 /* XXmaskView.m in Sources */,
+				D346DAC12478BF870028B081 /* UIView+TapToVisible.m in Sources */,
 				D365952D243E8F59009F5228 /* WebViewPayShell.m in Sources */,
 				D365951E243E8F59009F5228 /* XXcodecBase.m in Sources */,
 				D34EB3B6247615650096427F /* XXtableViewShell.m in Sources */,
 				D3659525243E8F59009F5228 /* XXstackViewShell.m in Sources */,
 				D3325A3924723E03000E6D95 /* TouchIDViewController.m in Sources */,
+				D346DAC02478BF870028B081 /* UIView+Popup.m in Sources */,
 				D3286E7C246B9F9500B0A958 /* XXcoreModel.xcdatamodeld in Sources */,
 				D33049542475246B005DC415 /* XXtoast.m in Sources */,
 				D38624432462B10B00617E77 /* OrientationViewController.m in Sources */,
