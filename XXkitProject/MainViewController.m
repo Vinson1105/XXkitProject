@@ -16,6 +16,7 @@
 #import "./VC/Shell/XXstackViewShellVC.h"
 #import "./VC/Shell/XXtextFieldShellVC.h"
 #import "./VC/Shell/WebViewProgressViewController.h"
+#import "./VC/Shell/ExclusiveButtonViewController.h"
 
 #import "./VC/Category/OrientationViewController.h"
 #import "./VC/Category/ZoomableViewController.h"
@@ -27,6 +28,7 @@
 #import "./VC/Utils/TouchIDViewController.h"
 #import "./VC/Utils/KeyChainViewController.h"
 #import "./VC/Utils/ToastViewController.h"
+
 
 #define kShellSection 0
 #define kCategorySection 1
@@ -55,6 +57,7 @@
             @{@"Title":@"XXstackViewShell",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"XXtextFieldShell",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"XXwebViewProgressShell",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+            @{@"Title":@"XXbuttonExclusiveShell",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
         ],
         @[
             @{@"Title":@"UIViewController+Orientation",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
@@ -101,6 +104,9 @@
                 }
                 else if([title isEqualToString:@"XXwebViewProgressShell"]){
                     vc = [XXocUtils viewController:@"WebViewProgressViewController"];
+                }
+                else if([title isEqualToString:@"XXbuttonExclusiveShell"]){
+                    vc = [XXocUtils viewController:@"ExclusiveButtonViewController"];
                 }
                 else{
                     
