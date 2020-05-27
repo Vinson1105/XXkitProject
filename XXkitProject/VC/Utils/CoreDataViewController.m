@@ -14,6 +14,7 @@
 
 #import "../../../../XXkit/Object-C/Shell/XXtableViewShell.h"
 #import "../../../../XXkit/Object-C/Shell/XXtextFieldShell.h"
+#import "../../../../XXkit/Object-C/View/XXtoast.h"
 
 @interface CoreDataViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -61,13 +62,16 @@
                                                                        msg:@""
                                                                    okTitle:@"好的"
                                                                       onOK:^(UIAlertAction * _Nonnull action) {
-                person.name = alertController.textFields.firstObject.text;
-                info[@"Title"] = person.name;
-                [[XXcoreData sharedInstance].context save:nil];
-                
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [ss.tableViewShell resetData:info atIndexPath:indexPath];
-                });
+                NSString *text = alertController.textFields.firstObject.text;
+                NSLog(@"%@ %@ %@")
+                [XXtoast showMessage:[NSString stringWithFormat:@"%@ %@ %@", alertController.textFields.firstObject.text, text, info]];
+//                person.name = alertController.textFields.firstObject.text;
+                //info[@"Title"] = [alertController.textFields.firstObject.text copy];//person.name;
+//                [[XXcoreData sharedInstance].context save:nil];
+//
+//                dispatch_async(dispatch_get_main_queue(), ^{
+//                    [ss.tableViewShell resetData:info atIndexPath:indexPath];
+//                });
             }
                                                                cancelTitle:@"取消"
                                                                   onCancel:^(UIAlertAction * _Nonnull action) {

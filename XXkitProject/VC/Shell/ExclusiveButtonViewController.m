@@ -27,8 +27,13 @@
     [super viewDidLoad];
     NSArray *buttons = @[_button1,_button2,_button3,_button4,_button5];
     for (UIButton *button in buttons) {
-        [button setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
-        [button setTitleColor:UIColor.redColor forState:UIControlStateSelected];
+        button.layer.borderWidth = 2;
+        
+        [button setBackgroundColor:UIColor.grayColor forState:UIControlStateNormal];
+        [button setBorderColor:UIColor.grayColor forState:UIControlStateNormal];
+        
+        [button setBackgroundColor:UIColor.blueColor forState:UIControlStateSelected];
+        [button setBorderColor:UIColor.blackColor forState:UIControlStateSelected];
     }
     
     _buttonShell = [XXbuttonExclusiveShell new];
@@ -41,15 +46,4 @@
         [XXtoast showMessage:[NSString stringWithFormat:@"%@ -> %@", previous, current]];
     };
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

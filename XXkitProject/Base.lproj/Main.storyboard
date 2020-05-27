@@ -946,30 +946,6 @@
                                 </constraints>
                                 <state key="normal" title="Button5"/>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UeP-kT-TWu">
-                                <rect key="frame" x="20" y="792" width="374" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksX-6j-bSQ">
-                                        <rect key="frame" x="0.0" y="10" width="50" height="30"/>
-                                        <state key="normal" title="Normal"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNh-m5-fMd">
-                                        <rect key="frame" x="101.5" y="10" width="60" height="30"/>
-                                        <state key="normal" title="highlight"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGm-ph-W0g">
-                                        <rect key="frame" x="213.5" y="10" width="49" height="30"/>
-                                        <state key="normal" title="disable"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95h-G8-mGW">
-                                        <rect key="frame" x="315" y="10" width="59" height="30"/>
-                                        <state key="normal" title="selected"/>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="AMa-XU-yMg"/>
-                                </constraints>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -977,11 +953,8 @@
                             <constraint firstItem="SJB-91-xIG" firstAttribute="trailing" secondItem="COe-VG-mMG" secondAttribute="trailing" id="Bls-vS-BkI"/>
                             <constraint firstItem="SJB-91-xIG" firstAttribute="leading" secondItem="COe-VG-mMG" secondAttribute="leading" id="DOf-ij-U4t"/>
                             <constraint firstItem="qPM-Dh-ggS" firstAttribute="trailing" secondItem="COe-VG-mMG" secondAttribute="trailing" id="IOM-MM-2Vg"/>
-                            <constraint firstItem="fNI-m7-6Rc" firstAttribute="bottom" secondItem="UeP-kT-TWu" secondAttribute="bottom" constant="20" id="Nyc-SS-O9J"/>
-                            <constraint firstItem="fNI-m7-6Rc" firstAttribute="trailing" secondItem="UeP-kT-TWu" secondAttribute="trailing" constant="20" id="OEo-JL-g2G"/>
                             <constraint firstItem="SJB-91-xIG" firstAttribute="top" secondItem="VpW-uH-4Re" secondAttribute="bottom" constant="20" id="PvV-Ws-lgu"/>
                             <constraint firstItem="gLc-jM-sUJ" firstAttribute="trailing" secondItem="COe-VG-mMG" secondAttribute="trailing" id="RZ5-tV-JhI"/>
-                            <constraint firstItem="UeP-kT-TWu" firstAttribute="leading" secondItem="fNI-m7-6Rc" secondAttribute="leading" constant="20" id="S4B-t7-qxf"/>
                             <constraint firstItem="gLc-jM-sUJ" firstAttribute="top" secondItem="SJB-91-xIG" secondAttribute="bottom" constant="20" id="Wk6-y0-3S7"/>
                             <constraint firstItem="VpW-uH-4Re" firstAttribute="top" secondItem="COe-VG-mMG" secondAttribute="bottom" constant="20" id="dkv-ps-mJu"/>
                             <constraint firstItem="gLc-jM-sUJ" firstAttribute="leading" secondItem="COe-VG-mMG" secondAttribute="leading" id="eBD-45-FT8"/>
