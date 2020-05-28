@@ -72,6 +72,7 @@
 		D39503B12447E5A4001434A5 /* XXocUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D39503AF2447E5A3001434A5 /* XXocUtils.m */; };
 		D39503B52447EABC001434A5 /* TableViewNibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D39503B32447EABC001434A5 /* TableViewNibCell.m */; };
 		D39503B62447EABC001434A5 /* TableViewNibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39503B42447EABC001434A5 /* TableViewNibCell.xib */; };
+		D3AFBD0E247FDEA100BA7FD1 /* XXaudioFilePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AFBD0D247FDEA100BA7FD1 /* XXaudioFilePlayer.m */; };
 		D3BEB01D2465456E0024C397 /* AudioRecordAndPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BEB01C2465456E0024C397 /* AudioRecordAndPlayViewController.m */; };
 		D3BEB020246551810024C397 /* XXaudioFileRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BEB01F246551810024C397 /* XXaudioFileRecorder.m */; };
 		D3E7DFF8245049A400124252 /* XXtextFieldShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E7DFF7245049A400124252 /* XXtextFieldShell.m */; };
@@ -234,6 +235,8 @@
 		D39503B22447EABC001434A5 /* TableViewNibCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewNibCell.h; sourceTree = "<group>"; };
 		D39503B32447EABC001434A5 /* TableViewNibCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewNibCell.m; sourceTree = "<group>"; };
 		D39503B42447EABC001434A5 /* TableViewNibCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewNibCell.xib; sourceTree = "<group>"; };
+		D3AFBD0C247FDEA100BA7FD1 /* XXaudioFilePlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXaudioFilePlayer.h; sourceTree = "<group>"; };
+		D3AFBD0D247FDEA100BA7FD1 /* XXaudioFilePlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXaudioFilePlayer.m; sourceTree = "<group>"; };
 		D3BEB01B2465456E0024C397 /* AudioRecordAndPlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioRecordAndPlayViewController.h; sourceTree = "<group>"; };
 		D3BEB01C2465456E0024C397 /* AudioRecordAndPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioRecordAndPlayViewController.m; sourceTree = "<group>"; };
 		D3BEB01E246551810024C397 /* XXaudioFileRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXaudioFileRecorder.h; sourceTree = "<group>"; };
@@ -420,6 +423,8 @@
 				D3659447243E8F58009F5228 /* XXtimestampSyncer.m */,
 				D3659448243E8F58009F5228 /* XXvideoRecorder的副本.m */,
 				D365944A243E8F58009F5228 /* XXh26xDecoder.m */,
+				D3AFBD0C247FDEA100BA7FD1 /* XXaudioFilePlayer.h */,
+				D3AFBD0D247FDEA100BA7FD1 /* XXaudioFilePlayer.m */,
 			);
 			path = AV;
 			sourceTree = "<group>";
@@ -779,6 +784,7 @@
 				D33FF84C2466DEC800AF3652 /* AudioFileCell.m in Sources */,
 				D3659563243E8F59009F5228 /* XXappDelegate.m in Sources */,
 				D365955E243E8F59009F5228 /* Metal.metal in Sources */,
+				D3AFBD0E247FDEA100BA7FD1 /* XXaudioFilePlayer.m in Sources */,
 				D35E3203244FB44900300362 /* XXstackViewShellVC.m in Sources */,
 				D3286E8C246BA6AD00B0A958 /* CoreDataViewController.m in Sources */,
 			);

@@ -51,41 +51,43 @@
         }
         [_tableViewShell addSectionWithHeader:nil row:persondata footer:nil];
         [_tableViewShell configFinished];
-        
-        XXOC_WS
-        _tableViewShell.onRowClicked = ^(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
-            XXOC_SS
-            
-            NSMutableDictionary *info = data;
-            Person *person = info[@"Object"];
-            __block UIAlertController *alertController = [XXocUtils alertWithTitle:@"修改"
-                                                                       msg:@""
-                                                                   okTitle:@"好的"
-                                                                      onOK:^(UIAlertAction * _Nonnull action) {
-                NSString *text = alertController.textFields.firstObject.text;
-                NSLog(@"%@ %@ %@")
-                [XXtoast showMessage:[NSString stringWithFormat:@"%@ %@ %@", alertController.textFields.firstObject.text, text, info]];
-//                person.name = alertController.textFields.firstObject.text;
-                //info[@"Title"] = [alertController.textFields.firstObject.text copy];//person.name;
-//                [[XXcoreData sharedInstance].context save:nil];
-//
-//                dispatch_async(dispatch_get_main_queue(), ^{
-//                    [ss.tableViewShell resetData:info atIndexPath:indexPath];
-//                });
-            }
-                                                               cancelTitle:@"取消"
-                                                                  onCancel:^(UIAlertAction * _Nonnull action) {
-                
-            }];
-            [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-                textField.text = person.name;
-            }];
-            [ss presentViewController:alertController animated:YES completion:^{
-                
-            }];
-            
-        };
     }
+    
+    XXOC_WS
+    _tableViewShell.onRowClicked = ^(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
+        XXOC_SS
+        
+        NSMutableDictionary *info = data;
+        Person *person = info[@"Object"];
+        __block UIAlertController *alertController = [XXocUtils alertWithTitle:@"修改"
+                                                                   msg:@""
+                                                               okTitle:@"好的"
+                                                                  onOK:^(UIAlertAction * _Nonnull action) {
+            person.name = alertController.textFields.firstObject.text;
+            info[@"Title"] = person.name;
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [ss.tableViewShell resetData:info atIndexPath:indexPath];
+            });
+        }
+                                                           cancelTitle:@"取消"
+                                                              onCancel:^(UIAlertAction * _Nonnull action) {
+            
+        }];
+        [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+            textField.text = person.name;
+        }];
+        [ss presentViewController:alertController animated:YES completion:^{
+            
+        }];
+        
+    };
+    
+    _tableViewShell.onRowEditingDelete = ^BOOL(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
+        NSMutableDictionary *info = data;
+        Person *person = info[@"Object"];
+        [[XXcoreData sharedInstance] deleteObject:person error:nil];
+        return YES;
+    };
 }
 
 
@@ -99,13 +101,12 @@
             [[XXcoreData sharedInstance] insertObject:@"Person" initHandler:^(id  _Nonnull obj) {
                 Person *person = obj;
                 person.name = alertController.textFields.firstObject.text;
+                NSLog(@"[###] 新增 %@",person);
+                
+                NSMutableDictionary *info = [[NSMutableDictionary alloc] initWithDictionary:@{@"Title":person.name,@"Object":person,}];
                 
                 XXOC_SS
-                [ss.tableViewShell addRow:@[@{
-                                                @"Title":person.name,
-                                                @"Object":person,
-                                                
-                }] atSection:0];
+                [ss.tableViewShell addRow:@[info] atSection:0];
             } error:nil];
         }
                                                            cancelTitle:@"取消"

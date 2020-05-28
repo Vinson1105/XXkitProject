@@ -16,12 +16,15 @@
 #import "../../../../XXkit/Object-C/Utility/XXcoreData.h"
 #import "../../../CoreData/AudioFile+CoreDataProperties.h"
 #import "../../../../XXkit/Object-C/XXocUtils.h"
+#import "../../../../XXkit/Object-C/AV/XXaudioFilePlayer.h"
 
 @interface AudioRecordAndPlayViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic,copy) NSString *dir;
 @property (nonatomic,strong) XXtableViewShell *tableShell;
+
+@property (nonatomic,strong) XXaudioFilePlayer *player;
 @end
 
 @implementation AudioRecordAndPlayViewController
@@ -41,13 +44,24 @@
     format.sampleRate = 16000;
     format.channels = 2;
     format.sampleBitSize = 16;
-    format.formatID = kAudioFormatMPEG4AAC;
+    format.formatID = kAudioFormatAppleIMA4;
     format.formatFlags = kAudioFormatFlagIsSignedInteger;
     [[XXaudioFileRecorder sharedInstance] config:format];
     
     _tableShell = [XXtableViewShell new];
     [_tableShell shell:_tableView];
     [_tableShell configRowType:@"AudioFileCell" loadType:XXtableViewShellRowLoadTypeNib systemStyle:0 height:0];
+    
+    XXOC_WS;
+    _tableShell.onRowClicked = ^(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
+        XXOC_SS;
+        
+        AudioFile *audioFile = data;
+        
+        if(ss.player && ss.player.isPlaying){
+            [ss.player stop];
+        }
+    };
     
     NSArray *audioFiles = [[XXcoreData sharedInstance] getObject:@"AudioFile" predicate:nil error:nil];
     if(nil != audioFiles){
@@ -91,7 +105,7 @@
             [self presentViewController:alert animated:YES completion:nil];
         }
         else{
-            NSString *name = [[XXocUtils currentDateString] stringByAppendingString:@".aac"];
+            NSString *name = [[XXocUtils currentDateString] stringByAppendingString:@".m4a"];
             NSString *path = [_dir stringByAppendingPathComponent:name];
             NSURL *url = [NSURL fileURLWithPath:path];
             if([[XXaudioFileRecorder sharedInstance] start:url]){
