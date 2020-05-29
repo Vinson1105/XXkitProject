@@ -44,22 +44,47 @@
     format.sampleRate = 16000;
     format.channels = 2;
     format.sampleBitSize = 16;
-    format.formatID = kAudioFormatAppleIMA4;
+    format.formatID = kAudioFormatMPEG4AAC;
     format.formatFlags = kAudioFormatFlagIsSignedInteger;
     [[XXaudioFileRecorder sharedInstance] config:format];
     
     _tableShell = [XXtableViewShell new];
     [_tableShell shell:_tableView];
     [_tableShell configRowType:@"AudioFileCell" loadType:XXtableViewShellRowLoadTypeNib systemStyle:0 height:0];
+    _tableShell.onRowEditingDelete = ^BOOL(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
+        AudioFile *audioFile = data;
+        [[XXcoreData sharedInstance] deleteObject:audioFile error:nil];
+        return YES;
+    };
     
     XXOC_WS;
     _tableShell.onRowClicked = ^(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
         XXOC_SS;
-        
-        AudioFile *audioFile = data;
-        
+                
         if(ss.player && ss.player.isPlaying){
             [ss.player stop];
+        }
+        
+        AudioFile *audioFile = data;
+        NSString *absulotePath = [[XXocUtils documentAbsolutePathString] stringByAppendingString:audioFile.path];
+        
+        NSError *error = nil;
+        ss.player = [[XXaudioFilePlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:absulotePath] error:&error];
+        if(error){
+            NSLog(@"[###] 创建失败 %@", error);
+        }
+        
+        ss.player.onFinished = ^(XXaudioFilePlayer * _Nonnull player, BOOL succeed) {
+            NSLog(@"[###] 播放完成(%d)", succeed);
+        };
+        ss.player.onDecodeError = ^(XXaudioFilePlayer * _Nonnull player, NSError * _Nonnull error) {
+            NSLog(@"[###] 解码出错 %@", error);
+        };
+        ss.player.onProgressUpdate = ^(XXaudioFilePlayer * _Nonnull player) {
+            NSLog(@"[###] 进度：%.3f %.3f", player.currentTime, player.duration);
+        };
+        if(![ss.player play]){
+            NSLog(@"[###] 播放失败");
         }
     };
     
@@ -105,7 +130,7 @@
             [self presentViewController:alert animated:YES completion:nil];
         }
         else{
-            NSString *name = [[XXocUtils currentDateString] stringByAppendingString:@".m4a"];
+            NSString *name = [[XXocUtils currentDateString] stringByAppendingString:@".aac"];
             NSString *path = [_dir stringByAppendingPathComponent:name];
             NSURL *url = [NSURL fileURLWithPath:path];
             if([[XXaudioFileRecorder sharedInstance] start:url]){
