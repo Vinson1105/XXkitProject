@@ -25,6 +25,7 @@
 @property (nonatomic,strong) XXtableViewShell *tableShell;
 
 @property (nonatomic,strong) XXaudioFilePlayer *player;
+@property (nonatomic,assign) int currentPlaying;
 @end
 
 @implementation AudioRecordAndPlayViewController
@@ -32,6 +33,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _currentPlaying = -1;
+    
     NSError *error;
     _dir = [XXocUtils mkdirInDocument:@[@"XXkitProject",@"Audio"] error:&error];
     if(error){
@@ -118,7 +121,7 @@
                     AudioFile *audioFile = obj;
                     audioFile.path = relaPath;
                     audioFile.name = alert.textFields.firstObject.text;
-
+                    audioFile.duration = 600;
                     [ss.tableShell addRow:@[audioFile] atSection:0];
                 } error:nil];
             } cancelTitle:@"取消" onCancel:^(UIAlertAction * _Nonnull action) {
@@ -144,6 +147,19 @@
     }
     else{
     }
+}
+
+
+- (void)playAtIndex:(int)index{
+    if(_currentPlaying){
+        
+    }
+}
+- (void)stop{
+    if(_currentPlaying < 0){
+        return;
+    }
+    
 }
 
 @end

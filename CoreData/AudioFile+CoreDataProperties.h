@@ -2,7 +2,7 @@
 //  AudioFile+CoreDataProperties.h
 //  XXkitProject
 //
-//  Created by VINSON on 2020/5/13.
+//  Created by VINSON on 2020/5/29.
 //  Copyright © 2020 郭文轩. All rights reserved.
 //
 //
@@ -16,8 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<AudioFile *> *)fetchRequest;
 
-@property (nullable, nonatomic, copy) NSString *path;
+@property (nonatomic) float duration;
 @property (nullable, nonatomic, copy) NSString *name;
+@property (nullable, nonatomic, copy) NSString *path;
 
 @end
 

@@ -9,6 +9,7 @@
 #import "AudioFileCell.h"
 #import "../../../../XXkit/Object-C/Shell/XXtableViewShell.h"
 #import "../../../CoreData/AudioFile+CoreDataProperties.h"
+#import "../../../../XXkit/Object-C/XXocUtils.h"
 
 @interface AudioFileCell()<XXtableViewCellDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *name;
@@ -39,5 +40,6 @@
 - (void)resetData:(nonnull id)data {
     AudioFile *info = data;
     _name.text = info.name;
+    _duration.text = [XXocUtils timeStringWithSecond:info.duration timeFormat:@"mm:ss"];
 }
 @end
