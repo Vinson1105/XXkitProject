@@ -121,6 +121,11 @@
 		D33FF8492466DEC800AF3652 /* AudioFileCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioFileCell.h; sourceTree = "<group>"; };
 		D33FF84A2466DEC800AF3652 /* AudioFileCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioFileCell.m; sourceTree = "<group>"; };
 		D33FF84B2466DEC800AF3652 /* AudioFileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioFileCell.xib; sourceTree = "<group>"; };
+		D3415AEF2481F781007E271D /* XXcoreModel 1.0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "XXcoreModel 1.0.xcdatamodel"; sourceTree = "<group>"; };
+		D3415AF02481F7DA007E271D /* AudioFile+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AudioFile+CoreDataProperties.h"; path = "CoreData/AudioFile+CoreDataProperties.h"; sourceTree = "<group>"; };
+		D3415AF12481F7DA007E271D /* AudioFile+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AudioFile+CoreDataClass.h"; path = "CoreData/AudioFile+CoreDataClass.h"; sourceTree = "<group>"; };
+		D3415AF22481F7DA007E271D /* AudioFile+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AudioFile+CoreDataClass.m"; path = "CoreData/AudioFile+CoreDataClass.m"; sourceTree = "<group>"; };
+		D3415AF32481F7DA007E271D /* AudioFile+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AudioFile+CoreDataProperties.m"; path = "CoreData/AudioFile+CoreDataProperties.m"; sourceTree = "<group>"; };
 		D3417FD7247368E800B509B1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D346DAB52477E7510028B081 /* XXwebViewProgressShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXwebViewProgressShell.m; sourceTree = "<group>"; };
 		D346DAB62477E7510028B081 /* XXwebViewProgressShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXwebViewProgressShell.h; sourceTree = "<group>"; };
@@ -233,10 +238,6 @@
 		D39503B42447EABC001434A5 /* TableViewNibCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewNibCell.xib; sourceTree = "<group>"; };
 		D3AFBD0C247FDEA100BA7FD1 /* XXaudioFilePlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXaudioFilePlayer.h; sourceTree = "<group>"; };
 		D3AFBD0D247FDEA100BA7FD1 /* XXaudioFilePlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXaudioFilePlayer.m; sourceTree = "<group>"; };
-		D3B33EAF24810DA0008AB970 /* AudioFile+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AudioFile+CoreDataProperties.h"; path = "CoreData/AudioFile+CoreDataProperties.h"; sourceTree = "<group>"; };
-		D3B33EB024810DA0008AB970 /* AudioFile+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AudioFile+CoreDataClass.h"; path = "CoreData/AudioFile+CoreDataClass.h"; sourceTree = "<group>"; };
-		D3B33EB124810DA0008AB970 /* AudioFile+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AudioFile+CoreDataClass.m"; path = "CoreData/AudioFile+CoreDataClass.m"; sourceTree = "<group>"; };
-		D3B33EB224810DA0008AB970 /* AudioFile+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AudioFile+CoreDataProperties.m"; path = "CoreData/AudioFile+CoreDataProperties.m"; sourceTree = "<group>"; };
 		D3BEB01B2465456E0024C397 /* AudioRecordAndPlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioRecordAndPlayViewController.h; sourceTree = "<group>"; };
 		D3BEB01C2465456E0024C397 /* AudioRecordAndPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioRecordAndPlayViewController.m; sourceTree = "<group>"; };
 		D3BEB01E246551810024C397 /* XXaudioFileRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXaudioFileRecorder.h; sourceTree = "<group>"; };
@@ -509,10 +510,10 @@
 		D37F69EF243C017E00DC2F28 = {
 			isa = PBXGroup;
 			children = (
-				D3B33EAF24810DA0008AB970 /* AudioFile+CoreDataProperties.h */,
-				D3B33EB024810DA0008AB970 /* AudioFile+CoreDataClass.h */,
-				D3B33EB124810DA0008AB970 /* AudioFile+CoreDataClass.m */,
-				D3B33EB224810DA0008AB970 /* AudioFile+CoreDataProperties.m */,
+				D3415AF02481F7DA007E271D /* AudioFile+CoreDataProperties.h */,
+				D3415AF12481F7DA007E271D /* AudioFile+CoreDataClass.h */,
+				D3415AF22481F7DA007E271D /* AudioFile+CoreDataClass.m */,
+				D3415AF32481F7DA007E271D /* AudioFile+CoreDataProperties.m */,
 				D3286E7D246BA06000B0A958 /* CoreData */,
 				D37F69FA243C017E00DC2F28 /* XXkitProject */,
 				D37F6A16243C017F00DC2F28 /* XXkitProjectTests */,
@@ -1113,9 +1114,10 @@
 		D3286E7A246B9F9500B0A958 /* XXcoreModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				D3415AEF2481F781007E271D /* XXcoreModel 1.0.xcdatamodel */,
 				D3286E7B246B9F9500B0A958 /* XXcoreModel.xcdatamodel */,
 			);
-			currentVersion = D3286E7B246B9F9500B0A958 /* XXcoreModel.xcdatamodel */;
+			currentVersion = D3415AEF2481F781007E271D /* XXcoreModel 1.0.xcdatamodel */;
 			path = XXcoreModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Person (CoreDataProperties)
 
 + (NSFetchRequest<Person *> *)fetchRequest;
-
+@property (nullable, nonatomic, copy) NSString *address;
 @property (nullable, nonatomic, copy) NSString *name;
 @property (nullable, nonatomic, copy) NSString *detail;
 @property (nonatomic) int16_t id;

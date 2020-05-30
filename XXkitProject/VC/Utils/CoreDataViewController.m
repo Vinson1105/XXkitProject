@@ -68,6 +68,7 @@
             dispatch_async(dispatch_get_main_queue(), ^{
                 [ss.tableViewShell resetData:info atIndexPath:indexPath];
             });
+            [[XXcoreData sharedInstance].context save:nil];
         }
                                                            cancelTitle:@"取消"
                                                               onCancel:^(UIAlertAction * _Nonnull action) {

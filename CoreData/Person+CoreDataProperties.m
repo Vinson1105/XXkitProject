@@ -15,6 +15,7 @@
 	return [NSFetchRequest fetchRequestWithEntityName:@"Person"];
 }
 
+@dynamic address;
 @dynamic name;
 @dynamic detail;
 @dynamic id;

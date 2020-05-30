@@ -40,6 +40,6 @@
 - (void)resetData:(nonnull id)data {
     AudioFile *info = data;
     _name.text = info.name;
-    _duration.text = [XXocUtils timeStringWithSecond:info.duration timeFormat:@"mm:ss"];
+    //_duration.text = [XXocUtils timeStringWithSecond:info.duration timeFormat:@"mm:ss"];
 }
 @end

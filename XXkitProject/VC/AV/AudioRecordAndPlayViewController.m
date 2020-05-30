@@ -121,7 +121,7 @@
                     AudioFile *audioFile = obj;
                     audioFile.path = relaPath;
                     audioFile.name = alert.textFields.firstObject.text;
-                    audioFile.duration = 600;
+                    //audioFile.duration = 600;
                     [ss.tableShell addRow:@[audioFile] atSection:0];
                 } error:nil];
             } cancelTitle:@"取消" onCancel:^(UIAlertAction * _Nonnull action) {
