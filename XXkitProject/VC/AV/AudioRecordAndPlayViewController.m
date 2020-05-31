@@ -85,6 +85,7 @@
         };
         ss.player.onProgressUpdate = ^(XXaudioFilePlayer * _Nonnull player) {
             NSLog(@"[###] 进度：%.3f %.3f", player.currentTime, player.duration);
+            [ws.tableShell rowDoSomething:@"progress" info:@(player.currentTime/player.duration) atIndex:indexPath];
         };
         if(![ss.player play]){
             NSLog(@"[###] 播放失败");
@@ -121,7 +122,7 @@
                     AudioFile *audioFile = obj;
                     audioFile.path = relaPath;
                     audioFile.name = alert.textFields.firstObject.text;
-                    //audioFile.duration = 600;
+                    audioFile.duration = 600;
                     [ss.tableShell addRow:@[audioFile] atSection:0];
                 } error:nil];
             } cancelTitle:@"取消" onCancel:^(UIAlertAction * _Nonnull action) {
