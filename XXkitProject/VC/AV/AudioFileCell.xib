@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="383" height="75"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="录音名称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q2z-kg-SZV">
+                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="录音名称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q2z-kg-SZV">
                         <rect key="frame" x="5" y="0.0" width="373" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="Xc2-i8-qTt"/>
@@ -62,7 +62,7 @@
                 <outlet property="progress" destination="7Gv-DX-ZeJ" id="tlD-Sc-sI3"/>
                 <outlet property="starttime" destination="3AC-8w-Inv" id="cN2-sc-OVB"/>
             </connections>
-            <point key="canvasLocation" x="-99.275362318840592" y="97.433035714285708"/>
+            <point key="canvasLocation" x="-304" y="43"/>
         </tableViewCell>
     </objects>
 </document>
