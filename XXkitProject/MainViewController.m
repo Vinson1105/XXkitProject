@@ -22,6 +22,7 @@
 #import "./VC/Category/OrientationViewController.h"
 #import "./VC/Category/ZoomableViewController.h"
 #import "./VC/Category/PopupableViewController.h"
+#import "./VC/Category/LangaugeViewController.h"
 
 #import "./VC/AV/AudioRecordAndPlayViewController.h"
 
@@ -65,6 +66,7 @@
             @{@"Title":@"UIViewController+Orientation",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"UIView+Zoomable",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"UIView+TapToPopup",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+            @{@"Title":@"NSBundle+Language",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
         ],
         @[
             @{@"Title":@"XXaudioFileRecorder",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
@@ -107,6 +109,7 @@
                 if([title isEqualToString:@"UIViewController+Orientation"]) { vc = [XXocUtils viewController:@"OrientationViewController"]; }
                 else if([title isEqualToString:@"UIView+Zoomable"])         { vc = [XXocUtils viewController:@"ZoomableViewController"]; }
                 else if([title isEqualToString:@"UIView+TapToPopup"])       { vc = [XXocUtils viewController:@"PopupableViewController"]; }
+                else if([title isEqualToString:@"NSBundle+Language"])       { vc = [XXocUtils viewController:@"LangaugeViewController"]; }
                 else{}
             }
             else if(kAVSection == indexPath.section){

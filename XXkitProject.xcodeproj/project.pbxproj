@@ -36,6 +36,9 @@
 		D34EB3B6247615650096427F /* XXtableViewShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EB3B5247615650096427F /* XXtableViewShell.m */; };
 		D3508822243FFCDD00B8BC8F /* XXtableViewShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3508821243FFCDD00B8BC8F /* XXtableViewShellVC.m */; };
 		D35663DA2456F7CF00EAB7FB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35663D92456F7CF00EAB7FB /* Security.framework */; };
+		D35B8CD32487025C0079843A /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = D35B8CD22487025C0079843A /* NSBundle+Language.m */; };
+		D35B8CDA2487055A0079843A /* localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = D35B8CDC2487055A0079843A /* localized.strings */; };
+		D35B8CE3248707FA0079843A /* LangaugeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35B8CE2248707FA0079843A /* LangaugeViewController.m */; };
 		D35D7AF624748B9B00C2472A /* KeyChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35D7AF524748B9B00C2472A /* KeyChainViewController.m */; };
 		D35E3203244FB44900300362 /* XXstackViewShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D35E3202244FB44900300362 /* XXstackViewShellVC.m */; };
 		D3659519243E8F59009F5228 /* UIView+Zoomable.m in Sources */ = {isa = PBXBuildFile; fileRef = D3659437243E8F58009F5228 /* UIView+Zoomable.m */; };
@@ -52,7 +55,6 @@
 		D3659560243E8F59009F5228 /* XXmaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = D36594CE243E8F59009F5228 /* XXmaskView.m */; };
 		D3659562243E8F59009F5228 /* XXkeyboardAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D36594D1243E8F59009F5228 /* XXkeyboardAdapter.m */; };
 		D3659563243E8F59009F5228 /* XXappDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D36594D4243E8F59009F5228 /* XXappDelegate.m */; };
-		D3659564243E8F59009F5228 /* NSBundle+XXlanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = D36594D8243E8F59009F5228 /* NSBundle+XXlanguage.m */; };
 		D3659569243E8F59009F5228 /* Readme.MD in Resources */ = {isa = PBXBuildFile; fileRef = D36594E0243E8F59009F5228 /* Readme.MD */; };
 		D365956A243E8F59009F5228 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D36594E1243E8F59009F5228 /* .gitignore */; };
 		D365956B243E8F59009F5228 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = D36594E2243E8F59009F5228 /* .gitattributes */; };
@@ -155,6 +157,15 @@
 		D3508820243FFCDD00B8BC8F /* XXtableViewShellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXtableViewShellVC.h; sourceTree = "<group>"; };
 		D3508821243FFCDD00B8BC8F /* XXtableViewShellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXtableViewShellVC.m; sourceTree = "<group>"; };
 		D35663D92456F7CF00EAB7FB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D35B8CD12487025C0079843A /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
+		D35B8CD22487025C0079843A /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
+		D35B8CDB2487055A0079843A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/localized.strings; sourceTree = "<group>"; };
+		D35B8CDD248706C20079843A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/localized.strings"; sourceTree = "<group>"; };
+		D35B8CDE248706DF0079843A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/localized.strings; sourceTree = "<group>"; };
+		D35B8CDF248706F20079843A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/localized.strings"; sourceTree = "<group>"; };
+		D35B8CE0248707000079843A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/localized.strings; sourceTree = "<group>"; };
+		D35B8CE1248707FA0079843A /* LangaugeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LangaugeViewController.h; sourceTree = "<group>"; };
+		D35B8CE2248707FA0079843A /* LangaugeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LangaugeViewController.m; sourceTree = "<group>"; };
 		D35D7AF424748B9B00C2472A /* KeyChainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyChainViewController.h; sourceTree = "<group>"; };
 		D35D7AF524748B9B00C2472A /* KeyChainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyChainViewController.m; sourceTree = "<group>"; };
 		D35E3201244FB44900300362 /* XXstackViewShellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXstackViewShellVC.h; sourceTree = "<group>"; };
@@ -201,8 +212,6 @@
 		D36594D1243E8F59009F5228 /* XXkeyboardAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXkeyboardAdapter.m; sourceTree = "<group>"; };
 		D36594D3243E8F59009F5228 /* XXappDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXappDelegate.h; sourceTree = "<group>"; };
 		D36594D4243E8F59009F5228 /* XXappDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXappDelegate.m; sourceTree = "<group>"; };
-		D36594D8243E8F59009F5228 /* NSBundle+XXlanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+XXlanguage.m"; sourceTree = "<group>"; };
-		D36594DD243E8F59009F5228 /* NSBundle+XXlanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+XXlanguage.h"; sourceTree = "<group>"; };
 		D36594E0243E8F59009F5228 /* Readme.MD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.MD; sourceTree = "<group>"; };
 		D36594E1243E8F59009F5228 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		D36594E2243E8F59009F5228 /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
@@ -211,7 +220,7 @@
 		D36B7A382445DD2F001BBE89 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		D37F4A45247346460065155C /* XXkeyChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXkeyChain.h; sourceTree = "<group>"; };
 		D37F4A46247346460065155C /* XXkeyChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXkeyChain.m; sourceTree = "<group>"; };
-		D37F69F8243C017E00DC2F28 /* XXkitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXkitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D37F69F8243C017E00DC2F28 /* XXkitProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXkitProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37F69FB243C017E00DC2F28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D37F69FC243C017E00DC2F28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D37F6A05243C017E00DC2F28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -388,6 +397,8 @@
 		D365942F243E8F58009F5228 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				D35B8CD12487025C0079843A /* NSBundle+Language.h */,
+				D35B8CD22487025C0079843A /* NSBundle+Language.m */,
 				D337423B247CFEAF009C48AC /* UIButton+StateSettings.h */,
 				D337423A247CFEAE009C48AC /* UIButton+StateSettings.m */,
 				D346DABE2478BF870028B081 /* UIView+Popup.h */,
@@ -509,8 +520,6 @@
 				D3286E93246BD1BA00B0A958 /* XXcoreData.m */,
 				D39097122459286700A850F6 /* XXtimer.h */,
 				D39097132459286700A850F6 /* XXtimer.m */,
-				D36594D8243E8F59009F5228 /* NSBundle+XXlanguage.m */,
-				D36594DD243E8F59009F5228 /* NSBundle+XXlanguage.h */,
 				D37F4A45247346460065155C /* XXkeyChain.h */,
 				D37F4A46247346460065155C /* XXkeyChain.m */,
 			);
@@ -536,7 +545,7 @@
 		D37F69F9243C017E00DC2F28 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D37F69F8243C017E00DC2F28 /* XXkitProject.app */,
+				D37F69F8243C017E00DC2F28 /* XXkitProj.app */,
 				D37F6A13243C017F00DC2F28 /* XXkitProjectTests.xctest */,
 				D37F6A1E243C017F00DC2F28 /* XXkitProjectUITests.xctest */,
 			);
@@ -556,6 +565,7 @@
 				D37F6A07243C017F00DC2F28 /* Assets.xcassets */,
 				D37F6A09243C017F00DC2F28 /* LaunchScreen.storyboard */,
 				D37F6A0C243C017F00DC2F28 /* Info.plist */,
+				D35B8CDC2487055A0079843A /* localized.strings */,
 				D37F6A0D243C017F00DC2F28 /* main.m */,
 				D36B7A372445DD2F001BBE89 /* MainViewController.h */,
 				D36B7A382445DD2F001BBE89 /* MainViewController.m */,
@@ -590,6 +600,8 @@
 				D38C26972463FD0D00B88757 /* ZoomableViewController.m */,
 				D3865B482478FF8700EF29B4 /* PopupableViewController.h */,
 				D3865B492478FF8700EF29B4 /* PopupableViewController.m */,
+				D35B8CE1248707FA0079843A /* LangaugeViewController.h */,
+				D35B8CE2248707FA0079843A /* LangaugeViewController.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -623,7 +635,7 @@
 			);
 			name = XXkitProject;
 			productName = XXkitProject;
-			productReference = D37F69F8243C017E00DC2F28 /* XXkitProject.app */;
+			productReference = D37F69F8243C017E00DC2F28 /* XXkitProj.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D37F6A12243C017F00DC2F28 /* XXkitProjectTests */ = {
@@ -692,6 +704,10 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				ja,
+				"zh-Hant",
+				ko,
 			);
 			mainGroup = D37F69EF243C017E00DC2F28;
 			productRefGroup = D37F69F9243C017E00DC2F28 /* Products */;
@@ -712,6 +728,7 @@
 			files = (
 				D37F6A0B243C017F00DC2F28 /* LaunchScreen.storyboard in Resources */,
 				D37F6A08243C017F00DC2F28 /* Assets.xcassets in Resources */,
+				D35B8CDA2487055A0079843A /* localized.strings in Resources */,
 				D39503B62447EABC001434A5 /* TableViewNibCell.xib in Resources */,
 				D3659569243E8F59009F5228 /* Readme.MD in Resources */,
 				D365956A243E8F59009F5228 /* .gitignore in Resources */,
@@ -756,7 +773,6 @@
 				D365951B243E8F59009F5228 /* UIViewController+Orientation.m in Sources */,
 				D3865B4A2478FF8700EF29B4 /* PopupableViewController.m in Sources */,
 				D365955C243E8F59009F5228 /* XXmtkRgbDelegate.m in Sources */,
-				D3659564243E8F59009F5228 /* NSBundle+XXlanguage.m in Sources */,
 				D3BEB01D2465456E0024C397 /* AudioRecordAndPlayViewController.m in Sources */,
 				D365955B243E8F59009F5228 /* XXshadowCreator.m in Sources */,
 				D39503B12447E5A4001434A5 /* XXocUtils.m in Sources */,
@@ -777,6 +793,7 @@
 				D3659533243E8F59009F5228 /* UIViewController+ApplicationState.m in Sources */,
 				D37F6A0E243C017F00DC2F28 /* main.m in Sources */,
 				D3659560243E8F59009F5228 /* XXmaskView.m in Sources */,
+				D35B8CD32487025C0079843A /* NSBundle+Language.m in Sources */,
 				D346DAC12478BF870028B081 /* UIView+TapToVisible.m in Sources */,
 				D365952D243E8F59009F5228 /* WebViewPayShell.m in Sources */,
 				D365951E243E8F59009F5228 /* XXcodecBase.m in Sources */,
@@ -795,6 +812,7 @@
 				D365951D243E8F59009F5228 /* XXaudioFormat.m in Sources */,
 				D33FF84C2466DEC800AF3652 /* AudioFileCell.m in Sources */,
 				D3659563243E8F59009F5228 /* XXappDelegate.m in Sources */,
+				D35B8CE3248707FA0079843A /* LangaugeViewController.m in Sources */,
 				D365955E243E8F59009F5228 /* Metal.metal in Sources */,
 				D3AFBD0E247FDEA100BA7FD1 /* XXaudioFilePlayer.m in Sources */,
 				D35E3203244FB44900300362 /* XXstackViewShellVC.m in Sources */,
@@ -835,6 +853,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D35B8CDC2487055A0079843A /* localized.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D35B8CDB2487055A0079843A /* en */,
+				D35B8CDD248706C20079843A /* zh-Hans */,
+				D35B8CDE248706DF0079843A /* ja */,
+				D35B8CDF248706F20079843A /* zh-Hant */,
+				D35B8CE0248707000079843A /* ko */,
+			);
+			name = localized.strings;
+			sourceTree = "<group>";
+		};
 		D37F6A04243C017E00DC2F28 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -858,6 +888,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -917,6 +948,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -980,7 +1012,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xxx.com.XXkitProject;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = XXkitProj;
 				SWIFT_OBJC_BRIDGING_HEADER = "XXkitProject-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1002,7 +1034,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xxx.com.XXkitProject;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = XXkitProj;
 				SWIFT_OBJC_BRIDGING_HEADER = "XXkitProject-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
