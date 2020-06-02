@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3236DD72485DED200AA5F7A /* XXbuttonCycleClickShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3236DD52485DED200AA5F7A /* XXbuttonCycleClickShell.m */; };
+		D3236DDA2485E0AE00AA5F7A /* CycleClickButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3236DD92485E0AE00AA5F7A /* CycleClickButtonViewController.m */; };
 		D3286E7C246B9F9500B0A958 /* XXcoreModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3286E7A246B9F9500B0A958 /* XXcoreModel.xcdatamodeld */; };
 		D3286E8C246BA6AD00B0A958 /* CoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3286E8B246BA6AD00B0A958 /* CoreDataViewController.m */; };
 		D3286E91246BD1A800B0A958 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3286E90246BD1A700B0A958 /* CoreData.framework */; };
@@ -96,6 +98,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D3236DD52485DED200AA5F7A /* XXbuttonCycleClickShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXbuttonCycleClickShell.m; sourceTree = "<group>"; };
+		D3236DD62485DED200AA5F7A /* XXbuttonCycleClickShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXbuttonCycleClickShell.h; sourceTree = "<group>"; };
+		D3236DD82485E0AE00AA5F7A /* CycleClickButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CycleClickButtonViewController.h; sourceTree = "<group>"; };
+		D3236DD92485E0AE00AA5F7A /* CycleClickButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CycleClickButtonViewController.m; sourceTree = "<group>"; };
 		D3286E7B246B9F9500B0A958 /* XXcoreModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XXcoreModel.xcdatamodel; sourceTree = "<group>"; };
 		D3286E8A246BA6AD00B0A958 /* CoreDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataViewController.h; sourceTree = "<group>"; };
 		D3286E8B246BA6AD00B0A958 /* CoreDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataViewController.m; sourceTree = "<group>"; };
@@ -323,6 +329,8 @@
 				D346DABA2477EA390028B081 /* WebViewProgressViewController.m */,
 				D3374234247CCE1B009C48AC /* ExclusiveButtonViewController.h */,
 				D3374235247CCE1B009C48AC /* ExclusiveButtonViewController.m */,
+				D3236DD82485E0AE00AA5F7A /* CycleClickButtonViewController.h */,
+				D3236DD92485E0AE00AA5F7A /* CycleClickButtonViewController.m */,
 			);
 			path = Shell;
 			sourceTree = "<group>";
@@ -429,6 +437,8 @@
 		D365944F243E8F58009F5228 /* Shell */ = {
 			isa = PBXGroup;
 			children = (
+				D3236DD62485DED200AA5F7A /* XXbuttonCycleClickShell.h */,
+				D3236DD52485DED200AA5F7A /* XXbuttonCycleClickShell.m */,
 				D3374231247CA511009C48AC /* XXbuttonExclusiveShell.h */,
 				D3374232247CA511009C48AC /* XXbuttonExclusiveShell.m */,
 				D346DAB62477E7510028B081 /* XXwebViewProgressShell.h */,
@@ -750,6 +760,7 @@
 				D3BEB01D2465456E0024C397 /* AudioRecordAndPlayViewController.m in Sources */,
 				D365955B243E8F59009F5228 /* XXshadowCreator.m in Sources */,
 				D39503B12447E5A4001434A5 /* XXocUtils.m in Sources */,
+				D3236DD72485DED200AA5F7A /* XXbuttonCycleClickShell.m in Sources */,
 				D365955D243E8F59009F5228 /* XXmtkYuvDelegate.m in Sources */,
 				D3374236247CCE1B009C48AC /* ExclusiveButtonViewController.m in Sources */,
 				D34C4873246119A30031884A /* SceneDelegate.m in Sources */,
@@ -788,6 +799,7 @@
 				D3AFBD0E247FDEA100BA7FD1 /* XXaudioFilePlayer.m in Sources */,
 				D35E3203244FB44900300362 /* XXstackViewShellVC.m in Sources */,
 				D3286E8C246BA6AD00B0A958 /* CoreDataViewController.m in Sources */,
+				D3236DDA2485E0AE00AA5F7A /* CycleClickButtonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

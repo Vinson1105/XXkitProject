@@ -979,6 +979,38 @@
             </objects>
             <point key="canvasLocation" x="2334.7826086956525" y="52.901785714285715"/>
         </scene>
+        <!--Cycle Click Button View Controller-->
+        <scene sceneID="VH2-xh-dVM">
+            <objects>
+                <viewController storyboardIdentifier="CycleClickButtonViewController" id="fFn-8z-tbz" customClass="CycleClickButtonViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1mQ-OG-WSN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8P-Ii-Gqh">
+                                <rect key="frame" x="167" y="508" width="80" height="80"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="2Xr-IE-8sq"/>
+                                    <constraint firstAttribute="width" constant="80" id="EPd-w1-zdD"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="F8P-Ii-Gqh" firstAttribute="centerY" secondItem="1mQ-OG-WSN" secondAttribute="centerY" constant="100" id="HyY-nd-8ys"/>
+                            <constraint firstItem="F8P-Ii-Gqh" firstAttribute="centerX" secondItem="1mQ-OG-WSN" secondAttribute="centerX" id="qZt-s5-z6q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cck-YH-kDM"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="F8P-Ii-Gqh" id="hYY-VT-I1X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yMJ-Cg-cFE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3021" y="51"/>
+        </scene>
     </scenes>
     <resources>
         <image name="minus" catalog="system" width="64" height="12"/>

@@ -17,6 +17,7 @@
 #import "./VC/Shell/XXtextFieldShellVC.h"
 #import "./VC/Shell/WebViewProgressViewController.h"
 #import "./VC/Shell/ExclusiveButtonViewController.h"
+#import "./VC/Shell/CycleClickButtonViewController.h"
 
 #import "./VC/Category/OrientationViewController.h"
 #import "./VC/Category/ZoomableViewController.h"
@@ -30,10 +31,10 @@
 #import "./VC/Utils/ToastViewController.h"
 
 
-#define kShellSection 0
-#define kCategorySection 1
-#define kAVSection 2
-#define kCoreDataSection 3
+#define kShellSection       0
+#define kCategorySection    1
+#define kAVSection          2
+#define kUtilsSection       3
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -58,6 +59,7 @@
             @{@"Title":@"XXtextFieldShell",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"XXwebViewProgressShell",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"XXbuttonExclusiveShell",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+            @{@"Title":@"XXbuttonCycleClickShell",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
         ],
         @[
             @{@"Title":@"UIViewController+Orientation",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
@@ -68,10 +70,10 @@
             @{@"Title":@"XXaudioFileRecorder",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
         ],
         @[
-            @{@"Title":@"CoreData",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
-            @{@"Title":@"TouchID",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
-            @{@"Title":@"KeyChain",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
-            @{@"Title":@"Toast",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+            @{@"Title":@"XXcoreData",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+            @{@"Title":@"XXtouchID",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+            @{@"Title":@"XXkeyChain",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+            @{@"Title":@"XXtoast",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
         ],
     ]];
     
@@ -82,80 +84,47 @@
     _shell.onRowClicked = self.onTableViewRowClicked;
     
     NSURL *url = [[XXocUtils documentAbsolutePathUrl] URLByAppendingPathComponent:[NSString stringWithFormat:@"xx.sqlite"]];
-    [[XXcoreData sharedInstance] configModel:@"XXcoreModel" bundle:nil storeType:NSSQLiteStoreType storeUrl:url];}
+    [[XXcoreData sharedInstance] configModel:@"XXcoreModel" bundle:nil storeType:NSSQLiteStoreType storeUrl:url];
+}
 
 
 - (void (^)(XXtableViewShell*, NSIndexPath *, id))onTableViewRowClicked{
     if(!_onTableViewRowClicked){
         XXOC_WS;
         _onTableViewRowClicked = ^(XXtableViewShell *shell,NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
-            XXOC_SS;
             UIViewController *vc = nil;
             NSString *title = [data objectForKey:@"Title"];
             if(kShellSection == indexPath.section){
-                if([title isEqualToString:@"XXtableViewShell"]){
-                    vc = [XXocUtils viewController:@"XXtableViewShellVC"];
-                }
-                else if([title isEqualToString:@"XXstackViewShell"]){
-                    vc = [XXocUtils viewController:@"XXstackViewShellVC"];
-                }
-                else if([title isEqualToString:@"XXtextFieldShell"]){
-                    vc = [XXocUtils viewController:@"XXtextFieldShellVC"];
-                }
-                else if([title isEqualToString:@"XXwebViewProgressShell"]){
-                    vc = [XXocUtils viewController:@"WebViewProgressViewController"];
-                }
-                else if([title isEqualToString:@"XXbuttonExclusiveShell"]){
-                    vc = [XXocUtils viewController:@"ExclusiveButtonViewController"];
-                }
-                else{
-                    
-                }
+                if([title isEqualToString:@"XXtableViewShell"])             { vc = [XXocUtils viewController:@"XXtableViewShellVC"]; }
+                else if([title isEqualToString:@"XXstackViewShell"])        { vc = [XXocUtils viewController:@"XXstackViewShellVC"]; }
+                else if([title isEqualToString:@"XXtextFieldShell"])        { vc = [XXocUtils viewController:@"XXtextFieldShellVC"]; }
+                else if([title isEqualToString:@"XXwebViewProgressShell"])  { vc = [XXocUtils viewController:@"WebViewProgressViewController"]; }
+                else if([title isEqualToString:@"XXbuttonExclusiveShell"])  { vc = [XXocUtils viewController:@"ExclusiveButtonViewController"]; }
+                else if([title isEqualToString:@"XXbuttonCycleClickShell"]) { vc = [XXocUtils viewController:@"CycleClickButtonViewController"]; }
+                else{}
             }
             else if(kCategorySection == indexPath.section){
-                if([title isEqualToString:@"UIViewController+Orientation"]){
-                    vc = [XXocUtils viewController:@"OrientationViewController"];
-                }
-                else if([title isEqualToString:@"UIView+Zoomable"]){
-                    vc = [XXocUtils viewController:@"ZoomableViewController"];
-                }
-                else if([title isEqualToString:@"UIView+TapToPopup"]){
-                    vc = [XXocUtils viewController:@"PopupableViewController"];
-                }
-                else{
-                    
-                }
+                if([title isEqualToString:@"UIViewController+Orientation"]) { vc = [XXocUtils viewController:@"OrientationViewController"]; }
+                else if([title isEqualToString:@"UIView+Zoomable"])         { vc = [XXocUtils viewController:@"ZoomableViewController"]; }
+                else if([title isEqualToString:@"UIView+TapToPopup"])       { vc = [XXocUtils viewController:@"PopupableViewController"]; }
+                else{}
             }
             else if(kAVSection == indexPath.section){
-                if([title isEqualToString:@"XXaudioFileRecorder"]){
-                    vc = [XXocUtils viewController:@"AudioRecordAndPlayViewController"];
-                }
-                else{
-                    
-                }
+                if([title isEqualToString:@"XXaudioFileRecorder"])          { vc = [XXocUtils viewController:@"AudioRecordAndPlayViewController"]; }
+                else{}
             }
-            else if(kCoreDataSection == indexPath.section){
-                if([title isEqualToString:@"CoreData"]){
-                    vc = [XXocUtils viewController:@"CoreDataViewController"];
-                }
-                else if([title isEqualToString:@"TouchID"]){
-                    vc = [XXocUtils viewController:@"TouchIDViewController"];
-                }
-                else if([title isEqualToString:@"KeyChain"]){
-                    vc = [XXocUtils viewController:@"KeyChainViewController"];
-                }
-                else if([title isEqualToString:@"Toast"]){
-                    vc = [XXocUtils viewController:@"ToastViewController"];
-                }
-                else{
-                    return;
-                }
+            else if(kUtilsSection == indexPath.section){
+                if([title isEqualToString:@"XXcoreData"])       { vc = [XXocUtils viewController:@"CoreDataViewController"]; }
+                else if([title isEqualToString:@"XXtouchID"])   { vc = [XXocUtils viewController:@"TouchIDViewController"]; }
+                else if([title isEqualToString:@"XXkeyChain"])  { vc = [XXocUtils viewController:@"KeyChainViewController"]; }
+                else if([title isEqualToString:@"XXtoast"])     { vc = [XXocUtils viewController:@"ToastViewController"]; }
+                else{}
             }
             else{
-                
             }
             
             if(nil == vc) return;
+            XXOC_SS;
             [ss.navigationController pushViewController:vc animated:YES];
         };
     }
