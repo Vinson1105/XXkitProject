@@ -1,0 +1,14 @@
+/* 
+  localized.strings
+  XXkitProject
+
+  Created by 郭文轩 on 2020/6/3.
+  Copyright © 2020 郭文轩. All rights reserved.
+*/
+
+"language.system" = "システムに従う";
+"language.ja" = "日本語";
+"language.en" = "English";
+"language.zh-Hant" = "中文（繁体）";
+"language.zh-Hans" = "中文（简体）";
+"language.ko" = "한국어";

@@ -37,7 +37,7 @@
 		D3508822243FFCDD00B8BC8F /* XXtableViewShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3508821243FFCDD00B8BC8F /* XXtableViewShellVC.m */; };
 		D35663DA2456F7CF00EAB7FB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35663D92456F7CF00EAB7FB /* Security.framework */; };
 		D35B8CD32487025C0079843A /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = D35B8CD22487025C0079843A /* NSBundle+Language.m */; };
-		D35B8CDA2487055A0079843A /* localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = D35B8CDC2487055A0079843A /* localized.strings */; };
+		D35B8CDA2487055A0079843A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D35B8CDC2487055A0079843A /* Localizable.strings */; };
 		D35B8CE3248707FA0079843A /* LangaugeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35B8CE2248707FA0079843A /* LangaugeViewController.m */; };
 		D35D7AF624748B9B00C2472A /* KeyChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35D7AF524748B9B00C2472A /* KeyChainViewController.m */; };
 		D35E3203244FB44900300362 /* XXstackViewShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D35E3202244FB44900300362 /* XXstackViewShellVC.m */; };
@@ -159,11 +159,11 @@
 		D35663D92456F7CF00EAB7FB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D35B8CD12487025C0079843A /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
 		D35B8CD22487025C0079843A /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
-		D35B8CDB2487055A0079843A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/localized.strings; sourceTree = "<group>"; };
-		D35B8CDD248706C20079843A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/localized.strings"; sourceTree = "<group>"; };
-		D35B8CDE248706DF0079843A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/localized.strings; sourceTree = "<group>"; };
-		D35B8CDF248706F20079843A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/localized.strings"; sourceTree = "<group>"; };
-		D35B8CE0248707000079843A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/localized.strings; sourceTree = "<group>"; };
+		D35B8CDB2487055A0079843A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D35B8CDD248706C20079843A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D35B8CDE248706DF0079843A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D35B8CDF248706F20079843A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D35B8CE0248707000079843A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D35B8CE1248707FA0079843A /* LangaugeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LangaugeViewController.h; sourceTree = "<group>"; };
 		D35B8CE2248707FA0079843A /* LangaugeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LangaugeViewController.m; sourceTree = "<group>"; };
 		D35D7AF424748B9B00C2472A /* KeyChainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyChainViewController.h; sourceTree = "<group>"; };
@@ -565,7 +565,7 @@
 				D37F6A07243C017F00DC2F28 /* Assets.xcassets */,
 				D37F6A09243C017F00DC2F28 /* LaunchScreen.storyboard */,
 				D37F6A0C243C017F00DC2F28 /* Info.plist */,
-				D35B8CDC2487055A0079843A /* localized.strings */,
+				D35B8CDC2487055A0079843A /* Localizable.strings */,
 				D37F6A0D243C017F00DC2F28 /* main.m */,
 				D36B7A372445DD2F001BBE89 /* MainViewController.h */,
 				D36B7A382445DD2F001BBE89 /* MainViewController.m */,
@@ -728,7 +728,7 @@
 			files = (
 				D37F6A0B243C017F00DC2F28 /* LaunchScreen.storyboard in Resources */,
 				D37F6A08243C017F00DC2F28 /* Assets.xcassets in Resources */,
-				D35B8CDA2487055A0079843A /* localized.strings in Resources */,
+				D35B8CDA2487055A0079843A /* Localizable.strings in Resources */,
 				D39503B62447EABC001434A5 /* TableViewNibCell.xib in Resources */,
 				D3659569243E8F59009F5228 /* Readme.MD in Resources */,
 				D365956A243E8F59009F5228 /* .gitignore in Resources */,
@@ -853,7 +853,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D35B8CDC2487055A0079843A /* localized.strings */ = {
+		D35B8CDC2487055A0079843A /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D35B8CDB2487055A0079843A /* en */,
@@ -862,7 +862,7 @@
 				D35B8CDF248706F20079843A /* zh-Hant */,
 				D35B8CE0248707000079843A /* ko */,
 			);
-			name = localized.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		D37F6A04243C017E00DC2F28 /* Main.storyboard */ = {
