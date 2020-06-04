@@ -23,22 +23,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSString *currentLanguage   = [NSBundle xx_currentLanguage];
-    NSArray *available          = [NSBundle xx_avaliableLanguages];
+    NSMutableArray *available   = [[NSMutableArray alloc] initWithArray:[NSBundle xx_avaliableLanguages]];
+    [available insertObject:@"system" atIndex:0];
     
     _tableShell = [XXtableViewShell new];
     [_tableShell shell:_tableView];
     [_tableShell configRowType:nil loadType:0 systemStyle:UITableViewCellStyleDefault height:57];
     
     NSMutableArray *row = [NSMutableArray new];
-    NSMutableDictionary *rowInfo = [[NSMutableDictionary alloc] initWithDictionary:@{
-        @"Title":NSLocalizedString(@"language.system", nil),
-        @"Language":@"System",
-        @"AccessoryType":nil==currentLanguage?@(UITableViewCellAccessoryCheckmark):@(UITableViewCellAccessoryNone)
-    }];
-    [row addObject:rowInfo];
     for (NSString *language in available) {
-        BOOL isUsing = nil != currentLanguage && [currentLanguage isEqualToString:language];
-        rowInfo = [[NSMutableDictionary alloc] initWithDictionary:@{
+        BOOL isUsing = (nil != currentLanguage && [currentLanguage isEqualToString:language]) || (nil == currentLanguage && [language isEqualToString:@"system"]);
+        NSMutableDictionary *rowInfo = [[NSMutableDictionary alloc] initWithDictionary:@{
             @"Title":NSLocalizedString(([NSString stringWithFormat:@"language.%@",language]), nil),
             @"Language":language,
             @"AccessoryType":isUsing?@(UITableViewCellAccessoryCheckmark):@(UITableViewCellAccessoryNone)
@@ -48,9 +43,6 @@
         if(isUsing){
             _indexPath = [NSIndexPath indexPathForRow:row.count-1 inSection:0];
         }
-    }
-    if(nil == currentLanguage){
-        _indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     }
     
     [_tableShell configSectionWithHeaders:nil rows:@[row] footers:nil];
@@ -77,8 +69,17 @@
         
         /// 设置
         NSString *language = info[@"Language"];
-        BOOL isSystem = [language isEqualToString:@"System"];
+        BOOL isSystem = [language isEqualToString:@"system"];
         [NSBundle xx_setLanguage:isSystem?nil:language];
+        
+        /// 退出APP
+        UIAlertController *alert =  [XXocUtils alertWithTitle:@""
+                                                          msg:@"需要重启APP才生效"
+                                                      okTitle:@"好的"
+                                                         onOK:^(UIAlertAction *action){exit(0);}
+                                                               cancelTitle:nil
+                                                               onCancel:nil];
+        [ss presentViewController:alert animated:YES completion:nil];
     };
 }
 @end
