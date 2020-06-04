@@ -41,6 +41,8 @@
 		D35B8CE3248707FA0079843A /* LangaugeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35B8CE2248707FA0079843A /* LangaugeViewController.m */; };
 		D35D7AF624748B9B00C2472A /* KeyChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35D7AF524748B9B00C2472A /* KeyChainViewController.m */; };
 		D35E3203244FB44900300362 /* XXstackViewShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D35E3202244FB44900300362 /* XXstackViewShellVC.m */; };
+		D35F32002489A3020099D71B /* XXbuttonPageShiftShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D35F31FE2489A3020099D71B /* XXbuttonPageShiftShell.m */; };
+		D35F32032489AE290099D71B /* PageShiftButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35F32022489AE290099D71B /* PageShiftButtonViewController.m */; };
 		D3659519243E8F59009F5228 /* UIView+Zoomable.m in Sources */ = {isa = PBXBuildFile; fileRef = D3659437243E8F58009F5228 /* UIView+Zoomable.m */; };
 		D365951B243E8F59009F5228 /* UIViewController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = D3659439243E8F58009F5228 /* UIViewController+Orientation.m */; };
 		D365951D243E8F59009F5228 /* XXaudioFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = D365943D243E8F58009F5228 /* XXaudioFormat.m */; };
@@ -170,6 +172,10 @@
 		D35D7AF524748B9B00C2472A /* KeyChainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyChainViewController.m; sourceTree = "<group>"; };
 		D35E3201244FB44900300362 /* XXstackViewShellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXstackViewShellVC.h; sourceTree = "<group>"; };
 		D35E3202244FB44900300362 /* XXstackViewShellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXstackViewShellVC.m; sourceTree = "<group>"; };
+		D35F31FE2489A3020099D71B /* XXbuttonPageShiftShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXbuttonPageShiftShell.m; sourceTree = "<group>"; };
+		D35F31FF2489A3020099D71B /* XXbuttonPageShiftShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXbuttonPageShiftShell.h; sourceTree = "<group>"; };
+		D35F32012489AE290099D71B /* PageShiftButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageShiftButtonViewController.h; sourceTree = "<group>"; };
+		D35F32022489AE290099D71B /* PageShiftButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageShiftButtonViewController.m; sourceTree = "<group>"; };
 		D3659432243E8F58009F5228 /* UIView+Zoomable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Zoomable.h"; sourceTree = "<group>"; };
 		D3659433243E8F58009F5228 /* UIViewController+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Orientation.h"; sourceTree = "<group>"; };
 		D3659437243E8F58009F5228 /* UIView+Zoomable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Zoomable.m"; sourceTree = "<group>"; };
@@ -340,6 +346,8 @@
 				D3374235247CCE1B009C48AC /* ExclusiveButtonViewController.m */,
 				D3236DD82485E0AE00AA5F7A /* CycleClickButtonViewController.h */,
 				D3236DD92485E0AE00AA5F7A /* CycleClickButtonViewController.m */,
+				D35F32012489AE290099D71B /* PageShiftButtonViewController.h */,
+				D35F32022489AE290099D71B /* PageShiftButtonViewController.m */,
 			);
 			path = Shell;
 			sourceTree = "<group>";
@@ -448,6 +456,8 @@
 		D365944F243E8F58009F5228 /* Shell */ = {
 			isa = PBXGroup;
 			children = (
+				D35F31FF2489A3020099D71B /* XXbuttonPageShiftShell.h */,
+				D35F31FE2489A3020099D71B /* XXbuttonPageShiftShell.m */,
 				D3236DD62485DED200AA5F7A /* XXbuttonCycleClickShell.h */,
 				D3236DD52485DED200AA5F7A /* XXbuttonCycleClickShell.m */,
 				D3374231247CA511009C48AC /* XXbuttonExclusiveShell.h */,
@@ -770,6 +780,7 @@
 				D35D7AF624748B9B00C2472A /* KeyChainViewController.m in Sources */,
 				D39503B52447EABC001434A5 /* TableViewNibCell.m in Sources */,
 				D3304957247529F4005DC415 /* ToastViewController.m in Sources */,
+				D35F32032489AE290099D71B /* PageShiftButtonViewController.m in Sources */,
 				D365951B243E8F59009F5228 /* UIViewController+Orientation.m in Sources */,
 				D3865B4A2478FF8700EF29B4 /* PopupableViewController.m in Sources */,
 				D365955C243E8F59009F5228 /* XXmtkRgbDelegate.m in Sources */,
@@ -778,6 +789,7 @@
 				D39503B12447E5A4001434A5 /* XXocUtils.m in Sources */,
 				D3236DD72485DED200AA5F7A /* XXbuttonCycleClickShell.m in Sources */,
 				D365955D243E8F59009F5228 /* XXmtkYuvDelegate.m in Sources */,
+				D35F32002489A3020099D71B /* XXbuttonPageShiftShell.m in Sources */,
 				D3374236247CCE1B009C48AC /* ExclusiveButtonViewController.m in Sources */,
 				D34C4873246119A30031884A /* SceneDelegate.m in Sources */,
 				D390971A2459592700A850F6 /* XXverificationCodeShell.m in Sources */,
