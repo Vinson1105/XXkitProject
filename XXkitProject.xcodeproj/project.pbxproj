@@ -320,8 +320,6 @@
 				D3325A3824723E03000E6D95 /* TouchIDViewController.m */,
 				D35D7AF424748B9B00C2472A /* KeyChainViewController.h */,
 				D35D7AF524748B9B00C2472A /* KeyChainViewController.m */,
-				D3304955247529F4005DC415 /* ToastViewController.h */,
-				D3304956247529F4005DC415 /* ToastViewController.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -355,6 +353,7 @@
 		D350881A243FF99F00B8BC8F /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				D3F80F54248A432A00753C94 /* View */,
 				D346DAB82477E9620028B081 /* Shell */,
 				D3286E89246BA67400B0A958 /* Utils */,
 				D3BEB014246542770024C397 /* AV */,
@@ -497,13 +496,13 @@
 				D36594C3243E8F59009F5228 /* XXshadowCreator.m */,
 				D36594C4243E8F59009F5228 /* XXmtkRgbDelegate.m */,
 				D36594C5243E8F59009F5228 /* XXmaskView.h */,
+				D36594CE243E8F59009F5228 /* XXmaskView.m */,
 				D36594C6243E8F59009F5228 /* XXmtkYuvDelegate.m */,
 				D36594C7243E8F59009F5228 /* Metal.metal */,
 				D36594CA243E8F59009F5228 /* XXkeyboardAdapter.h */,
 				D36594CB243E8F59009F5228 /* XXmtkRgbDelegate.h */,
 				D36594CC243E8F59009F5228 /* XXshadowCreator.h */,
 				D36594CD243E8F59009F5228 /* XXmtkYuvDelegate.h */,
-				D36594CE243E8F59009F5228 /* XXmaskView.m */,
 				D36594D1243E8F59009F5228 /* XXkeyboardAdapter.m */,
 			);
 			path = View;
@@ -626,6 +625,15 @@
 				D33FF84B2466DEC800AF3652 /* AudioFileCell.xib */,
 			);
 			path = AV;
+			sourceTree = "<group>";
+		};
+		D3F80F54248A432A00753C94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D3304955247529F4005DC415 /* ToastViewController.h */,
+				D3304956247529F4005DC415 /* ToastViewController.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

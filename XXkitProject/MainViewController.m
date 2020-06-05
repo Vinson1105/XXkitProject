@@ -27,16 +27,18 @@
 
 #import "./VC/AV/AudioRecordAndPlayViewController.h"
 
+#import "./VC/View/ToastViewController.h"
+
 #import "./VC/Utils/CoreDataViewController.h"
 #import "./VC/Utils/TouchIDViewController.h"
 #import "./VC/Utils/KeyChainViewController.h"
-#import "./VC/Utils/ToastViewController.h"
 
 
 #define kShellSection       0
 #define kCategorySection    1
 #define kAVSection          2
-#define kUtilsSection       3
+#define kViewSection        3
+#define kUtilsSection       4
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -52,7 +54,7 @@
     NSLog(@"[MainViewController] alloc %p", self);
     
     // Do any additional setup after loading the view.
-    NSMutableArray *headers = [[NSMutableArray alloc] initWithArray:@[@"Shell",@"Category",@"AV",@"Utils"]];
+    NSMutableArray *headers = [[NSMutableArray alloc] initWithArray:@[@"Shell",@"Category",@"AV",@"View",@"Utils"]];
     
     NSMutableArray *rows = [[NSMutableArray alloc] initWithArray:@[
         @[
@@ -74,10 +76,12 @@
             @{@"Title":@"XXaudioFileRecorder",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
         ],
         @[
+            @{@"Title":@"XXtoast",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+        ],
+        @[
             @{@"Title":@"XXcoreData",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"XXtouchID",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"XXkeyChain",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
-            @{@"Title":@"XXtoast",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
         ],
     ]];
     
@@ -119,11 +123,14 @@
                 if([title isEqualToString:@"XXaudioFileRecorder"])          { vc = [XXocUtils viewController:@"AudioRecordAndPlayViewController"]; }
                 else{}
             }
+            else if(kViewSection == indexPath.section){
+                if([title isEqualToString:@"XXtoast"])          { vc = [XXocUtils viewController:@"ToastViewController"]; }
+                else{}
+            }
             else if(kUtilsSection == indexPath.section){
                 if([title isEqualToString:@"XXcoreData"])       { vc = [XXocUtils viewController:@"CoreDataViewController"]; }
                 else if([title isEqualToString:@"XXtouchID"])   { vc = [XXocUtils viewController:@"TouchIDViewController"]; }
                 else if([title isEqualToString:@"XXkeyChain"])  { vc = [XXocUtils viewController:@"KeyChainViewController"]; }
-                else if([title isEqualToString:@"XXtoast"])     { vc = [XXocUtils viewController:@"ToastViewController"]; }
                 else{}
             }
             else{
