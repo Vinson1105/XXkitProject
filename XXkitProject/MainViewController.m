@@ -28,6 +28,7 @@
 #import "./VC/AV/AudioRecordAndPlayViewController.h"
 
 #import "./VC/View/ToastViewController.h"
+#import "./VC/View/MaskViewViewController.h"
 
 #import "./VC/Utils/CoreDataViewController.h"
 #import "./VC/Utils/TouchIDViewController.h"
@@ -77,6 +78,7 @@
         ],
         @[
             @{@"Title":@"XXtoast",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+            @{@"Title":@"XXmaskView",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
         ],
         @[
             @{@"Title":@"XXcoreData",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
@@ -125,6 +127,7 @@
             }
             else if(kViewSection == indexPath.section){
                 if([title isEqualToString:@"XXtoast"])          { vc = [XXocUtils viewController:@"ToastViewController"]; }
+                if([title isEqualToString:@"XXmaskView"])          { vc = [XXocUtils viewController:@"MaskViewViewController"]; }
                 else{}
             }
             else if(kUtilsSection == indexPath.section){
