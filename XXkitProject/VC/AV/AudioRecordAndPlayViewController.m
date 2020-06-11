@@ -8,7 +8,7 @@
 
 #import "AudioRecordAndPlayViewController.h"
 #import "../../../../XXkit/Object-C/AV/XXaudioPlayer.h"
-#import "../../../../XXkit/Object-C/AV/XXaudioFormat.h"
+#import "../../../../XXkit/Object-C/AV/XXavFormat.h"
 #import "../../../../XXkit/Object-C/AV/XXaudioFileRecorder.h"
 #import "../../../../XXkit/Object-C/XXocUtils.h"
 
