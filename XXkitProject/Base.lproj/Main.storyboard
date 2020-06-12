@@ -213,10 +213,10 @@
             </objects>
             <point key="canvasLocation" x="-391" y="1377"/>
         </scene>
-        <!--Media Record And Play View Controller-->
+        <!--Video Record View Controller-->
         <scene sceneID="VPT-02-q0B">
             <objects>
-                <viewController storyboardIdentifier="MediaRecordAndPlayViewController" id="gwt-cM-k1S" customClass="MediaRecordAndPlayViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VideoRecordViewController" id="gwt-cM-k1S" customClass="VideoRecordViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xsI-wd-2Hf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,6 +232,9 @@
                                     <constraint firstAttribute="height" constant="50" id="hvc-Eq-2p3"/>
                                     <constraint firstAttribute="width" constant="50" id="xGp-s1-1YQ"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="button:" destination="gwt-cM-k1S" eventType="touchUpInside" id="esV-Wd-ZGi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

@@ -26,7 +26,7 @@
 #import "./VC/Category/LangaugeViewController.h"
 
 #import "./VC/AV/AudioRecordAndPlayViewController.h"
-#import "./VC/AV/MediaRecordAndPlayViewController.h"
+#import "./VC/AV/VideoRecordViewController.h"
 
 #import "./VC/View/ToastViewController.h"
 #import "./VC/View/MaskViewViewController.h"
@@ -76,7 +76,7 @@
         ],
         @[
             @{@"Title":@"XXaudioFileRecorder",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
-            @{@"Title":@"Media encode and decode",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+            @{@"Title":@"XXvideoRecorder",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
         ],
         @[
             @{@"Title":@"XXtoast",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
@@ -125,7 +125,7 @@
             }
             else if(kAVSection == indexPath.section){
                 if([title isEqualToString:@"XXaudioFileRecorder"])          { vc = [XXocUtils viewController:@"AudioRecordAndPlayViewController"]; }
-                if([title isEqualToString:@"Media encode and decode"])          { vc = [XXocUtils viewController:@"MediaRecordAndPlayViewController"]; }
+                if([title isEqualToString:@"XXvideoRecorder"])          { vc = [XXocUtils viewController:@"VideoRecordViewController"]; }
                 else{}
             }
             else if(kViewSection == indexPath.section){

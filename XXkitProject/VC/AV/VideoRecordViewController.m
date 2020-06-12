@@ -6,18 +6,23 @@
 //  Copyright © 2020 郭文轩. All rights reserved.
 //
 
-#import "MediaRecordAndPlayViewController.h"
+#import "VideoRecordViewController.h"
+#import "../../../../XXkit/Object-C/AV/XXvideoRecorder.h"
+#import "../../../../XXkit/Object-C/Category/UIButton+StateSettings.h"
 
-@interface MediaRecordAndPlayViewController ()
+@interface VideoRecordViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIButton *button;
 @end
 
-@implementation MediaRecordAndPlayViewController
+@implementation VideoRecordViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [XXvideoRecorder sharedInstance].preview = self.view;
+    [_button setBackgroundColor:UIColor.greenColor forState:UIControlStateNormal];
+    [_button setBackgroundColor:UIColor.redColor forState:UIControlStateSelected];
 }
 
 /*
@@ -31,5 +36,13 @@
 */
 
 - (IBAction)button:(id)sender {
+    UIButton *button = sender;
+    button.selected = !button.selected;
+    if(button.selected){
+        [[XXvideoRecorder sharedInstance] startConnect];;
+    }
+    else{
+        [[XXvideoRecorder sharedInstance] stopConnect];;
+    }
 }
 @end

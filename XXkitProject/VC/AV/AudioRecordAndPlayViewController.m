@@ -36,7 +36,7 @@
     _currentPlaying = -1;
     
     NSError *error;
-    _dir = [XXocUtils mkdirInDocument:@[@"XXkitProject",@"Audio"] error:&error];
+    self.dir = [XXocUtils mkdirInDocument:@[@"XXkitProject",@"Audio"] error:&error];
     if(error){
         NSLog(@"[AudioRecordAndPlayViewController] 创建目录失败");
     }
@@ -135,7 +135,7 @@
         }
         else{
             NSString *name = [[XXocUtils currentDateString] stringByAppendingString:@".aac"];
-            NSString *path = [_dir stringByAppendingPathComponent:name];
+            NSString *path = [self.dir stringByAppendingPathComponent:name];
             NSURL *url = [NSURL fileURLWithPath:path];
             if([[XXaudioFileRecorder sharedInstance] start:url]){
                 NSLog(@"[AudioRecordAndPlayViewController] 开始成功");

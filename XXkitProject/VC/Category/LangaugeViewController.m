@@ -41,7 +41,7 @@
         [row addObject:rowInfo];
         
         if(isUsing){
-            _indexPath = [NSIndexPath indexPathForRow:row.count-1 inSection:0];
+            self.indexPath = [NSIndexPath indexPathForRow:row.count-1 inSection:0];
         }
     }
     
