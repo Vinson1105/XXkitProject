@@ -9,6 +9,7 @@
 #import "VideoRecordViewController.h"
 #import "../../../../XXkit/Object-C/AV/XXvideoRecorder.h"
 #import "../../../../XXkit/Object-C/Category/UIButton+StateSettings.h"
+#import "XXocUtils.h"
 
 @interface VideoRecordViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -37,12 +38,15 @@
 
 - (IBAction)button:(id)sender {
     UIButton *button = sender;
-    button.selected = !button.selected;
     if(button.selected){
-        [[XXvideoRecorder sharedInstance] startConnect];;
+        [[XXvideoRecorder sharedInstance] stopConnect];
+        button.selected = NO;
     }
     else{
-        [[XXvideoRecorder sharedInstance] stopConnect];;
+        [XXocUtils anthorizedCameraCheckAtViewController:self message:@"请求摄像机权限" succeed:^{
+            [[XXvideoRecorder sharedInstance] startConnect];
+            button.selected = YES;
+        }];
     }
 }
 @end
