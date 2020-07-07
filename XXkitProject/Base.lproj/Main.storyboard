@@ -178,7 +178,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtM-Xg-UZY">
-                                <rect key="frame" x="182" y="816" width="50" height="50"/>
+                                <rect key="frame" x="182" y="826" width="50" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.27635954289999998" blue="0.3622285401" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="HDc-5A-X1C"/>
@@ -189,7 +189,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="KeU-in-rbA">
-                                <rect key="frame" x="0.0" y="44" width="414" height="752"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="762"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -199,7 +199,7 @@
                             <constraint firstItem="UtM-Xg-UZY" firstAttribute="top" secondItem="KeU-in-rbA" secondAttribute="bottom" constant="20" id="MYc-UD-BDL"/>
                             <constraint firstItem="UtM-Xg-UZY" firstAttribute="centerX" secondItem="EME-Wb-5TO" secondAttribute="centerX" id="OfD-vj-Dpp"/>
                             <constraint firstItem="KeU-in-rbA" firstAttribute="leading" secondItem="qca-TN-wV2" secondAttribute="leading" id="cHd-Id-X3f"/>
-                            <constraint firstAttribute="bottom" secondItem="UtM-Xg-UZY" secondAttribute="bottom" constant="30" id="rAn-Td-xTC"/>
+                            <constraint firstAttribute="bottom" secondItem="UtM-Xg-UZY" secondAttribute="bottom" constant="20" id="rAn-Td-xTC"/>
                             <constraint firstItem="qca-TN-wV2" firstAttribute="trailing" secondItem="KeU-in-rbA" secondAttribute="trailing" id="rH0-xS-pNW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qca-TN-wV2"/>
@@ -212,6 +212,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXe-1N-WIM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-391" y="1377"/>
+        </scene>
+        <!--Video Record View Controller-->
+        <scene sceneID="VPT-02-q0B">
+            <objects>
+                <viewController storyboardIdentifier="VideoRecordViewController" id="gwt-cM-k1S" customClass="VideoRecordViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xsI-wd-2Hf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="9jx-3Q-rBZ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="762"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eht-77-J93">
+                                <rect key="frame" x="182" y="826" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1751319579" green="0.71453838830000005" blue="0.71453838830000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hvc-Eq-2p3"/>
+                                    <constraint firstAttribute="width" constant="50" id="xGp-s1-1YQ"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="button:" destination="gwt-cM-k1S" eventType="touchUpInside" id="esV-Wd-ZGi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sql-jx-nkk" firstAttribute="trailing" secondItem="9jx-3Q-rBZ" secondAttribute="trailing" id="EsY-9i-ZPU"/>
+                            <constraint firstItem="Eht-77-J93" firstAttribute="centerX" secondItem="xsI-wd-2Hf" secondAttribute="centerX" id="Huu-rx-rfe"/>
+                            <constraint firstItem="9jx-3Q-rBZ" firstAttribute="top" secondItem="sql-jx-nkk" secondAttribute="top" id="bFo-p6-Zif"/>
+                            <constraint firstAttribute="bottom" secondItem="Eht-77-J93" secondAttribute="bottom" constant="20" id="dWi-z0-tCN"/>
+                            <constraint firstItem="9jx-3Q-rBZ" firstAttribute="leading" secondItem="sql-jx-nkk" secondAttribute="leading" id="q2w-P8-XFU"/>
+                            <constraint firstItem="Eht-77-J93" firstAttribute="top" secondItem="9jx-3Q-rBZ" secondAttribute="bottom" constant="20" id="sGO-ZR-REP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sql-jx-nkk"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="Eht-77-J93" id="Jop-Uu-298"/>
+                        <outlet property="tableView" destination="9jx-3Q-rBZ" id="guH-9d-aiJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A57-Ru-vbN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="277" y="1377"/>
         </scene>
         <!--Core Data View Controller-->
         <scene sceneID="iWq-f3-aRn">
