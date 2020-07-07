@@ -205,8 +205,6 @@
 		D365944B243E8F58009F5228 /* XXaudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXaudioPlayer.m; sourceTree = "<group>"; };
 		D365944D243E8F58009F5228 /* XXstackViewShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXstackViewShell.m; sourceTree = "<group>"; };
 		D365944E243E8F58009F5228 /* XXstackViewShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXstackViewShell.h; sourceTree = "<group>"; };
-		D3659454243E8F58009F5228 /* XXcomboBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXcomboBox.m; sourceTree = "<group>"; };
-		D365945E243E8F58009F5228 /* XXcomboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXcomboBox.h; sourceTree = "<group>"; };
 		D3659461243E8F58009F5228 /* WebViewPayShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewPayShell.m; sourceTree = "<group>"; };
 		D3659462243E8F58009F5228 /* WebViewPayShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewPayShell.h; sourceTree = "<group>"; };
 		D3659470243E8F58009F5228 /* UIViewController+ApplicationState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ApplicationState.h"; sourceTree = "<group>"; };
@@ -477,8 +475,6 @@
 				D365944E243E8F58009F5228 /* XXstackViewShell.h */,
 				D3E7DFF6245049A400124252 /* XXtextFieldShell.h */,
 				D3E7DFF7245049A400124252 /* XXtextFieldShell.m */,
-				D3659454243E8F58009F5228 /* XXcomboBox.m */,
-				D365945E243E8F58009F5228 /* XXcomboBox.h */,
 				D32E8B8524519AB400AB33ED /* XXloginShell.h */,
 				D32E8B8624519AB400AB33ED /* XXloginShell.m */,
 				D390970F2459267000A850F6 /* XXbuttonLimitShell.h */,
