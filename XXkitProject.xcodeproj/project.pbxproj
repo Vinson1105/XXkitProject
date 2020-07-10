@@ -22,6 +22,7 @@
 		D3374233247CA512009C48AC /* XXbuttonExclusiveShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3374232247CA511009C48AC /* XXbuttonExclusiveShell.m */; };
 		D3374236247CCE1B009C48AC /* ExclusiveButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3374235247CCE1B009C48AC /* ExclusiveButtonViewController.m */; };
 		D337423C247CFEAF009C48AC /* UIButton+StateSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D337423A247CFEAE009C48AC /* UIButton+StateSettings.m */; };
+		D33B011324ADB92800EAD771 /* XXwebViewPayShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D33B011224ADB92700EAD771 /* XXwebViewPayShell.m */; };
 		D33C787D24936AE500E9E926 /* XXvideoRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = D33C787B24936AE500E9E926 /* XXvideoRecorder.m */; };
 		D33F537A245014B500B8D5E1 /* XXtextFieldShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D33F5379245014B500B8D5E1 /* XXtextFieldShellVC.m */; };
 		D33F7382248DC94500A9808D /* VideoRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33F7381248DC94500A9808D /* VideoRecordViewController.m */; };
@@ -52,7 +53,6 @@
 		D365951D243E8F59009F5228 /* XXavFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = D365943D243E8F58009F5228 /* XXavFormat.m */; };
 		D365951E243E8F59009F5228 /* XXcodecBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D365943F243E8F58009F5228 /* XXcodecBase.m */; };
 		D3659525243E8F59009F5228 /* XXstackViewShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D365944D243E8F58009F5228 /* XXstackViewShell.m */; };
-		D365952D243E8F59009F5228 /* WebViewPayShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3659461243E8F58009F5228 /* WebViewPayShell.m */; };
 		D3659533243E8F59009F5228 /* UIViewController+ApplicationState.m in Sources */ = {isa = PBXBuildFile; fileRef = D3659471243E8F58009F5228 /* UIViewController+ApplicationState.m */; };
 		D365955B243E8F59009F5228 /* XXshadowCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = D36594C3243E8F59009F5228 /* XXshadowCreator.m */; };
 		D365955C243E8F59009F5228 /* XXmtkRgbDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D36594C4243E8F59009F5228 /* XXmtkRgbDelegate.m */; };
@@ -134,6 +134,8 @@
 		D3374235247CCE1B009C48AC /* ExclusiveButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExclusiveButtonViewController.m; sourceTree = "<group>"; };
 		D337423A247CFEAE009C48AC /* UIButton+StateSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+StateSettings.m"; sourceTree = "<group>"; };
 		D337423B247CFEAF009C48AC /* UIButton+StateSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+StateSettings.h"; sourceTree = "<group>"; };
+		D33B011124ADB92700EAD771 /* XXwebViewPayShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXwebViewPayShell.h; sourceTree = "<group>"; };
+		D33B011224ADB92700EAD771 /* XXwebViewPayShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXwebViewPayShell.m; sourceTree = "<group>"; };
 		D33C787B24936AE500E9E926 /* XXvideoRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXvideoRecorder.m; sourceTree = "<group>"; };
 		D33C787C24936AE500E9E926 /* XXvideoRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXvideoRecorder.h; sourceTree = "<group>"; };
 		D33F5378245014B500B8D5E1 /* XXtextFieldShellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXtextFieldShellVC.h; sourceTree = "<group>"; };
@@ -210,8 +212,6 @@
 		D365944E243E8F58009F5228 /* XXstackViewShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXstackViewShell.h; sourceTree = "<group>"; };
 		D3659454243E8F58009F5228 /* XXcomboBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXcomboBox.m; sourceTree = "<group>"; };
 		D365945E243E8F58009F5228 /* XXcomboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXcomboBox.h; sourceTree = "<group>"; };
-		D3659461243E8F58009F5228 /* WebViewPayShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewPayShell.m; sourceTree = "<group>"; };
-		D3659462243E8F58009F5228 /* WebViewPayShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewPayShell.h; sourceTree = "<group>"; };
 		D3659470243E8F58009F5228 /* UIViewController+ApplicationState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ApplicationState.h"; sourceTree = "<group>"; };
 		D3659471243E8F58009F5228 /* UIViewController+ApplicationState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ApplicationState.m"; sourceTree = "<group>"; };
 		D36594C3243E8F59009F5228 /* XXshadowCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXshadowCreator.m; sourceTree = "<group>"; };
@@ -402,7 +402,6 @@
 				D365942F243E8F58009F5228 /* Category */,
 				D365943A243E8F58009F5228 /* AV */,
 				D365944F243E8F58009F5228 /* Shell */,
-				D3659460243E8F58009F5228 /* Web */,
 				D36594C2243E8F59009F5228 /* View */,
 				D36594D2243E8F59009F5228 /* AppDelegate */,
 				D36594D5243E8F59009F5228 /* Utility */,
@@ -465,6 +464,8 @@
 		D365944F243E8F58009F5228 /* Shell */ = {
 			isa = PBXGroup;
 			children = (
+				D33B011124ADB92700EAD771 /* XXwebViewPayShell.h */,
+				D33B011224ADB92700EAD771 /* XXwebViewPayShell.m */,
 				D35F31FF2489A3020099D71B /* XXbuttonPageShiftShell.h */,
 				D35F31FE2489A3020099D71B /* XXbuttonPageShiftShell.m */,
 				D3236DD62485DED200AA5F7A /* XXbuttonCycleClickShell.h */,
@@ -489,15 +490,6 @@
 				D39097192459592700A850F6 /* XXverificationCodeShell.m */,
 			);
 			path = Shell;
-			sourceTree = "<group>";
-		};
-		D3659460243E8F58009F5228 /* Web */ = {
-			isa = PBXGroup;
-			children = (
-				D3659461243E8F58009F5228 /* WebViewPayShell.m */,
-				D3659462243E8F58009F5228 /* WebViewPayShell.h */,
-			);
-			path = Web;
 			sourceTree = "<group>";
 		};
 		D36594C2243E8F59009F5228 /* View */ = {
@@ -817,6 +809,7 @@
 				D34C4873246119A30031884A /* SceneDelegate.m in Sources */,
 				D390971A2459592700A850F6 /* XXverificationCodeShell.m in Sources */,
 				D39097142459286800A850F6 /* XXtimer.m in Sources */,
+				D33B011324ADB92800EAD771 /* XXwebViewPayShell.m in Sources */,
 				D36B7A392445DD2F001BBE89 /* MainViewController.m in Sources */,
 				D3BEB020246551810024C397 /* XXaudioFileRecorder.m in Sources */,
 				D3286E94246BD1BA00B0A958 /* XXcoreData.m in Sources */,
@@ -831,7 +824,6 @@
 				D335CF4A248B80BE004832BB /* MaskViewViewController.m in Sources */,
 				D35B8CD32487025C0079843A /* NSBundle+Language.m in Sources */,
 				D346DAC12478BF870028B081 /* UIView+TapToVisible.m in Sources */,
-				D365952D243E8F59009F5228 /* WebViewPayShell.m in Sources */,
 				D365951E243E8F59009F5228 /* XXcodecBase.m in Sources */,
 				D33C787D24936AE500E9E926 /* XXvideoRecorder.m in Sources */,
 				D34EB3B6247615650096427F /* XXtableViewShell.m in Sources */,
