@@ -24,6 +24,7 @@
 		D337423C247CFEAF009C48AC /* UIButton+StateSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D337423A247CFEAE009C48AC /* UIButton+StateSettings.m */; };
 		D33B011324ADB92800EAD771 /* XXwebViewPayShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D33B011224ADB92700EAD771 /* XXwebViewPayShell.m */; };
 		D33C787D24936AE500E9E926 /* XXvideoRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = D33C787B24936AE500E9E926 /* XXvideoRecorder.m */; };
+		D33D60BE24BC81460066E17A /* XXviewMovableShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D33D60BD24BC81460066E17A /* XXviewMovableShell.m */; };
 		D33F537A245014B500B8D5E1 /* XXtextFieldShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D33F5379245014B500B8D5E1 /* XXtextFieldShellVC.m */; };
 		D33F7382248DC94500A9808D /* VideoRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33F7381248DC94500A9808D /* VideoRecordViewController.m */; };
 		D33FF84C2466DEC800AF3652 /* AudioFileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D33FF84A2466DEC800AF3652 /* AudioFileCell.m */; };
@@ -138,6 +139,8 @@
 		D33B011224ADB92700EAD771 /* XXwebViewPayShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXwebViewPayShell.m; sourceTree = "<group>"; };
 		D33C787B24936AE500E9E926 /* XXvideoRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXvideoRecorder.m; sourceTree = "<group>"; };
 		D33C787C24936AE500E9E926 /* XXvideoRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXvideoRecorder.h; sourceTree = "<group>"; };
+		D33D60BC24BC81460066E17A /* XXviewMovableShell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXviewMovableShell.h; sourceTree = "<group>"; };
+		D33D60BD24BC81460066E17A /* XXviewMovableShell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXviewMovableShell.m; sourceTree = "<group>"; };
 		D33F5378245014B500B8D5E1 /* XXtextFieldShellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXtextFieldShellVC.h; sourceTree = "<group>"; };
 		D33F5379245014B500B8D5E1 /* XXtextFieldShellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXtextFieldShellVC.m; sourceTree = "<group>"; };
 		D33F7380248DC94500A9808D /* VideoRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoRecordViewController.h; sourceTree = "<group>"; };
@@ -210,8 +213,6 @@
 		D365944B243E8F58009F5228 /* XXaudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXaudioPlayer.m; sourceTree = "<group>"; };
 		D365944D243E8F58009F5228 /* XXstackViewShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXstackViewShell.m; sourceTree = "<group>"; };
 		D365944E243E8F58009F5228 /* XXstackViewShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXstackViewShell.h; sourceTree = "<group>"; };
-		D3659454243E8F58009F5228 /* XXcomboBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXcomboBox.m; sourceTree = "<group>"; };
-		D365945E243E8F58009F5228 /* XXcomboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXcomboBox.h; sourceTree = "<group>"; };
 		D3659470243E8F58009F5228 /* UIViewController+ApplicationState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ApplicationState.h"; sourceTree = "<group>"; };
 		D3659471243E8F58009F5228 /* UIViewController+ApplicationState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ApplicationState.m"; sourceTree = "<group>"; };
 		D36594C3243E8F59009F5228 /* XXshadowCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXshadowCreator.m; sourceTree = "<group>"; };
@@ -486,6 +487,8 @@
 				D39097102459267000A850F6 /* XXbuttonLimitShell.m */,
 				D39097182459592700A850F6 /* XXverificationCodeShell.h */,
 				D39097192459592700A850F6 /* XXverificationCodeShell.m */,
+				D33D60BC24BC81460066E17A /* XXviewMovableShell.h */,
+				D33D60BD24BC81460066E17A /* XXviewMovableShell.m */,
 			);
 			path = Shell;
 			sourceTree = "<group>";
@@ -818,6 +821,7 @@
 				D37F69FD243C017E00DC2F28 /* AppDelegate.m in Sources */,
 				D3659533243E8F59009F5228 /* UIViewController+ApplicationState.m in Sources */,
 				D37F6A0E243C017F00DC2F28 /* main.m in Sources */,
+				D33D60BE24BC81460066E17A /* XXviewMovableShell.m in Sources */,
 				D3659560243E8F59009F5228 /* XXmaskView.m in Sources */,
 				D335CF4A248B80BE004832BB /* MaskViewViewController.m in Sources */,
 				D35B8CD32487025C0079843A /* NSBundle+Language.m in Sources */,
