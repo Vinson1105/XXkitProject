@@ -96,8 +96,9 @@
     };
     
     _verificationCodeShell = [XXverificationCodeShell new];
-    [_verificationCodeShell shellAccount:_textField5 code:_textField6 request:_requestCodeButton];
-    [_verificationCodeShell.requestShell configNormalColor:UIColor.whiteColor limitColor:UIColor.grayColor];
+    [_verificationCodeShell shellAccount:_textField5 code:_textField6 request:_requestCodeButton mode:XXverificationCodeShellModePhoneNumber];
+    [_requestCodeButton setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
+    [_requestCodeButton setTitleColor:UIColor.grayColor forState:UIControlStateDisabled];
     _verificationCodeShell.onRequest = ^(XXverificationCodeShell * _Nonnull shell, NSString * _Nonnull account) {
         
     };
