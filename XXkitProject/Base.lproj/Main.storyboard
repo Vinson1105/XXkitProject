@@ -1210,6 +1210,50 @@
             </objects>
             <point key="canvasLocation" x="3655" y="48"/>
         </scene>
+        <!--Xpicker View ShellVC-->
+        <scene sceneID="018-w3-vPd">
+            <objects>
+                <viewController storyboardIdentifier="XXpickerViewShellVC" id="s0H-Sc-YIr" customClass="XXpickerViewShellVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mAA-Ez-hff">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyZ-14-pkz">
+                                <rect key="frame" x="157" y="423" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="DCy-zY-Pl2"/>
+                                    <constraint firstAttribute="height" constant="50" id="MUa-tY-WHX"/>
+                                </constraints>
+                                <state key="normal" title="弹出"/>
+                                <connections>
+                                    <action selector="onButtonUpInside:" destination="s0H-Sc-YIr" eventType="touchUpInside" id="SX1-Yv-lCc"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLy-fq-g7k">
+                                <rect key="frame" x="0.0" y="662" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="fPM-Q2-IVA"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NLy-fq-g7k" firstAttribute="bottom" secondItem="qDm-pb-457" secondAttribute="bottom" id="EU1-8d-Z70"/>
+                            <constraint firstItem="eyZ-14-pkz" firstAttribute="centerY" secondItem="mAA-Ez-hff" secondAttribute="centerY" id="FPo-E6-W0N"/>
+                            <constraint firstItem="NLy-fq-g7k" firstAttribute="leading" secondItem="qDm-pb-457" secondAttribute="leading" id="KTD-Wz-AL2"/>
+                            <constraint firstItem="NLy-fq-g7k" firstAttribute="trailing" secondItem="qDm-pb-457" secondAttribute="trailing" id="c9Z-2j-I3F"/>
+                            <constraint firstItem="eyZ-14-pkz" firstAttribute="centerX" secondItem="mAA-Ez-hff" secondAttribute="centerX" id="eag-Lx-niY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qDm-pb-457"/>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="NLy-fq-g7k" id="n70-Ka-jiB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7F1-os-SZT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4332" y="48"/>
+        </scene>
     </scenes>
     <resources>
         <image name="chevron.left" catalog="system" width="96" height="128"/>

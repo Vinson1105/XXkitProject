@@ -67,6 +67,7 @@
             @{@"Title":@"XXbuttonExclusiveShell",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"XXbuttonCycleClickShell",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"XXbuttonPageShiftShell",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+            @{@"Title":@"XXpickerViewShell",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
         ],
         @[
             @{@"Title":@"UIViewController+Orientation",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
@@ -114,6 +115,7 @@
                 else if([title isEqualToString:@"XXbuttonExclusiveShell"])  { vc = [XXocUtils viewController:@"ExclusiveButtonViewController"]; }
                 else if([title isEqualToString:@"XXbuttonCycleClickShell"]) { vc = [XXocUtils viewController:@"CycleClickButtonViewController"]; }
                 else if([title isEqualToString:@"XXbuttonPageShiftShell"]) { vc = [XXocUtils viewController:@"PageShiftButtonViewController"]; }
+                else if([title isEqualToString:@"XXpickerViewShell"]) { vc = [XXocUtils viewController:@"XXpickerViewShellVC"]; }
                 else{}
             }
             else if(kCategorySection == indexPath.section){

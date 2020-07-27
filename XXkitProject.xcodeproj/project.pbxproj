@@ -87,6 +87,8 @@
 		D3BEB01D2465456E0024C397 /* AudioRecordAndPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BEB01C2465456E0024C397 /* AudioRecordAndPlayViewController.m */; };
 		D3BEB020246551810024C397 /* XXaudioFileRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BEB01F246551810024C397 /* XXaudioFileRecorder.m */; };
 		D3E7DFF8245049A400124252 /* XXtextFieldShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E7DFF7245049A400124252 /* XXtextFieldShell.m */; };
+		D3FBEAE724CE8B8000A32649 /* XXpickerViewShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FBEAE524CE8B8000A32649 /* XXpickerViewShell.m */; };
+		D3FBEAEA24CEA2B700A32649 /* XXpickerViewShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FBEAE924CEA2B700A32649 /* XXpickerViewShellVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -279,6 +281,10 @@
 		D3E1B441246BF7AE00BD4802 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
 		D3E7DFF6245049A400124252 /* XXtextFieldShell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXtextFieldShell.h; sourceTree = "<group>"; };
 		D3E7DFF7245049A400124252 /* XXtextFieldShell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXtextFieldShell.m; sourceTree = "<group>"; };
+		D3FBEAE524CE8B8000A32649 /* XXpickerViewShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXpickerViewShell.m; sourceTree = "<group>"; };
+		D3FBEAE624CE8B8000A32649 /* XXpickerViewShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXpickerViewShell.h; sourceTree = "<group>"; };
+		D3FBEAE824CEA2B700A32649 /* XXpickerViewShellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXpickerViewShellVC.h; sourceTree = "<group>"; };
+		D3FBEAE924CEA2B700A32649 /* XXpickerViewShellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXpickerViewShellVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -356,6 +362,8 @@
 				D3236DD92485E0AE00AA5F7A /* CycleClickButtonViewController.m */,
 				D35F32012489AE290099D71B /* PageShiftButtonViewController.h */,
 				D35F32022489AE290099D71B /* PageShiftButtonViewController.m */,
+				D3FBEAE824CEA2B700A32649 /* XXpickerViewShellVC.h */,
+				D3FBEAE924CEA2B700A32649 /* XXpickerViewShellVC.m */,
 			);
 			path = Shell;
 			sourceTree = "<group>";
@@ -465,6 +473,8 @@
 		D365944F243E8F58009F5228 /* Shell */ = {
 			isa = PBXGroup;
 			children = (
+				D3FBEAE624CE8B8000A32649 /* XXpickerViewShell.h */,
+				D3FBEAE524CE8B8000A32649 /* XXpickerViewShell.m */,
 				D33B011124ADB92700EAD771 /* XXwebViewPayShell.h */,
 				D33B011224ADB92700EAD771 /* XXwebViewPayShell.m */,
 				D35F31FF2489A3020099D71B /* XXbuttonPageShiftShell.h */,
@@ -798,6 +808,7 @@
 				D3304957247529F4005DC415 /* ToastViewController.m in Sources */,
 				D35F32032489AE290099D71B /* PageShiftButtonViewController.m in Sources */,
 				D365951B243E8F59009F5228 /* UIViewController+Orientation.m in Sources */,
+				D3FBEAE724CE8B8000A32649 /* XXpickerViewShell.m in Sources */,
 				D3865B4A2478FF8700EF29B4 /* PopupableViewController.m in Sources */,
 				D365955C243E8F59009F5228 /* XXmtkRgbDelegate.m in Sources */,
 				D3BEB01D2465456E0024C397 /* AudioRecordAndPlayViewController.m in Sources */,
@@ -823,6 +834,7 @@
 				D37F6A0E243C017F00DC2F28 /* main.m in Sources */,
 				D33D60BE24BC81460066E17A /* XXviewMovableShell.m in Sources */,
 				D3659560243E8F59009F5228 /* XXmaskView.m in Sources */,
+				D3FBEAEA24CEA2B700A32649 /* XXpickerViewShellVC.m in Sources */,
 				D335CF4A248B80BE004832BB /* MaskViewViewController.m in Sources */,
 				D35B8CD32487025C0079843A /* NSBundle+Language.m in Sources */,
 				D346DAC12478BF870028B081 /* UIView+TapToVisible.m in Sources */,

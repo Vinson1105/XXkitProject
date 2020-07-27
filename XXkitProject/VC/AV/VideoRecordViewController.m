@@ -12,6 +12,17 @@
 #import "../../../../XXkit/Object-C/Shell/XXviewMovableShell.h"
 #import "XXocUtils.h"
 
+@interface ViewA : UIView
+@end
+@implementation ViewA
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"[###] [ViewA] touchesBegan");
+}
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"[###] [ViewA] touchesMoved");
+}
+@end
+
 @interface VideoRecordViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIButton *button;
@@ -24,16 +35,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.preview = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 100)];
+    self.preview = [[ViewA alloc] initWithFrame:CGRectMake(50, 50, 50, 100)];
     self.preview.backgroundColor = UIColor.blackColor;
     [self.view insertSubview:self.preview aboveSubview:self.tableView];
-    
+//    [self.view addSubview:self.preview];
+
     [XXvideoRecorder sharedInstance].preview = self.preview;
     [_button setBackgroundColor:UIColor.greenColor forState:UIControlStateNormal];
     [_button setBackgroundColor:UIColor.redColor forState:UIControlStateSelected];
-    
+
     self.movableShell = [XXviewMovableShell new];
     [self.movableShell shell:self.preview];
+    
+    ViewA *viewA = [[ViewA alloc] initWithFrame:CGRectMake(0, 200, 100, 100)];
+    viewA.backgroundColor = UIColor.grayColor;
+    [self.view addSubview:viewA];
 }
 - (void)dealloc{
     [XXvideoRecorder sharedInstance].preview = nil;
@@ -62,5 +78,12 @@
             button.selected = YES;
         }];
     }
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"[###] [VideoRecordViewController] touchesBegan");
+}
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"[###] [VideoRecordViewController] touchesMoved");
 }
 @end
