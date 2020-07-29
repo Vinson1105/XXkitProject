@@ -45,7 +45,7 @@
         }
     }
     
-    [_tableShell configSectionWithHeaders:nil rows:@[row] footers:nil];
+    [_tableShell configSectionHeaders:nil rows:@[row] footers:nil];
     XXOC_WS;
     _tableShell.onRowClicked = ^(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
         XXOC_SS;

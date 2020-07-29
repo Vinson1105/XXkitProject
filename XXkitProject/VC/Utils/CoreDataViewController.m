@@ -49,7 +49,7 @@
             dict[@"Object"] = person;
             [persondata addObject:dict];
         }
-        [_tableViewShell addSectionWithHeader:nil row:persondata footer:nil];
+        [_tableViewShell addSectionHeader:nil row:persondata footer:nil];
         [_tableViewShell configFinished];
     }
     

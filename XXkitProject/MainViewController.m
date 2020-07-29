@@ -92,7 +92,7 @@
     
     _shell = [XXtableViewShell new];
     [_shell shell:_tableView];
-    [_shell configSectionWithHeaders:headers rows:rows footers:nil];
+    [_shell configSectionHeaders:headers rows:rows footers:nil];
     
     _shell.onRowClicked = self.onTableViewRowClicked;
     
