@@ -21,7 +21,6 @@
     // Do any additional setup after loading the view.
     
     _pickerView.hidden = YES;
-    _pickerView.backgroundColor = UIColor.grayColor;
     
     _shell = [XXpickerViewShell new];
     [_shell shell:_pickerView];
@@ -29,18 +28,21 @@
     for (int index= 0 ; index<50; index++) {
         [data addObject:[NSString stringWithFormat:@"%d",index]];
     }
-    [_shell setData:data atComponent:0];
+    _shell.componentData = @[data];
+    _shell.selectedColor = UIColor.blueColor;
+    
+    UILabel *suffixLabel = [UILabel new];
+    suffixLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    suffixLabel.textColor = UIColor.redColor;
+    suffixLabel.text = @"秒";
+    
+    [_pickerView addSubview:suffixLabel];
+    _pickerView.translatesAutoresizingMaskIntoConstraints = NO;
+    CGSize size = [_pickerView rowSizeForComponent:0];
+    [suffixLabel.centerYAnchor constraintEqualToAnchor:_pickerView.centerYAnchor].active = YES;
+    [suffixLabel.centerXAnchor constraintEqualToAnchor:_pickerView.centerXAnchor constant:size.height*2].active = YES;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 - (IBAction)onButtonUpInside:(id)sender {
     _pickerView.hidden = !_pickerView.hidden;
 }
