@@ -28,7 +28,7 @@
     
     _tableShell = [XXtableViewShell new];
     [_tableShell shell:_tableView];
-    [_tableShell configRowType:nil loadType:0 systemStyle:UITableViewCellStyleDefault height:57];
+    [_tableShell configCellSystemStyle:UITableViewCellStyleDefault height:57];
     
     NSMutableArray *row = [NSMutableArray new];
     for (NSString *language in available) {

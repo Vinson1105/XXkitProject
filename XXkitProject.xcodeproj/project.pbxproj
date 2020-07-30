@@ -34,6 +34,7 @@
 		D346DABB2477EA390028B081 /* WebViewProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D346DABA2477EA390028B081 /* WebViewProgressViewController.m */; };
 		D346DAC02478BF870028B081 /* UIView+Popup.m in Sources */ = {isa = PBXBuildFile; fileRef = D346DABC2478BF870028B081 /* UIView+Popup.m */; };
 		D346DAC12478BF870028B081 /* UIView+TapToVisible.m in Sources */ = {isa = PBXBuildFile; fileRef = D346DABF2478BF870028B081 /* UIView+TapToVisible.m */; };
+		D34755C124D2BF480027D6D3 /* TableViewCodeHeaderFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D34755C024D2BF480027D6D3 /* TableViewCodeHeaderFooter.m */; };
 		D348AB26244D99F000C7588F /* TableViewCodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D348AB25244D99F000C7588F /* TableViewCodeCell.m */; };
 		D34C486B24610A440031884A /* XXsceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C486A24610A440031884A /* XXsceneDelegate.m */; };
 		D34C4870246113200031884A /* UIViewController+SceneState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C486F246113200031884A /* UIViewController+SceneState.m */; };
@@ -164,6 +165,8 @@
 		D346DABD2478BF870028B081 /* UIView+TapToVisible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TapToVisible.h"; sourceTree = "<group>"; };
 		D346DABE2478BF870028B081 /* UIView+Popup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Popup.h"; sourceTree = "<group>"; };
 		D346DABF2478BF870028B081 /* UIView+TapToVisible.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TapToVisible.m"; sourceTree = "<group>"; };
+		D34755BF24D2BF480027D6D3 /* TableViewCodeHeaderFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCodeHeaderFooter.h; sourceTree = "<group>"; };
+		D34755C024D2BF480027D6D3 /* TableViewCodeHeaderFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCodeHeaderFooter.m; sourceTree = "<group>"; };
 		D348AB24244D99F000C7588F /* TableViewCodeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCodeCell.h; sourceTree = "<group>"; };
 		D348AB25244D99F000C7588F /* TableViewCodeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCodeCell.m; sourceTree = "<group>"; };
 		D34C486924610A440031884A /* XXsceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXsceneDelegate.h; sourceTree = "<group>"; };
@@ -364,6 +367,8 @@
 				D35F32022489AE290099D71B /* PageShiftButtonViewController.m */,
 				D3FBEAE824CEA2B700A32649 /* XXpickerViewShellVC.h */,
 				D3FBEAE924CEA2B700A32649 /* XXpickerViewShellVC.m */,
+				D34755BF24D2BF480027D6D3 /* TableViewCodeHeaderFooter.h */,
+				D34755C024D2BF480027D6D3 /* TableViewCodeHeaderFooter.m */,
 			);
 			path = Shell;
 			sourceTree = "<group>";
@@ -859,6 +864,7 @@
 				D35B8CE3248707FA0079843A /* LangaugeViewController.m in Sources */,
 				D365955E243E8F59009F5228 /* Metal.metal in Sources */,
 				D3AFBD0E247FDEA100BA7FD1 /* XXaudioFilePlayer.m in Sources */,
+				D34755C124D2BF480027D6D3 /* TableViewCodeHeaderFooter.m in Sources */,
 				D35E3203244FB44900300362 /* XXstackViewShellVC.m in Sources */,
 				D3286E8C246BA6AD00B0A958 /* CoreDataViewController.m in Sources */,
 				D3236DDA2485E0AE00AA5F7A /* CycleClickButtonViewController.m in Sources */,

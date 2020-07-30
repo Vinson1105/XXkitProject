@@ -53,7 +53,7 @@
     
     _tableShell = [XXtableViewShell new];
     [_tableShell shell:_tableView];
-    [_tableShell configRowType:@"AudioFileCell" loadType:XXtableViewShellRowLoadTypeNib systemStyle:0 height:0];
+    [_tableShell configCellClass:@"AudioFileCell" loadType:XXtableViewShellLoadTypeNib height:0];
     _tableShell.onRowEditingDelete = ^BOOL(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
         AudioFile *audioFile = data;
         [[XXcoreData sharedInstance] deleteObject:audioFile error:nil];

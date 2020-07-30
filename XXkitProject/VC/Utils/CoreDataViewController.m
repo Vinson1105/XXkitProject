@@ -34,7 +34,7 @@
     
     _tableViewShell = [XXtableViewShell new];
     [_tableViewShell shell:_tableView];
-    [_tableViewShell configRowType:nil loadType:0 systemStyle:UITableViewCellStyleDefault height:0];
+    [_tableViewShell configCellSystemStyle:UITableViewCellStyleDefault height:0];
     
     NSError *error;
     NSArray *objs = [[XXcoreData sharedInstance] getObject:@"Person" predicate:nil error:&error];

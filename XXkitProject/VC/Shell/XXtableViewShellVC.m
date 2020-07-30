@@ -84,14 +84,14 @@
         case kDefaultRowButtonID:{
              _defaultRowShell = [XXtableViewShell new];
             [_defaultRowShell shell:_tableView];
-            [_defaultRowShell configRowType:nil loadType:0 systemStyle:UITableViewCellStyleDefault height:0];
+            [_defaultRowShell configCellSystemStyle:UITableViewCellStyleDefault height:0];
             [_defaultRowShell configSectionHeaders:_headers rows:_rows footers:_footers];
             break;
         }
         case kNibRowButtonID:{
             _nibRowShell = [XXtableViewShell new];
             [_nibRowShell shell:_tableView];
-            [_nibRowShell configRowType:@"TableViewNibCell" loadType:XXtableViewShellRowLoadTypeNib systemStyle:0 height:0];
+            [_nibRowShell configCellClass:@"TableViewNibCell" loadType:XXtableViewShellLoadTypeNib height:0];
             [_nibRowShell configSectionHeaders:_headers rows:_rows footers:_footers];
             _nibRowShell.onRowClicked = ^(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
                 NSMutableDictionary *dict = data;
@@ -104,7 +104,7 @@
         case kCodeRowButtonID:{
             _codeRowShell = [XXtableViewShell new];
             [_codeRowShell shell:_tableView];
-            [_codeRowShell configRowType:@"TableViewCodeCell" loadType:XXtableViewShellLoadTypeCode systemStyle:0 height:0];
+            [_codeRowShell configCellClass:@"TableViewCodeCell" loadType:XXtableViewShellLoadTypeCode height:0];
             [_codeRowShell configSectionHeaders:_headers rows:_rows footers:_footers];
             _codeRowShell.onRowClicked = ^(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
                 NSMutableDictionary *dict = data;
