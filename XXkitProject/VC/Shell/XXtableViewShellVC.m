@@ -59,7 +59,11 @@
             }]];
         }
         
-        [_headers addObject:[NSString stringWithFormat:@"[Header %d]",sectionIndex]];
+        [_headers addObject:[[NSMutableDictionary alloc] initWithDictionary:@{
+            @"Title":[NSString stringWithFormat:@"[Header %d]",sectionIndex],
+            @"Open":@(NO),
+            @"Height":@(30)
+        }]];
         [_footers addObject:[NSString stringWithFormat:@"[Footer %d]",sectionIndex]];
         [_rows addObject:row];
     }
@@ -105,6 +109,7 @@
             _codeRowShell = [XXtableViewShell new];
             [_codeRowShell shell:_tableView];
             [_codeRowShell configCellClass:@"TableViewCodeCell" loadType:XXtableViewShellLoadTypeCode height:0];
+            [_codeRowShell configHeaderClass:@"TableViewCodeHeaderFooter" loadType:XXtableViewShellLoadTypeCode height:-1];
             [_codeRowShell configSectionHeaders:_headers rows:_rows footers:_footers];
             _codeRowShell.onRowClicked = ^(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
                 NSMutableDictionary *dict = data;
