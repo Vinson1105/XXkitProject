@@ -27,52 +27,41 @@
     }
     return self;
 }
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    NSLog(@"[####] [TableViewCodeHeaderFooter] layout subViews");
+    [self setupLayout:self.contentView];
+}
 - (void)setup:(UIView*)superview{
     _titleLabel = [UILabel new];
     _titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [superview addSubview:_titleLabel];
-    [XXocUtils view:self.titleLabel containsLeft:10 centerYAt:superview];
-//    [self.titleLabel.topAnchor constraintEqualToAnchor:superview.topAnchor constant:10].active = YES;
-//    [self.titleLabel.bottomAnchor constraintEqualToAnchor:superview.bottomAnchor constant:-10].active = YES;
-//    [self.titleLabel.heightAnchor constraintEqualToConstant:50].active = YES;
-//    _titleHeightConstraint = [self.titleLabel.heightAnchor constraintEqualToConstant:30];
-    _titleHeightConstraint.active = YES;
-    [self.titleLabel setContentHuggingPriority:999 forAxis:UILayoutConstraintAxisHorizontal];
-    [self.titleLabel setContentCompressionResistancePriority:1000 forAxis:UILayoutConstraintAxisVertical];
-    [self.titleLabel setContentHuggingPriority:500 forAxis:UILayoutConstraintAxisVertical];
     self.titleLabel.numberOfLines = 0;
     self.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
     
     _openButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _openButton.translatesAutoresizingMaskIntoConstraints = NO;
     [superview addSubview:_openButton];
-    [XXocUtils view:self.openButton containsRight:-10 centerYAt:superview];
-    [self.openButton.leadingAnchor constraintEqualToAnchor:self.titleLabel.trailingAnchor constant:10].active = YES;
-    [self.openButton setContentHuggingPriority:1000 forAxis:UILayoutConstraintAxisHorizontal];
     [self.openButton setBackgroundColor:UIColor.grayColor forState:UIControlStateNormal];
     [self.openButton setBackgroundColor:UIColor.greenColor forState:UIControlStateSelected];
     [XXocUtils view:self.openButton size:CGSizeMake(30, 30)];
     [self.openButton addTarget:self action:@selector(onButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
     
-    superview.backgroundColor = UIColor.redColor;
+    superview.backgroundColor = [XXocUtils colorFromHexString:@"#2f2f2f"];
 }
+- (void)setupLayout:(UIView*)superview{
+    [self.titleLabel.leadingAnchor constraintEqualToAnchor:superview.leadingAnchor constant:10].active = YES;
+    [self.titleLabel.topAnchor constraintEqualToAnchor:superview.topAnchor constant:10].active = YES;
+    [self.titleLabel.bottomAnchor constraintEqualToAnchor:superview.bottomAnchor constant:-10].active = YES;
+    
+    [XXocUtils view:self.openButton containsRight:-10 centerYAt:superview];
+    [self.openButton.leadingAnchor constraintEqualToAnchor:self.titleLabel.trailingAnchor constant:10].active = YES;
+}
+
 - (void)onButtonTouchUpInside:(UIButton*)sender{
     if(sender == self.openButton){
         BOOL isOpen = !self.openButton.selected;
         _dictData[@"Open"] = @(isOpen);
-        
-        NSString *title = [NSString stringWithFormat:@"Header %ld",(long)self.indexPath.section];
-        _dictData[@"Title"] = isOpen
-            ?
-            [NSString stringWithFormat:@"%@ %@ %@ %@ %@ %@ %@ %@ %@ %@",title,title,title,title,title,title,title,title,title,title]
-            :
-            title;
-        _dictData[@"Height"] = isOpen ? @100  : @30;
-//        [self.tableViewShell.tableView reloadData];
-//        [self.tableViewShell.tableView layoutIfNeeded];
-        [self.tableViewShell.tableView reloadSections:[NSIndexSet indexSetWithIndex:self.indexPath.section] withRowAnimation:UITableViewRowAnimationAutomatic];
-        [self.backgroundView setNeedsLayout];
-        [self.tableViewShell.tableView layoutIfNeeded];
     }
 }
 - (void)doSomething:(nonnull NSString *)event info:(nullable id)info {
@@ -84,13 +73,6 @@
         _dictData = data;
         self.titleLabel.text = nil!=_dictData[@"Title"] ? _dictData[@"Title"] : @"Unknown";
         self.openButton.selected = nil!=_dictData[@"Open"] ? [_dictData[@"Open"] boolValue] : NO;
-//        self.titleHeightConstraint.constant = self.openButton.isSelected ? 100  : 30;
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            [self.tableViewShell.tableView setNeedsLayout];
-//            [self.tableViewShell.tableView layoutIfNeeded];
-//        });
-//        [self.contentView setNeedsLayout];
-//        [self.contentView layoutIfNeeded];
     }
 }
 @end

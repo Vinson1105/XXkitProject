@@ -47,7 +47,7 @@
     _footers    = [NSMutableArray new];
     
     int sectionCount    = 5;
-    int rowCount        = 10;
+    int rowCount        = 20;
     
     for (int sectionIndex = 0; sectionIndex < sectionCount; sectionIndex++) {
         NSMutableArray *row = [NSMutableArray new];
@@ -60,9 +60,9 @@
         }
         
         [_headers addObject:[[NSMutableDictionary alloc] initWithDictionary:@{
-            @"Title":[NSString stringWithFormat:@"[Header %d]",sectionIndex],
+            @"Title":[NSString stringWithFormat:@"[Header %d] Header Header Header Header Header Header Header Header Header Header Header",sectionIndex],
             @"Open":@(NO),
-            @"Height":@(30)
+//            @"Height":@(50)
         }]];
         [_footers addObject:[NSString stringWithFormat:@"[Footer %d]",sectionIndex]];
         [_rows addObject:row];
