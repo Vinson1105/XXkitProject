@@ -94,7 +94,7 @@
     [_shell shell:_tableView];
     [_shell configSectionHeaders:headers rows:rows footers:nil];
     
-    _shell.onRowClicked = self.onTableViewRowClicked;
+    _shell.onSectionRowClicked = self.onTableViewRowClicked;
     
     NSURL *url = [[XXocUtils documentAbsolutePathUrl] URLByAppendingPathComponent:[NSString stringWithFormat:@"xx.sqlite"]];
     [[XXcoreData sharedInstance] configModel:@"XXcoreModel" bundle:nil storeType:NSSQLiteStoreType storeUrl:url];

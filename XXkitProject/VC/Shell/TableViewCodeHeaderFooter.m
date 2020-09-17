@@ -27,11 +27,11 @@
     }
     return self;
 }
-- (void)layoutSubviews{
-    [super layoutSubviews];
-    NSLog(@"[####] [TableViewCodeHeaderFooter] layout subViews");
-    [self setupLayout:self.contentView];
-}
+//- (void)layoutSubviews{
+//    [super layoutSubviews];
+//    NSLog(@"[####] [TableViewCodeHeaderFooter] layout subViews");
+//    [self setupLayout:self.contentView];
+//}
 - (void)setup:(UIView*)superview{
     _titleLabel = [UILabel new];
     _titleLabel.translatesAutoresizingMaskIntoConstraints = NO;

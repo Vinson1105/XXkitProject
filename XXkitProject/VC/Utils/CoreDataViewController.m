@@ -34,7 +34,7 @@
     
     _tableViewShell = [XXtableViewShell new];
     [_tableViewShell shell:_tableView];
-    [_tableViewShell configCellSystemStyle:UITableViewCellStyleDefault height:0];
+    [_tableViewShell configSectionRowSystemStyle:UITableViewCellStyleDefault height:0];
     
     NSError *error;
     NSArray *objs = [[XXcoreData sharedInstance] getObject:@"Person" predicate:nil error:&error];
@@ -54,7 +54,7 @@
     }
     
     XXOC_WS
-    _tableViewShell.onRowClicked = ^(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
+    _tableViewShell.onSectionRowClicked = ^(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
         XXOC_SS
         
         NSMutableDictionary *info = data;
@@ -83,7 +83,7 @@
         
     };
     
-    _tableViewShell.onRowEditingDelete = ^BOOL(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
+    _tableViewShell.onSectionRowEditingDelete = ^BOOL(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
         NSMutableDictionary *info = data;
         Person *person = info[@"Object"];
         [[XXcoreData sharedInstance] deleteObject:person error:nil];

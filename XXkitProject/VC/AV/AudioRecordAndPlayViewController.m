@@ -53,15 +53,15 @@
     
     _tableShell = [XXtableViewShell new];
     [_tableShell shell:_tableView];
-    [_tableShell configCellClass:@"AudioFileCell" loadType:XXtableViewShellLoadTypeNib height:0];
-    _tableShell.onRowEditingDelete = ^BOOL(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
+    [_tableShell configSectionRowClass:@"AudioFileCell" loadType:XXtableViewShellLoadTypeNib height:0];
+    _tableShell.onSectionRowEditingDelete = ^BOOL(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
         AudioFile *audioFile = data;
         [[XXcoreData sharedInstance] deleteObject:audioFile error:nil];
         return YES;
     };
     
     XXOC_WS;
-    _tableShell.onRowClicked = ^(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
+    _tableShell.onSectionRowClicked = ^(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
         XXOC_SS;
                 
         if(ss.player && ss.player.isPlaying){

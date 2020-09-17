@@ -28,7 +28,7 @@
     
     _tableShell = [XXtableViewShell new];
     [_tableShell shell:_tableView];
-    [_tableShell configCellSystemStyle:UITableViewCellStyleDefault height:57];
+    [_tableShell configSectionRowSystemStyle:UITableViewCellStyleDefault height:57];
     
     NSMutableArray *row = [NSMutableArray new];
     for (NSString *language in available) {
@@ -47,7 +47,7 @@
     
     [_tableShell configSectionHeaders:nil rows:@[row] footers:nil];
     XXOC_WS;
-    _tableShell.onRowClicked = ^(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
+    _tableShell.onSectionRowClicked = ^(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
         XXOC_SS;
         
         /// 清除之前的状态
