@@ -95,7 +95,7 @@
         case kNibRowButtonID:{
             _nibRowShell = [XXtableViewShell new];
             [_nibRowShell shell:_tableView];
-            [_nibRowShell configSectionRowClass:@"TableViewNibCell" loadType:XXtableViewShellLoadTypeNib height:0];
+            [_nibRowShell configSectionRowClass:@"TableViewNibCell" loadType:XXtableViewShellLoadTypeNib height:-1];
             [_nibRowShell configSectionHeaders:_headers rows:_rows footers:_footers];
             _nibRowShell.onSectionRowClicked = ^(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
                 NSMutableDictionary *dict = data;
@@ -108,13 +108,13 @@
         case kCodeRowButtonID:{
             _codeRowShell = [XXtableViewShell new];
             [_codeRowShell shell:_tableView];
-            [_codeRowShell configSectionRowClass:@"TableViewCodeCell" loadType:XXtableViewShellLoadTypeCode height:0];
-//            [_codeRowShell configSectionHeaderClass:@"TableViewCodeHeaderFooter" loadType:XXtableViewShellLoadTypeCode height:-1];
+            [_codeRowShell configSectionRowClass:@"TableViewCodeCell" loadType:XXtableViewShellLoadTypeCode height:-1];
+            [_codeRowShell configSectionHeaderClass:@"TableViewCodeHeaderFooter" loadType:XXtableViewShellLoadTypeCode height:-1];
             [_codeRowShell configSectionHeaders:_headers rows:_rows footers:_footers];
             _codeRowShell.onSectionRowClicked = ^(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
                 NSMutableDictionary *dict = data;
                 BOOL curr = [dict[@"IsDetailShowing"] boolValue];
-                dict[@"IsDetailShowing"] = @(!curr);
+                dict[@"IsDetailShowing"] = @(!curr);
                 [shell resetData:dict atIndexPath:indexPath];
             };
             break;

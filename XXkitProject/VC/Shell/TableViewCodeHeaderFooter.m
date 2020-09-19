@@ -24,14 +24,14 @@
     self = [super initWithReuseIdentifier:reuseIdentifier];
     if(self){
         [self setup:self.contentView];
+        [self setupLayout:self.contentView];
     }
     return self;
 }
-//- (void)layoutSubviews{
-//    [super layoutSubviews];
-//    NSLog(@"[####] [TableViewCodeHeaderFooter] layout subViews");
-//    [self setupLayout:self.contentView];
-//}
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    NSLog(@"[GWX] layoutSubviews");
+}
 - (void)setup:(UIView*)superview{
     _titleLabel = [UILabel new];
     _titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
@@ -44,7 +44,7 @@
     [superview addSubview:_openButton];
     [self.openButton setBackgroundColor:UIColor.grayColor forState:UIControlStateNormal];
     [self.openButton setBackgroundColor:UIColor.greenColor forState:UIControlStateSelected];
-    [XXocUtils view:self.openButton size:CGSizeMake(30, 30)];
+    [XXocUtils view:self.openButton size:CGSizeMake(43, 43)];
     [self.openButton addTarget:self action:@selector(onButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
     
     superview.backgroundColor = [XXocUtils colorFromHexString:@"#2f2f2f"];
@@ -61,14 +61,26 @@
 - (void)onButtonTouchUpInside:(UIButton*)sender{
     if(sender == self.openButton){
         BOOL isOpen = !self.openButton.selected;
+        
+        NSString *title = isOpen ?
+        @"title title title title title title title title title title title title title title title title title title title title title title title title title title title":
+        @"TITLE TITLE TITLE TITLE TITLE TITLE TITLE TITLE TITLE TITLE TITLE TITLE ";
+        self.titleLabel.textColor = isOpen ? UIColor.greenColor : UIColor.redColor;
+        self.titleLabel.text = title;
+        
         _dictData[@"Open"] = @(isOpen);
+        _dictData[@"Title"] = title;
+        
+        [self.contentView setNeedsLayout];
+        [self setNeedsLayout];
+        [self setNeedsDisplay];
+        [self.tableViewShell.tableView reloadData];
     }
 }
 - (void)doSomething:(nonnull NSString *)event info:(nullable id)info {
     NSLog(@"[TableViewCodeHeaderFooter] [doSomething] event:%@ info:%@", event, info);
 }
 - (void)resetData:(nonnull id)data {
-    NSLog(@"[TableViewCodeHeaderFooter] [resetData] data:%@", data);
     if([data isKindOfClass:[NSDictionary class]]){
         _dictData = data;
         self.titleLabel.text = nil!=_dictData[@"Title"] ? _dictData[@"Title"] : @"Unknown";
