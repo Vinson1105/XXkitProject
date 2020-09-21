@@ -66,7 +66,7 @@
             person.name = alertController.textFields.firstObject.text;
             info[@"Title"] = person.name;
             dispatch_async(dispatch_get_main_queue(), ^{
-                [ss.tableViewShell resetData:info atIndexPath:indexPath];
+                [ss.tableViewShell setSectionRow:info atIndexPath:indexPath];
             });
             [[XXcoreData sharedInstance].context save:nil];
         }
@@ -107,7 +107,7 @@
                 NSMutableDictionary *info = [[NSMutableDictionary alloc] initWithDictionary:@{@"Title":person.name,@"Object":person,}];
                 
                 XXOC_SS
-                [ss.tableViewShell addRow:@[info] atSection:0];
+                [ss.tableViewShell addSectionRows:@[info] atIndex:0];
             } error:nil];
         }
                                                            cancelTitle:@"取消"

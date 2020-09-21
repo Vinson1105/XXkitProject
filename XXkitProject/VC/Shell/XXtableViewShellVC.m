@@ -101,7 +101,7 @@
                 NSMutableDictionary *dict = data;
                 BOOL curr = [dict[@"IsDetailShowing"] boolValue];
                 dict[@"IsDetailShowing"] = @(!curr);
-                [shell resetData:dict atIndexPath:indexPath];
+                [shell setSectionRow:dict atIndexPath:indexPath];
             };
             break;
         }
@@ -115,7 +115,7 @@
                 NSMutableDictionary *dict = data;
                 BOOL curr = [dict[@"IsDetailShowing"] boolValue];
                 dict[@"IsDetailShowing"] = @(!curr);
-                [shell resetData:dict atIndexPath:indexPath];
+                [shell setSectionRow:dict atIndexPath:indexPath];
             };
             break;
         }
