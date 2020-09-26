@@ -133,7 +133,7 @@
                 NSMutableDictionary *dict = data;
                 BOOL curr = [dict[@"IsDetailShowing"] boolValue];
                 dict[@"IsDetailShowing"] = @(!curr);
-                [shell setSectionRow:dict atIndexPath:indexPath];
+                [shell updateSectionRow:@{@"IsDetailShowing":@(!curr)} atIndexPath:indexPath];
             };
             break;
         }
