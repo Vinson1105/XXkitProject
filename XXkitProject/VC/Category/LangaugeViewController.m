@@ -52,7 +52,7 @@
         
         /// 清除之前的状态
         NSIndexPath *lastIndexPath = ss.indexPath;
-        NSMutableDictionary *info = [shell getDataAtIndexPath:lastIndexPath];
+        NSMutableDictionary *info = [shell getSectionRowAtIndexPath:lastIndexPath];
         if(nil != info){
             info[@"AccessoryType"] = @(UITableViewCellAccessoryNone);
         }

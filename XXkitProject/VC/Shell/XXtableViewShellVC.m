@@ -68,6 +68,24 @@
         [_rows addObject:row];
     }
 }
+- (IBAction)clear:(id)sender {
+    _rowTypeDefaultButton.selected  = NO;
+    _rowTypeNibButton.selected      = NO;
+    _rowTypeCodeButton.selected     = NO;
+    
+    if(_defaultRowShell){
+        [_defaultRowShell removeAllSections];
+    }
+    else if(_nibRowShell){
+        [_nibRowShell removeAllSections];
+    }
+    else if(_codeRowShell){
+        [_codeRowShell removeAllSections];
+    }
+    else{
+        
+    }
+}
 - (IBAction)onButtonTouchUpInside:(id)sender {
     UIButton *button = sender;
     if(button.isSelected){
@@ -88,20 +106,34 @@
         case kDefaultRowButtonID:{
              _defaultRowShell = [XXtableViewShell new];
             [_defaultRowShell shell:_tableView];
-            [_defaultRowShell configSectionRowSystemStyle:UITableViewCellStyleDefault height:0];
+            [_defaultRowShell configNoContentImage:[UIImage imageNamed:@"common_icon_null"]
+                                         imageSize:CGSizeMake(100, 100)
+                                             title:@"DefaultRowShell No Content"
+                                        titleColor:nil
+                                         titleFont:nil];
+            
+            [_defaultRowShell configSectionRowSystemStyle:UITableViewCellStyleDefault height:-1];
             [_defaultRowShell configSectionHeaders:_headers rows:_rows footers:_footers];
+            
             break;
         }
         case kNibRowButtonID:{
             _nibRowShell = [XXtableViewShell new];
             [_nibRowShell shell:_tableView];
+            [_nibRowShell configNoContentImage:[UIImage imageNamed:@"common_icon_null"]
+                                         imageSize:CGSizeMake(100, 100)
+                                             title:@"NibRowShell No Content NibRowShell No Content"
+                                        titleColor:nil
+                                         titleFont:nil];
+            
             [_nibRowShell configSectionRowClass:@"TableViewNibCell" loadType:XXtableViewShellLoadTypeNib height:-1];
             [_nibRowShell configSectionHeaders:_headers rows:_rows footers:_footers];
+            
             _nibRowShell.onSectionRowClicked = ^(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
                 NSMutableDictionary *dict = data;
                 BOOL curr = [dict[@"IsDetailShowing"] boolValue];
                 dict[@"IsDetailShowing"] = @(!curr);
-                [shell resetData:dict atIndexPath:indexPath];
+                [shell setSectionRow:dict atIndexPath:indexPath];
             };
             break;
         }
@@ -110,12 +142,19 @@
             [_codeRowShell shell:_tableView];
             [_codeRowShell configSectionRowClass:@"TableViewCodeCell" loadType:XXtableViewShellLoadTypeCode height:-1];
             [_codeRowShell configSectionHeaderClass:@"TableViewCodeHeaderFooter" loadType:XXtableViewShellLoadTypeCode height:-1];
+            [_codeRowShell configNoContentImage:[UIImage imageNamed:@"common_icon_null"]
+                                         imageSize:CGSizeMake(100, 100)
+                                             title:@"CodeRowShell No Content CodeRowShell No Content CodeRowShell No Content"
+                                        titleColor:nil
+                                         titleFont:nil];
+            
             [_codeRowShell configSectionHeaders:_headers rows:_rows footers:_footers];
+            
             _codeRowShell.onSectionRowClicked = ^(XXtableViewShell * _Nonnull shell, NSIndexPath * _Nonnull indexPath, id  _Nonnull data) {
                 NSMutableDictionary *dict = data;
                 BOOL curr = [dict[@"IsDetailShowing"] boolValue];
                 dict[@"IsDetailShowing"] = @(!curr);
-                [shell resetData:dict atIndexPath:indexPath];
+                [shell setSectionRow:dict atIndexPath:indexPath];
             };
             break;
         }

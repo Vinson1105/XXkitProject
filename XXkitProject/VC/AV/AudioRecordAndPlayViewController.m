@@ -94,7 +94,7 @@
     
     NSArray *audioFiles = [[XXcoreData sharedInstance] getObject:@"AudioFile" predicate:nil error:nil];
     if(nil != audioFiles){
-        [_tableShell addRow:audioFiles atSection:0];
+        [self.tableShell addSectionRows:audioFiles atIndex:0];
     }
 }
 
@@ -123,7 +123,7 @@
                     audioFile.path = relaPath;
                     audioFile.name = alert.textFields.firstObject.text;
                     audioFile.duration = [XXocUtils audioDuration:url];
-                    [ss.tableShell addRow:@[audioFile] atSection:0];
+                    [ss.tableShell addSectionRows:@[audioFile] atIndex:0];
                 } error:nil];
             } cancelTitle:@"取消" onCancel:^(UIAlertAction * _Nonnull action) {
                 [[NSFileManager defaultManager] removeItemAtURL:url error:nil];
