@@ -77,7 +77,7 @@
         [self.tableViewShell.tableView reloadData];
     }
 }
-- (void)doSomething:(nonnull NSString *)event info:(nullable id)info {
+- (void)event:(nonnull NSString *)event info:(nullable id)info {
     NSLog(@"[TableViewCodeHeaderFooter] [doSomething] event:%@ info:%@", event, info);
 }
 - (void)resetData:(nonnull id)data {

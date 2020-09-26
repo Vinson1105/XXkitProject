@@ -44,7 +44,7 @@
     _progress.value = 0;
     _starttime.text = @"00:00";
 }
-- (void)doSomething:(NSString *)event info:(id)info{
+- (void)event:(NSString *)event info:(id)info{
     if([event isEqualToString:@"progress"]){
         _progress.value = [info doubleValue];
     }
