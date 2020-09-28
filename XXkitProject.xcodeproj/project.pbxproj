@@ -110,6 +110,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D303218A2522024900FE8B49 /* XXviewBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXviewBase.h; sourceTree = "<group>"; };
 		D3236DD52485DED200AA5F7A /* XXbuttonCycleClickShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXbuttonCycleClickShell.m; sourceTree = "<group>"; };
 		D3236DD62485DED200AA5F7A /* XXbuttonCycleClickShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXbuttonCycleClickShell.h; sourceTree = "<group>"; };
 		D3236DD82485E0AE00AA5F7A /* CycleClickButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CycleClickButtonViewController.h; sourceTree = "<group>"; };
@@ -504,6 +505,7 @@
 				D39097192459592700A850F6 /* XXverificationCodeShell.m */,
 				D33D60BC24BC81460066E17A /* XXviewMovableShell.h */,
 				D33D60BD24BC81460066E17A /* XXviewMovableShell.m */,
+				D303218A2522024900FE8B49 /* XXviewBase.h */,
 			);
 			path = Shell;
 			sourceTree = "<group>";
