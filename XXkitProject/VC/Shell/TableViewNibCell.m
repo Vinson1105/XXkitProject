@@ -8,8 +8,9 @@
 
 #import "TableViewNibCell.h"
 #import "../../../../XXkit/Object-C/Shell/XXtableViewShell.h"
+#import "../../../../XXkit/Object-C/Shell/XXviewBase.h"
 
-@interface TableViewNibCell() <XXtableViewCellDelegate>
+@interface TableViewNibCell() <XXviewBase>
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *messageLabel;
 @property (weak, nonatomic) IBOutlet UIButton *detailButton;
@@ -19,7 +20,7 @@
 @end
 
 @implementation TableViewNibCell
-@synthesize tableViewShell, indexPath;
+@synthesize indexPath, onDataPost, onEventOccured;
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -37,6 +38,9 @@
     else{
         self.isDetailShowing = [_data[@"IsDetailShowing"] boolValue];
     }
+}
+- (void)performTask:(NSString *)task info:(id)info{
+    
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
@@ -61,6 +65,6 @@
 
 - (IBAction)onButtonTouchUpInside:(id)sender {
     self.isDetailShowing = !self.isDetailShowing;
-    [self.tableViewShell.tableView reloadRowsAtIndexPaths:@[self.indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    self.onDataPost(self, self.data);
 }
 @end
