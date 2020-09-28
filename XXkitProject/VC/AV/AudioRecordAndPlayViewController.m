@@ -85,7 +85,7 @@
         };
         ss.player.onProgressUpdate = ^(XXaudioFilePlayer * _Nonnull player) {
             NSLog(@"[###] 进度：%.3f %.3f", player.currentTime, player.duration);
-            [ws.tableShell sectionRowDoEvent:@"progress" info:@(player.currentTime/player.duration) atIndex:indexPath];
+            [ws.tableShell sectionRowPerformTask:@"progress" info:@(player.currentTime/player.duration) atIndex:indexPath];
         };
         if(![ss.player play]){
             NSLog(@"[###] 播放失败");

@@ -10,8 +10,9 @@
 #import "../../../../XXkit/Object-C/Shell/XXtableViewShell.h"
 #import "../../../../XXkit/Object-C/XXocUtils.h"
 #import "../../../../XXkit/Object-C/Category/UIButton+StateSettings.h"
+#import "../../../../XXkit/Object-C/Shell/XXviewBase.h"
 
-@interface TableViewCodeHeaderFooter()<XXtableViewCellDelegate>
+@interface TableViewCodeHeaderFooter()<XXviewBase>
 @property (nonatomic,strong) UILabel *titleLabel;
 @property (nonatomic,strong) UIButton *openButton;
 @property (nonatomic,strong) NSMutableDictionary *dictData;
@@ -19,7 +20,7 @@
 @end
 
 @implementation TableViewCodeHeaderFooter
-@synthesize indexPath,onEvent,tableViewShell;
+@synthesize indexPath,onDataPost,onEventOccured;
 - (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithReuseIdentifier:reuseIdentifier];
     if(self){
@@ -74,11 +75,8 @@
         [self.contentView setNeedsLayout];
         [self setNeedsLayout];
         [self setNeedsDisplay];
-        [self.tableViewShell.tableView reloadData];
+        self.onDataPost(self.dictData);
     }
-}
-- (void)event:(nonnull NSString *)event info:(nullable id)info {
-    NSLog(@"[TableViewCodeHeaderFooter] [doSomething] event:%@ info:%@", event, info);
 }
 - (void)resetData:(nonnull id)data {
     if([data isKindOfClass:[NSDictionary class]]){
@@ -86,5 +84,8 @@
         self.titleLabel.text = nil!=_dictData[@"Title"] ? _dictData[@"Title"] : @"Unknown";
         self.openButton.selected = nil!=_dictData[@"Open"] ? [_dictData[@"Open"] boolValue] : NO;
     }
+}
+- (void)performTask:(NSString *)task info:(id)info{
+    NSLog(@"[TableViewCodeHeaderFooter] [performTask] event:%@ info:%@", task, info);
 }
 @end

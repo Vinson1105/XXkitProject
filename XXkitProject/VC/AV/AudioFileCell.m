@@ -10,8 +10,9 @@
 #import "../../../../XXkit/Object-C/Shell/XXtableViewShell.h"
 #import "../../../CoreData/AudioFile+CoreDataProperties.h"
 #import "../../../../XXkit/Object-C/XXocUtils.h"
+#import "../../../../XXkit/Object-C/Shell/XXviewBase.h"
 
-@interface AudioFileCell()<XXtableViewCellDelegate>
+@interface AudioFileCell()<XXviewBase>
 @property (weak, nonatomic) IBOutlet UITextField *name;
 @property (weak, nonatomic) IBOutlet UILabel *starttime;
 @property (weak, nonatomic) IBOutlet UILabel *duration;
@@ -35,8 +36,7 @@
     // Configure the view for the selected state
 }
 
-@synthesize indexPath;
-@synthesize tableViewShell;
+@synthesize indexPath,onEventOccured,onDataPost;
 - (void)resetData:(nonnull id)data {
     AudioFile *info = data;
     _name.text = info.name;
@@ -44,8 +44,8 @@
     _progress.value = 0;
     _starttime.text = @"00:00";
 }
-- (void)event:(NSString *)event info:(id)info{
-    if([event isEqualToString:@"progress"]){
+- (void)performTask:(NSString *)task info:(id)info{
+    if([task isEqualToString:@"progress"]){
         _progress.value = [info doubleValue];
     }
 }

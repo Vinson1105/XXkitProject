@@ -8,8 +8,9 @@
 
 #import "TableViewCodeCell.h"
 #import "../../../../XXkit/Object-C/Shell/XXtableViewShell.h"
+#import "../../../../XXkit/Object-C/Shell/XXviewBase.h"
 
-@interface TableViewCodeCell() <XXtableViewCellDelegate>
+@interface TableViewCodeCell() <XXviewBase>
 @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) UILabel *messageLabel;
 @property (strong, nonatomic) UIButton *detailButton;
@@ -19,7 +20,7 @@
 @end
 
 @implementation TableViewCodeCell
-@synthesize indexPath, tableViewShell;
+@synthesize indexPath, onDataPost, onEventOccured;
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -79,6 +80,9 @@
         self.isDetailShowing = [_data[@"IsDetailShowing"] boolValue];
     }
 }
+- (void)performTask:(NSString *)task info:(id)info{
+    
+}
 
 - (void)setIsDetailShowing:(BOOL)isDetailShowing{
     if(_isDetailShowing == isDetailShowing) return;
@@ -98,6 +102,6 @@
 
 - (void)onButtonTouchUpInside:(id)sender {
     self.isDetailShowing = !self.isDetailShowing;
-    [self.tableViewShell.tableView reloadRowsAtIndexPaths:@[self.indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    self.onDataPost(self, self.data);
 }
 @end
