@@ -75,7 +75,7 @@
         [self.contentView setNeedsLayout];
         [self setNeedsLayout];
         [self setNeedsDisplay];
-        self.onDataPost(self.dictData);
+        self.onDataPost(self, self.dictData);
     }
 }
 - (void)resetData:(nonnull id)data {
