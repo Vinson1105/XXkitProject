@@ -35,12 +35,14 @@
 #import "./VC/Utils/TouchIDViewController.h"
 #import "./VC/Utils/KeyChainViewController.h"
 
+#import "./VC/Quick/QuickViewController.h"
 
 #define kShellSection       0
 #define kCategorySection    1
 #define kAVSection          2
 #define kViewSection        3
 #define kUtilsSection       4
+#define kQuickSection       5
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -56,7 +58,7 @@
     NSLog(@"[MainViewController] alloc %p", self);
     
     // Do any additional setup after loading the view.
-    NSMutableArray *headers = [[NSMutableArray alloc] initWithArray:@[@"Shell",@"Category",@"AV",@"View",@"Utils"]];
+    NSMutableArray *headers = [[NSMutableArray alloc] initWithArray:@[@"Shell",@"Category",@"AV",@"View",@"Utils",@"Quick"]];
     
     NSMutableArray *rows = [[NSMutableArray alloc] initWithArray:@[
         @[
@@ -88,6 +90,9 @@
             @{@"Title":@"XXtouchID",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"XXkeyChain",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
         ],
+        @[
+            @{@"Title":@"XXquick",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+        ]
     ]];
     
     _shell = [XXtableViewShell new];
@@ -139,6 +144,10 @@
                 if([title isEqualToString:@"XXcoreData"])       { vc = [XXocUtils viewController:@"CoreDataViewController"]; }
                 else if([title isEqualToString:@"XXtouchID"])   { vc = [XXocUtils viewController:@"TouchIDViewController"]; }
                 else if([title isEqualToString:@"XXkeyChain"])  { vc = [XXocUtils viewController:@"KeyChainViewController"]; }
+                else{}
+            }
+            else if(kQuickSection == indexPath.section){
+                if([title isEqualToString:@"XXquick"])       { vc = [XXocUtils viewController:@"QuickViewController"]; }
                 else{}
             }
             else{

@@ -309,6 +309,49 @@
             </objects>
             <point key="canvasLocation" x="-391" y="2704"/>
         </scene>
+        <!--Quick View Controller-->
+        <scene sceneID="VHn-ng-WJC">
+            <objects>
+                <viewController storyboardIdentifier="QuickViewController" id="JgM-ix-zea" customClass="QuickViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TpW-1T-3JH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whH-Up-bto">
+                                <rect key="frame" x="20" y="64" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="quick_name" value="title1"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgP-6H-Z6Q">
+                                <rect key="frame" x="20" y="105" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="quick_name" value="title2"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OTb-up-Nfm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SgP-6H-Z6Q" firstAttribute="top" secondItem="whH-Up-bto" secondAttribute="bottom" constant="20" id="9JC-16-WuN"/>
+                            <constraint firstItem="SgP-6H-Z6Q" firstAttribute="leading" secondItem="OTb-up-Nfm" secondAttribute="leading" constant="20" id="Fip-Tm-5dF"/>
+                            <constraint firstItem="OTb-up-Nfm" firstAttribute="trailing" secondItem="whH-Up-bto" secondAttribute="trailing" constant="20" id="Nhp-Bv-Urr"/>
+                            <constraint firstItem="whH-Up-bto" firstAttribute="top" secondItem="OTb-up-Nfm" secondAttribute="top" constant="20" id="QPH-hm-VUn"/>
+                            <constraint firstItem="OTb-up-Nfm" firstAttribute="trailing" secondItem="SgP-6H-Z6Q" secondAttribute="trailing" constant="20" id="W7Y-cS-9NR"/>
+                            <constraint firstItem="whH-Up-bto" firstAttribute="leading" secondItem="OTb-up-Nfm" secondAttribute="leading" constant="20" id="tcW-yg-Rbt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JyC-M3-6CV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-391.304347826087" y="3394.4196428571427"/>
+        </scene>
         <!--TouchID View Controller-->
         <scene sceneID="XXr-vP-DJf">
             <objects>
