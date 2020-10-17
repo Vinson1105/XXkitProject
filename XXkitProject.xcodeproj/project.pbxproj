@@ -51,6 +51,7 @@
 		D3550A1E2537BA1C00C5222F /* QuickComponentUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D3550A182537BA1C00C5222F /* QuickComponentUILabel.m */; };
 		D3550A1F2537BA1C00C5222F /* UIViewController+QuickLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D3550A192537BA1C00C5222F /* UIViewController+QuickLoader.m */; };
 		D35663DA2456F7CF00EAB7FB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35663D92456F7CF00EAB7FB /* Security.framework */; };
+		D356B0C7253AE72D00EE0090 /* QuickInitScript.plist in Resources */ = {isa = PBXBuildFile; fileRef = D356B0C6253AE72D00EE0090 /* QuickInitScript.plist */; };
 		D35B8CD32487025C0079843A /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = D35B8CD22487025C0079843A /* NSBundle+Language.m */; };
 		D35B8CDA2487055A0079843A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D35B8CDC2487055A0079843A /* Localizable.strings */; };
 		D35B8CE3248707FA0079843A /* LangaugeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35B8CE2248707FA0079843A /* LangaugeViewController.m */; };
@@ -205,6 +206,7 @@
 		D3550A192537BA1C00C5222F /* UIViewController+QuickLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+QuickLoader.m"; sourceTree = "<group>"; };
 		D3550A1A2537BA1C00C5222F /* NSObject+Quick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Quick.h"; sourceTree = "<group>"; };
 		D35663D92456F7CF00EAB7FB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D356B0C6253AE72D00EE0090 /* QuickInitScript.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = QuickInitScript.plist; sourceTree = "<group>"; };
 		D35B8CD12487025C0079843A /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
 		D35B8CD22487025C0079843A /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
 		D35B8CDB2487055A0079843A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -433,6 +435,7 @@
 				D3550A112537BA1C00C5222F /* XXquickFactory.m */,
 				D3550A1A2537BA1C00C5222F /* NSObject+Quick.h */,
 				D3550A142537BA1C00C5222F /* NSObject+Quick.m */,
+				D356B0C6253AE72D00EE0090 /* QuickInitScript.plist */,
 			);
 			path = Quick;
 			sourceTree = "<group>";
@@ -827,6 +830,7 @@
 				D35B8CDA2487055A0079843A /* Localizable.strings in Resources */,
 				D33B8A472536EB5600654A54 /* Quick.json in Resources */,
 				D39503B62447EABC001434A5 /* TableViewNibCell.xib in Resources */,
+				D356B0C7253AE72D00EE0090 /* QuickInitScript.plist in Resources */,
 				D3659569243E8F59009F5228 /* Readme.MD in Resources */,
 				D365956A243E8F59009F5228 /* .gitignore in Resources */,
 				D365956B243E8F59009F5228 /* .gitattributes in Resources */,

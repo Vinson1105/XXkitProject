@@ -1,12 +1,14 @@
 {
     "title1":{
         "Text":"我是title1",
-        "Color":"#444444",
+        "TextColor":"#444444",
         "Font":50,
+        "TextAlignment":"Center",
     },
     "title2":{
         "Text":"我是title2",
-        "Color":"#777000",
+        "TextColor":"#777000",
         "Font":20,
+        "TextAlignment":"Right",
     }
 }
