@@ -52,6 +52,8 @@
 		D3550A1F2537BA1C00C5222F /* UIViewController+QuickLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D3550A192537BA1C00C5222F /* UIViewController+QuickLoader.m */; };
 		D35663DA2456F7CF00EAB7FB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35663D92456F7CF00EAB7FB /* Security.framework */; };
 		D356B0C7253AE72D00EE0090 /* QuickInitScript.plist in Resources */ = {isa = PBXBuildFile; fileRef = D356B0C6253AE72D00EE0090 /* QuickInitScript.plist */; };
+		D356B0D0253AF0EB00EE0090 /* AppStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D356B0CF253AF0EB00EE0090 /* AppStoryboard.storyboard */; };
+		D356B0D7253AF16E00EE0090 /* AccountLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D356B0D6253AF16E00EE0090 /* AccountLoginVC.m */; };
 		D35B8CD32487025C0079843A /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = D35B8CD22487025C0079843A /* NSBundle+Language.m */; };
 		D35B8CDA2487055A0079843A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D35B8CDC2487055A0079843A /* Localizable.strings */; };
 		D35B8CE3248707FA0079843A /* LangaugeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35B8CE2248707FA0079843A /* LangaugeViewController.m */; };
@@ -59,6 +61,8 @@
 		D35E3203244FB44900300362 /* XXstackViewShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D35E3202244FB44900300362 /* XXstackViewShellVC.m */; };
 		D35F32002489A3020099D71B /* XXbuttonPageShiftShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D35F31FE2489A3020099D71B /* XXbuttonPageShiftShell.m */; };
 		D35F32032489AE290099D71B /* PageShiftButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35F32022489AE290099D71B /* PageShiftButtonViewController.m */; };
+		D35F8F48253BA50B00C8BE86 /* QuickComponentUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D35F8F47253BA50B00C8BE86 /* QuickComponentUIButton.m */; };
+		D35F8F4E253BA73C00C8BE86 /* QuickComponentUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = D35F8F4D253BA73C00C8BE86 /* QuickComponentUIView.m */; };
 		D3659519243E8F59009F5228 /* UIView+Zoomable.m in Sources */ = {isa = PBXBuildFile; fileRef = D3659437243E8F58009F5228 /* UIView+Zoomable.m */; };
 		D365951B243E8F59009F5228 /* UIViewController+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = D3659439243E8F58009F5228 /* UIViewController+Orientation.m */; };
 		D365951D243E8F59009F5228 /* XXavFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = D365943D243E8F58009F5228 /* XXavFormat.m */; };
@@ -207,6 +211,9 @@
 		D3550A1A2537BA1C00C5222F /* NSObject+Quick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Quick.h"; sourceTree = "<group>"; };
 		D35663D92456F7CF00EAB7FB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D356B0C6253AE72D00EE0090 /* QuickInitScript.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = QuickInitScript.plist; sourceTree = "<group>"; };
+		D356B0CF253AF0EB00EE0090 /* AppStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppStoryboard.storyboard; sourceTree = "<group>"; };
+		D356B0D5253AF16E00EE0090 /* AccountLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountLoginVC.h; sourceTree = "<group>"; };
+		D356B0D6253AF16E00EE0090 /* AccountLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountLoginVC.m; sourceTree = "<group>"; };
 		D35B8CD12487025C0079843A /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
 		D35B8CD22487025C0079843A /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
 		D35B8CDB2487055A0079843A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -224,6 +231,10 @@
 		D35F31FF2489A3020099D71B /* XXbuttonPageShiftShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXbuttonPageShiftShell.h; sourceTree = "<group>"; };
 		D35F32012489AE290099D71B /* PageShiftButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageShiftButtonViewController.h; sourceTree = "<group>"; };
 		D35F32022489AE290099D71B /* PageShiftButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageShiftButtonViewController.m; sourceTree = "<group>"; };
+		D35F8F46253BA50B00C8BE86 /* QuickComponentUIButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickComponentUIButton.h; sourceTree = "<group>"; };
+		D35F8F47253BA50B00C8BE86 /* QuickComponentUIButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickComponentUIButton.m; sourceTree = "<group>"; };
+		D35F8F4C253BA73C00C8BE86 /* QuickComponentUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickComponentUIView.h; sourceTree = "<group>"; };
+		D35F8F4D253BA73C00C8BE86 /* QuickComponentUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickComponentUIView.m; sourceTree = "<group>"; };
 		D3659432243E8F58009F5228 /* UIView+Zoomable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Zoomable.h"; sourceTree = "<group>"; };
 		D3659433243E8F58009F5228 /* UIViewController+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Orientation.h"; sourceTree = "<group>"; };
 		D3659437243E8F58009F5228 /* UIView+Zoomable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Zoomable.m"; sourceTree = "<group>"; };
@@ -436,6 +447,10 @@
 				D3550A1A2537BA1C00C5222F /* NSObject+Quick.h */,
 				D3550A142537BA1C00C5222F /* NSObject+Quick.m */,
 				D356B0C6253AE72D00EE0090 /* QuickInitScript.plist */,
+				D35F8F46253BA50B00C8BE86 /* QuickComponentUIButton.h */,
+				D35F8F47253BA50B00C8BE86 /* QuickComponentUIButton.m */,
+				D35F8F4C253BA73C00C8BE86 /* QuickComponentUIView.h */,
+				D35F8F4D253BA73C00C8BE86 /* QuickComponentUIView.m */,
 			);
 			path = Quick;
 			sourceTree = "<group>";
@@ -448,6 +463,24 @@
 				D35663D92456F7CF00EAB7FB /* Security.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D356B0CE253AEE3300EE0090 /* APP */ = {
+			isa = PBXGroup;
+			children = (
+				D356B0D4253AF14000EE0090 /* AccountLogin */,
+				D356B0CF253AF0EB00EE0090 /* AppStoryboard.storyboard */,
+			);
+			path = APP;
+			sourceTree = "<group>";
+		};
+		D356B0D4253AF14000EE0090 /* AccountLogin */ = {
+			isa = PBXGroup;
+			children = (
+				D356B0D5253AF16E00EE0090 /* AccountLoginVC.h */,
+				D356B0D6253AF16E00EE0090 /* AccountLoginVC.m */,
+			);
+			path = AccountLogin;
 			sourceTree = "<group>";
 		};
 		D3659403243E8F58009F5228 /* XXkit */ = {
@@ -641,6 +674,7 @@
 		D37F69FA243C017E00DC2F28 /* XXkitProject */ = {
 			isa = PBXGroup;
 			children = (
+				D356B0CE253AEE3300EE0090 /* APP */,
 				D350881A243FF99F00B8BC8F /* VC */,
 				D3659403243E8F58009F5228 /* XXkit */,
 				D37F69FB243C017E00DC2F28 /* AppDelegate.h */,
@@ -835,6 +869,7 @@
 				D365956A243E8F59009F5228 /* .gitignore in Resources */,
 				D365956B243E8F59009F5228 /* .gitattributes in Resources */,
 				D33FF84D2466DEC800AF3652 /* AudioFileCell.xib in Resources */,
+				D356B0D0253AF0EB00EE0090 /* AppStoryboard.storyboard in Resources */,
 				D34C487724613FB50031884A /* Readme.md in Resources */,
 				D37F6A06243C017E00DC2F28 /* Main.storyboard in Resources */,
 			);
@@ -870,6 +905,7 @@
 				D3550A1B2537BA1C00C5222F /* XXquickFactory.m in Sources */,
 				D3659562243E8F59009F5228 /* XXkeyboardAdapter.m in Sources */,
 				D33F537A245014B500B8D5E1 /* XXtextFieldShellVC.m in Sources */,
+				D35F8F48253BA50B00C8BE86 /* QuickComponentUIButton.m in Sources */,
 				D35D7AF624748B9B00C2472A /* KeyChainViewController.m in Sources */,
 				D39503B52447EABC001434A5 /* TableViewNibCell.m in Sources */,
 				D3550A1C2537BA1C00C5222F /* NSObject+Quick.m in Sources */,
@@ -891,6 +927,7 @@
 				D390971A2459592700A850F6 /* XXverificationCodeShell.m in Sources */,
 				D39097142459286800A850F6 /* XXtimer.m in Sources */,
 				D33B011324ADB92800EAD771 /* XXwebViewPayShell.m in Sources */,
+				D356B0D7253AF16E00EE0090 /* AccountLoginVC.m in Sources */,
 				D36B7A392445DD2F001BBE89 /* MainViewController.m in Sources */,
 				D3BEB020246551810024C397 /* XXaudioFileRecorder.m in Sources */,
 				D3286E94246BD1BA00B0A958 /* XXcoreData.m in Sources */,
@@ -933,6 +970,7 @@
 				D365955E243E8F59009F5228 /* Metal.metal in Sources */,
 				D3AFBD0E247FDEA100BA7FD1 /* XXaudioFilePlayer.m in Sources */,
 				D34755C124D2BF480027D6D3 /* TableViewCodeHeaderFooter.m in Sources */,
+				D35F8F4E253BA73C00C8BE86 /* QuickComponentUIView.m in Sources */,
 				D35E3203244FB44900300362 /* XXstackViewShellVC.m in Sources */,
 				D3286E8C246BA6AD00B0A958 /* CoreDataViewController.m in Sources */,
 				D3236DDA2485E0AE00AA5F7A /* CycleClickButtonViewController.m in Sources */,
