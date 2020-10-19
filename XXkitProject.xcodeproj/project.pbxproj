@@ -438,8 +438,12 @@
 			children = (
 				D3550A122537BA1C00C5222F /* QuickComponentBase.h */,
 				D3550A162537BA1C00C5222F /* QuickComponentBase.m */,
+				D35F8F4C253BA73C00C8BE86 /* QuickComponentUIView.h */,
+				D35F8F4D253BA73C00C8BE86 /* QuickComponentUIView.m */,
 				D3550A132537BA1C00C5222F /* QuickComponentUILabel.h */,
 				D3550A182537BA1C00C5222F /* QuickComponentUILabel.m */,
+				D35F8F46253BA50B00C8BE86 /* QuickComponentUIButton.h */,
+				D35F8F47253BA50B00C8BE86 /* QuickComponentUIButton.m */,
 				D3550A152537BA1C00C5222F /* UIViewController+QuickLoader.h */,
 				D3550A192537BA1C00C5222F /* UIViewController+QuickLoader.m */,
 				D3550A172537BA1C00C5222F /* XXquickFactory.h */,
@@ -447,10 +451,6 @@
 				D3550A1A2537BA1C00C5222F /* NSObject+Quick.h */,
 				D3550A142537BA1C00C5222F /* NSObject+Quick.m */,
 				D356B0C6253AE72D00EE0090 /* QuickInitScript.plist */,
-				D35F8F46253BA50B00C8BE86 /* QuickComponentUIButton.h */,
-				D35F8F47253BA50B00C8BE86 /* QuickComponentUIButton.m */,
-				D35F8F4C253BA73C00C8BE86 /* QuickComponentUIView.h */,
-				D35F8F4D253BA73C00C8BE86 /* QuickComponentUIView.m */,
 			);
 			path = Quick;
 			sourceTree = "<group>";
