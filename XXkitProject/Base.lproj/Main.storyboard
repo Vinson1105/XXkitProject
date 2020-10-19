@@ -335,6 +335,32 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="quick_name" value="title2"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="doU-nU-Ioi">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1C-7O-cgz">
+                                        <rect key="frame" x="50" y="50" width="100" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="A9i-bd-q7f"/>
+                                            <constraint firstAttribute="height" constant="100" id="SjG-Rd-0fC"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="quick_name" value="sub"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Ihl-OB-zJx"/>
+                                    <constraint firstItem="e1C-7O-cgz" firstAttribute="centerX" secondItem="doU-nU-Ioi" secondAttribute="centerX" id="Q9B-xW-lHZ"/>
+                                    <constraint firstItem="e1C-7O-cgz" firstAttribute="centerY" secondItem="doU-nU-Ioi" secondAttribute="centerY" id="Z8h-YA-0iD"/>
+                                    <constraint firstAttribute="width" constant="200" id="efD-pG-tvr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="quick_name" value="super"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OTb-up-Nfm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -343,7 +369,9 @@
                             <constraint firstItem="SgP-6H-Z6Q" firstAttribute="leading" secondItem="OTb-up-Nfm" secondAttribute="leading" constant="20" id="Fip-Tm-5dF"/>
                             <constraint firstItem="OTb-up-Nfm" firstAttribute="trailing" secondItem="whH-Up-bto" secondAttribute="trailing" constant="20" id="Nhp-Bv-Urr"/>
                             <constraint firstItem="whH-Up-bto" firstAttribute="top" secondItem="OTb-up-Nfm" secondAttribute="top" constant="20" id="QPH-hm-VUn"/>
+                            <constraint firstItem="doU-nU-Ioi" firstAttribute="centerY" secondItem="TpW-1T-3JH" secondAttribute="centerY" id="VQT-9a-RaE"/>
                             <constraint firstItem="OTb-up-Nfm" firstAttribute="trailing" secondItem="SgP-6H-Z6Q" secondAttribute="trailing" constant="20" id="W7Y-cS-9NR"/>
+                            <constraint firstItem="doU-nU-Ioi" firstAttribute="centerX" secondItem="TpW-1T-3JH" secondAttribute="centerX" id="hQ0-z8-VQx"/>
                             <constraint firstItem="whH-Up-bto" firstAttribute="leading" secondItem="OTb-up-Nfm" secondAttribute="leading" constant="20" id="tcW-yg-Rbt"/>
                         </constraints>
                     </view>
