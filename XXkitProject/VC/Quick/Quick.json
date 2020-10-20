@@ -10,5 +10,11 @@
         "TextColor":"#777000",
         "Font":20,
         "TextAlignment":"Right",
+    },
+    "view1":{
+        "BackgroundColor":"#7f7f7f",
+    },
+    "view2":{
+        "BackgroundColor":"#110011",
     }
 }
