@@ -94,6 +94,7 @@
 		D38624432462B10B00617E77 /* OrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D38624422462B10B00617E77 /* OrientationViewController.m */; };
 		D3865B4A2478FF8700EF29B4 /* PopupableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3865B492478FF8700EF29B4 /* PopupableViewController.m */; };
 		D38C26982463FD0D00B88757 /* ZoomableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D38C26972463FD0D00B88757 /* ZoomableViewController.m */; };
+		D38E9F852540F47700FFF4E9 /* QuickComponentUINavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D38E9F842540F47700FFF4E9 /* QuickComponentUINavigationBar.m */; };
 		D39097112459267000A850F6 /* XXbuttonLimitShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D39097102459267000A850F6 /* XXbuttonLimitShell.m */; };
 		D39097142459286800A850F6 /* XXtimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D39097132459286700A850F6 /* XXtimer.m */; };
 		D390971A2459592700A850F6 /* XXverificationCodeShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D39097192459592700A850F6 /* XXverificationCodeShell.m */; };
@@ -306,6 +307,8 @@
 		D3865B492478FF8700EF29B4 /* PopupableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopupableViewController.m; sourceTree = "<group>"; };
 		D38C26962463FD0C00B88757 /* ZoomableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZoomableViewController.h; sourceTree = "<group>"; };
 		D38C26972463FD0D00B88757 /* ZoomableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZoomableViewController.m; sourceTree = "<group>"; };
+		D38E9F832540F47700FFF4E9 /* QuickComponentUINavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickComponentUINavigationBar.h; sourceTree = "<group>"; };
+		D38E9F842540F47700FFF4E9 /* QuickComponentUINavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickComponentUINavigationBar.m; sourceTree = "<group>"; };
 		D390970F2459267000A850F6 /* XXbuttonLimitShell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXbuttonLimitShell.h; sourceTree = "<group>"; };
 		D39097102459267000A850F6 /* XXbuttonLimitShell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXbuttonLimitShell.m; sourceTree = "<group>"; };
 		D39097122459286700A850F6 /* XXtimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXtimer.h; sourceTree = "<group>"; };
@@ -457,6 +460,8 @@
 				D35F8F47253BA50B00C8BE86 /* QuickComponentUIButton.m */,
 				D33AE78325401463009C6C35 /* QuickComponentUIViewController.h */,
 				D33AE78425401463009C6C35 /* QuickComponentUIViewController.m */,
+				D38E9F832540F47700FFF4E9 /* QuickComponentUINavigationBar.h */,
+				D38E9F842540F47700FFF4E9 /* QuickComponentUINavigationBar.m */,
 				D3550A172537BA1C00C5222F /* XXquickFactory.h */,
 				D3550A112537BA1C00C5222F /* XXquickFactory.m */,
 				D3550A1A2537BA1C00C5222F /* NSObject+Quick.h */,
@@ -961,6 +966,7 @@
 				D3FBEAEA24CEA2B700A32649 /* XXpickerViewShellVC.m in Sources */,
 				D335CF4A248B80BE004832BB /* MaskViewViewController.m in Sources */,
 				D3550A1D2537BA1C00C5222F /* QuickComponentBase.m in Sources */,
+				D38E9F852540F47700FFF4E9 /* QuickComponentUINavigationBar.m in Sources */,
 				D35B8CD32487025C0079843A /* NSBundle+Language.m in Sources */,
 				D346DAC12478BF870028B081 /* UIView+TapToVisible.m in Sources */,
 				D33AE77F25400415009C6C35 /* QuickMainLoader.m in Sources */,
