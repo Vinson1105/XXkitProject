@@ -11,10 +11,16 @@
         "Font":20,
         "TextAlignment":"Right",
     },
-    "view1":{
+    "super":{
         "BackgroundColor":"#7f7f7f",
     },
-    "view2":{
+    "sub":{
         "BackgroundColor":"#110011",
+    },
+    "button1":{
+        "Title":"next",
+        "TitleColor":"#000000",
+        "BackgroundColor":"#7f3487",
+        "CornerRadius":20,
     }
 }

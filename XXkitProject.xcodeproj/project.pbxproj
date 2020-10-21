@@ -25,6 +25,8 @@
 		D33B011324ADB92800EAD771 /* XXwebViewPayShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D33B011224ADB92700EAD771 /* XXwebViewPayShell.m */; };
 		D33B8A3E2536E99000654A54 /* QuickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33B8A3D2536E99000654A54 /* QuickViewController.m */; };
 		D33B8A472536EB5600654A54 /* Quick.json in Resources */ = {isa = PBXBuildFile; fileRef = D33B8A462536EB5600654A54 /* Quick.json */; };
+		D33C4B5C253F1F6D0073D820 /* QuickVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = D33C4B5B253F1F6D0073D820 /* QuickVC2.m */; };
+		D33C4B61253F1F860073D820 /* Quick2.json in Resources */ = {isa = PBXBuildFile; fileRef = D33C4B60253F1F860073D820 /* Quick2.json */; };
 		D33C787D24936AE500E9E926 /* XXvideoRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = D33C787B24936AE500E9E926 /* XXvideoRecorder.m */; };
 		D33D60BE24BC81460066E17A /* XXviewMovableShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D33D60BD24BC81460066E17A /* XXviewMovableShell.m */; };
 		D33F537A245014B500B8D5E1 /* XXtextFieldShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D33F5379245014B500B8D5E1 /* XXtextFieldShellVC.m */; };
@@ -157,6 +159,9 @@
 		D33B8A3C2536E99000654A54 /* QuickViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickViewController.h; sourceTree = "<group>"; };
 		D33B8A3D2536E99000654A54 /* QuickViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickViewController.m; sourceTree = "<group>"; };
 		D33B8A462536EB5600654A54 /* Quick.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Quick.json; sourceTree = "<group>"; };
+		D33C4B5A253F1F6D0073D820 /* QuickVC2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickVC2.h; sourceTree = "<group>"; };
+		D33C4B5B253F1F6D0073D820 /* QuickVC2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickVC2.m; sourceTree = "<group>"; };
+		D33C4B60253F1F860073D820 /* Quick2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Quick2.json; sourceTree = "<group>"; };
 		D33C787B24936AE500E9E926 /* XXvideoRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXvideoRecorder.m; sourceTree = "<group>"; };
 		D33C787C24936AE500E9E926 /* XXvideoRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXvideoRecorder.h; sourceTree = "<group>"; };
 		D33D60BC24BC81460066E17A /* XXviewMovableShell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXviewMovableShell.h; sourceTree = "<group>"; };
@@ -386,6 +391,9 @@
 				D33B8A3C2536E99000654A54 /* QuickViewController.h */,
 				D33B8A3D2536E99000654A54 /* QuickViewController.m */,
 				D33B8A462536EB5600654A54 /* Quick.json */,
+				D33C4B5A253F1F6D0073D820 /* QuickVC2.h */,
+				D33C4B5B253F1F6D0073D820 /* QuickVC2.m */,
+				D33C4B60253F1F860073D820 /* Quick2.json */,
 			);
 			path = Quick;
 			sourceTree = "<group>";
@@ -872,6 +880,7 @@
 				D356B0D0253AF0EB00EE0090 /* AppStoryboard.storyboard in Resources */,
 				D34C487724613FB50031884A /* Readme.md in Resources */,
 				D37F6A06243C017E00DC2F28 /* Main.storyboard in Resources */,
+				D33C4B61253F1F860073D820 /* Quick2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -912,6 +921,7 @@
 				D3304957247529F4005DC415 /* ToastViewController.m in Sources */,
 				D35F32032489AE290099D71B /* PageShiftButtonViewController.m in Sources */,
 				D365951B243E8F59009F5228 /* UIViewController+Orientation.m in Sources */,
+				D33C4B5C253F1F6D0073D820 /* QuickVC2.m in Sources */,
 				D3FBEAE724CE8B8000A32649 /* XXpickerViewShell.m in Sources */,
 				D3865B4A2478FF8700EF29B4 /* PopupableViewController.m in Sources */,
 				D365955C243E8F59009F5228 /* XXmtkRgbDelegate.m in Sources */,

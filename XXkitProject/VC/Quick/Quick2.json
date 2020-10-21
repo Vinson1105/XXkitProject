@@ -1,0 +1,8 @@
+{
+    "super":{
+        "BackgroundColor":"#7f7f7f",
+    },
+    "sub":{
+        "BackgroundColor":"#110011",
+    }
+}

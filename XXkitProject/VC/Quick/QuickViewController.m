@@ -10,7 +10,6 @@
 #import "../../../../XXkit/Object-C/Quick/UIViewController+QuickLoader.h"
 
 @interface QuickViewController ()
-
 @end
 
 @implementation QuickViewController
