@@ -1,26 +1,31 @@
 {
-    "title1":{
-        "Text":"我是title1",
-        "TextColor":"#444444",
-        "Font":50,
-        "TextAlignment":"Center",
+    "View":{
+        "BackgroundColor" : "#252525",
     },
-    "title2":{
-        "Text":"我是title2",
-        "TextColor":"#777000",
-        "Font":20,
-        "TextAlignment":"Right",
-    },
-    "super":{
-        "BackgroundColor":"#7f7f7f",
-    },
-    "sub":{
-        "BackgroundColor":"#110011",
-    },
-    "button1":{
-        "Title":"next",
-        "TitleColor":"#000000",
-        "BackgroundColor":"#7f3487",
-        "CornerRadius":20,
+    "SubView":{
+        "title1":{
+            "Text":"我是title1",
+            "TextColor":"#444444",
+            "Font":50,
+            "TextAlignment":"Center",
+        },
+        "title2":{
+            "Text":"我是title2",
+            "TextColor":"#777000",
+            "Font":20,
+            "TextAlignment":"Right",
+        },
+        "super":{
+            "BackgroundColor":"#7f7f7f",
+        },
+        "sub":{
+            "BackgroundColor":"#110011",
+        },
+        "button1":{
+            "Title":"next",
+            "TitleColor":"#ffffff",
+            "BackgroundColor":"#7f3487",
+            "CornerRadius":20,
+        }
     }
 }

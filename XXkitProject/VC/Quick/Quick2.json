@@ -1,8 +1,13 @@
 {
-    "super":{
-        "BackgroundColor":"#7f7f7f",
+    "View":{
+        "BackgroundColor":"#686868",
     },
-    "sub":{
-        "BackgroundColor":"#110011",
+    "SubView":{
+        "view1":{
+            "BackgroundColor":"#7f7f7f",
+        },
+        "view2":{
+            "BackgroundColor":"#110011",
+        }
     }
 }

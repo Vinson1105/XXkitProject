@@ -7,7 +7,8 @@
 //
 
 #import "QuickViewController.h"
-#import "../../../../XXkit/Object-C/Quick/UIViewController+QuickLoader.h"
+//#import "../../../../XXkit/Object-C/Quick/UIViewController+QuickLoader.h"
+#import "../../../../XXkit/Object-C/Quick/NSObject+Quick.h"
 
 @interface QuickViewController ()
 @end
@@ -17,7 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self quick_loadFromFileName:@"Quick.json" bundle:nil];
+//    [self quick_loadFromFileName:@"Quick.json" bundle:nil];
+    [self quick_resetFromJFile:@"Quick.json" bundle:nil];
 }
 
 /*

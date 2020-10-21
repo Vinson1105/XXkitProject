@@ -372,6 +372,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="quick_name" value="button1"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="6De-M1-WO7" kind="show" id="kVu-0C-1qx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OTb-up-Nfm"/>
@@ -394,6 +397,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JyC-M3-6CV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-391.304347826087" y="3394.4196428571427"/>
+        </scene>
+        <!--QuickVC2-->
+        <scene sceneID="W8R-dZ-i8c">
+            <objects>
+                <viewController storyboardIdentifier="QuickVC2" id="6De-M1-WO7" customClass="QuickVC2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LTM-xh-SPN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLY-YO-Hlh">
+                                <rect key="frame" x="20" y="20" width="374" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="fH5-ur-Kbu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="quick_name" value="view1"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9EW-Ay-G2v">
+                                <rect key="frame" x="20" y="140" width="374" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="D7p-2k-hMC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="quick_name" value="view2"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UWH-Ig-8hC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UWH-Ig-8hC" firstAttribute="trailing" secondItem="gLY-YO-Hlh" secondAttribute="trailing" constant="20" id="1NS-mi-Eq7"/>
+                            <constraint firstItem="9EW-Ay-G2v" firstAttribute="top" secondItem="gLY-YO-Hlh" secondAttribute="bottom" constant="20" id="CQU-Ce-sKR"/>
+                            <constraint firstItem="UWH-Ig-8hC" firstAttribute="trailing" secondItem="9EW-Ay-G2v" secondAttribute="trailing" constant="20" id="KI9-pM-vV5"/>
+                            <constraint firstItem="gLY-YO-Hlh" firstAttribute="leading" secondItem="UWH-Ig-8hC" secondAttribute="leading" constant="20" id="NNI-RP-Taa"/>
+                            <constraint firstItem="gLY-YO-Hlh" firstAttribute="top" secondItem="UWH-Ig-8hC" secondAttribute="top" constant="20" id="an3-bU-FRB"/>
+                            <constraint firstItem="9EW-Ay-G2v" firstAttribute="leading" secondItem="UWH-Ig-8hC" secondAttribute="leading" constant="20" id="n0C-43-lPV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5SA-Wx-SMg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mUY-Eb-abh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="277" y="3394"/>
         </scene>
         <!--TouchID View Controller-->
         <scene sceneID="XXr-vP-DJf">

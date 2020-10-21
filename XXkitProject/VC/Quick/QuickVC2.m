@@ -7,7 +7,14 @@
 //
 
 #import "QuickVC2.h"
+//#import "../../../../XXkit/Object-C/Quick/UIViewController+QuickLoader.h"
+#import "../../../../XXkit/Object-C/Quick/NSObject+Quick.h"
+
 
 @implementation QuickVC2
-
+- (void)viewDidLoad{
+    [super viewDidLoad];
+//    [self quick_loadFromFileName:@"Quick2.json" bundle:nil];
+    [self quick_resetFromJFile:@"Quick2.json" bundle:nil];
+}
 @end
