@@ -20,6 +20,10 @@
     // Do any additional setup after loading the view.
 //    [self quick_loadFromFileName:@"Quick.json" bundle:nil];
     [self quick_resetFromJFile:@"Quick.json" bundle:nil];
+    
+    self.navigationItem.leftBarButtonItem.title = @"1111";
+    self.navigationItem.backButtonTitle = @"2222";
+    self.navigationItem.leftItemsSupplementBackButton = YES;
 }
 
 /*

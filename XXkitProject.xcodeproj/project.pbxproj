@@ -24,6 +24,7 @@
 		D337423C247CFEAF009C48AC /* UIButton+StateSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D337423A247CFEAE009C48AC /* UIButton+StateSettings.m */; };
 		D33AE77F25400415009C6C35 /* QuickMainLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D33AE77E25400415009C6C35 /* QuickMainLoader.m */; };
 		D33AE78525401463009C6C35 /* QuickComponentUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33AE78425401463009C6C35 /* QuickComponentUIViewController.m */; };
+		D33AE7B6254156CD009C6C35 /* QuickComponentUINavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D33AE7B5254156CD009C6C35 /* QuickComponentUINavigationItem.m */; };
 		D33B011324ADB92800EAD771 /* XXwebViewPayShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D33B011224ADB92700EAD771 /* XXwebViewPayShell.m */; };
 		D33B8A3E2536E99000654A54 /* QuickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33B8A3D2536E99000654A54 /* QuickViewController.m */; };
 		D33B8A472536EB5600654A54 /* Quick.json in Resources */ = {isa = PBXBuildFile; fileRef = D33B8A462536EB5600654A54 /* Quick.json */; };
@@ -160,6 +161,8 @@
 		D33AE77E25400415009C6C35 /* QuickMainLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickMainLoader.m; sourceTree = "<group>"; };
 		D33AE78325401463009C6C35 /* QuickComponentUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickComponentUIViewController.h; sourceTree = "<group>"; };
 		D33AE78425401463009C6C35 /* QuickComponentUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickComponentUIViewController.m; sourceTree = "<group>"; };
+		D33AE7B4254156CD009C6C35 /* QuickComponentUINavigationItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickComponentUINavigationItem.h; sourceTree = "<group>"; };
+		D33AE7B5254156CD009C6C35 /* QuickComponentUINavigationItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickComponentUINavigationItem.m; sourceTree = "<group>"; };
 		D33B011124ADB92700EAD771 /* XXwebViewPayShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXwebViewPayShell.h; sourceTree = "<group>"; };
 		D33B011224ADB92700EAD771 /* XXwebViewPayShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXwebViewPayShell.m; sourceTree = "<group>"; };
 		D33B8A3C2536E99000654A54 /* QuickViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickViewController.h; sourceTree = "<group>"; };
@@ -462,13 +465,15 @@
 				D33AE78425401463009C6C35 /* QuickComponentUIViewController.m */,
 				D38E9F832540F47700FFF4E9 /* QuickComponentUINavigationBar.h */,
 				D38E9F842540F47700FFF4E9 /* QuickComponentUINavigationBar.m */,
+				D33AE7B4254156CD009C6C35 /* QuickComponentUINavigationItem.h */,
+				D33AE7B5254156CD009C6C35 /* QuickComponentUINavigationItem.m */,
 				D3550A172537BA1C00C5222F /* XXquickFactory.h */,
 				D3550A112537BA1C00C5222F /* XXquickFactory.m */,
 				D3550A1A2537BA1C00C5222F /* NSObject+Quick.h */,
 				D3550A142537BA1C00C5222F /* NSObject+Quick.m */,
-				D356B0C6253AE72D00EE0090 /* QuickInitScript.plist */,
 				D33AE77D25400415009C6C35 /* QuickMainLoader.h */,
 				D33AE77E25400415009C6C35 /* QuickMainLoader.m */,
+				D356B0C6253AE72D00EE0090 /* QuickInitScript.plist */,
 			);
 			path = Quick;
 			sourceTree = "<group>";
@@ -947,6 +952,7 @@
 				D390971A2459592700A850F6 /* XXverificationCodeShell.m in Sources */,
 				D39097142459286800A850F6 /* XXtimer.m in Sources */,
 				D33B011324ADB92800EAD771 /* XXwebViewPayShell.m in Sources */,
+				D33AE7B6254156CD009C6C35 /* QuickComponentUINavigationItem.m in Sources */,
 				D356B0D7253AF16E00EE0090 /* AccountLoginVC.m in Sources */,
 				D36B7A392445DD2F001BBE89 /* MainViewController.m in Sources */,
 				D3BEB020246551810024C397 /* XXaudioFileRecorder.m in Sources */,
