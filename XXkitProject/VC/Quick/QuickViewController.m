@@ -21,9 +21,11 @@
 //    [self quick_loadFromFileName:@"Quick.json" bundle:nil];
     [self quick_resetFromJFile:@"Quick.json" bundle:nil];
     
-    self.navigationItem.leftBarButtonItem.title = @"1111";
-    self.navigationItem.backButtonTitle = @"2222";
-    self.navigationItem.leftItemsSupplementBackButton = YES;
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"login.clear"] style:UIBarButtonItemStylePlain target:self action:@selector(onReturn)];
+//    self.navigationController.interactivePopGestureRecognizer.delegate = self;
+}
+-(void)onReturn{
+    
 }
 
 /*

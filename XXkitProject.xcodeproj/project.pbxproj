@@ -22,7 +22,6 @@
 		D3374233247CA512009C48AC /* XXbuttonExclusiveShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3374232247CA511009C48AC /* XXbuttonExclusiveShell.m */; };
 		D3374236247CCE1B009C48AC /* ExclusiveButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3374235247CCE1B009C48AC /* ExclusiveButtonViewController.m */; };
 		D337423C247CFEAF009C48AC /* UIButton+StateSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D337423A247CFEAE009C48AC /* UIButton+StateSettings.m */; };
-		D33AE77F25400415009C6C35 /* QuickMainLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D33AE77E25400415009C6C35 /* QuickMainLoader.m */; };
 		D33AE78525401463009C6C35 /* QuickComponentUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33AE78425401463009C6C35 /* QuickComponentUIViewController.m */; };
 		D33AE7B6254156CD009C6C35 /* QuickComponentUINavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D33AE7B5254156CD009C6C35 /* QuickComponentUINavigationItem.m */; };
 		D33B011324ADB92800EAD771 /* XXwebViewPayShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D33B011224ADB92700EAD771 /* XXwebViewPayShell.m */; };
@@ -50,7 +49,7 @@
 		D34EB3B6247615650096427F /* XXtableViewShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EB3B5247615650096427F /* XXtableViewShell.m */; };
 		D3508822243FFCDD00B8BC8F /* XXtableViewShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3508821243FFCDD00B8BC8F /* XXtableViewShellVC.m */; };
 		D3525A482533D964007007D1 /* NSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D3525A472533D964007007D1 /* NSString+JSON.m */; };
-		D3550A1B2537BA1C00C5222F /* XXquickFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D3550A112537BA1C00C5222F /* XXquickFactory.m */; };
+		D3550A1B2537BA1C00C5222F /* QuickLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D3550A112537BA1C00C5222F /* QuickLoader.m */; };
 		D3550A1C2537BA1C00C5222F /* NSObject+Quick.m in Sources */ = {isa = PBXBuildFile; fileRef = D3550A142537BA1C00C5222F /* NSObject+Quick.m */; };
 		D3550A1D2537BA1C00C5222F /* QuickComponentBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D3550A162537BA1C00C5222F /* QuickComponentBase.m */; };
 		D3550A1E2537BA1C00C5222F /* QuickComponentUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D3550A182537BA1C00C5222F /* QuickComponentUILabel.m */; };
@@ -58,6 +57,7 @@
 		D356B0C7253AE72D00EE0090 /* QuickInitScript.plist in Resources */ = {isa = PBXBuildFile; fileRef = D356B0C6253AE72D00EE0090 /* QuickInitScript.plist */; };
 		D356B0D0253AF0EB00EE0090 /* AppStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D356B0CF253AF0EB00EE0090 /* AppStoryboard.storyboard */; };
 		D356B0D7253AF16E00EE0090 /* AccountLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D356B0D6253AF16E00EE0090 /* AccountLoginVC.m */; };
+		D35814932543118800EDA923 /* UIViewController+SafeLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = D35814922543118800EDA923 /* UIViewController+SafeLoad.m */; };
 		D35B8CD32487025C0079843A /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = D35B8CD22487025C0079843A /* NSBundle+Language.m */; };
 		D35B8CDA2487055A0079843A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D35B8CDC2487055A0079843A /* Localizable.strings */; };
 		D35B8CE3248707FA0079843A /* LangaugeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35B8CE2248707FA0079843A /* LangaugeViewController.m */; };
@@ -157,8 +157,6 @@
 		D3374235247CCE1B009C48AC /* ExclusiveButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExclusiveButtonViewController.m; sourceTree = "<group>"; };
 		D337423A247CFEAE009C48AC /* UIButton+StateSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+StateSettings.m"; sourceTree = "<group>"; };
 		D337423B247CFEAF009C48AC /* UIButton+StateSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+StateSettings.h"; sourceTree = "<group>"; };
-		D33AE77D25400415009C6C35 /* QuickMainLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickMainLoader.h; sourceTree = "<group>"; };
-		D33AE77E25400415009C6C35 /* QuickMainLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickMainLoader.m; sourceTree = "<group>"; };
 		D33AE78325401463009C6C35 /* QuickComponentUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickComponentUIViewController.h; sourceTree = "<group>"; };
 		D33AE78425401463009C6C35 /* QuickComponentUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickComponentUIViewController.m; sourceTree = "<group>"; };
 		D33AE7B4254156CD009C6C35 /* QuickComponentUINavigationItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickComponentUINavigationItem.h; sourceTree = "<group>"; };
@@ -213,12 +211,12 @@
 		D3508821243FFCDD00B8BC8F /* XXtableViewShellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXtableViewShellVC.m; sourceTree = "<group>"; };
 		D3525A462533D964007007D1 /* NSString+JSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JSON.h"; sourceTree = "<group>"; };
 		D3525A472533D964007007D1 /* NSString+JSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSON.m"; sourceTree = "<group>"; };
-		D3550A112537BA1C00C5222F /* XXquickFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXquickFactory.m; sourceTree = "<group>"; };
+		D3550A112537BA1C00C5222F /* QuickLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickLoader.m; sourceTree = "<group>"; };
 		D3550A122537BA1C00C5222F /* QuickComponentBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickComponentBase.h; sourceTree = "<group>"; };
 		D3550A132537BA1C00C5222F /* QuickComponentUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickComponentUILabel.h; sourceTree = "<group>"; };
 		D3550A142537BA1C00C5222F /* NSObject+Quick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Quick.m"; sourceTree = "<group>"; };
 		D3550A162537BA1C00C5222F /* QuickComponentBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickComponentBase.m; sourceTree = "<group>"; };
-		D3550A172537BA1C00C5222F /* XXquickFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXquickFactory.h; sourceTree = "<group>"; };
+		D3550A172537BA1C00C5222F /* QuickLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickLoader.h; sourceTree = "<group>"; };
 		D3550A182537BA1C00C5222F /* QuickComponentUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickComponentUILabel.m; sourceTree = "<group>"; };
 		D3550A1A2537BA1C00C5222F /* NSObject+Quick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Quick.h"; sourceTree = "<group>"; };
 		D35663D92456F7CF00EAB7FB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -226,6 +224,8 @@
 		D356B0CF253AF0EB00EE0090 /* AppStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppStoryboard.storyboard; sourceTree = "<group>"; };
 		D356B0D5253AF16E00EE0090 /* AccountLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountLoginVC.h; sourceTree = "<group>"; };
 		D356B0D6253AF16E00EE0090 /* AccountLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountLoginVC.m; sourceTree = "<group>"; };
+		D35814912543118800EDA923 /* UIViewController+SafeLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SafeLoad.h"; sourceTree = "<group>"; };
+		D35814922543118800EDA923 /* UIViewController+SafeLoad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SafeLoad.m"; sourceTree = "<group>"; };
 		D35B8CD12487025C0079843A /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
 		D35B8CD22487025C0079843A /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
 		D35B8CDB2487055A0079843A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -467,12 +467,10 @@
 				D38E9F842540F47700FFF4E9 /* QuickComponentUINavigationBar.m */,
 				D33AE7B4254156CD009C6C35 /* QuickComponentUINavigationItem.h */,
 				D33AE7B5254156CD009C6C35 /* QuickComponentUINavigationItem.m */,
-				D3550A172537BA1C00C5222F /* XXquickFactory.h */,
-				D3550A112537BA1C00C5222F /* XXquickFactory.m */,
+				D3550A172537BA1C00C5222F /* QuickLoader.h */,
+				D3550A112537BA1C00C5222F /* QuickLoader.m */,
 				D3550A1A2537BA1C00C5222F /* NSObject+Quick.h */,
 				D3550A142537BA1C00C5222F /* NSObject+Quick.m */,
-				D33AE77D25400415009C6C35 /* QuickMainLoader.h */,
-				D33AE77E25400415009C6C35 /* QuickMainLoader.m */,
 				D356B0C6253AE72D00EE0090 /* QuickInitScript.plist */,
 			);
 			path = Quick;
@@ -558,6 +556,8 @@
 				D335CF4C248B8B3A004832BB /* UIView+MaskView.m */,
 				D3525A462533D964007007D1 /* NSString+JSON.h */,
 				D3525A472533D964007007D1 /* NSString+JSON.m */,
+				D35814912543118800EDA923 /* UIViewController+SafeLoad.h */,
+				D35814922543118800EDA923 /* UIViewController+SafeLoad.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -926,7 +926,7 @@
 				D3E7DFF8245049A400124252 /* XXtextFieldShell.m in Sources */,
 				D3659519243E8F59009F5228 /* UIView+Zoomable.m in Sources */,
 				D34C486B24610A440031884A /* XXsceneDelegate.m in Sources */,
-				D3550A1B2537BA1C00C5222F /* XXquickFactory.m in Sources */,
+				D3550A1B2537BA1C00C5222F /* QuickLoader.m in Sources */,
 				D3659562243E8F59009F5228 /* XXkeyboardAdapter.m in Sources */,
 				D33F537A245014B500B8D5E1 /* XXtextFieldShellVC.m in Sources */,
 				D35F8F48253BA50B00C8BE86 /* QuickComponentUIButton.m in Sources */,
@@ -969,13 +969,13 @@
 				D33AE78525401463009C6C35 /* QuickComponentUIViewController.m in Sources */,
 				D33D60BE24BC81460066E17A /* XXviewMovableShell.m in Sources */,
 				D3659560243E8F59009F5228 /* XXmaskView.m in Sources */,
+				D35814932543118800EDA923 /* UIViewController+SafeLoad.m in Sources */,
 				D3FBEAEA24CEA2B700A32649 /* XXpickerViewShellVC.m in Sources */,
 				D335CF4A248B80BE004832BB /* MaskViewViewController.m in Sources */,
 				D3550A1D2537BA1C00C5222F /* QuickComponentBase.m in Sources */,
 				D38E9F852540F47700FFF4E9 /* QuickComponentUINavigationBar.m in Sources */,
 				D35B8CD32487025C0079843A /* NSBundle+Language.m in Sources */,
 				D346DAC12478BF870028B081 /* UIView+TapToVisible.m in Sources */,
-				D33AE77F25400415009C6C35 /* QuickMainLoader.m in Sources */,
 				D365951E243E8F59009F5228 /* XXcodecBase.m in Sources */,
 				D33C787D24936AE500E9E926 /* XXvideoRecorder.m in Sources */,
 				D34EB3B6247615650096427F /* XXtableViewShell.m in Sources */,
