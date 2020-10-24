@@ -309,10 +309,10 @@
             </objects>
             <point key="canvasLocation" x="-391" y="2704"/>
         </scene>
-        <!--Quick View Controller-->
+        <!--QuickVC1-->
         <scene sceneID="VHn-ng-WJC">
             <objects>
-                <viewController storyboardIdentifier="QuickViewController" id="JgM-ix-zea" customClass="QuickViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuickViewController" id="JgM-ix-zea" customClass="QuickVC1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TpW-1T-3JH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -393,6 +393,9 @@
                             <constraint firstItem="whH-Up-bto" firstAttribute="leading" secondItem="OTb-up-Nfm" secondAttribute="leading" constant="20" id="tcW-yg-Rbt"/>
                         </constraints>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="quick_name" value="VC1"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JyC-M3-6CV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -439,6 +442,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5SA-Wx-SMg"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="quick_name" value="VC2"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mUY-Eb-abh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

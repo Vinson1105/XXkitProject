@@ -6,23 +6,19 @@
 //  Copyright © 2020 郭文轩. All rights reserved.
 //
 
-#import "QuickViewController.h"
+#import "QuickVC1.h"
 //#import "../../../../XXkit/Object-C/Quick/UIViewController+QuickLoader.h"
 #import "../../../../XXkit/Object-C/Quick/NSObject+Quick.h"
 
-@interface QuickViewController ()
+@interface QuickVC1 ()
 @end
 
-@implementation QuickViewController
+@implementation QuickVC1
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    [self quick_loadFromFileName:@"Quick.json" bundle:nil];
-    [self quick_resetFromJFile:@"Quick.json" bundle:nil];
-    
-//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"login.clear"] style:UIBarButtonItemStylePlain target:self action:@selector(onReturn)];
-//    self.navigationController.interactivePopGestureRecognizer.delegate = self;
+//    [self quick_resetFromJFile:@"Quick.json" bundle:nil];
 }
 -(void)onReturn{
     

@@ -35,7 +35,7 @@
 #import "./VC/Utils/TouchIDViewController.h"
 #import "./VC/Utils/KeyChainViewController.h"
 
-#import "./VC/Quick/QuickViewController.h"
+#import "./VC/Quick/QuickVC1.h"
 
 #define kShellSection       0
 #define kCategorySection    1

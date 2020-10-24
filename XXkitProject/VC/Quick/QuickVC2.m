@@ -15,6 +15,6 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
 //    [self quick_loadFromFileName:@"Quick2.json" bundle:nil];
-    [self quick_resetFromJFile:@"Quick2.json" bundle:nil];
+//    [self quick_resetFromJFile:@"Quick2.json" bundle:nil];
 }
 @end
