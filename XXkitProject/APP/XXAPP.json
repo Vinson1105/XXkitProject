@@ -1,0 +1,41 @@
+{
+    "AccountLogin":{
+        "NavigationBarHidden":1,
+        "NavigationBar":{
+            "Translucent":1,
+        },
+        "SubView":{
+            "Logo":{
+                "Image":"LoginMainLogo",
+            },
+            "Title":{
+                "Text":"XX APP",
+                "Font":15,
+                "TextColor":["#000000","#234f29"]
+            }
+        },
+        "Shell":[{
+                "Class":"XXtextFieldShell",
+                "Name":"shell1",
+                "Target":["obj1","obj2","obj3"],
+                "Config":{
+                    "xxx":"xxx",
+                }
+            }
+        ],
+        "Action":{
+            "obj1.siga":{
+                "obj.property":""
+            },
+            "obj2.sigb":{
+                
+            },
+            "obj3.sigc":{
+                
+            },
+            "sigx":{
+                
+            }
+        }
+    }
+}

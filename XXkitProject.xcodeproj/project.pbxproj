@@ -17,6 +17,7 @@
 		D33049542475246B005DC415 /* XXtoast.m in Sources */ = {isa = PBXBuildFile; fileRef = D33049522475246B005DC415 /* XXtoast.m */; };
 		D3304957247529F4005DC415 /* ToastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3304956247529F4005DC415 /* ToastViewController.m */; };
 		D3325A3924723E03000E6D95 /* TouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3325A3824723E03000E6D95 /* TouchIDViewController.m */; };
+		D3359DC5254FA8AF007E6481 /* XXAPP.json in Resources */ = {isa = PBXBuildFile; fileRef = D3359DC4254FA8AF007E6481 /* XXAPP.json */; };
 		D335CF4A248B80BE004832BB /* MaskViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D335CF49248B80BE004832BB /* MaskViewViewController.m */; };
 		D335CF4D248B8B3A004832BB /* UIView+MaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = D335CF4C248B8B3A004832BB /* UIView+MaskView.m */; };
 		D3374233247CA512009C48AC /* XXbuttonExclusiveShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3374232247CA511009C48AC /* XXbuttonExclusiveShell.m */; };
@@ -56,9 +57,10 @@
 		D3550A1E2537BA1C00C5222F /* QuickComponentUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D3550A182537BA1C00C5222F /* QuickComponentUILabel.m */; };
 		D35663DA2456F7CF00EAB7FB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35663D92456F7CF00EAB7FB /* Security.framework */; };
 		D356B0C7253AE72D00EE0090 /* QuickInitScript.plist in Resources */ = {isa = PBXBuildFile; fileRef = D356B0C6253AE72D00EE0090 /* QuickInitScript.plist */; };
-		D356B0D0253AF0EB00EE0090 /* AppStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D356B0CF253AF0EB00EE0090 /* AppStoryboard.storyboard */; };
+		D356B0D0253AF0EB00EE0090 /* XXAPP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D356B0CF253AF0EB00EE0090 /* XXAPP.storyboard */; };
 		D356B0D7253AF16E00EE0090 /* AccountLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D356B0D6253AF16E00EE0090 /* AccountLoginVC.m */; };
 		D35814932543118800EDA923 /* UIViewController+SafeLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = D35814922543118800EDA923 /* UIViewController+SafeLoad.m */; };
+		D35B1D7D254FEE630040FBBC /* QuickComponentUIImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D35B1D7C254FEE630040FBBC /* QuickComponentUIImageView.m */; };
 		D35B8CD32487025C0079843A /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = D35B8CD22487025C0079843A /* NSBundle+Language.m */; };
 		D35B8CDA2487055A0079843A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D35B8CDC2487055A0079843A /* Localizable.strings */; };
 		D35B8CE3248707FA0079843A /* LangaugeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35B8CE2248707FA0079843A /* LangaugeViewController.m */; };
@@ -148,6 +150,8 @@
 		D3304956247529F4005DC415 /* ToastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastViewController.m; sourceTree = "<group>"; };
 		D3325A3724723E03000E6D95 /* TouchIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchIDViewController.h; sourceTree = "<group>"; };
 		D3325A3824723E03000E6D95 /* TouchIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchIDViewController.m; sourceTree = "<group>"; };
+		D3359DC4254FA8AF007E6481 /* XXAPP.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = XXAPP.json; sourceTree = "<group>"; };
+		D3359DD1254FA9D2007E6481 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D335CF48248B80BD004832BB /* MaskViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaskViewViewController.h; sourceTree = "<group>"; };
 		D335CF49248B80BE004832BB /* MaskViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaskViewViewController.m; sourceTree = "<group>"; };
 		D335CF4B248B8B3A004832BB /* UIView+MaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MaskView.h"; sourceTree = "<group>"; };
@@ -225,11 +229,13 @@
 		D3550A1A2537BA1C00C5222F /* NSObject+Quick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Quick.h"; sourceTree = "<group>"; };
 		D35663D92456F7CF00EAB7FB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D356B0C6253AE72D00EE0090 /* QuickInitScript.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = QuickInitScript.plist; sourceTree = "<group>"; };
-		D356B0CF253AF0EB00EE0090 /* AppStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppStoryboard.storyboard; sourceTree = "<group>"; };
+		D356B0CF253AF0EB00EE0090 /* XXAPP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = XXAPP.storyboard; sourceTree = "<group>"; };
 		D356B0D5253AF16E00EE0090 /* AccountLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountLoginVC.h; sourceTree = "<group>"; };
 		D356B0D6253AF16E00EE0090 /* AccountLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountLoginVC.m; sourceTree = "<group>"; };
 		D35814912543118800EDA923 /* UIViewController+SafeLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SafeLoad.h"; sourceTree = "<group>"; };
 		D35814922543118800EDA923 /* UIViewController+SafeLoad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SafeLoad.m"; sourceTree = "<group>"; };
+		D35B1D7B254FEE630040FBBC /* QuickComponentUIImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickComponentUIImageView.h; sourceTree = "<group>"; };
+		D35B1D7C254FEE630040FBBC /* QuickComponentUIImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickComponentUIImageView.m; sourceTree = "<group>"; };
 		D35B8CD12487025C0079843A /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
 		D35B8CD22487025C0079843A /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
 		D35B8CDB2487055A0079843A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -464,6 +470,8 @@
 				D3550A182537BA1C00C5222F /* QuickComponentUILabel.m */,
 				D35F8F46253BA50B00C8BE86 /* QuickComponentUIButton.h */,
 				D35F8F47253BA50B00C8BE86 /* QuickComponentUIButton.m */,
+				D35B1D7B254FEE630040FBBC /* QuickComponentUIImageView.h */,
+				D35B1D7C254FEE630040FBBC /* QuickComponentUIImageView.m */,
 				D33AE78325401463009C6C35 /* QuickComponentUIViewController.h */,
 				D33AE78425401463009C6C35 /* QuickComponentUIViewController.m */,
 				D38E9F832540F47700FFF4E9 /* QuickComponentUINavigationBar.h */,
@@ -479,6 +487,7 @@
 				D339A27B2544222E0069D11E /* UINavigationController+Quick.h */,
 				D339A27C2544222E0069D11E /* UINavigationController+Quick.m */,
 				D356B0C6253AE72D00EE0090 /* QuickInitScript.plist */,
+				D3359DD1254FA9D2007E6481 /* README.md */,
 			);
 			path = Quick;
 			sourceTree = "<group>";
@@ -497,7 +506,8 @@
 			isa = PBXGroup;
 			children = (
 				D356B0D4253AF14000EE0090 /* AccountLogin */,
-				D356B0CF253AF0EB00EE0090 /* AppStoryboard.storyboard */,
+				D356B0CF253AF0EB00EE0090 /* XXAPP.storyboard */,
+				D3359DC4254FA8AF007E6481 /* XXAPP.json */,
 			);
 			path = APP;
 			sourceTree = "<group>";
@@ -894,12 +904,13 @@
 				D35B8CDA2487055A0079843A /* Localizable.strings in Resources */,
 				D39503B62447EABC001434A5 /* TableViewNibCell.xib in Resources */,
 				D356B0C7253AE72D00EE0090 /* QuickInitScript.plist in Resources */,
+				D3359DC5254FA8AF007E6481 /* XXAPP.json in Resources */,
 				D3659569243E8F59009F5228 /* Readme.MD in Resources */,
 				D365956A243E8F59009F5228 /* .gitignore in Resources */,
 				D339A270254413EC0069D11E /* app.json in Resources */,
 				D365956B243E8F59009F5228 /* .gitattributes in Resources */,
 				D33FF84D2466DEC800AF3652 /* AudioFileCell.xib in Resources */,
-				D356B0D0253AF0EB00EE0090 /* AppStoryboard.storyboard in Resources */,
+				D356B0D0253AF0EB00EE0090 /* XXAPP.storyboard in Resources */,
 				D34C487724613FB50031884A /* Readme.md in Resources */,
 				D37F6A06243C017E00DC2F28 /* Main.storyboard in Resources */,
 			);
@@ -946,6 +957,7 @@
 				D3FBEAE724CE8B8000A32649 /* XXpickerViewShell.m in Sources */,
 				D3865B4A2478FF8700EF29B4 /* PopupableViewController.m in Sources */,
 				D365955C243E8F59009F5228 /* XXmtkRgbDelegate.m in Sources */,
+				D35B1D7D254FEE630040FBBC /* QuickComponentUIImageView.m in Sources */,
 				D3BEB01D2465456E0024C397 /* AudioRecordAndPlayViewController.m in Sources */,
 				D3525A482533D964007007D1 /* NSString+JSON.m in Sources */,
 				D365955B243E8F59009F5228 /* XXshadowCreator.m in Sources */,
