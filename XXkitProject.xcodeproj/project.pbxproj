@@ -59,6 +59,8 @@
 		D356B0C7253AE72D00EE0090 /* QuickInitScript.plist in Resources */ = {isa = PBXBuildFile; fileRef = D356B0C6253AE72D00EE0090 /* QuickInitScript.plist */; };
 		D356B0D0253AF0EB00EE0090 /* XXAPP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D356B0CF253AF0EB00EE0090 /* XXAPP.storyboard */; };
 		D356B0D7253AF16E00EE0090 /* AccountLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D356B0D6253AF16E00EE0090 /* AccountLoginVC.m */; };
+		D357FB8525510736007964F6 /* QuickComponentUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D357FB8425510736007964F6 /* QuickComponentUITextField.m */; };
+		D357FB8E25513296007964F6 /* UIViewController+Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = D357FB8D25513296007964F6 /* UIViewController+Keyboard.m */; };
 		D35814932543118800EDA923 /* UIViewController+SafeLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = D35814922543118800EDA923 /* UIViewController+SafeLoad.m */; };
 		D35B1D7D254FEE630040FBBC /* QuickComponentUIImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D35B1D7C254FEE630040FBBC /* QuickComponentUIImageView.m */; };
 		D35B8CD32487025C0079843A /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = D35B8CD22487025C0079843A /* NSBundle+Language.m */; };
@@ -232,6 +234,10 @@
 		D356B0CF253AF0EB00EE0090 /* XXAPP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = XXAPP.storyboard; sourceTree = "<group>"; };
 		D356B0D5253AF16E00EE0090 /* AccountLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountLoginVC.h; sourceTree = "<group>"; };
 		D356B0D6253AF16E00EE0090 /* AccountLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountLoginVC.m; sourceTree = "<group>"; };
+		D357FB8325510736007964F6 /* QuickComponentUITextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickComponentUITextField.h; sourceTree = "<group>"; };
+		D357FB8425510736007964F6 /* QuickComponentUITextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickComponentUITextField.m; sourceTree = "<group>"; };
+		D357FB8C25513296007964F6 /* UIViewController+Keyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Keyboard.h"; sourceTree = "<group>"; };
+		D357FB8D25513296007964F6 /* UIViewController+Keyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Keyboard.m"; sourceTree = "<group>"; };
 		D35814912543118800EDA923 /* UIViewController+SafeLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SafeLoad.h"; sourceTree = "<group>"; };
 		D35814922543118800EDA923 /* UIViewController+SafeLoad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SafeLoad.m"; sourceTree = "<group>"; };
 		D35B1D7B254FEE630040FBBC /* QuickComponentUIImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickComponentUIImageView.h; sourceTree = "<group>"; };
@@ -472,6 +478,8 @@
 				D35F8F47253BA50B00C8BE86 /* QuickComponentUIButton.m */,
 				D35B1D7B254FEE630040FBBC /* QuickComponentUIImageView.h */,
 				D35B1D7C254FEE630040FBBC /* QuickComponentUIImageView.m */,
+				D357FB8325510736007964F6 /* QuickComponentUITextField.h */,
+				D357FB8425510736007964F6 /* QuickComponentUITextField.m */,
 				D33AE78325401463009C6C35 /* QuickComponentUIViewController.h */,
 				D33AE78425401463009C6C35 /* QuickComponentUIViewController.m */,
 				D38E9F832540F47700FFF4E9 /* QuickComponentUINavigationBar.h */,
@@ -575,6 +583,8 @@
 				D3525A472533D964007007D1 /* NSString+JSON.m */,
 				D35814912543118800EDA923 /* UIViewController+SafeLoad.h */,
 				D35814922543118800EDA923 /* UIViewController+SafeLoad.m */,
+				D357FB8C25513296007964F6 /* UIViewController+Keyboard.h */,
+				D357FB8D25513296007964F6 /* UIViewController+Keyboard.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -984,6 +994,7 @@
 				D3550A1E2537BA1C00C5222F /* QuickComponentUILabel.m in Sources */,
 				D37F69FD243C017E00DC2F28 /* AppDelegate.m in Sources */,
 				D3659533243E8F59009F5228 /* UIViewController+ApplicationState.m in Sources */,
+				D357FB8E25513296007964F6 /* UIViewController+Keyboard.m in Sources */,
 				D37F6A0E243C017F00DC2F28 /* main.m in Sources */,
 				D33AE78525401463009C6C35 /* QuickComponentUIViewController.m in Sources */,
 				D33D60BE24BC81460066E17A /* XXviewMovableShell.m in Sources */,
@@ -1010,6 +1021,7 @@
 				D346DABB2477EA390028B081 /* WebViewProgressViewController.m in Sources */,
 				D34C4870246113200031884A /* UIViewController+SceneState.m in Sources */,
 				D335CF4D248B8B3A004832BB /* UIView+MaskView.m in Sources */,
+				D357FB8525510736007964F6 /* QuickComponentUITextField.m in Sources */,
 				D348AB26244D99F000C7588F /* TableViewCodeCell.m in Sources */,
 				D365951D243E8F59009F5228 /* XXavFormat.m in Sources */,
 				D33FF84C2466DEC800AF3652 /* AudioFileCell.m in Sources */,

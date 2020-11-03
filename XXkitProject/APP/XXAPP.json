@@ -11,8 +11,50 @@
             "Title":{
                 "Text":"XX APP",
                 "Font":15,
-                "TextColor":["#000000","#234f29"]
-            }
+                "TextColor":["#000000","#234f29"],
+            },
+            "Account":{
+                "Placeholder":"ACCOUNT",
+                "LeftView":"login.account",
+            },
+            "AccountBackground":{
+                "BackgroundColor":"transparent",
+            },
+            "AccountBottom":{
+                "BackgroundColor":["#a0a0a0","#3A3A3A"],
+            },
+            "AreaCode":{
+                "TextColor":["#a0a0a0","#3A3A3A"],
+            },
+            "Password":{
+                "Placeholder":"PASSWORD",
+                "LeftView":"login.password",
+            },
+            "PasswordBackground":{
+                "BackgroundColor":"transparent",
+            },
+            "PasswordBottom":{
+                "BackgroundColor":["#a0a0a0","#3A3A3A"],
+            },
+            "Login":{
+                "BackgroundColor":{
+                    "Normal":"#0081E2",
+                    "Disabled":"#BBBBBB",
+                },
+                "TextColor":"#ffffff",
+                "Text":"Login",
+                "Font":16,
+                "CornerRadius":22,
+            },
+            "ForgotPassword":{
+                "Text":"Forgot?"
+            },
+            "Register":{
+                "Text":"JOIN IN",
+            },
+            "Experience":{
+                "Text":"Have a try!",
+            },
         },
         "Shell":[{
                 "Class":"XXtextFieldShell",
@@ -28,13 +70,13 @@
                 "obj.property":""
             },
             "obj2.sigb":{
-                
+                "obj.property":""
             },
             "obj3.sigc":{
-                
+                "obj.property":""
             },
             "sigx":{
-                
+                "obj.property":""
             }
         }
     }
