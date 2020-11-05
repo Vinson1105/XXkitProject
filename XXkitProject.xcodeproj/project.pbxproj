@@ -25,7 +25,6 @@
 		D337423C247CFEAF009C48AC /* UIButton+StateSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D337423A247CFEAE009C48AC /* UIButton+StateSettings.m */; };
 		D339A270254413EC0069D11E /* app.json in Resources */ = {isa = PBXBuildFile; fileRef = D339A26F254413EC0069D11E /* app.json */; };
 		D339A27D2544222E0069D11E /* UINavigationController+Quick.m in Sources */ = {isa = PBXBuildFile; fileRef = D339A27C2544222E0069D11E /* UINavigationController+Quick.m */; };
-		D339A289254427E20069D11E /* QuickComponentXXtextFieldShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D339A288254427E20069D11E /* QuickComponentXXtextFieldShell.m */; };
 		D33AE78525401463009C6C35 /* QuickComponentUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33AE78425401463009C6C35 /* QuickComponentUIViewController.m */; };
 		D33AE7B6254156CD009C6C35 /* QuickComponentUINavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D33AE7B5254156CD009C6C35 /* QuickComponentUINavigationItem.m */; };
 		D33B011324ADB92800EAD771 /* XXwebViewPayShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D33B011224ADB92700EAD771 /* XXwebViewPayShell.m */; };
@@ -167,8 +166,6 @@
 		D339A26F254413EC0069D11E /* app.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = app.json; sourceTree = "<group>"; };
 		D339A27B2544222E0069D11E /* UINavigationController+Quick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Quick.h"; sourceTree = "<group>"; };
 		D339A27C2544222E0069D11E /* UINavigationController+Quick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Quick.m"; sourceTree = "<group>"; };
-		D339A287254427E20069D11E /* QuickComponentXXtextFieldShell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickComponentXXtextFieldShell.h; sourceTree = "<group>"; };
-		D339A288254427E20069D11E /* QuickComponentXXtextFieldShell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickComponentXXtextFieldShell.m; sourceTree = "<group>"; };
 		D33AE78325401463009C6C35 /* QuickComponentUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickComponentUIViewController.h; sourceTree = "<group>"; };
 		D33AE78425401463009C6C35 /* QuickComponentUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickComponentUIViewController.m; sourceTree = "<group>"; };
 		D33AE7B4254156CD009C6C35 /* QuickComponentUINavigationItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickComponentUINavigationItem.h; sourceTree = "<group>"; };
@@ -486,8 +483,6 @@
 				D38E9F842540F47700FFF4E9 /* QuickComponentUINavigationBar.m */,
 				D33AE7B4254156CD009C6C35 /* QuickComponentUINavigationItem.h */,
 				D33AE7B5254156CD009C6C35 /* QuickComponentUINavigationItem.m */,
-				D339A287254427E20069D11E /* QuickComponentXXtextFieldShell.h */,
-				D339A288254427E20069D11E /* QuickComponentXXtextFieldShell.m */,
 				D3550A172537BA1C00C5222F /* QuickLoader.h */,
 				D3550A112537BA1C00C5222F /* QuickLoader.m */,
 				D3550A1A2537BA1C00C5222F /* NSObject+Quick.h */,
@@ -976,7 +971,6 @@
 				D365955D243E8F59009F5228 /* XXmtkYuvDelegate.m in Sources */,
 				D35F32002489A3020099D71B /* XXbuttonPageShiftShell.m in Sources */,
 				D3374236247CCE1B009C48AC /* ExclusiveButtonViewController.m in Sources */,
-				D339A289254427E20069D11E /* QuickComponentXXtextFieldShell.m in Sources */,
 				D34C4873246119A30031884A /* SceneDelegate.m in Sources */,
 				D390971A2459592700A850F6 /* XXverificationCodeShell.m in Sources */,
 				D39097142459286800A850F6 /* XXtimer.m in Sources */,
