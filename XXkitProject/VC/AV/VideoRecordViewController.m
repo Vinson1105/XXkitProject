@@ -9,7 +9,6 @@
 #import "VideoRecordViewController.h"
 #import "../../../../XXkit/Object-C/AV/XXvideoRecorder.h"
 #import "../../../../XXkit/Object-C/Category/UIButton+StateSettings.h"
-#import "../../../../XXkit/Object-C/Shell/XXviewMovableShell.h"
 #import "XXocUtils.h"
 
 @interface ViewA : UIView
@@ -27,7 +26,6 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIButton *button;
 @property (nonatomic,strong) UIView *preview;
-@property (nonatomic,strong) XXviewMovableShell *movableShell;
 @end
 
 @implementation VideoRecordViewController
@@ -43,9 +41,6 @@
     [XXvideoRecorder sharedInstance].preview = self.preview;
     [_button setBackgroundColor:UIColor.greenColor forState:UIControlStateNormal];
     [_button setBackgroundColor:UIColor.redColor forState:UIControlStateSelected];
-
-    self.movableShell = [XXviewMovableShell new];
-    [self.movableShell shell:self.preview];
     
     ViewA *viewA = [[ViewA alloc] initWithFrame:CGRectMake(0, 200, 100, 100)];
     viewA.backgroundColor = UIColor.grayColor;

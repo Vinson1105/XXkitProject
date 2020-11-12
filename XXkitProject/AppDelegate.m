@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "./MainViewController.h"
 #import "../../XXkit/Object-C/Quick/QuickLoader.h"
+#import "../../XXkit/Object-C/Utility/XXdebugHelper.h"
 
 //#define Main
 #define XXAPP
@@ -29,6 +30,7 @@
 #endif
     [self createNavigationWithIntitalViewControllerAtStoryboard:kMainStoryboard bundle:nil];
 
+    [XXdebugHelper install:[UIApplication sharedApplication].delegate.window];
     return YES;
 }
 @end
