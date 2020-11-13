@@ -689,6 +689,7 @@
 		D36594D5243E8F59009F5228 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				D339911E255D255D00972B27 /* XXdebugHelper.h */,
 				D339913D255D532100972B27 /* XXdebugHelper.m */,
 				D33049532475246B005DC415 /* XXtoast.h */,
 				D33049522475246B005DC415 /* XXtoast.m */,
@@ -698,7 +699,6 @@
 				D39097132459286700A850F6 /* XXtimer.m */,
 				D37F4A45247346460065155C /* XXkeyChain.h */,
 				D37F4A46247346460065155C /* XXkeyChain.m */,
-				D339911E255D255D00972B27 /* XXdebugHelper.h */,
 				D3399124255D256900972B27 /* XXlogger.h */,
 				D3399125255D256900972B27 /* XXlogger.m */,
 			);
