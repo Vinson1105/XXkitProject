@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3096388256AA05900DB2D58 /* XXqueue.c in Sources */ = {isa = PBXBuildFile; fileRef = D3096375256AA05800DB2D58 /* XXqueue.c */; };
+		D3096389256AA05900DB2D58 /* XXtcpSocket.c in Sources */ = {isa = PBXBuildFile; fileRef = D3096379256AA05900DB2D58 /* XXtcpSocket.c */; };
+		D309638A256AA05900DB2D58 /* XXudpSocket.c in Sources */ = {isa = PBXBuildFile; fileRef = D309637C256AA05900DB2D58 /* XXudpSocket.c */; };
+		D309638B256AA05900DB2D58 /* XXavUtility.c in Sources */ = {isa = PBXBuildFile; fileRef = D309637E256AA05900DB2D58 /* XXavUtility.c */; };
+		D309638C256AA05900DB2D58 /* XXbyteOrder.c in Sources */ = {isa = PBXBuildFile; fileRef = D309637F256AA05900DB2D58 /* XXbyteOrder.c */; };
+		D309638D256AA05900DB2D58 /* XXnaluSpliter.c in Sources */ = {isa = PBXBuildFile; fileRef = D3096380256AA05900DB2D58 /* XXnaluSpliter.c */; };
+		D309638E256AA05900DB2D58 /* XXtsReader.c in Sources */ = {isa = PBXBuildFile; fileRef = D3096381256AA05900DB2D58 /* XXtsReader.c */; };
+		D309638F256AA05900DB2D58 /* XXnet.c in Sources */ = {isa = PBXBuildFile; fileRef = D3096382256AA05900DB2D58 /* XXnet.c */; };
 		D3236DD72485DED200AA5F7A /* XXbuttonCycleClickShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3236DD52485DED200AA5F7A /* XXbuttonCycleClickShell.m */; };
 		D3236DDA2485E0AE00AA5F7A /* CycleClickButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3236DD92485E0AE00AA5F7A /* CycleClickButtonViewController.m */; };
 		D3286E7C246B9F9500B0A958 /* XXcoreModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3286E7A246B9F9500B0A958 /* XXcoreModel.xcdatamodeld */; };
@@ -112,6 +120,7 @@
 		D3AFBD0E247FDEA100BA7FD1 /* XXaudioFilePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AFBD0D247FDEA100BA7FD1 /* XXaudioFilePlayer.m */; };
 		D3BEB01D2465456E0024C397 /* AudioRecordAndPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BEB01C2465456E0024C397 /* AudioRecordAndPlayViewController.m */; };
 		D3BEB020246551810024C397 /* XXaudioFileRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BEB01F246551810024C397 /* XXaudioFileRecorder.m */; };
+		D3BF2EE92561F1B00053BA1F /* UIView+ModalPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BF2EE82561F1B00053BA1F /* UIView+ModalPopup.m */; };
 		D3E7DFF8245049A400124252 /* XXtextFieldShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E7DFF7245049A400124252 /* XXtextFieldShell.m */; };
 		D3FBEAE724CE8B8000A32649 /* XXpickerViewShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FBEAE524CE8B8000A32649 /* XXpickerViewShell.m */; };
 		D3FBEAEA24CEA2B700A32649 /* XXpickerViewShellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FBEAE924CEA2B700A32649 /* XXpickerViewShellVC.m */; };
@@ -136,6 +145,24 @@
 
 /* Begin PBXFileReference section */
 		D303218A2522024900FE8B49 /* XXviewBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXviewBase.h; sourceTree = "<group>"; };
+		D3096371256AA05800DB2D58 /* XXtcpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXtcpSocket.h; sourceTree = "<group>"; };
+		D3096372256AA05800DB2D58 /* XXavUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXavUtility.h; sourceTree = "<group>"; };
+		D3096373256AA05800DB2D58 /* XXbyteOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXbyteOrder.h; sourceTree = "<group>"; };
+		D3096374256AA05800DB2D58 /* XXudpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXudpSocket.h; sourceTree = "<group>"; };
+		D3096375256AA05800DB2D58 /* XXqueue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XXqueue.c; sourceTree = "<group>"; };
+		D3096376256AA05800DB2D58 /* XXnaluSpliter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXnaluSpliter.h; sourceTree = "<group>"; };
+		D3096377256AA05800DB2D58 /* XXnet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXnet.h; sourceTree = "<group>"; };
+		D3096378256AA05800DB2D58 /* XXtsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXtsReader.h; sourceTree = "<group>"; };
+		D3096379256AA05900DB2D58 /* XXtcpSocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XXtcpSocket.c; sourceTree = "<group>"; };
+		D309637A256AA05900DB2D58 /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
+		D309637B256AA05900DB2D58 /* XXqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXqueue.h; sourceTree = "<group>"; };
+		D309637C256AA05900DB2D58 /* XXudpSocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XXudpSocket.c; sourceTree = "<group>"; };
+		D309637D256AA05900DB2D58 /* XXtsType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXtsType.h; sourceTree = "<group>"; };
+		D309637E256AA05900DB2D58 /* XXavUtility.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XXavUtility.c; sourceTree = "<group>"; };
+		D309637F256AA05900DB2D58 /* XXbyteOrder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XXbyteOrder.c; sourceTree = "<group>"; };
+		D3096380256AA05900DB2D58 /* XXnaluSpliter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XXnaluSpliter.c; sourceTree = "<group>"; };
+		D3096381256AA05900DB2D58 /* XXtsReader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XXtsReader.c; sourceTree = "<group>"; };
+		D3096382256AA05900DB2D58 /* XXnet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XXnet.c; sourceTree = "<group>"; };
 		D3236DD52485DED200AA5F7A /* XXbuttonCycleClickShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXbuttonCycleClickShell.m; sourceTree = "<group>"; };
 		D3236DD62485DED200AA5F7A /* XXbuttonCycleClickShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXbuttonCycleClickShell.h; sourceTree = "<group>"; };
 		D3236DD82485E0AE00AA5F7A /* CycleClickButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CycleClickButtonViewController.h; sourceTree = "<group>"; };
@@ -351,6 +378,8 @@
 		D3BEB01C2465456E0024C397 /* AudioRecordAndPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioRecordAndPlayViewController.m; sourceTree = "<group>"; };
 		D3BEB01E246551810024C397 /* XXaudioFileRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXaudioFileRecorder.h; sourceTree = "<group>"; };
 		D3BEB01F246551810024C397 /* XXaudioFileRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXaudioFileRecorder.m; sourceTree = "<group>"; };
+		D3BF2EE72561F1B00053BA1F /* UIView+ModalPopup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ModalPopup.h"; sourceTree = "<group>"; };
+		D3BF2EE82561F1B00053BA1F /* UIView+ModalPopup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ModalPopup.m"; sourceTree = "<group>"; };
 		D3E1B43E246BF7AE00BD4802 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
 		D3E1B43F246BF7AE00BD4802 /* Person+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataClass.h"; sourceTree = "<group>"; };
 		D3E1B440246BF7AE00BD4802 /* Person+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataClass.m"; sourceTree = "<group>"; };
@@ -391,6 +420,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3096365256AA05800DB2D58 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				D3096371256AA05800DB2D58 /* XXtcpSocket.h */,
+				D3096372256AA05800DB2D58 /* XXavUtility.h */,
+				D3096373256AA05800DB2D58 /* XXbyteOrder.h */,
+				D3096374256AA05800DB2D58 /* XXudpSocket.h */,
+				D3096375256AA05800DB2D58 /* XXqueue.c */,
+				D3096376256AA05800DB2D58 /* XXnaluSpliter.h */,
+				D3096377256AA05800DB2D58 /* XXnet.h */,
+				D3096378256AA05800DB2D58 /* XXtsReader.h */,
+				D3096379256AA05900DB2D58 /* XXtcpSocket.c */,
+				D309637A256AA05900DB2D58 /* list.h */,
+				D309637B256AA05900DB2D58 /* XXqueue.h */,
+				D309637C256AA05900DB2D58 /* XXudpSocket.c */,
+				D309637D256AA05900DB2D58 /* XXtsType.h */,
+				D309637E256AA05900DB2D58 /* XXavUtility.c */,
+				D309637F256AA05900DB2D58 /* XXbyteOrder.c */,
+				D3096380256AA05900DB2D58 /* XXnaluSpliter.c */,
+				D3096381256AA05900DB2D58 /* XXtsReader.c */,
+				D3096382256AA05900DB2D58 /* XXnet.c */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
 		D3286E7D246BA06000B0A958 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -536,6 +590,7 @@
 		D3659403243E8F58009F5228 /* XXkit */ = {
 			isa = PBXGroup;
 			children = (
+				D3096365256AA05800DB2D58 /* C */,
 				D365942B243E8F58009F5228 /* Object-C */,
 				D36594E0243E8F59009F5228 /* Readme.MD */,
 				D36594E1243E8F59009F5228 /* .gitignore */,
@@ -593,6 +648,8 @@
 				D339912B255D2C6900972B27 /* UIView+Touchable.m */,
 				D3399131255D3AA800972B27 /* UIView+Movable.h */,
 				D3399132255D3AA800972B27 /* UIView+Movable.m */,
+				D3BF2EE72561F1B00053BA1F /* UIView+ModalPopup.h */,
+				D3BF2EE82561F1B00053BA1F /* UIView+ModalPopup.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -957,6 +1014,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3096389256AA05900DB2D58 /* XXtcpSocket.c in Sources */,
 				D32E8B8724519AB400AB33ED /* XXloginShell.m in Sources */,
 				D33F7382248DC94500A9808D /* VideoRecordViewController.m in Sources */,
 				D38C26982463FD0D00B88757 /* ZoomableViewController.m in Sources */,
@@ -979,6 +1037,7 @@
 				D365955C243E8F59009F5228 /* XXmtkRgbDelegate.m in Sources */,
 				D35B1D7D254FEE630040FBBC /* QuickComponentUIImageView.m in Sources */,
 				D3BEB01D2465456E0024C397 /* AudioRecordAndPlayViewController.m in Sources */,
+				D309638B256AA05900DB2D58 /* XXavUtility.c in Sources */,
 				D3525A482533D964007007D1 /* NSString+JSON.m in Sources */,
 				D365955B243E8F59009F5228 /* XXshadowCreator.m in Sources */,
 				D39503B12447E5A4001434A5 /* XXocUtils.m in Sources */,
@@ -986,6 +1045,7 @@
 				D339912C255D2C6900972B27 /* UIView+Touchable.m in Sources */,
 				D365955D243E8F59009F5228 /* XXmtkYuvDelegate.m in Sources */,
 				D35F32002489A3020099D71B /* XXbuttonPageShiftShell.m in Sources */,
+				D309638F256AA05900DB2D58 /* XXnet.c in Sources */,
 				D3374236247CCE1B009C48AC /* ExclusiveButtonViewController.m in Sources */,
 				D34C4873246119A30031884A /* SceneDelegate.m in Sources */,
 				D390971A2459592700A850F6 /* XXverificationCodeShell.m in Sources */,
@@ -1008,6 +1068,7 @@
 				D37F6A0E243C017F00DC2F28 /* main.m in Sources */,
 				D33AE78525401463009C6C35 /* QuickComponentUIViewController.m in Sources */,
 				D3659560243E8F59009F5228 /* XXmaskView.m in Sources */,
+				D3BF2EE92561F1B00053BA1F /* UIView+ModalPopup.m in Sources */,
 				D35814932543118800EDA923 /* UIViewController+SafeLoad.m in Sources */,
 				D3FBEAEA24CEA2B700A32649 /* XXpickerViewShellVC.m in Sources */,
 				D339913E255D532100972B27 /* XXdebugHelper.m in Sources */,
@@ -1025,11 +1086,13 @@
 				D346DAC02478BF870028B081 /* UIView+Popup.m in Sources */,
 				D3286E7C246B9F9500B0A958 /* XXcoreModel.xcdatamodeld in Sources */,
 				D339A27D2544222E0069D11E /* UINavigationController+Quick.m in Sources */,
+				D309638D256AA05900DB2D58 /* XXnaluSpliter.c in Sources */,
 				D3374233247CA512009C48AC /* XXbuttonExclusiveShell.m in Sources */,
 				D33049542475246B005DC415 /* XXtoast.m in Sources */,
 				D3399126255D256900972B27 /* XXlogger.m in Sources */,
 				D38624432462B10B00617E77 /* OrientationViewController.m in Sources */,
 				D37F4A47247346460065155C /* XXkeyChain.m in Sources */,
+				D3096388256AA05900DB2D58 /* XXqueue.c in Sources */,
 				D346DABB2477EA390028B081 /* WebViewProgressViewController.m in Sources */,
 				D34C4870246113200031884A /* UIViewController+SceneState.m in Sources */,
 				D335CF4D248B8B3A004832BB /* UIView+MaskView.m in Sources */,
@@ -1038,12 +1101,15 @@
 				D365951D243E8F59009F5228 /* XXavFormat.m in Sources */,
 				D33FF84C2466DEC800AF3652 /* AudioFileCell.m in Sources */,
 				D3659563243E8F59009F5228 /* XXappDelegate.m in Sources */,
+				D309638C256AA05900DB2D58 /* XXbyteOrder.c in Sources */,
 				D35B8CE3248707FA0079843A /* LangaugeViewController.m in Sources */,
 				D365955E243E8F59009F5228 /* Metal.metal in Sources */,
 				D3AFBD0E247FDEA100BA7FD1 /* XXaudioFilePlayer.m in Sources */,
+				D309638A256AA05900DB2D58 /* XXudpSocket.c in Sources */,
 				D34755C124D2BF480027D6D3 /* TableViewCodeHeaderFooter.m in Sources */,
 				D35F8F4E253BA73C00C8BE86 /* QuickComponentUIView.m in Sources */,
 				D35E3203244FB44900300362 /* XXstackViewShellVC.m in Sources */,
+				D309638E256AA05900DB2D58 /* XXtsReader.c in Sources */,
 				D3286E8C246BA6AD00B0A958 /* CoreDataViewController.m in Sources */,
 				D3236DDA2485E0AE00AA5F7A /* CycleClickButtonViewController.m in Sources */,
 			);

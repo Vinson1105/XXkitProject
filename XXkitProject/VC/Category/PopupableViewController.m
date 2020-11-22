@@ -39,23 +39,26 @@
     _topViewPopdownConstraints = @[
         [_topView.bottomAnchor constraintEqualToAnchor:_bgView.topAnchor constant:-10]
     ];
-    _topView.xx_popupConstraint = _topViewPopupConstraints;
-    _topView.xx_popdownConstraint = _topViewPopdownConstraints;
-    [_topView xx_initPopup:YES];
+    _topView.popup_upLayoutConstraints = _topViewPopupConstraints;
+    _topView.popup_downLayoutConstraints = _topViewPopdownConstraints;
+//    [_topView popup_install:YES];
+    _topView.popup_active = YES;
     
     _rightViewPopdownConstraints = @[
         [_rightView.leadingAnchor constraintEqualToAnchor:_bgView.trailingAnchor constant:10]
     ];
-    _rightView.xx_popupConstraint = _rightViewPopupConstraints;
-    _rightView.xx_popdownConstraint = _rightViewPopdownConstraints;
-    [_rightView xx_initPopup:YES];
+    _rightView.popup_upLayoutConstraints = _rightViewPopupConstraints;
+    _rightView.popup_downLayoutConstraints = _rightViewPopdownConstraints;
+//    [_rightView popup_install:YES];
+    _rightView.popup_active = YES;
 
     _leftViewPopdownConstraints = @[
         [_leftView.trailingAnchor constraintEqualToAnchor:_bgView.leadingAnchor constant:-10]
     ];
-    _leftView.xx_popupConstraint = _leftViewPopupConstraints;
-    _leftView.xx_popdownConstraint = _leftViewPopdownConstraints;
-    [_leftView xx_initPopup:YES];
+    _leftView.popup_upLayoutConstraints = _leftViewPopupConstraints;
+    _leftView.popup_downLayoutConstraints = _leftViewPopdownConstraints;
+//    [_leftView popup_install:YES];
+    _leftView.popup_active = YES;
 
     self.view.xx_visibleInterval = 5;
     self.view.xx_visibleViews = @[_topView,_rightView,_leftView,_midViwe];
