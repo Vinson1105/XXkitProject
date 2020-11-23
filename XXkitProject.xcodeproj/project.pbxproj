@@ -109,6 +109,7 @@
 		D37F6A23243C017F00DC2F28 /* XXkitProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D37F6A22243C017F00DC2F28 /* XXkitProjectUITests.m */; };
 		D38624432462B10B00617E77 /* OrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D38624422462B10B00617E77 /* OrientationViewController.m */; };
 		D3865B4A2478FF8700EF29B4 /* PopupableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3865B492478FF8700EF29B4 /* PopupableViewController.m */; };
+		D386F015256C81F600AD481B /* DailyLogFileFifo.m in Sources */ = {isa = PBXBuildFile; fileRef = D386F014256C81F600AD481B /* DailyLogFileFifo.m */; };
 		D38C26982463FD0D00B88757 /* ZoomableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D38C26972463FD0D00B88757 /* ZoomableViewController.m */; };
 		D38E9F852540F47700FFF4E9 /* QuickComponentUINavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D38E9F842540F47700FFF4E9 /* QuickComponentUINavigationBar.m */; };
 		D39097112459267000A850F6 /* XXbuttonLimitShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D39097102459267000A850F6 /* XXbuttonLimitShell.m */; };
@@ -357,6 +358,8 @@
 		D38624422462B10B00617E77 /* OrientationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrientationViewController.m; sourceTree = "<group>"; };
 		D3865B482478FF8700EF29B4 /* PopupableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopupableViewController.h; sourceTree = "<group>"; };
 		D3865B492478FF8700EF29B4 /* PopupableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopupableViewController.m; sourceTree = "<group>"; };
+		D386F013256C81F600AD481B /* DailyLogFileFifo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DailyLogFileFifo.h; sourceTree = "<group>"; };
+		D386F014256C81F600AD481B /* DailyLogFileFifo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DailyLogFileFifo.m; sourceTree = "<group>"; };
 		D38C26962463FD0C00B88757 /* ZoomableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZoomableViewController.h; sourceTree = "<group>"; };
 		D38C26972463FD0D00B88757 /* ZoomableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZoomableViewController.m; sourceTree = "<group>"; };
 		D38E9F832540F47700FFF4E9 /* QuickComponentUINavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickComponentUINavigationBar.h; sourceTree = "<group>"; };
@@ -758,6 +761,8 @@
 				D37F4A46247346460065155C /* XXkeyChain.m */,
 				D3399124255D256900972B27 /* XXlogger.h */,
 				D3399125255D256900972B27 /* XXlogger.m */,
+				D386F013256C81F600AD481B /* DailyLogFileFifo.h */,
+				D386F014256C81F600AD481B /* DailyLogFileFifo.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -1087,6 +1092,7 @@
 				D3286E7C246B9F9500B0A958 /* XXcoreModel.xcdatamodeld in Sources */,
 				D339A27D2544222E0069D11E /* UINavigationController+Quick.m in Sources */,
 				D309638D256AA05900DB2D58 /* XXnaluSpliter.c in Sources */,
+				D386F015256C81F600AD481B /* DailyLogFileFifo.m in Sources */,
 				D3374233247CA512009C48AC /* XXbuttonExclusiveShell.m in Sources */,
 				D33049542475246B005DC415 /* XXtoast.m in Sources */,
 				D3399126255D256900972B27 /* XXlogger.m in Sources */,
