@@ -556,6 +556,57 @@
             </objects>
             <point key="canvasLocation" x="945" y="2704"/>
         </scene>
+        <!--Logger View Controller-->
+        <scene sceneID="u9d-Bc-QH6">
+            <objects>
+                <viewController storyboardIdentifier="LoggerViewController" id="icG-To-uuh" customClass="LoggerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I3g-jn-1Ak">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ifw-OI-LV4">
+                                <rect key="frame" x="18" y="353" width="378" height="31"/>
+                                <connections>
+                                    <action selector="onIntervalSliderValueChanged:" destination="icG-To-uuh" eventType="valueChanged" id="oTo-XY-wkT"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3E-pd-dC8">
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onStartOrStopButtonClicked:" destination="icG-To-uuh" eventType="touchUpInside" id="zWe-Us-zIE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35y-Me-4gZ">
+                                <rect key="frame" x="186" y="322" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QcB-vb-nBB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QcB-vb-nBB" firstAttribute="trailing" secondItem="Ifw-OI-LV4" secondAttribute="trailing" constant="20" id="8qN-Qk-VFv"/>
+                            <constraint firstItem="o3E-pd-dC8" firstAttribute="centerX" secondItem="I3g-jn-1Ak" secondAttribute="centerX" id="AkH-Gl-wCS"/>
+                            <constraint firstItem="Ifw-OI-LV4" firstAttribute="leading" secondItem="QcB-vb-nBB" secondAttribute="leading" constant="20" id="E7T-dV-OXw"/>
+                            <constraint firstItem="Ifw-OI-LV4" firstAttribute="centerX" secondItem="I3g-jn-1Ak" secondAttribute="centerX" id="RyL-GE-zmM"/>
+                            <constraint firstItem="Ifw-OI-LV4" firstAttribute="top" secondItem="35y-Me-4gZ" secondAttribute="bottom" constant="10" id="WjI-91-UC9"/>
+                            <constraint firstItem="o3E-pd-dC8" firstAttribute="centerY" secondItem="I3g-jn-1Ak" secondAttribute="centerY" id="aes-bN-2CS"/>
+                            <constraint firstItem="35y-Me-4gZ" firstAttribute="centerX" secondItem="I3g-jn-1Ak" secondAttribute="centerX" id="fqd-Wb-B2b"/>
+                            <constraint firstItem="o3E-pd-dC8" firstAttribute="top" secondItem="Ifw-OI-LV4" secondAttribute="bottom" constant="50" id="m2A-WG-1E5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="intervalLabel" destination="35y-Me-4gZ" id="TNO-7e-Ovz"/>
+                        <outlet property="intervalSlider" destination="Ifw-OI-LV4" id="12i-Qb-Ujz"/>
+                        <outlet property="startOrStopButton" destination="o3E-pd-dC8" id="eW9-7N-ZDs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dsf-KJ-ewL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1629" y="2703"/>
+        </scene>
         <!--Toast View Controller-->
         <scene sceneID="JzB-2t-OzD">
             <objects>

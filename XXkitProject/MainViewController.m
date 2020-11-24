@@ -89,6 +89,7 @@
             @{@"Title":@"XXcoreData",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"XXtouchID",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"XXkeyChain",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+            @{@"Title":@"XXlogger",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),}
         ],
         @[
             @{@"Title":@"XXquick",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
@@ -144,6 +145,7 @@
                 if([title isEqualToString:@"XXcoreData"])       { vc = [XXocUtils viewController:@"CoreDataViewController"]; }
                 else if([title isEqualToString:@"XXtouchID"])   { vc = [XXocUtils viewController:@"TouchIDViewController"]; }
                 else if([title isEqualToString:@"XXkeyChain"])  { vc = [XXocUtils viewController:@"KeyChainViewController"]; }
+                else if([title isEqualToString:@"XXlogger"])  { vc = [XXocUtils viewController:@"LoggerViewController"]; }
                 else{}
             }
             else if(kQuickSection == indexPath.section){
