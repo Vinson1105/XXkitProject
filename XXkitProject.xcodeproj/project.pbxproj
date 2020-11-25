@@ -17,6 +17,7 @@
 		D309638F256AA05900DB2D58 /* XXnet.c in Sources */ = {isa = PBXBuildFile; fileRef = D3096382256AA05900DB2D58 /* XXnet.c */; };
 		D3236DD72485DED200AA5F7A /* XXbuttonCycleClickShell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3236DD52485DED200AA5F7A /* XXbuttonCycleClickShell.m */; };
 		D3236DDA2485E0AE00AA5F7A /* CycleClickButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3236DD92485E0AE00AA5F7A /* CycleClickButtonViewController.m */; };
+		D3283419256E55F50021CAD7 /* XXmodalView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3283415256E55F50021CAD7 /* XXmodalView.m */; };
 		D3286E7C246B9F9500B0A958 /* XXcoreModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3286E7A246B9F9500B0A958 /* XXcoreModel.xcdatamodeld */; };
 		D3286E8C246BA6AD00B0A958 /* CoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3286E8B246BA6AD00B0A958 /* CoreDataViewController.m */; };
 		D3286E91246BD1A800B0A958 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3286E90246BD1A700B0A958 /* CoreData.framework */; };
@@ -170,6 +171,8 @@
 		D3236DD62485DED200AA5F7A /* XXbuttonCycleClickShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXbuttonCycleClickShell.h; sourceTree = "<group>"; };
 		D3236DD82485E0AE00AA5F7A /* CycleClickButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CycleClickButtonViewController.h; sourceTree = "<group>"; };
 		D3236DD92485E0AE00AA5F7A /* CycleClickButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CycleClickButtonViewController.m; sourceTree = "<group>"; };
+		D3283415256E55F50021CAD7 /* XXmodalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXmodalView.m; sourceTree = "<group>"; };
+		D3283418256E55F50021CAD7 /* XXmodalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXmodalView.h; sourceTree = "<group>"; };
 		D3286E7B246B9F9500B0A958 /* XXcoreModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XXcoreModel.xcdatamodel; sourceTree = "<group>"; };
 		D3286E8A246BA6AD00B0A958 /* CoreDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataViewController.h; sourceTree = "<group>"; };
 		D3286E8B246BA6AD00B0A958 /* CoreDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataViewController.m; sourceTree = "<group>"; };
@@ -433,23 +436,23 @@
 			isa = PBXGroup;
 			children = (
 				D3096371256AA05800DB2D58 /* XXtcpSocket.h */,
+				D3096379256AA05900DB2D58 /* XXtcpSocket.c */,
 				D3096372256AA05800DB2D58 /* XXavUtility.h */,
+				D309637E256AA05900DB2D58 /* XXavUtility.c */,
 				D3096373256AA05800DB2D58 /* XXbyteOrder.h */,
+				D309637F256AA05900DB2D58 /* XXbyteOrder.c */,
 				D3096374256AA05800DB2D58 /* XXudpSocket.h */,
+				D309637C256AA05900DB2D58 /* XXudpSocket.c */,
+				D309637B256AA05900DB2D58 /* XXqueue.h */,
 				D3096375256AA05800DB2D58 /* XXqueue.c */,
 				D3096376256AA05800DB2D58 /* XXnaluSpliter.h */,
-				D3096377256AA05800DB2D58 /* XXnet.h */,
-				D3096378256AA05800DB2D58 /* XXtsReader.h */,
-				D3096379256AA05900DB2D58 /* XXtcpSocket.c */,
-				D309637A256AA05900DB2D58 /* list.h */,
-				D309637B256AA05900DB2D58 /* XXqueue.h */,
-				D309637C256AA05900DB2D58 /* XXudpSocket.c */,
-				D309637D256AA05900DB2D58 /* XXtsType.h */,
-				D309637E256AA05900DB2D58 /* XXavUtility.c */,
-				D309637F256AA05900DB2D58 /* XXbyteOrder.c */,
 				D3096380256AA05900DB2D58 /* XXnaluSpliter.c */,
-				D3096381256AA05900DB2D58 /* XXtsReader.c */,
+				D3096377256AA05800DB2D58 /* XXnet.h */,
 				D3096382256AA05900DB2D58 /* XXnet.c */,
+				D3096378256AA05800DB2D58 /* XXtsReader.h */,
+				D3096381256AA05900DB2D58 /* XXtsReader.c */,
+				D309637D256AA05900DB2D58 /* XXtsType.h */,
+				D309637A256AA05900DB2D58 /* list.h */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -727,6 +730,8 @@
 		D36594C2243E8F59009F5228 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D3283418256E55F50021CAD7 /* XXmodalView.h */,
+				D3283415256E55F50021CAD7 /* XXmodalView.m */,
 				D36594C3243E8F59009F5228 /* XXshadowCreator.m */,
 				D36594C4243E8F59009F5228 /* XXmtkRgbDelegate.m */,
 				D36594C5243E8F59009F5228 /* XXmaskView.h */,
@@ -1119,6 +1124,7 @@
 				D365951D243E8F59009F5228 /* XXavFormat.m in Sources */,
 				D33FF84C2466DEC800AF3652 /* AudioFileCell.m in Sources */,
 				D3659563243E8F59009F5228 /* XXappDelegate.m in Sources */,
+				D3283419256E55F50021CAD7 /* XXmodalView.m in Sources */,
 				D309638C256AA05900DB2D58 /* XXbyteOrder.c in Sources */,
 				D35B8CE3248707FA0079843A /* LangaugeViewController.m in Sources */,
 				D365955E243E8F59009F5228 /* Metal.metal in Sources */,

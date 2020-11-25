@@ -7,8 +7,14 @@
 //
 
 #import "MaskViewViewController.h"
-#import "../../../../XXkit/Object-C/View/XXmaskView.h"
-#import "../../../../XXkit/Object-C/Category/UIView+MaskView.h"
+//#import "../../../../XXkit/Object-C/View/XXmaskView.h"
+//#import "../../../../XXkit/Object-C/Category/UIView+MaskView.h"
+#import "../../../../XXkit/Object-C/Category/UIView+ModalPopup.h"
+
+@interface CustomView : UIView
+@end
+@implementation CustomView
+@end
 
 @interface MaskViewViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *redButton;
@@ -18,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet UIStackView *stackView;
 
 @property (nonatomic,strong) UIImageView *imageView;
+@property (nonatomic,strong) CustomView *colorView;
 @end
 
 @implementation MaskViewViewController
@@ -29,6 +36,8 @@
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     _imageView = [[UIImageView alloc] initWithImage:[self convertViewToImage:_stackView]];
+    [_imageView modalPopup_configAtCenterSize:CGSizeMake(100, 100) margin:0];
+    _imageView.modalPopup_touchBackgroundToPopdown = YES;
 }
 
 /*
@@ -52,20 +61,26 @@
         color = UIColor.blueColor;
     }
     else if(sender == _categoryButton){
-        _imageView.xx_hiddenWithMaskView = NO;
+//        _imageView.xx_hiddenWithMaskView = NO;
+        _imageView.modalPopup_popup = YES;
         return;
     }
     else{
         
     }
     
-    UIView *view = [UIView new];
-    view.translatesAutoresizingMaskIntoConstraints = NO;
+    CustomView *view = [CustomView new];
     view.backgroundColor = color;
-    [view.widthAnchor constraintEqualToConstant:50].active = YES;
-    [view.heightAnchor constraintEqualToConstant:50].active = YES;
     
-    [[XXmaskView sharedInstance] show:view animated:YES];
+    if(self.colorView){
+        [self.colorView modalPopup_release];
+    }
+    self.colorView = view;
+    self.colorView.modalPopup_touchBackgroundToPopdown = YES;
+    [self.colorView modalPopup_configAtCenterSize:CGSizeMake(100, 100) margin:0];
+    self.colorView.modalPopup_popup = YES;
+//    [[XXmaskView sharedInstance] show:view animated:YES];
+    
 }
 - (UIImage *)convertViewToImage:(UIView *)view {
     

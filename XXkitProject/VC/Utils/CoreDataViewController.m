@@ -14,7 +14,7 @@
 
 #import "../../../../XXkit/Object-C/Shell/XXtableViewShell.h"
 #import "../../../../XXkit/Object-C/Shell/XXtextFieldShell.h"
-#import "../../../../XXkit/Object-C/View/XXtoast.h"
+#import "../../../../XXkit/Object-C/Utility/XXtoast.h"
 
 @interface CoreDataViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;

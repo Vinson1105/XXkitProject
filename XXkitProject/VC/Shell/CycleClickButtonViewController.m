@@ -9,7 +9,7 @@
 #import "CycleClickButtonViewController.h"
 #import "../../../../XXkit/Object-C/Shell/XXbuttonCycleClickShell.h"
 #import "../../../../XXkit/Object-C/XXocUtils.h"
-#import "../../../../XXkit/Object-C/View/XXtoast.h"
+#import "../../../../XXkit/Object-C/Utility/XXtoast.h"
 
 @interface CycleClickButtonViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *button;

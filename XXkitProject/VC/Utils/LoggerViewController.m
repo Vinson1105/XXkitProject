@@ -12,6 +12,8 @@
 #import "../../../../XXkit/Object-C/Utility/XXtimer.h"
 #import "../../../../XXkit/Object-C/Utility/DailyLogFileFifo.h"
 
+#import "../../../../XXkit/Object-C/Utility/NetworkFifo.h"
+
 @interface LoggerViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *intervalLabel;
 @property (weak, nonatomic) IBOutlet UISlider *intervalSlider;
@@ -32,6 +34,12 @@
     self.intervalSlider.value = 0.5;
     self.intervalLabel.text = [NSString stringWithFormat:@"%.2f",self.intervalSlider.value];
     self.interval = self.intervalSlider.value;
+    
+    [XXlogger setFifoEnable:NO forName:@"XXlogger"];
+    [XXlogger configFifoClassString:@"NetworkFifo" param:@{@"host":@"192.168.1.105",@"port":@(23333),@"way":@"tcp"} forName:@"Network"];
+}
+- (void)dealloc{
+    self.running = NO;
 }
 - (IBAction)onIntervalSliderValueChanged:(id)sender {
     CGFloat interval = self.intervalSlider.value;
