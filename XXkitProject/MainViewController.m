@@ -76,6 +76,7 @@
             @{@"Title":@"UIView+Zoomable",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"UIView+TapToPopup",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"NSBundle+Language",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+            @{@"Title":@"UIView+KeyboradAdapter",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
         ],
         @[
             @{@"Title":@"XXaudioFileRecorder",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
@@ -129,6 +130,7 @@
                 else if([title isEqualToString:@"UIView+Zoomable"])         { vc = [XXocUtils viewController:@"ZoomableViewController"]; }
                 else if([title isEqualToString:@"UIView+TapToPopup"])       { vc = [XXocUtils viewController:@"PopupableViewController"]; }
                 else if([title isEqualToString:@"NSBundle+Language"])       { vc = [XXocUtils viewController:@"LangaugeViewController"]; }
+                else if([title isEqualToString:@"UIView+KeyboradAdapter"])  { vc = [XXocUtils viewController:@"KeyboardAdapterViewController"];}
                 else{}
             }
             else if(kAVSection == indexPath.section){
