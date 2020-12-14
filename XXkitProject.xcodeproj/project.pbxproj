@@ -98,6 +98,7 @@
 		D365956A243E8F59009F5228 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D36594E1243E8F59009F5228 /* .gitignore */; };
 		D365956B243E8F59009F5228 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = D36594E2243E8F59009F5228 /* .gitattributes */; };
 		D36B7A392445DD2F001BBE89 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D36B7A382445DD2F001BBE89 /* MainViewController.m */; };
+		D370DEDD25881D4100310C36 /* KeyboardAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D370DEDC25881D4100310C36 /* KeyboardAdapterViewController.m */; };
 		D37F4A47247346460065155C /* XXkeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = D37F4A46247346460065155C /* XXkeyChain.m */; };
 		D37F69FD243C017E00DC2F28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D37F69FC243C017E00DC2F28 /* AppDelegate.m */; };
 		D37F6A06243C017E00DC2F28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37F6A04243C017E00DC2F28 /* Main.storyboard */; };
@@ -338,6 +339,8 @@
 		D36594E3243E8F59009F5228 /* XXdefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXdefine.h; sourceTree = "<group>"; };
 		D36B7A372445DD2F001BBE89 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		D36B7A382445DD2F001BBE89 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		D370DEDB25881D4100310C36 /* KeyboardAdapterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardAdapterViewController.h; sourceTree = "<group>"; };
+		D370DEDC25881D4100310C36 /* KeyboardAdapterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardAdapterViewController.m; sourceTree = "<group>"; };
 		D37F4A45247346460065155C /* XXkeyChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXkeyChain.h; sourceTree = "<group>"; };
 		D37F4A46247346460065155C /* XXkeyChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXkeyChain.m; sourceTree = "<group>"; };
 		D37F69F8243C017E00DC2F28 /* XXkitProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXkitProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -854,6 +857,8 @@
 				D3865B492478FF8700EF29B4 /* PopupableViewController.m */,
 				D35B8CE1248707FA0079843A /* LangaugeViewController.h */,
 				D35B8CE2248707FA0079843A /* LangaugeViewController.m */,
+				D370DEDB25881D4100310C36 /* KeyboardAdapterViewController.h */,
+				D370DEDC25881D4100310C36 /* KeyboardAdapterViewController.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1126,6 +1131,7 @@
 				D309638A256AA05900DB2D58 /* XXudpSocket.c in Sources */,
 				D34755C124D2BF480027D6D3 /* TableViewCodeHeaderFooter.m in Sources */,
 				D35F8F4E253BA73C00C8BE86 /* QuickComponentUIView.m in Sources */,
+				D370DEDD25881D4100310C36 /* KeyboardAdapterViewController.m in Sources */,
 				D35E3203244FB44900300362 /* XXstackViewShellVC.m in Sources */,
 				D309638E256AA05900DB2D58 /* XXtsReader.c in Sources */,
 				D3286E8C246BA6AD00B0A958 /* CoreDataViewController.m in Sources */,
