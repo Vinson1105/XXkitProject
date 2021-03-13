@@ -34,6 +34,7 @@
     
     UITextField *tf1 = [UITextField new];
     tf1.translatesAutoresizingMaskIntoConstraints = NO;
+    tf1.backgroundColor = UIColor.grayColor;
     [self.pview addSubview:tf1];
     [tf1.leadingAnchor constraintEqualToAnchor:self.pview.leadingAnchor constant:10].active = YES;
     [tf1.trailingAnchor constraintEqualToAnchor:self.pview.trailingAnchor constant:-10].active = YES;
@@ -41,6 +42,7 @@
 
     UITextField *tf2 = [UITextField new];
     tf2.translatesAutoresizingMaskIntoConstraints = NO;
+    tf2.backgroundColor = UIColor.grayColor;
     [self.pview addSubview:tf2];
     [tf2.leadingAnchor constraintEqualToAnchor:self.pview.leadingAnchor constant:10].active = YES;
     [tf2.trailingAnchor constraintEqualToAnchor:self.pview.trailingAnchor constant:-10].active = YES;
@@ -51,6 +53,7 @@
     [upLayouts addObject:[self.pview.leadingAnchor constraintEqualToAnchor:self.pview.modalPopup_backgroundView.leadingAnchor constant:20]];
     [upLayouts addObject:[self.pview.trailingAnchor constraintEqualToAnchor:self.pview.modalPopup_backgroundView.trailingAnchor constant:-20]];
     [upLayouts addObject:[self.pview.bottomAnchor constraintEqualToAnchor:self.pview.modalPopup_backgroundView.bottomAnchor constant:-20]];
+    //[upLayouts addObject:[self.pview.centerYAnchor constraintEqualToAnchor:self.pview.modalPopup_backgroundView.centerYAnchor constant:50]];
     
     NSMutableArray *downLayouts = [NSMutableArray new];
     [downLayouts addObject:[self.pview.leadingAnchor constraintEqualToAnchor:self.pview.modalPopup_backgroundView.leadingAnchor constant:20]];
@@ -58,6 +61,7 @@
     [downLayouts addObject:[self.pview.topAnchor constraintEqualToAnchor:self.pview.modalPopup_backgroundView.bottomAnchor constant:20]];
 
     [self.pview modalPopup_configPopupConstraint:upLayouts popdownConstraint:downLayouts];
+    self.pview.modalPopup_touchBackgroundToPopdown = YES;
     [self.pview keyboradAdapter_install:YES];
     self.pview.keyboradAdapter_vlayout = upLayouts[2];
 }
