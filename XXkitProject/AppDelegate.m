@@ -8,8 +8,8 @@
 
 #import "AppDelegate.h"
 #import "./MainViewController.h"
-#import "../../XXkit/Object-C/Quick/QuickLoader.h"
-#import "../../XXkit/Object-C/Utility/XXdebugHelper.h"
+#import "../../XXkit/Objective-C/Quick/QuickLoader.h"
+#import "../../XXkit/Objective-C/Utility/XXdebugHelper.h"
 
 #define Main
 //#define XXAPP

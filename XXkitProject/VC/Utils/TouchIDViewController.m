@@ -7,7 +7,7 @@
 //
 
 #import "TouchIDViewController.h"
-#import "../../../../XXkit/Object-C/XXocUtils.h"
+#import "../../../../XXkit/Objective-C/XXocUtils.h"
 
 @interface TouchIDViewController()
 @property (weak, nonatomic) IBOutlet UIButton *button1;

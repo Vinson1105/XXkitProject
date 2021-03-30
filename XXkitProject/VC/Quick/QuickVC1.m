@@ -8,7 +8,7 @@
 
 #import "QuickVC1.h"
 //#import "../../../../XXkit/Object-C/Quick/UIViewController+QuickLoader.h"
-#import "../../../../XXkit/Object-C/Quick/NSObject+Quick.h"
+#import "../../../../XXkit/Objective-C/Quick/NSObject+Quick.h"
 
 @interface QuickVC1 ()
 @end

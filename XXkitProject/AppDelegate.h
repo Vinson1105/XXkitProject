@@ -6,7 +6,7 @@
 //  Copyright © 2020 郭文轩. All rights reserved.
 //
 
-#import "../../XXkit/Object-C/AppDelegate/XXappDelegate.h"
+#import "../../XXkit/Objective-C/AppDelegate/XXappDelegate.h"
 
 @interface AppDelegate : XXappDelegate
 @end

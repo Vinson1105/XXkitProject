@@ -7,8 +7,8 @@
 //
 
 #import "VideoRecordViewController.h"
-#import "../../../../XXkit/Object-C/AV/XXvideoRecorder.h"
-#import "../../../../XXkit/Object-C/Category/UIButton+StateSettings.h"
+#import "../../../../XXkit/Objective-C/AV/XXvideoRecorder.h"
+#import "../../../../XXkit/Objective-C/Category/UIButton+StateSettings.h"
 #import "XXocUtils.h"
 
 @interface ViewA : UIView

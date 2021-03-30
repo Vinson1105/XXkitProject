@@ -7,10 +7,10 @@
 //
 
 #import "AudioFileCell.h"
-#import "../../../../XXkit/Object-C/Shell/XXtableViewShell.h"
+#import "../../../../XXkit/Objective-C/Shell/XXtableViewShell.h"
 #import "../../../CoreData/AudioFile+CoreDataProperties.h"
-#import "../../../../XXkit/Object-C/XXocUtils.h"
-#import "../../../../XXkit/Object-C/Shell/XXviewBase.h"
+#import "../../../../XXkit/Objective-C/XXocUtils.h"
+#import "../../../../XXkit/Objective-C/Shell/XXviewBase.h"
 
 @interface AudioFileCell()<XXviewBase>
 @property (weak, nonatomic) IBOutlet UITextField *name;

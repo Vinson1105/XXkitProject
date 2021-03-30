@@ -7,9 +7,9 @@
 //
 
 #import "KeyboardAdapterViewController.h"
-#import "../../../../XXkit/Object-C/Category/UIView+KeyboradAdapter.h"
-#import "../../../../XXkit/Object-C/Category/UIView+ModalPopup.h"
-#import "../../../../XXkit/Object-C/XXocUtils.h"
+#import "../../../../XXkit/Objective-C/Category/UIView+KeyboradAdapter.h"
+#import "../../../../XXkit/Objective-C/Category/UIView+ModalPopup.h"
+#import "../../../../XXkit/Objective-C/XXocUtils.h"
 
 @interface KeyboardAdapterViewController ()
 @property (nonatomic,strong) UIView *pview;

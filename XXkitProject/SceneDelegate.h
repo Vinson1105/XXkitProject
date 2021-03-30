@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "../../XXkit/Object-C/AppDelegate/XXsceneDelegate.h"
+#import "../../XXkit/Objective-C/AppDelegate/XXsceneDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

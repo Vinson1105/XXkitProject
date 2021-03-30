@@ -7,9 +7,9 @@
 //
 
 #import "PageShiftButtonViewController.h"
-#import "../../../../XXkit/Object-C/Shell/XXbuttonPageShiftShell.h"
-#import "../../../../XXkit/Object-C/XXocUtils.h"
-#import "../../../../XXkit/Object-C/Utility/XXtoast.h"
+#import "../../../../XXkit/Objective-C/Shell/XXbuttonPageShiftShell.h"
+#import "../../../../XXkit/Objective-C/XXocUtils.h"
+#import "../../../../XXkit/Objective-C/Utility/XXtoast.h"
 
 @interface PageShiftButtonViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *label;

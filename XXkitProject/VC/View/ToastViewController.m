@@ -7,7 +7,7 @@
 //
 
 #import "ToastViewController.h"
-#import "../../../../XXkit/Object-C/Utility/XXtoast.h"
+#import "../../../../XXkit/Objective-C/Utility/XXtoast.h"
 
 @interface ToastViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *tips1;

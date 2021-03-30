@@ -7,9 +7,9 @@
 //
 
 #import "LangaugeViewController.h"
-#import "../../../../XXkit/Object-C/Category/NSBundle+Language.h"
-#import "../../../../XXkit/Object-C/Shell/XXtableViewShell.h"
-#import "../../../../XXkit/Object-C/XXocUtils.h"
+#import "../../../../XXkit/Objective-C/Category/NSBundle+Language.h"
+#import "../../../../XXkit/Objective-C/Shell/XXtableViewShell.h"
+#import "../../../../XXkit/Objective-C/XXocUtils.h"
 
 @interface LangaugeViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;

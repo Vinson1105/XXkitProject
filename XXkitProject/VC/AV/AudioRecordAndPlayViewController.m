@@ -7,16 +7,16 @@
 //
 
 #import "AudioRecordAndPlayViewController.h"
-#import "../../../../XXkit/Object-C/AV/XXaudioPlayer.h"
-#import "../../../../XXkit/Object-C/AV/XXavFormat.h"
-#import "../../../../XXkit/Object-C/AV/XXaudioFileRecorder.h"
-#import "../../../../XXkit/Object-C/XXocUtils.h"
+#import "../../../../XXkit/Objective-C/AV/XXaudioPlayer.h"
+#import "../../../../XXkit/Objective-C/AV/XXavFormat.h"
+#import "../../../../XXkit/Objective-C/AV/XXaudioFileRecorder.h"
+#import "../../../../XXkit/Objective-C/XXocUtils.h"
 
-#import "../../../../XXkit/Object-C/Shell/XXtableViewShell.h"
-#import "../../../../XXkit/Object-C/Utility/XXcoreData.h"
+#import "../../../../XXkit/Objective-C/Shell/XXtableViewShell.h"
+#import "../../../../XXkit/Objective-C/Utility/XXcoreData.h"
 #import "../../../CoreData/AudioFile+CoreDataProperties.h"
-#import "../../../../XXkit/Object-C/XXocUtils.h"
-#import "../../../../XXkit/Object-C/AV/XXaudioFilePlayer.h"
+#import "../../../../XXkit/Objective-C/XXocUtils.h"
+#import "../../../../XXkit/Objective-C/AV/XXaudioFilePlayer.h"
 
 @interface AudioRecordAndPlayViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *startButton;

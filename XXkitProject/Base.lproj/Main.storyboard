@@ -928,6 +928,31 @@
             </objects>
             <point key="canvasLocation" x="2300" y="702"/>
         </scene>
+        <!--Activity Indicator View Controller-->
+        <scene sceneID="FXw-Eu-nPg">
+            <objects>
+                <viewController storyboardIdentifier="ActivityIndicatorViewController" id="G3I-ht-CZU" customClass="ActivityIndicatorViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ioj-0K-K0O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnY-Jb-KTU">
+                                <rect key="frame" x="189" y="426" width="36" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="show"/>
+                                <connections>
+                                    <action selector="onButtonTouchUpInside:" destination="G3I-ht-CZU" eventType="touchUpInside" id="MkM-eh-ZzP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pbc-ng-nmA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nm2-4G-MAU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2969.5652173913045" y="701.78571428571422"/>
+        </scene>
         <!--Xstack View ShellVC-->
         <scene sceneID="R6v-Qx-ebA">
             <objects>

@@ -7,10 +7,10 @@
 //
 
 #import "MainViewController.h"
-#import "../../XXkit/Object-C/Utility/XXcoreData.h"
+#import "../../XXkit/Objective-C/Utility/XXcoreData.h"
 
-#import "../../XXkit/Object-C/Shell/XXtableViewShell.h"
-#import "../../XXkit/Object-C/XXocUtils.h"
+#import "../../XXkit/Objective-C/Shell/XXtableViewShell.h"
+#import "../../XXkit/Objective-C/XXocUtils.h"
 
 #import "./VC/Shell/XXtableViewShellVC.h"
 #import "./VC/Shell/XXstackViewShellVC.h"
@@ -77,7 +77,8 @@
             @{@"Title":@"UIView+TapToPopup",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"NSBundle+Language",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"UIView+KeyboradAdapter",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
-        ],
+            @{@"Title":@"UIView+ActivityIndicator",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
+],
         @[
             @{@"Title":@"XXaudioFileRecorder",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
             @{@"Title":@"XXvideoRecorder",@"AccessoryType":@(UITableViewCellAccessoryDisclosureIndicator),},
@@ -131,6 +132,7 @@
                 else if([title isEqualToString:@"UIView+TapToPopup"])       { vc = [XXocUtils viewController:@"PopupableViewController"]; }
                 else if([title isEqualToString:@"NSBundle+Language"])       { vc = [XXocUtils viewController:@"LangaugeViewController"]; }
                 else if([title isEqualToString:@"UIView+KeyboradAdapter"])  { vc = [XXocUtils viewController:@"KeyboardAdapterViewController"];}
+                else if([title isEqualToString:@"UIView+ActivityIndicator"])  { vc = [XXocUtils viewController:@"ActivityIndicatorViewController"];}
                 else{}
             }
             else if(kAVSection == indexPath.section){

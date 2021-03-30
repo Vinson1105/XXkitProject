@@ -7,14 +7,14 @@
 //
 
 #import "CoreDataViewController.h"
-#import "../../../../XXkit/Object-C/Utility/XXcoreData.h"
+#import "../../../../XXkit/Objective-C/Utility/XXcoreData.h"
 #import "../../../CoreData/Person+CoreDataClass.h"
 #import "../../../CoreData/Person+CoreDataProperties.h"
-#import "../../../../XXkit/Object-C/XXocUtils.h"
+#import "../../../../XXkit/Objective-C/XXocUtils.h"
 
-#import "../../../../XXkit/Object-C/Shell/XXtableViewShell.h"
-#import "../../../../XXkit/Object-C/Shell/XXtextFieldShell.h"
-#import "../../../../XXkit/Object-C/Utility/XXtoast.h"
+#import "../../../../XXkit/Objective-C/Shell/XXtableViewShell.h"
+#import "../../../../XXkit/Objective-C/Shell/XXtextFieldShell.h"
+#import "../../../../XXkit/Objective-C/Utility/XXtoast.h"
 
 @interface CoreDataViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;

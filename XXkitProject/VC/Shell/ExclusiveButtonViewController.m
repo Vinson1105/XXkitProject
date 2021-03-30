@@ -7,9 +7,9 @@
 //
 
 #import "ExclusiveButtonViewController.h"
-#import "../../../../XXkit/Object-C/Shell/XXbuttonExclusiveShell.h"
-#import "../../../../XXkit/Object-C/Utility/XXtoast.h"
-#import "../../../../XXkit/Object-C/Category/UIButton+StateSettings.h"
+#import "../../../../XXkit/Objective-C/Shell/XXbuttonExclusiveShell.h"
+#import "../../../../XXkit/Objective-C/Utility/XXtoast.h"
+#import "../../../../XXkit/Objective-C/Category/UIButton+StateSettings.h"
 
 @interface ExclusiveButtonViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *button1;

@@ -7,8 +7,8 @@
 //
 
 #import "OrientationViewController.h"
-#import "../../../../XXkit/Object-C/Category/UIViewController+Orientation.h"
-#import "../../../../XXkit/Object-C/XXocUtils.h"
+#import "../../../../XXkit/Objective-C/Category/UIViewController+Orientation.h"
+#import "../../../../XXkit/Objective-C/XXocUtils.h"
 
 @interface OrientationViewController ()
 @property (weak, nonatomic) IBOutlet UIView *blueView;

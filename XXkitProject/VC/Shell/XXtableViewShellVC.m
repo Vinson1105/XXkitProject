@@ -7,7 +7,7 @@
 //
 
 #import "XXtableViewShellVC.h"
-#import "../../../../XXkit/Object-C/Shell/XXtableViewShell.h"
+#import "../../../../XXkit/Objective-C/Shell/XXtableViewShell.h"
 
 #define kDefaultRowButtonID 0
 #define kNibRowButtonID 1

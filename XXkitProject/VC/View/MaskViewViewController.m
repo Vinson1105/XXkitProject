@@ -9,7 +9,7 @@
 #import "MaskViewViewController.h"
 //#import "../../../../XXkit/Object-C/View/XXmaskView.h"
 //#import "../../../../XXkit/Object-C/Category/UIView+MaskView.h"
-#import "../../../../XXkit/Object-C/Category/UIView+ModalPopup.h"
+#import "../../../../XXkit/Objective-C/Category/UIView+ModalPopup.h"
 
 @interface CustomView : UIView
 @end

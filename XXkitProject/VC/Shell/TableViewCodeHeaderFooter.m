@@ -7,10 +7,10 @@
 //
 
 #import "TableViewCodeHeaderFooter.h"
-#import "../../../../XXkit/Object-C/Shell/XXtableViewShell.h"
-#import "../../../../XXkit/Object-C/XXocUtils.h"
-#import "../../../../XXkit/Object-C/Category/UIButton+StateSettings.h"
-#import "../../../../XXkit/Object-C/Shell/XXviewBase.h"
+#import "../../../../XXkit/Objective-C/Shell/XXtableViewShell.h"
+#import "../../../../XXkit/Objective-C/XXocUtils.h"
+#import "../../../../XXkit/Objective-C/Category/UIButton+StateSettings.h"
+#import "../../../../XXkit/Objective-C/Shell/XXviewBase.h"
 
 @interface TableViewCodeHeaderFooter()<XXviewBase>
 @property (nonatomic,strong) UILabel *titleLabel;

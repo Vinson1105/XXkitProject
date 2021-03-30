@@ -7,12 +7,12 @@
 //
 
 #import "LoggerViewController.h"
-#import "../../../../XXkit/Object-C/XXocUtils.h"
-#import "../../../../XXkit/Object-C/Utility/XXlogger.h"
-#import "../../../../XXkit/Object-C/Utility/XXtimer.h"
-#import "../../../../XXkit/Object-C/Utility/DailyLogFileFifo.h"
+#import "../../../../XXkit/Objective-C/XXocUtils.h"
+#import "../../../../XXkit/Objective-C/Utility/XXlogger.h"
+#import "../../../../XXkit/Objective-C/Utility/XXtimer.h"
+#import "../../../../XXkit/Objective-C/Utility/DailyLogFileFifo.h"
 
-#import "../../../../XXkit/Object-C/Utility/NetworkFifo.h"
+#import "../../../../XXkit/Objective-C/Utility/NetworkFifo.h"
 
 @interface LoggerViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *intervalLabel;

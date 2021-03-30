@@ -7,7 +7,7 @@
 //
 
 #import "ZoomableViewController.h"
-#import "../../../../XXkit/Object-C/Category/UIView+Zoomable.h"
+#import "../../../../XXkit/Objective-C/Category/UIView+Zoomable.h"
 
 @interface ZoomableViewController ()
 @property (weak, nonatomic) IBOutlet UIView *zoomableView;

@@ -7,8 +7,8 @@
 //
 
 #import "PopupableViewController.h"
-#import "../../../../XXkit/Object-C/Category/UIView+Popup.h"
-#import "../../../../XXkit/Object-C/Category/UIView+TapToVisible.h"
+#import "../../../../XXkit/Objective-C/Category/UIView+Popup.h"
+#import "../../../../XXkit/Objective-C/Category/UIView+TapToVisible.h"
 
 @interface PopupableViewController ()
 @property (weak, nonatomic) IBOutlet UIView *bgView;
